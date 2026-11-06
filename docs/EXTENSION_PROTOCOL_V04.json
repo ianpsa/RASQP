@@ -1,0 +1,27 @@
+{
+  "version": "0.3.0-research-iteration-2",
+  "status": "exploratory follow-up motivated by v03 failures; frozen before execution; independent seeds and new width, not an independent replication study",
+  "parent": "EXTENSION_PROTOCOL_V03.json",
+  "seed": 440000,
+  "width": 4,
+  "calibration_repetitions": 511,
+  "reference_shots_per_probe": 8192,
+  "test_repetitions": 256,
+  "shots_per_decision": 768,
+  "noise": [0.0, 0.005, 0.01],
+  "alphas": [0.05, 0.01],
+  "probes": [["0000", "ZZZZ"], ["1111", "ZZZZ"], ["++++", "XXXX"]],
+  "approved_variants": ["identity", "x3_x3"],
+  "reference_models": ["ideal", "trusted_noisy"],
+  "cases": ["clean", "x3", "z3", "cx23", "x3_z3", "cx23_z3", "rz3_0.12", "benign_noise_drift_0.04", "public_probe_adaptive_fabrication"],
+  "H44": {
+    "concept": "Context-conditioned complementary probe contract: choose calibration from the independently approved raw variant and backend epoch; joint noisy-reference detector; drift requires quarantine/recalibration, not a malicious label.",
+    "candidate": "trusted_noisy reference with alpha=0.01",
+    "criterion": "For EACH noise and EACH approved variant: clean Wilson95 FPR upper<=0.10 AND every strong mutation Wilson95 TPR lower>=0.90. Weak rotation, drift, adaptive fabrication separately reported. No claim of protection against arbitrary provider or host.",
+    "ablation": "Factorial ideal/trusted-noisy references x alpha 0.05/0.01 on identical calibration/evaluation counts. Report overhead for noisy reference collection; no universal gain assumed.",
+    "security_constraint": "References and variant approval must precede provider execution; learning from attacker-controlled calibration invalidates the guarantee. Variant selection does not use the hidden attack label."
+  },
+  "statistics": "Wilson95 per condition, exact McNemar and Holm across candidate-versus-three-ablation comparisons on strong and weak attacks. No retuning or optional stopping.",
+  "cost": "Equal evaluation shots for all four ablations; shared samples. Additional trusted reference and 511 calibration batches explicitly charged. Different calibration budget from v03 precludes attributing cross-study improvements solely to noisy reference.",
+  "interpretation": "A local empirical research concept composed of established techniques; novelty not proven. Preserve all negative and adversarial outcomes."
+}

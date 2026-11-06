@@ -1,0 +1,25 @@
+{
+  "version": "0.3.0",
+  "status": "fixed before first extension run; exploratory local protocol, not external preregistration",
+  "seed": 390000,
+  "calibration_repetitions": 127,
+  "test_repetitions": 128,
+  "shots_per_decision": 768,
+  "alpha": 0.05,
+  "noise": [0.0, 0.005],
+  "training": {"width": 2, "reference": "identity", "mutations": ["x0", "z0", "cx01"]},
+  "holdout": {"width": 3, "reference": "identity", "mutations": ["x2", "z2", "cx12", "rz2_0.12", "x2_z2", "cx12_z2"]},
+  "selection": "Exhaustive lexicographic three-probe subset of the existing 12-product-probe catalogue maximizing minimum maximum ideal TVD over training mutations; single-probe baseline maximizes average training TVD. No held-out circuit enters selection.",
+  "methods": ["fixed_0Z", "trained_single", "portfolio_joint", "portfolio_naive_or"],
+  "calibration": "Independent calibration samples per method/probe. Portfolio_joint uses split-conformal quantile of the maximum TVD across three probes. Naive OR uses individual alpha thresholds on the same portfolio samples. No retuning after results.",
+  "controls": ["clean", "equivalent_x_pair", "benign_noise_drift_0.04", "public_probe_adaptive_fabrication"],
+  "hypotheses": {
+    "H39": {"claim": "Atomic persistent ledger prevents authenticated replay after restart and across concurrent processes", "criterion": "exactly one acceptance across 16 simultaneous submissions; zero acceptance on restart", "boundary": "trusted intact local SQLite file; deletion, rollback and host compromise excluded"},
+    "H40": {"claim": "Context/artifact/circuit binding plus a result gate prevents release under specified pipeline substitutions", "criterion": "all specified substitutions withhold counts; context mismatch inconclusive; clean accepted", "boundary": "authenticating a claimed artifact identifier does not attest the running machine code; include stale-identifier counterexample"},
+    "H41": {"claim": "Training-selected complementary probes improve held-out worst-case strong-attack coverage at equal shots", "criterion": "for EACH noise: strong attack minimum Wilson TPR lower >=0.90; clean and equivalent control Wilson FPR upper <=0.10; minimum TPR >= each single baseline minimum TPR +0.20", "weak_rotation": "reported separately, no requirement; never drop failed strong families"},
+    "H42": {"claim": "Joint calibration constrains the multiple-probe alarm rate without unacceptable detection loss", "criterion": "for EACH noise: clean FPR upper <=0.10; strong-attack TPR no more than 0.05 below naive OR for every family; report whether actual FPR improves without assuming improvement", "boundary": "exchangeability required; drift is an alarm-control challenge and not malicious intent"},
+    "H43": {"claim": "Combining classically orthogonal controls with portfolio behavior expands fixture attack coverage", "criterion": "all structural/resource, transcript, artifact, and distribution fixture violations withheld, no rejected/inconclusive result released; ablations reported", "boundary": "integration property only, no universal superiority; public adaptive fabrication and forged artifact claims retained as counterexamples"}
+  },
+  "statistics": "Wilson95 per condition; exact one-sided McNemar comparisons paired by repetition; Holm across all attack method comparisons; no optional stopping. Runtime integration properties have no inferential p-values.",
+  "reporting": "Record raw counts, seeds, circuit, calibration scores, thresholds, shot costs, versions and protocol SHA256. Preserve negative results. Only simulation; scientific novelty not established."
+}
