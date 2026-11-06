@@ -1,0 +1,2682 @@
+{
+  "protocol_sha256": "b933bae793f5fa12d1dfc7f8becc2308a531a2f15258198d6f8a82348736bafd",
+  "sandbox": {
+    "network_denied": true,
+    "writable_open_denied": true,
+    "outside_write_denied": true
+  },
+  "environment": {
+    "python": "3.12.14",
+    "qiskit": "2.6.1",
+    "aer": "0.18.2"
+  },
+  "design": {
+    "calibration": 79,
+    "repetitions": 128,
+    "shots_per_decision": 1024,
+    "synthetic_noise": [
+      0,
+      0.005
+    ]
+  },
+  "comparisons": [
+    {
+      "label": "phase/noise0.0/fixed_vs_selected",
+      "n": 128,
+      "gains": 128,
+      "losses": 0,
+      "p_one_sided": 2.938735877055719e-39,
+      "delta": 1.0,
+      "p_holm": 7.640713280344869e-38,
+      "significant_rejection_increase": true,
+      "interpretation": "Detection increase; practical criterion also requires FPR bound"
+    },
+    {
+      "label": "phase/noise0.0/multiple_vs_selected",
+      "n": 128,
+      "gains": 0,
+      "losses": 0,
+      "p_one_sided": 1.0,
+      "delta": 0.0,
+      "p_holm": 1.0,
+      "significant_rejection_increase": false,
+      "interpretation": "Detection increase; practical criterion also requires FPR bound"
+    },
+    {
+      "label": "bitflip/noise0.0/fixed_vs_selected",
+      "n": 128,
+      "gains": 0,
+      "losses": 0,
+      "p_one_sided": 1.0,
+      "delta": 0.0,
+      "p_holm": 1.0,
+      "significant_rejection_increase": false,
+      "interpretation": "Detection increase; practical criterion also requires FPR bound"
+    },
+    {
+      "label": "bitflip/noise0.0/multiple_vs_selected",
+      "n": 128,
+      "gains": 0,
+      "losses": 0,
+      "p_one_sided": 1.0,
+      "delta": 0.0,
+      "p_holm": 1.0,
+      "significant_rejection_increase": false,
+      "interpretation": "Detection increase; practical criterion also requires FPR bound"
+    },
+    {
+      "label": "small_rotation/noise0.0/fixed_vs_selected",
+      "n": 128,
+      "gains": 2,
+      "losses": 0,
+      "p_one_sided": 0.25,
+      "delta": 0.015625,
+      "p_holm": 1.0,
+      "significant_rejection_increase": false,
+      "interpretation": "Detection increase; practical criterion also requires FPR bound"
+    },
+    {
+      "label": "small_rotation/noise0.0/multiple_vs_selected",
+      "n": 128,
+      "gains": 2,
+      "losses": 0,
+      "p_one_sided": 0.25,
+      "delta": 0.015625,
+      "p_holm": 1.0,
+      "significant_rejection_increase": false,
+      "interpretation": "Detection increase; practical criterion also requires FPR bound"
+    },
+    {
+      "label": "dormant_cx/noise0.0/fixed_vs_selected",
+      "n": 128,
+      "gains": 128,
+      "losses": 0,
+      "p_one_sided": 2.938735877055719e-39,
+      "delta": 1.0,
+      "p_holm": 7.640713280344869e-38,
+      "significant_rejection_increase": true,
+      "interpretation": "Detection increase; practical criterion also requires FPR bound"
+    },
+    {
+      "label": "dormant_cx/noise0.0/multiple_vs_selected",
+      "n": 128,
+      "gains": 0,
+      "losses": 0,
+      "p_one_sided": 1.0,
+      "delta": 0.0,
+      "p_holm": 1.0,
+      "significant_rejection_increase": false,
+      "interpretation": "Detection increase; practical criterion also requires FPR bound"
+    },
+    {
+      "label": "legit_hh/noise0.0/fixed_vs_selected",
+      "n": 128,
+      "gains": 0,
+      "losses": 0,
+      "p_one_sided": 1.0,
+      "delta": 0.0,
+      "p_holm": 1.0,
+      "significant_rejection_increase": false,
+      "interpretation": "More rejections are harmful on benign variants"
+    },
+    {
+      "label": "legit_hh/noise0.0/multiple_vs_selected",
+      "n": 128,
+      "gains": 0,
+      "losses": 0,
+      "p_one_sided": 1.0,
+      "delta": 0.0,
+      "p_holm": 1.0,
+      "significant_rejection_increase": false,
+      "interpretation": "More rejections are harmful on benign variants"
+    },
+    {
+      "label": "legit_rz_composition/noise0.0/fixed_vs_selected",
+      "n": 128,
+      "gains": 5,
+      "losses": 0,
+      "p_one_sided": 0.03125,
+      "delta": 0.0390625,
+      "p_holm": 0.5,
+      "significant_rejection_increase": false,
+      "interpretation": "More rejections are harmful on benign variants"
+    },
+    {
+      "label": "legit_rz_composition/noise0.0/multiple_vs_selected",
+      "n": 128,
+      "gains": 5,
+      "losses": 1,
+      "p_one_sided": 0.109375,
+      "delta": 0.03125,
+      "p_holm": 1.0,
+      "significant_rejection_increase": false,
+      "interpretation": "More rejections are harmful on benign variants"
+    },
+    {
+      "label": "phase/noise0.005/fixed_vs_selected",
+      "n": 128,
+      "gains": 115,
+      "losses": 0,
+      "p_one_sided": 2.407412430484045e-35,
+      "delta": 0.8984375,
+      "p_holm": 5.7777898331617076e-34,
+      "significant_rejection_increase": true,
+      "interpretation": "Detection increase; practical criterion also requires FPR bound"
+    },
+    {
+      "label": "phase/noise0.005/multiple_vs_selected",
+      "n": 128,
+      "gains": 0,
+      "losses": 0,
+      "p_one_sided": 1.0,
+      "delta": 0.0,
+      "p_holm": 1.0,
+      "significant_rejection_increase": false,
+      "interpretation": "Detection increase; practical criterion also requires FPR bound"
+    },
+    {
+      "label": "bitflip/noise0.005/fixed_vs_selected",
+      "n": 128,
+      "gains": 0,
+      "losses": 0,
+      "p_one_sided": 1.0,
+      "delta": 0.0,
+      "p_holm": 1.0,
+      "significant_rejection_increase": false,
+      "interpretation": "Detection increase; practical criterion also requires FPR bound"
+    },
+    {
+      "label": "bitflip/noise0.005/multiple_vs_selected",
+      "n": 128,
+      "gains": 0,
+      "losses": 0,
+      "p_one_sided": 1.0,
+      "delta": 0.0,
+      "p_holm": 1.0,
+      "significant_rejection_increase": false,
+      "interpretation": "Detection increase; practical criterion also requires FPR bound"
+    },
+    {
+      "label": "small_rotation/noise0.005/fixed_vs_selected",
+      "n": 128,
+      "gains": 15,
+      "losses": 1,
+      "p_one_sided": 0.0002593994140625,
+      "delta": 0.109375,
+      "p_holm": 0.004669189453125,
+      "significant_rejection_increase": false,
+      "interpretation": "Detection increase; practical criterion also requires FPR bound"
+    },
+    {
+      "label": "small_rotation/noise0.005/multiple_vs_selected",
+      "n": 128,
+      "gains": 71,
+      "losses": 1,
+      "p_one_sided": 1.545835128739098e-20,
+      "delta": 0.546875,
+      "p_holm": 3.4716729596054797e-19,
+      "significant_rejection_increase": true,
+      "interpretation": "Detection increase; practical criterion also requires FPR bound"
+    },
+    {
+      "label": "dormant_cx/noise0.005/fixed_vs_selected",
+      "n": 128,
+      "gains": 49,
+      "losses": 0,
+      "p_one_sided": 1.7763568394002505e-15,
+      "delta": 0.3828125,
+      "p_holm": 3.730349362740526e-14,
+      "significant_rejection_increase": true,
+      "interpretation": "Detection increase; practical criterion also requires FPR bound"
+    },
+    {
+      "label": "dormant_cx/noise0.005/multiple_vs_selected",
+      "n": 128,
+      "gains": 0,
+      "losses": 0,
+      "p_one_sided": 1.0,
+      "delta": 0.0,
+      "p_holm": 1.0,
+      "significant_rejection_increase": false,
+      "interpretation": "Detection increase; practical criterion also requires FPR bound"
+    },
+    {
+      "label": "legit_hh/noise0.005/fixed_vs_selected",
+      "n": 128,
+      "gains": 41,
+      "losses": 18,
+      "p_one_sided": 0.0018968528176858037,
+      "delta": 0.1796875,
+      "p_holm": 0.032246497900658665,
+      "significant_rejection_increase": false,
+      "interpretation": "More rejections are harmful on benign variants"
+    },
+    {
+      "label": "legit_hh/noise0.005/multiple_vs_selected",
+      "n": 128,
+      "gains": 83,
+      "losses": 4,
+      "p_one_sided": 1.509423025915426e-20,
+      "delta": 0.6171875,
+      "p_holm": 3.4716729596054797e-19,
+      "significant_rejection_increase": true,
+      "interpretation": "More rejections are harmful on benign variants"
+    },
+    {
+      "label": "legit_rz_composition/noise0.005/fixed_vs_selected",
+      "n": 128,
+      "gains": 9,
+      "losses": 9,
+      "p_one_sided": 0.5927352905273438,
+      "delta": 0.0,
+      "p_holm": 1.0,
+      "significant_rejection_increase": false,
+      "interpretation": "More rejections are harmful on benign variants"
+    },
+    {
+      "label": "legit_rz_composition/noise0.005/multiple_vs_selected",
+      "n": 128,
+      "gains": 9,
+      "losses": 2,
+      "p_one_sided": 0.03271484375,
+      "delta": 0.0546875,
+      "p_holm": 0.5,
+      "significant_rejection_increase": false,
+      "interpretation": "More rejections are harmful on benign variants"
+    },
+    {
+      "label": "shots/noise0.0/256_vs_4096",
+      "n": 128,
+      "gains": 45,
+      "losses": 0,
+      "p_one_sided": 2.842170943040401e-14,
+      "delta": 0.3515625,
+      "p_holm": 5.684341886080801e-13,
+      "significant_rejection_increase": true,
+      "interpretation": "Detection increase; practical criterion also requires FPR bound"
+    },
+    {
+      "label": "shots/noise0.005/256_vs_4096",
+      "n": 128,
+      "gains": 31,
+      "losses": 0,
+      "p_one_sided": 4.656612873077393e-10,
+      "delta": 0.2421875,
+      "p_holm": 8.847564458847046e-09,
+      "significant_rejection_increase": true,
+      "interpretation": "Detection increase; practical criterion also requires FPR bound"
+    }
+  ],
+  "normalization": {
+    "n": 360,
+    "raw_flags": 360,
+    "normalized_matches": 360,
+    "operator_preserved": 360,
+    "idempotent": 360,
+    "median_ms": 0.03250650001973554,
+    "p95_ms": 0.9650850502566757,
+    "cirq_max_probability_error": 5.551115123125783e-16,
+    "incomplete_counterexample": {
+      "equivalent": true,
+      "normal_forms_differ": true
+    }
+  },
+  "genome": {
+    "known_variants_recognized": [
+      12,
+      12
+    ],
+    "unknown_quarantined": true,
+    "first_divergence": [
+      "build",
+      "compile",
+      "submit"
+    ],
+    "forged_expected_and_observed_pass": true,
+    "dependency_edges_example": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ]
+  },
+  "mutations": {
+    "n": 396,
+    "reversals_restored": 396,
+    "harmful_at_tvd_gt_005": 259,
+    "holdouts": [
+      {
+        "family": "basis",
+        "train_n": 144,
+        "test_n": 45,
+        "balanced_accuracy": 0.5,
+        "tpr": 1.0,
+        "tnr": 0.0,
+        "model": {
+          "x": true,
+          "z": true,
+          "ry": true
+        }
+      },
+      {
+        "family": "ghz",
+        "train_n": 135,
+        "test_n": 72,
+        "balanced_accuracy": 0.125,
+        "tpr": 0.25,
+        "tnr": 0.0,
+        "model": {
+          "x": true,
+          "z": true,
+          "ry": false
+        }
+      },
+      {
+        "family": "variational",
+        "train_n": 135,
+        "test_n": 72,
+        "balanced_accuracy": 0.30952380952380953,
+        "tpr": 0.6190476190476191,
+        "tnr": 0.0,
+        "model": {
+          "x": true,
+          "z": false,
+          "ry": true
+        }
+      }
+    ],
+    "generalization_pass": false
+  },
+  "factorial": {
+    "tvd_I_A_B_AB": [
+      0.0,
+      0.0056144610319787845,
+      0.0056144610319787845,
+      0.022331755437196833
+    ],
+    "interaction": 0.011102833373239262,
+    "threshold": 0.01,
+    "isolates_below_combination_above": true,
+    "cancellation_counterexample": true
+  },
+  "probes": [
+    {
+      "fixture": "phase",
+      "noise": 0.0,
+      "is_attack": true,
+      "selection_ms": 6.065820999992866,
+      "methods": {
+        "fixed": {
+          "attack": {
+            "n": 128,
+            "rejected": 0,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "clean": {
+            "n": 128,
+            "rejected": 0,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "practical_pass": false,
+          "threshold": 0.0,
+          "probes": [
+            {
+              "input_state": "0",
+              "basis": "Z"
+            }
+          ],
+          "reference_shots": 16384,
+          "calibration_shots": 80896,
+          "test_shots_per_decision": 1024
+        },
+        "selected": {
+          "attack": {
+            "n": 128,
+            "rejected": 128,
+            "rate": 1.0,
+            "wilson95": [
+              0.9708630437264916,
+              1.0
+            ]
+          },
+          "clean": {
+            "n": 128,
+            "rejected": 0,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "practical_pass": true,
+          "threshold": 0.0,
+          "probes": [
+            {
+              "input_state": "+",
+              "basis": "X"
+            }
+          ],
+          "reference_shots": 16384,
+          "calibration_shots": 80896,
+          "test_shots_per_decision": 1024
+        },
+        "multiple": {
+          "attack": {
+            "n": 128,
+            "rejected": 128,
+            "rate": 1.0,
+            "wilson95": [
+              0.9708630437264916,
+              1.0
+            ]
+          },
+          "clean": {
+            "n": 128,
+            "rejected": 0,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "practical_pass": true,
+          "threshold": 0.0,
+          "probes": [
+            {
+              "input_state": "0",
+              "basis": "Z"
+            },
+            {
+              "input_state": "1",
+              "basis": "Z"
+            },
+            {
+              "input_state": "+",
+              "basis": "X"
+            },
+            {
+              "input_state": "i",
+              "basis": "Y"
+            }
+          ],
+          "reference_shots": 65536,
+          "calibration_shots": 80896,
+          "test_shots_per_decision": 1024
+        },
+        "structural": {
+          "flag": true,
+          "meaning": "unknown normalized representation, not proof of malicious behavior"
+        },
+        "exact_operator": {
+          "flag": true,
+          "cost": "exponential classical oracle; visible candidate only"
+        },
+        "combined": {
+          "rejected": 128,
+          "n": 128,
+          "false_alarm_if_benign": false
+        }
+      }
+    },
+    {
+      "fixture": "bitflip",
+      "noise": 0.0,
+      "is_attack": true,
+      "selection_ms": 8.87274900014745,
+      "methods": {
+        "fixed": {
+          "attack": {
+            "n": 128,
+            "rejected": 128,
+            "rate": 1.0,
+            "wilson95": [
+              0.9708630437264916,
+              1.0
+            ]
+          },
+          "clean": {
+            "n": 128,
+            "rejected": 0,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "practical_pass": true,
+          "threshold": 0.0,
+          "probes": [
+            {
+              "input_state": "0",
+              "basis": "Z"
+            }
+          ],
+          "reference_shots": 16384,
+          "calibration_shots": 80896,
+          "test_shots_per_decision": 1024
+        },
+        "selected": {
+          "attack": {
+            "n": 128,
+            "rejected": 128,
+            "rate": 1.0,
+            "wilson95": [
+              0.9708630437264916,
+              1.0
+            ]
+          },
+          "clean": {
+            "n": 128,
+            "rejected": 0,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "practical_pass": true,
+          "threshold": 0.0,
+          "probes": [
+            {
+              "input_state": "0",
+              "basis": "Z"
+            }
+          ],
+          "reference_shots": 16384,
+          "calibration_shots": 80896,
+          "test_shots_per_decision": 1024
+        },
+        "multiple": {
+          "attack": {
+            "n": 128,
+            "rejected": 128,
+            "rate": 1.0,
+            "wilson95": [
+              0.9708630437264916,
+              1.0
+            ]
+          },
+          "clean": {
+            "n": 128,
+            "rejected": 0,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "practical_pass": true,
+          "threshold": 0.0,
+          "probes": [
+            {
+              "input_state": "0",
+              "basis": "Z"
+            },
+            {
+              "input_state": "1",
+              "basis": "Z"
+            },
+            {
+              "input_state": "+",
+              "basis": "X"
+            },
+            {
+              "input_state": "i",
+              "basis": "Y"
+            }
+          ],
+          "reference_shots": 65536,
+          "calibration_shots": 80896,
+          "test_shots_per_decision": 1024
+        },
+        "structural": {
+          "flag": true,
+          "meaning": "unknown normalized representation, not proof of malicious behavior"
+        },
+        "exact_operator": {
+          "flag": true,
+          "cost": "exponential classical oracle; visible candidate only"
+        },
+        "combined": {
+          "rejected": 128,
+          "n": 128,
+          "false_alarm_if_benign": false
+        }
+      }
+    },
+    {
+      "fixture": "small_rotation",
+      "noise": 0.0,
+      "is_attack": true,
+      "selection_ms": 8.592317999955412,
+      "methods": {
+        "fixed": {
+          "attack": {
+            "n": 128,
+            "rejected": 126,
+            "rate": 0.984375,
+            "wilson95": [
+              0.9448190233201829,
+              0.9957045502898559
+            ]
+          },
+          "clean": {
+            "n": 128,
+            "rejected": 0,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "practical_pass": true,
+          "threshold": 0.0,
+          "probes": [
+            {
+              "input_state": "0",
+              "basis": "Z"
+            }
+          ],
+          "reference_shots": 16384,
+          "calibration_shots": 80896,
+          "test_shots_per_decision": 1024
+        },
+        "selected": {
+          "attack": {
+            "n": 128,
+            "rejected": 128,
+            "rate": 1.0,
+            "wilson95": [
+              0.9708630437264916,
+              1.0
+            ]
+          },
+          "clean": {
+            "n": 128,
+            "rejected": 9,
+            "rate": 0.0703125,
+            "wilson95": [
+              0.03742976830393997,
+              0.12823480349360633
+            ]
+          },
+          "practical_pass": false,
+          "threshold": 0.03009033203125,
+          "probes": [
+            {
+              "input_state": "0",
+              "basis": "X"
+            }
+          ],
+          "reference_shots": 16384,
+          "calibration_shots": 80896,
+          "test_shots_per_decision": 1024
+        },
+        "multiple": {
+          "attack": {
+            "n": 128,
+            "rejected": 126,
+            "rate": 0.984375,
+            "wilson95": [
+              0.9448190233201829,
+              0.9957045502898559
+            ]
+          },
+          "clean": {
+            "n": 128,
+            "rejected": 0,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "practical_pass": true,
+          "threshold": 0.0,
+          "probes": [
+            {
+              "input_state": "0",
+              "basis": "Z"
+            },
+            {
+              "input_state": "1",
+              "basis": "Z"
+            },
+            {
+              "input_state": "+",
+              "basis": "X"
+            },
+            {
+              "input_state": "i",
+              "basis": "Y"
+            }
+          ],
+          "reference_shots": 65536,
+          "calibration_shots": 80896,
+          "test_shots_per_decision": 1024
+        },
+        "structural": {
+          "flag": true,
+          "meaning": "unknown normalized representation, not proof of malicious behavior"
+        },
+        "exact_operator": {
+          "flag": true,
+          "cost": "exponential classical oracle; visible candidate only"
+        },
+        "combined": {
+          "rejected": 128,
+          "n": 128,
+          "false_alarm_if_benign": false
+        }
+      }
+    },
+    {
+      "fixture": "dormant_cx",
+      "noise": 0.0,
+      "is_attack": true,
+      "selection_ms": 20.383359000334167,
+      "methods": {
+        "fixed": {
+          "attack": {
+            "n": 128,
+            "rejected": 0,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "clean": {
+            "n": 128,
+            "rejected": 0,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "practical_pass": false,
+          "threshold": 0.0,
+          "probes": [
+            {
+              "input_state": "00",
+              "basis": "ZZ"
+            }
+          ],
+          "reference_shots": 16384,
+          "calibration_shots": 80896,
+          "test_shots_per_decision": 1024
+        },
+        "selected": {
+          "attack": {
+            "n": 128,
+            "rejected": 128,
+            "rate": 1.0,
+            "wilson95": [
+              0.9708630437264916,
+              1.0
+            ]
+          },
+          "clean": {
+            "n": 128,
+            "rejected": 0,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "practical_pass": true,
+          "threshold": 0.0,
+          "probes": [
+            {
+              "input_state": "11",
+              "basis": "ZZ"
+            }
+          ],
+          "reference_shots": 16384,
+          "calibration_shots": 80896,
+          "test_shots_per_decision": 1024
+        },
+        "multiple": {
+          "attack": {
+            "n": 128,
+            "rejected": 128,
+            "rate": 1.0,
+            "wilson95": [
+              0.9708630437264916,
+              1.0
+            ]
+          },
+          "clean": {
+            "n": 128,
+            "rejected": 0,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "practical_pass": true,
+          "threshold": 0.0,
+          "probes": [
+            {
+              "input_state": "00",
+              "basis": "ZZ"
+            },
+            {
+              "input_state": "11",
+              "basis": "ZZ"
+            },
+            {
+              "input_state": "++",
+              "basis": "XX"
+            },
+            {
+              "input_state": "ii",
+              "basis": "YY"
+            }
+          ],
+          "reference_shots": 65536,
+          "calibration_shots": 80896,
+          "test_shots_per_decision": 1024
+        },
+        "structural": {
+          "flag": true,
+          "meaning": "unknown normalized representation, not proof of malicious behavior"
+        },
+        "exact_operator": {
+          "flag": true,
+          "cost": "exponential classical oracle; visible candidate only"
+        },
+        "combined": {
+          "rejected": 128,
+          "n": 128,
+          "false_alarm_if_benign": false
+        }
+      }
+    },
+    {
+      "fixture": "legit_hh",
+      "noise": 0.0,
+      "is_attack": false,
+      "selection_ms": 30.19007300008525,
+      "methods": {
+        "fixed": {
+          "attack": {
+            "n": 128,
+            "rejected": 0,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "clean": {
+            "n": 128,
+            "rejected": 0,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "practical_pass": false,
+          "threshold": 0.0,
+          "probes": [
+            {
+              "input_state": "0",
+              "basis": "Z"
+            }
+          ],
+          "reference_shots": 16384,
+          "calibration_shots": 80896,
+          "test_shots_per_decision": 1024
+        },
+        "selected": {
+          "attack": {
+            "n": 128,
+            "rejected": 0,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "clean": {
+            "n": 128,
+            "rejected": 0,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "practical_pass": false,
+          "threshold": 0.0,
+          "probes": [
+            {
+              "input_state": "0",
+              "basis": "Z"
+            }
+          ],
+          "reference_shots": 16384,
+          "calibration_shots": 80896,
+          "test_shots_per_decision": 1024
+        },
+        "multiple": {
+          "attack": {
+            "n": 128,
+            "rejected": 0,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "clean": {
+            "n": 128,
+            "rejected": 0,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "practical_pass": false,
+          "threshold": 0.0,
+          "probes": [
+            {
+              "input_state": "0",
+              "basis": "Z"
+            },
+            {
+              "input_state": "1",
+              "basis": "Z"
+            },
+            {
+              "input_state": "+",
+              "basis": "X"
+            },
+            {
+              "input_state": "i",
+              "basis": "Y"
+            }
+          ],
+          "reference_shots": 65536,
+          "calibration_shots": 80896,
+          "test_shots_per_decision": 1024
+        },
+        "structural": {
+          "flag": false,
+          "meaning": "unknown normalized representation, not proof of malicious behavior"
+        },
+        "exact_operator": {
+          "flag": false,
+          "cost": "exponential classical oracle; visible candidate only"
+        },
+        "combined": {
+          "rejected": 0,
+          "n": 128,
+          "false_alarm_if_benign": false
+        }
+      }
+    },
+    {
+      "fixture": "legit_rz_composition",
+      "noise": 0.0,
+      "is_attack": false,
+      "selection_ms": 10.652983999989374,
+      "methods": {
+        "fixed": {
+          "attack": {
+            "n": 128,
+            "rejected": 0,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "clean": {
+            "n": 128,
+            "rejected": 0,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "practical_pass": false,
+          "threshold": 0.0,
+          "probes": [
+            {
+              "input_state": "0",
+              "basis": "Z"
+            }
+          ],
+          "reference_shots": 16384,
+          "calibration_shots": 80896,
+          "test_shots_per_decision": 1024
+        },
+        "selected": {
+          "attack": {
+            "n": 128,
+            "rejected": 5,
+            "rate": 0.0390625,
+            "wilson95": [
+              0.016798610797803704,
+              0.08818702076683686
+            ]
+          },
+          "clean": {
+            "n": 128,
+            "rejected": 7,
+            "rate": 0.0546875,
+            "wilson95": [
+              0.026740201381346355,
+              0.10858490029974707
+            ]
+          },
+          "practical_pass": false,
+          "threshold": 0.0328369140625,
+          "probes": [
+            {
+              "input_state": "0",
+              "basis": "Y"
+            }
+          ],
+          "reference_shots": 16384,
+          "calibration_shots": 80896,
+          "test_shots_per_decision": 1024
+        },
+        "multiple": {
+          "attack": {
+            "n": 128,
+            "rejected": 1,
+            "rate": 0.0078125,
+            "wilson95": [
+              0.0013804318928742412,
+              0.04292625943886061
+            ]
+          },
+          "clean": {
+            "n": 128,
+            "rejected": 0,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "practical_pass": false,
+          "threshold": 0.03936767578125,
+          "probes": [
+            {
+              "input_state": "0",
+              "basis": "Z"
+            },
+            {
+              "input_state": "1",
+              "basis": "Z"
+            },
+            {
+              "input_state": "+",
+              "basis": "X"
+            },
+            {
+              "input_state": "i",
+              "basis": "Y"
+            }
+          ],
+          "reference_shots": 65536,
+          "calibration_shots": 80896,
+          "test_shots_per_decision": 1024
+        },
+        "structural": {
+          "flag": true,
+          "meaning": "unknown normalized representation, not proof of malicious behavior"
+        },
+        "exact_operator": {
+          "flag": false,
+          "cost": "exponential classical oracle; visible candidate only"
+        },
+        "combined": {
+          "rejected": 128,
+          "n": 128,
+          "false_alarm_if_benign": true
+        }
+      }
+    },
+    {
+      "fixture": "phase",
+      "noise": 0.005,
+      "is_attack": true,
+      "selection_ms": 14.849177999622043,
+      "methods": {
+        "fixed": {
+          "attack": {
+            "n": 128,
+            "rejected": 13,
+            "rate": 0.1015625,
+            "wilson95": [
+              0.060318648726840854,
+              0.16602486330361116
+            ]
+          },
+          "clean": {
+            "n": 128,
+            "rejected": 1,
+            "rate": 0.0078125,
+            "wilson95": [
+              0.0013804318928742412,
+              0.04292625943886061
+            ]
+          },
+          "practical_pass": false,
+          "threshold": 0.0052490234375,
+          "probes": [
+            {
+              "input_state": "0",
+              "basis": "Z"
+            }
+          ],
+          "reference_shots": 16384,
+          "calibration_shots": 80896,
+          "test_shots_per_decision": 1024
+        },
+        "selected": {
+          "attack": {
+            "n": 128,
+            "rejected": 128,
+            "rate": 1.0,
+            "wilson95": [
+              0.9708630437264916,
+              1.0
+            ]
+          },
+          "clean": {
+            "n": 128,
+            "rejected": 1,
+            "rate": 0.0078125,
+            "wilson95": [
+              0.0013804318928742412,
+              0.04292625943886061
+            ]
+          },
+          "practical_pass": true,
+          "threshold": 0.00732421875,
+          "probes": [
+            {
+              "input_state": "+",
+              "basis": "X"
+            }
+          ],
+          "reference_shots": 16384,
+          "calibration_shots": 80896,
+          "test_shots_per_decision": 1024
+        },
+        "multiple": {
+          "attack": {
+            "n": 128,
+            "rejected": 128,
+            "rate": 1.0,
+            "wilson95": [
+              0.9708630437264916,
+              1.0
+            ]
+          },
+          "clean": {
+            "n": 128,
+            "rejected": 12,
+            "rate": 0.09375,
+            "wilson95": [
+              0.054443804399147026,
+              0.15672997257307855
+            ]
+          },
+          "practical_pass": false,
+          "threshold": 0.014404296875,
+          "probes": [
+            {
+              "input_state": "0",
+              "basis": "Z"
+            },
+            {
+              "input_state": "1",
+              "basis": "Z"
+            },
+            {
+              "input_state": "+",
+              "basis": "X"
+            },
+            {
+              "input_state": "i",
+              "basis": "Y"
+            }
+          ],
+          "reference_shots": 65536,
+          "calibration_shots": 80896,
+          "test_shots_per_decision": 1024
+        },
+        "structural": {
+          "flag": true,
+          "meaning": "unknown normalized representation, not proof of malicious behavior"
+        },
+        "exact_operator": {
+          "flag": true,
+          "cost": "exponential classical oracle; visible candidate only"
+        },
+        "combined": {
+          "rejected": 128,
+          "n": 128,
+          "false_alarm_if_benign": false
+        }
+      }
+    },
+    {
+      "fixture": "bitflip",
+      "noise": 0.005,
+      "is_attack": true,
+      "selection_ms": 30.479896000088047,
+      "methods": {
+        "fixed": {
+          "attack": {
+            "n": 128,
+            "rejected": 128,
+            "rate": 1.0,
+            "wilson95": [
+              0.9708630437264916,
+              1.0
+            ]
+          },
+          "clean": {
+            "n": 128,
+            "rejected": 3,
+            "rate": 0.0234375,
+            "wilson95": [
+              0.008002416396755481,
+              0.06664374505143222
+            ]
+          },
+          "practical_pass": true,
+          "threshold": 0.00457763671875,
+          "probes": [
+            {
+              "input_state": "0",
+              "basis": "Z"
+            }
+          ],
+          "reference_shots": 16384,
+          "calibration_shots": 80896,
+          "test_shots_per_decision": 1024
+        },
+        "selected": {
+          "attack": {
+            "n": 128,
+            "rejected": 128,
+            "rate": 1.0,
+            "wilson95": [
+              0.9708630437264916,
+              1.0
+            ]
+          },
+          "clean": {
+            "n": 128,
+            "rejected": 11,
+            "rate": 0.0859375,
+            "wilson95": [
+              0.04866313137138619,
+              0.14734091054261295
+            ]
+          },
+          "practical_pass": false,
+          "threshold": 0.00341796875,
+          "probes": [
+            {
+              "input_state": "0",
+              "basis": "Z"
+            }
+          ],
+          "reference_shots": 16384,
+          "calibration_shots": 80896,
+          "test_shots_per_decision": 1024
+        },
+        "multiple": {
+          "attack": {
+            "n": 128,
+            "rejected": 128,
+            "rate": 1.0,
+            "wilson95": [
+              0.9708630437264916,
+              1.0
+            ]
+          },
+          "clean": {
+            "n": 128,
+            "rejected": 0,
+            "rate": 0.0,
+            "wilson95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "practical_pass": true,
+          "threshold": 0.0218505859375,
+          "probes": [
+            {
+              "input_state": "0",
+              "basis": "Z"
+            },
+            {
+              "input_state": "1",
+              "basis": "Z"
+            },
+            {
+              "input_state": "+",
+              "basis": "X"
+            },
+            {
+              "input_state": "i",
+              "basis": "Y"
+            }
+          ],
+          "reference_shots": 65536,
+          "calibration_shots": 80896,
+          "test_shots_per_decision": 1024
+        },
+        "structural": {
+          "flag": true,
+          "meaning": "unknown normalized representation, not proof of malicious behavior"
+        },
+        "exact_operator": {
+          "flag": true,
+          "cost": "exponential classical oracle; visible candidate only"
+        },
+        "combined": {
+          "rejected": 128,
+          "n": 128,
+          "false_alarm_if_benign": false
+        }
+      }
+    },
+    {
+      "fixture": "small_rotation",
+      "noise": 0.005,
+      "is_attack": true,
+      "selection_ms": 10.850218999621575,
+      "methods": {
+        "fixed": {
+          "attack": {
+            "n": 128,
+            "rejected": 113,
+            "rate": 0.8828125,
+            "wilson95": [
+              0.8156338413466524,
+              0.9276831765064426
+            ]
+          },
+          "clean": {
+            "n": 128,
+            "rejected": 6,
+            "rate": 0.046875,
+            "wilson95": [
+              0.021657844171923776,
+              0.09849752245094322
+            ]
+          },
+          "practical_pass": false,
+          "threshold": 0.00457763671875,
+          "probes": [
+            {
+              "input_state": "0",
+              "basis": "Z"
+            }
+          ],
+          "reference_shots": 16384,
+          "calibration_shots": 80896,
+          "test_shots_per_decision": 1024
+        },
+        "selected": {
+          "attack": {
+            "n": 128,
+            "rejected": 127,
+            "rate": 0.9921875,
+            "wilson95": [
+              0.9570737405611394,
+              0.9986195681071257
+            ]
+          },
+          "clean": {
+            "n": 128,
+            "rejected": 10,
+            "rate": 0.078125,
+            "wilson95": [
+              0.04298737505098223,
+              0.13784693180479052
+            ]
+          },
+          "practical_pass": false,
+          "threshold": 0.031494140625,
+          "probes": [
+            {
+              "input_state": "0",
+              "basis": "X"
+            }
+          ],
+          "reference_shots": 16384,
+          "calibration_shots": 80896,
+          "test_shots_per_decision": 1024
+        },
+        "multiple": {
+          "attack": {
+            "n": 128,
+            "rejected": 57,
+            "rate": 0.4453125,
+            "wilson95": [
+              0.36205524949299805,
+              0.5317566050994169
+            ]
+          },
+          "clean": {
+            "n": 128,
+            "rejected": 15,
+            "rate": 0.1171875,
+            "wilson95": [
+              0.07231682349355734,
+              0.18436615865334754
+            ]
+          },
+          "practical_pass": false,
+          "threshold": 0.0135498046875,
+          "probes": [
+            {
+              "input_state": "0",
+              "basis": "Z"
+            },
+            {
+              "input_state": "1",
+              "basis": "Z"
+            },
+            {
+              "input_state": "+",
+              "basis": "X"
+            },
+            {
+              "input_state": "i",
+              "basis": "Y"
+            }
+          ],
+          "reference_shots": 65536,
+          "calibration_shots": 80896,
+          "test_shots_per_decision": 1024
+        },
+        "structural": {
+          "flag": true,
+          "meaning": "unknown normalized representation, not proof of malicious behavior"
+        },
+        "exact_operator": {
+          "flag": true,
+          "cost": "exponential classical oracle; visible candidate only"
+        },
+        "combined": {
+          "rejected": 128,
+          "n": 128,
+          "false_alarm_if_benign": false
+        }
+      }
+    },
+    {
+      "fixture": "dormant_cx",
+      "noise": 0.005,
+      "is_attack": true,
+      "selection_ms": 11.382940999737912,
+      "methods": {
+        "fixed": {
+          "attack": {
+            "n": 128,
+            "rejected": 79,
+            "rate": 0.6171875,
+            "wilson95": [
+              0.5307322844502991,
+              0.6968137414230975
+            ]
+          },
+          "clean": {
+            "n": 128,
+            "rejected": 1,
+            "rate": 0.0078125,
+            "wilson95": [
+              0.0013804318928742412,
+              0.04292625943886061
+            ]
+          },
+          "practical_pass": false,
+          "threshold": 0.00732421875,
+          "probes": [
+            {
+              "input_state": "00",
+              "basis": "ZZ"
+            }
+          ],
+          "reference_shots": 16384,
+          "calibration_shots": 80896,
+          "test_shots_per_decision": 1024
+        },
+        "selected": {
+          "attack": {
+            "n": 128,
+            "rejected": 128,
+            "rate": 1.0,
+            "wilson95": [
+              0.9708630437264916,
+              1.0
+            ]
+          },
+          "clean": {
+            "n": 128,
+            "rejected": 5,
+            "rate": 0.0390625,
+            "wilson95": [
+              0.016798610797803704,
+              0.08818702076683686
+            ]
+          },
+          "practical_pass": true,
+          "threshold": 0.00750732421875,
+          "probes": [
+            {
+              "input_state": "11",
+              "basis": "ZZ"
+            }
+          ],
+          "reference_shots": 16384,
+          "calibration_shots": 80896,
+          "test_shots_per_decision": 1024
+        },
+        "multiple": {
+          "attack": {
+            "n": 128,
+            "rejected": 128,
+            "rate": 1.0,
+            "wilson95": [
+              0.9708630437264916,
+              1.0
+            ]
+          },
+          "clean": {
+            "n": 128,
+            "rejected": 4,
+            "rate": 0.03125,
+            "wilson95": [
+              0.01221826524505338,
+              0.07759763126136077
+            ]
+          },
+          "practical_pass": true,
+          "threshold": 0.0235595703125,
+          "probes": [
+            {
+              "input_state": "00",
+              "basis": "ZZ"
+            },
+            {
+              "input_state": "11",
+              "basis": "ZZ"
+            },
+            {
+              "input_state": "++",
+              "basis": "XX"
+            },
+            {
+              "input_state": "ii",
+              "basis": "YY"
+            }
+          ],
+          "reference_shots": 65536,
+          "calibration_shots": 80896,
+          "test_shots_per_decision": 1024
+        },
+        "structural": {
+          "flag": true,
+          "meaning": "unknown normalized representation, not proof of malicious behavior"
+        },
+        "exact_operator": {
+          "flag": true,
+          "cost": "exponential classical oracle; visible candidate only"
+        },
+        "combined": {
+          "rejected": 128,
+          "n": 128,
+          "false_alarm_if_benign": false
+        }
+      }
+    },
+    {
+      "fixture": "legit_hh",
+      "noise": 0.005,
+      "is_attack": false,
+      "selection_ms": 9.721542000079353,
+      "methods": {
+        "fixed": {
+          "attack": {
+            "n": 128,
+            "rejected": 68,
+            "rate": 0.53125,
+            "wilson95": [
+              0.44515370795994524,
+              0.6155252322729605
+            ]
+          },
+          "clean": {
+            "n": 128,
+            "rejected": 4,
+            "rate": 0.03125,
+            "wilson95": [
+              0.01221826524505338,
+              0.07759763126136077
+            ]
+          },
+          "practical_pass": false,
+          "threshold": 0.004150390625,
+          "probes": [
+            {
+              "input_state": "0",
+              "basis": "Z"
+            }
+          ],
+          "reference_shots": 16384,
+          "calibration_shots": 80896,
+          "test_shots_per_decision": 1024
+        },
+        "selected": {
+          "attack": {
+            "n": 128,
+            "rejected": 91,
+            "rate": 0.7109375,
+            "wilson95": [
+              0.6271668442501395,
+              0.7824160023219742
+            ]
+          },
+          "clean": {
+            "n": 128,
+            "rejected": 11,
+            "rate": 0.0859375,
+            "wilson95": [
+              0.04866313137138619,
+              0.14734091054261295
+            ]
+          },
+          "practical_pass": false,
+          "threshold": 0.00390625,
+          "probes": [
+            {
+              "input_state": "0",
+              "basis": "Z"
+            }
+          ],
+          "reference_shots": 16384,
+          "calibration_shots": 80896,
+          "test_shots_per_decision": 1024
+        },
+        "multiple": {
+          "attack": {
+            "n": 128,
+            "rejected": 12,
+            "rate": 0.09375,
+            "wilson95": [
+              0.054443804399147026,
+              0.15672997257307855
+            ]
+          },
+          "clean": {
+            "n": 128,
+            "rejected": 1,
+            "rate": 0.0078125,
+            "wilson95": [
+              0.0013804318928742412,
+              0.04292625943886061
+            ]
+          },
+          "practical_pass": false,
+          "threshold": 0.0218505859375,
+          "probes": [
+            {
+              "input_state": "0",
+              "basis": "Z"
+            },
+            {
+              "input_state": "1",
+              "basis": "Z"
+            },
+            {
+              "input_state": "+",
+              "basis": "X"
+            },
+            {
+              "input_state": "i",
+              "basis": "Y"
+            }
+          ],
+          "reference_shots": 65536,
+          "calibration_shots": 80896,
+          "test_shots_per_decision": 1024
+        },
+        "structural": {
+          "flag": false,
+          "meaning": "unknown normalized representation, not proof of malicious behavior"
+        },
+        "exact_operator": {
+          "flag": false,
+          "cost": "exponential classical oracle; visible candidate only"
+        },
+        "combined": {
+          "rejected": 91,
+          "n": 128,
+          "false_alarm_if_benign": true
+        }
+      }
+    },
+    {
+      "fixture": "legit_rz_composition",
+      "noise": 0.005,
+      "is_attack": false,
+      "selection_ms": 8.667829000387428,
+      "methods": {
+        "fixed": {
+          "attack": {
+            "n": 128,
+            "rejected": 9,
+            "rate": 0.0703125,
+            "wilson95": [
+              0.03742976830393997,
+              0.12823480349360633
+            ]
+          },
+          "clean": {
+            "n": 128,
+            "rejected": 4,
+            "rate": 0.03125,
+            "wilson95": [
+              0.01221826524505338,
+              0.07759763126136077
+            ]
+          },
+          "practical_pass": false,
+          "threshold": 0.005859375,
+          "probes": [
+            {
+              "input_state": "0",
+              "basis": "Z"
+            }
+          ],
+          "reference_shots": 16384,
+          "calibration_shots": 80896,
+          "test_shots_per_decision": 1024
+        },
+        "selected": {
+          "attack": {
+            "n": 128,
+            "rejected": 9,
+            "rate": 0.0703125,
+            "wilson95": [
+              0.03742976830393997,
+              0.12823480349360633
+            ]
+          },
+          "clean": {
+            "n": 128,
+            "rejected": 15,
+            "rate": 0.1171875,
+            "wilson95": [
+              0.07231682349355734,
+              0.18436615865334754
+            ]
+          },
+          "practical_pass": false,
+          "threshold": 0.0291748046875,
+          "probes": [
+            {
+              "input_state": "0",
+              "basis": "Y"
+            }
+          ],
+          "reference_shots": 16384,
+          "calibration_shots": 80896,
+          "test_shots_per_decision": 1024
+        },
+        "multiple": {
+          "attack": {
+            "n": 128,
+            "rejected": 2,
+            "rate": 0.015625,
+            "wilson95": [
+              0.004295449710144082,
+              0.055180976679817195
+            ]
+          },
+          "clean": {
+            "n": 128,
+            "rejected": 3,
+            "rate": 0.0234375,
+            "wilson95": [
+              0.008002416396755481,
+              0.06664374505143222
+            ]
+          },
+          "practical_pass": false,
+          "threshold": 0.040283203125,
+          "probes": [
+            {
+              "input_state": "0",
+              "basis": "Z"
+            },
+            {
+              "input_state": "1",
+              "basis": "Z"
+            },
+            {
+              "input_state": "+",
+              "basis": "X"
+            },
+            {
+              "input_state": "i",
+              "basis": "Y"
+            }
+          ],
+          "reference_shots": 65536,
+          "calibration_shots": 80896,
+          "test_shots_per_decision": 1024
+        },
+        "structural": {
+          "flag": true,
+          "meaning": "unknown normalized representation, not proof of malicious behavior"
+        },
+        "exact_operator": {
+          "flag": false,
+          "cost": "exponential classical oracle; visible candidate only"
+        },
+        "combined": {
+          "rejected": 128,
+          "n": 128,
+          "false_alarm_if_benign": true
+        }
+      }
+    }
+  ],
+  "shots": [
+    {
+      "noise": 0.0,
+      "shots": 256,
+      "attack": {
+        "n": 128,
+        "rejected": 83,
+        "rate": 0.6484375,
+        "wilson95": [
+          0.5624978389203745,
+          0.7257271271859276
+        ]
+      },
+      "clean": {
+        "n": 128,
+        "rejected": 7,
+        "rate": 0.0546875,
+        "wilson95": [
+          0.026740201381346355,
+          0.10858490029974707
+        ]
+      },
+      "practical_pass": false
+    },
+    {
+      "noise": 0.0,
+      "shots": 4096,
+      "attack": {
+        "n": 128,
+        "rejected": 128,
+        "rate": 1.0,
+        "wilson95": [
+          0.9708630437264916,
+          1.0
+        ]
+      },
+      "clean": {
+        "n": 128,
+        "rejected": 16,
+        "rate": 0.125,
+        "wilson95": [
+          0.07842644638761664,
+          0.19342627081751468
+        ]
+      },
+      "practical_pass": false
+    },
+    {
+      "noise": 0.005,
+      "shots": 256,
+      "attack": {
+        "n": 128,
+        "rejected": 97,
+        "rate": 0.7578125,
+        "wilson95": [
+          0.6767886369138937,
+          0.8238126200075785
+        ]
+      },
+      "clean": {
+        "n": 128,
+        "rejected": 10,
+        "rate": 0.078125,
+        "wilson95": [
+          0.04298737505098223,
+          0.13784693180479052
+        ]
+      },
+      "practical_pass": false
+    },
+    {
+      "noise": 0.005,
+      "shots": 4096,
+      "attack": {
+        "n": 128,
+        "rejected": 128,
+        "rate": 1.0,
+        "wilson95": [
+          0.9708630437264916,
+          1.0
+        ]
+      },
+      "clean": {
+        "n": 128,
+        "rejected": 3,
+        "rate": 0.0234375,
+        "wilson95": [
+          0.008002416396755481,
+          0.06664374505143222
+        ]
+      },
+      "practical_pass": true
+    }
+  ],
+  "resources": {
+    "equivalent": true,
+    "normalized_equal": true,
+    "original": {
+      "gates": 0,
+      "depth": 0,
+      "two_qubit": 0
+    },
+    "padded": {
+      "gates": 100,
+      "depth": 100,
+      "two_qubit": 0
+    },
+    "runs": [
+      {
+        "noise": 0.0,
+        "attack": {
+          "n": 128,
+          "rejected": 0,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.029136956273508416
+          ]
+        },
+        "clean": {
+          "n": 128,
+          "rejected": 0,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.029136956273508416
+          ]
+        },
+        "practical_pass": false
+      },
+      {
+        "noise": 0.005,
+        "attack": {
+          "n": 128,
+          "rejected": 128,
+          "rate": 1.0,
+          "wilson95": [
+            0.9708630437264916,
+            1.0
+          ]
+        },
+        "clean": {
+          "n": 128,
+          "rejected": 3,
+          "rate": 0.0234375,
+          "wilson95": [
+            0.008002416396755481,
+            0.06664374505143222
+          ]
+        },
+        "practical_pass": true
+      }
+    ],
+    "note": "Gates submitted without optimizing identities away."
+  },
+  "drift": {
+    "stable": {
+      "n": 128,
+      "rejected": 3,
+      "rate": 0.0234375,
+      "wilson95": [
+        0.008002416396755481,
+        0.06664374505143222
+      ]
+    },
+    "benign_drift": {
+      "n": 128,
+      "rejected": 128,
+      "rate": 1.0,
+      "wilson95": [
+        0.9708630437264916,
+        1.0
+      ]
+    },
+    "noise": [
+      0.005,
+      0.03
+    ],
+    "identifiability_counterexample": "Same result distribution can be produced deliberately or by noise; counts alone do not identify cause."
+  },
+  "checks": [
+    {
+      "noise": 0.0,
+      "layers": 1,
+      "payload": "i",
+      "threshold": 0.0,
+      "flag_mean": 0.0,
+      "qubits": 2,
+      "gates": 10,
+      "depth": 8,
+      "attack": {
+        "n": 128,
+        "rejected": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.029136956273508416
+        ]
+      },
+      "clean": {
+        "n": 128,
+        "rejected": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.029136956273508416
+        ]
+      },
+      "practical_pass": false
+    },
+    {
+      "noise": 0.0,
+      "layers": 1,
+      "payload": "x",
+      "threshold": 0.0,
+      "flag_mean": 0.0,
+      "qubits": 2,
+      "gates": 11,
+      "depth": 9,
+      "attack": {
+        "n": 128,
+        "rejected": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.029136956273508416
+        ]
+      },
+      "clean": {
+        "n": 128,
+        "rejected": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.029136956273508416
+        ]
+      },
+      "practical_pass": false
+    },
+    {
+      "noise": 0.0,
+      "layers": 1,
+      "payload": "y",
+      "threshold": 0.0,
+      "flag_mean": 1.0,
+      "qubits": 2,
+      "gates": 11,
+      "depth": 9,
+      "attack": {
+        "n": 128,
+        "rejected": 128,
+        "rate": 1.0,
+        "wilson95": [
+          0.9708630437264916,
+          1.0
+        ]
+      },
+      "clean": {
+        "n": 128,
+        "rejected": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.029136956273508416
+        ]
+      },
+      "practical_pass": true
+    },
+    {
+      "noise": 0.0,
+      "layers": 1,
+      "payload": "z",
+      "threshold": 0.0,
+      "flag_mean": 1.0,
+      "qubits": 2,
+      "gates": 11,
+      "depth": 9,
+      "attack": {
+        "n": 128,
+        "rejected": 128,
+        "rate": 1.0,
+        "wilson95": [
+          0.9708630437264916,
+          1.0
+        ]
+      },
+      "clean": {
+        "n": 128,
+        "rejected": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.029136956273508416
+        ]
+      },
+      "practical_pass": true
+    },
+    {
+      "noise": 0.0,
+      "layers": 2,
+      "payload": "i",
+      "threshold": 0.0,
+      "flag_mean": 0.0,
+      "qubits": 3,
+      "gates": 17,
+      "depth": 12,
+      "attack": {
+        "n": 128,
+        "rejected": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.029136956273508416
+        ]
+      },
+      "clean": {
+        "n": 128,
+        "rejected": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.029136956273508416
+        ]
+      },
+      "practical_pass": false
+    },
+    {
+      "noise": 0.0,
+      "layers": 2,
+      "payload": "x",
+      "threshold": 0.0,
+      "flag_mean": 1.0,
+      "qubits": 3,
+      "gates": 18,
+      "depth": 13,
+      "attack": {
+        "n": 128,
+        "rejected": 128,
+        "rate": 1.0,
+        "wilson95": [
+          0.9708630437264916,
+          1.0
+        ]
+      },
+      "clean": {
+        "n": 128,
+        "rejected": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.029136956273508416
+        ]
+      },
+      "practical_pass": true
+    },
+    {
+      "noise": 0.0,
+      "layers": 2,
+      "payload": "y",
+      "threshold": 0.0,
+      "flag_mean": 1.0,
+      "qubits": 3,
+      "gates": 18,
+      "depth": 13,
+      "attack": {
+        "n": 128,
+        "rejected": 128,
+        "rate": 1.0,
+        "wilson95": [
+          0.9708630437264916,
+          1.0
+        ]
+      },
+      "clean": {
+        "n": 128,
+        "rejected": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.029136956273508416
+        ]
+      },
+      "practical_pass": true
+    },
+    {
+      "noise": 0.0,
+      "layers": 2,
+      "payload": "z",
+      "threshold": 0.0,
+      "flag_mean": 1.0,
+      "qubits": 3,
+      "gates": 18,
+      "depth": 13,
+      "attack": {
+        "n": 128,
+        "rejected": 128,
+        "rate": 1.0,
+        "wilson95": [
+          0.9708630437264916,
+          1.0
+        ]
+      },
+      "clean": {
+        "n": 128,
+        "rejected": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.029136956273508416
+        ]
+      },
+      "practical_pass": true
+    },
+    {
+      "noise": 0.005,
+      "layers": 1,
+      "payload": "i",
+      "threshold": 0.0341796875,
+      "flag_mean": 0.02393341064453125,
+      "qubits": 2,
+      "gates": 10,
+      "depth": 8,
+      "attack": {
+        "n": 128,
+        "rejected": 3,
+        "rate": 0.0234375,
+        "wilson95": [
+          0.008002416396755481,
+          0.06664374505143222
+        ]
+      },
+      "clean": {
+        "n": 128,
+        "rejected": 5,
+        "rate": 0.0390625,
+        "wilson95": [
+          0.016798610797803704,
+          0.08818702076683686
+        ]
+      },
+      "practical_pass": false
+    },
+    {
+      "noise": 0.005,
+      "layers": 1,
+      "payload": "x",
+      "threshold": 0.0341796875,
+      "flag_mean": 0.02709197998046875,
+      "qubits": 2,
+      "gates": 11,
+      "depth": 9,
+      "attack": {
+        "n": 128,
+        "rejected": 9,
+        "rate": 0.0703125,
+        "wilson95": [
+          0.03742976830393997,
+          0.12823480349360633
+        ]
+      },
+      "clean": {
+        "n": 128,
+        "rejected": 5,
+        "rate": 0.0390625,
+        "wilson95": [
+          0.016798610797803704,
+          0.08818702076683686
+        ]
+      },
+      "practical_pass": false
+    },
+    {
+      "noise": 0.005,
+      "layers": 1,
+      "payload": "y",
+      "threshold": 0.0341796875,
+      "flag_mean": 0.9742889404296875,
+      "qubits": 2,
+      "gates": 11,
+      "depth": 9,
+      "attack": {
+        "n": 128,
+        "rejected": 128,
+        "rate": 1.0,
+        "wilson95": [
+          0.9708630437264916,
+          1.0
+        ]
+      },
+      "clean": {
+        "n": 128,
+        "rejected": 5,
+        "rate": 0.0390625,
+        "wilson95": [
+          0.016798610797803704,
+          0.08818702076683686
+        ]
+      },
+      "practical_pass": true
+    },
+    {
+      "noise": 0.005,
+      "layers": 1,
+      "payload": "z",
+      "threshold": 0.0341796875,
+      "flag_mean": 0.973236083984375,
+      "qubits": 2,
+      "gates": 11,
+      "depth": 9,
+      "attack": {
+        "n": 128,
+        "rejected": 128,
+        "rate": 1.0,
+        "wilson95": [
+          0.9708630437264916,
+          1.0
+        ]
+      },
+      "clean": {
+        "n": 128,
+        "rejected": 5,
+        "rate": 0.0390625,
+        "wilson95": [
+          0.016798610797803704,
+          0.08818702076683686
+        ]
+      },
+      "practical_pass": true
+    },
+    {
+      "noise": 0.005,
+      "layers": 2,
+      "payload": "i",
+      "threshold": 0.068359375,
+      "flag_mean": 0.05554962158203125,
+      "qubits": 3,
+      "gates": 17,
+      "depth": 12,
+      "attack": {
+        "n": 128,
+        "rejected": 7,
+        "rate": 0.0546875,
+        "wilson95": [
+          0.026740201381346355,
+          0.10858490029974707
+        ]
+      },
+      "clean": {
+        "n": 128,
+        "rejected": 4,
+        "rate": 0.03125,
+        "wilson95": [
+          0.01221826524505338,
+          0.07759763126136077
+        ]
+      },
+      "practical_pass": false
+    },
+    {
+      "noise": 0.005,
+      "layers": 2,
+      "payload": "x",
+      "threshold": 0.068359375,
+      "flag_mean": 0.9818496704101562,
+      "qubits": 3,
+      "gates": 18,
+      "depth": 13,
+      "attack": {
+        "n": 128,
+        "rejected": 128,
+        "rate": 1.0,
+        "wilson95": [
+          0.9708630437264916,
+          1.0
+        ]
+      },
+      "clean": {
+        "n": 128,
+        "rejected": 4,
+        "rate": 0.03125,
+        "wilson95": [
+          0.01221826524505338,
+          0.07759763126136077
+        ]
+      },
+      "practical_pass": true
+    },
+    {
+      "noise": 0.005,
+      "layers": 2,
+      "payload": "y",
+      "threshold": 0.068359375,
+      "flag_mean": 0.9909439086914062,
+      "qubits": 3,
+      "gates": 18,
+      "depth": 13,
+      "attack": {
+        "n": 128,
+        "rejected": 128,
+        "rate": 1.0,
+        "wilson95": [
+          0.9708630437264916,
+          1.0
+        ]
+      },
+      "clean": {
+        "n": 128,
+        "rejected": 4,
+        "rate": 0.03125,
+        "wilson95": [
+          0.01221826524505338,
+          0.07759763126136077
+        ]
+      },
+      "practical_pass": true
+    },
+    {
+      "noise": 0.005,
+      "layers": 2,
+      "payload": "z",
+      "threshold": 0.068359375,
+      "flag_mean": 0.967864990234375,
+      "qubits": 3,
+      "gates": 18,
+      "depth": 13,
+      "attack": {
+        "n": 128,
+        "rejected": 128,
+        "rate": 1.0,
+        "wilson95": [
+          0.9708630437264916,
+          1.0
+        ]
+      },
+      "clean": {
+        "n": 128,
+        "rejected": 4,
+        "rate": 0.03125,
+        "wilson95": [
+          0.01221826524505338,
+          0.07759763126136077
+        ]
+      },
+      "practical_pass": true
+    }
+  ],
+  "dynamic": {
+    "counts": {
+      "010": 1024
+    },
+    "all_data_reset": true,
+    "flag_preserved": true,
+    "forged_zero_flags_pass_naive_guard": true,
+    "hardware_tested": false
+  },
+  "symmetry": [
+    {
+      "payload": "i",
+      "basis": "ZZ",
+      "odd_probability": 0.0
+    },
+    {
+      "payload": "i",
+      "basis": "XX",
+      "odd_probability": 1.0573994819069698e-33
+    },
+    {
+      "payload": "x",
+      "basis": "ZZ",
+      "odd_probability": 0.9999999999999998
+    },
+    {
+      "payload": "x",
+      "basis": "XX",
+      "odd_probability": 1.0573994819069698e-33
+    },
+    {
+      "payload": "z",
+      "basis": "ZZ",
+      "odd_probability": 0.0
+    },
+    {
+      "payload": "z",
+      "basis": "XX",
+      "odd_probability": 0.9999999999999996
+    }
+  ],
+  "metamorphic": {
+    "clean_tvd": 0.0,
+    "selective_tvd": 1.0,
+    "correlated_forgery_tvd": 0.0,
+    "forged_vs_truth_tvd": 0.8,
+    "method": "Algebraic counterexample on classical counts; not independent quantum shots."
+  },
+  "diversity": {
+    "equivalent": true,
+    "fixed_pattern_original_tvd": 0.09862664878510263,
+    "fixed_pattern_diverse_tvd": 0.0,
+    "adaptive_pattern_diverse_tvd": 0.09862664878510263,
+    "scope": "One equivalent rewrite, not full randomized compiling noise-tailoring protocol."
+  },
+  "inspection": {
+    "population": 100,
+    "tampered": 10,
+    "inspected": 10,
+    "trials": 10000,
+    "detections": 6707,
+    "theory": 0.6695237889132748,
+    "wilson95": [
+      0.6614249587345542,
+      0.6798439442216968
+    ],
+    "binomial_p": 0.8068661209809397,
+    "adaptive_visible_selection_detection": 0,
+    "scope": "Classical Monte Carlo; fixed tampering before private inspection only."
+  },
+  "scaling": [
+    {
+      "qubits": 2,
+      "matrix_bytes": 256,
+      "seconds": 0.0013971580001452821
+    },
+    {
+      "qubits": 3,
+      "matrix_bytes": 1024,
+      "seconds": 0.001123097999879974
+    },
+    {
+      "qubits": 4,
+      "matrix_bytes": 4096,
+      "seconds": 0.002485791000253812
+    },
+    {
+      "qubits": 5,
+      "matrix_bytes": 16384,
+      "seconds": 0.003328961000079289
+    },
+    {
+      "qubits": 6,
+      "matrix_bytes": 65536,
+      "seconds": 0.00365886200006571
+    },
+    {
+      "qubits": 7,
+      "matrix_bytes": 262144,
+      "seconds": 0.009138540999629186
+    },
+    {
+      "qubits": 8,
+      "matrix_bytes": 1048576,
+      "seconds": 0.0359283669999968
+    }
+  ],
+  "cost": {
+    "wall_seconds": 45.05490292600007,
+    "aer_jobs": 339,
+    "aer_circuit_instances": 29419,
+    "aer_shots": 20747776,
+    "includes": "reference acquisition, calibration, evaluation; exact oracle calls not counted as shots",
+    "remote_jobs": 0,
+    "qpu_shots": 0
+  }
+}

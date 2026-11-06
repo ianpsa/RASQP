@@ -1,0 +1,84 @@
+{
+  "batch": {
+    "alpha": 0.05,
+    "calibration": 59,
+    "circuit_seeds": [
+      17,
+      71
+    ],
+    "families": [
+      "basis",
+      "ghz",
+      "variational"
+    ],
+    "noise": [
+      0,
+      0.005
+    ],
+    "repetitions": 24,
+    "shots": [
+      256,
+      1024
+    ],
+    "widths": [
+      2,
+      3,
+      4
+    ]
+  },
+  "criteria": {
+    "baseline_gain": 0.2,
+    "clean_fpr_wilson_upper": 0.1,
+    "strong_tpr_wilson_lower": 0.9,
+    "weak_rotation": "report separately, never count as strong"
+  },
+  "extension_v03": {
+    "calibration": 127,
+    "noise": [
+      0,
+      0.005
+    ],
+    "repetitions": 128,
+    "shots": 768,
+    "source": "docs/EXTENSION_PROTOCOL_V03.json",
+    "width": 3
+  },
+  "extension_v04": {
+    "calibration": 511,
+    "noise": [
+      0,
+      0.005,
+      0.01
+    ],
+    "reference_shots": 8192,
+    "repetitions": 256,
+    "shots": 768,
+    "source": "docs/EXTENSION_PROTOCOL_V04.json",
+    "width": 4
+  },
+  "hypotheses": {
+    "calibration": 79,
+    "noise": [
+      0,
+      0.005
+    ],
+    "repetitions": 128,
+    "shots": 1024,
+    "source": "docs/HYPOTHESIS_PROTOCOL.json"
+  },
+  "limitations": [
+    "bounded small-circuit simulator, no QPU",
+    "Rust benchmark RNG produces different variational fixtures; cross-language parity uses serialized identical circuits",
+    "Pauli gadget CZ/Y/T are lowered into supported gates; noisy cost is explicitly that decomposition",
+    "safe function guard checks supplied code snapshot and function address, not Python bytecode or in-memory attestation",
+    "native optimizer uses conservative rewrites, not Qiskit optimization level 3",
+    "positive fixture results do not establish scientific novelty"
+  ],
+  "parity": "Compare deterministic probabilities, operators, encodings, policy decisions, normalization traces, alignment and statistical functions to Python/Qiskit/Cirq; stochastic counts need not be identical",
+  "rng": "rand_chacha 0.3 ChaCha8Rng; differs from Python MT19937 and NumPy/Aer streams",
+  "seed": 710000,
+  "simulator": "native statevector and density matrix; depolarizing p per 1q gate, min(2p,1) per CX, symmetric readout p; no optimization of submitted gates",
+  "statistics": "Wilson95 per condition; paired one-sided exact McNemar; Holm within each study's reported attack comparisons; no retuning after native outcomes",
+  "status": "Frozen before native execution. Port-validation experiment, not independent confirmation or external preregistration.",
+  "version": "rust-native-v1"
+}

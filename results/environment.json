@@ -1,0 +1,23 @@
+{
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "versions": {
+    "qiskit": "2.6.1",
+    "qiskit-aer": "0.18.2",
+    "cirq-core": "1.7.0",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "pytest": "9.2.0"
+  },
+  "sandbox_checks": {
+    "network_denied": true,
+    "writable_open_denied": true,
+    "outside_write_denied": true
+  },
+  "total_seconds": 64.42344116100003,
+  "real_qpu": false,
+  "cloud_requests": false,
+  "synthetic_noise": true,
+  "sandbox_limits": "seccomp denies network/exec/new writable files; no filesystem read jail or VM",
+  "seeds": "calibration 100000+config; evaluation 200000+config, 300000+100*config+attack; supplemental source lists seeds"
+}

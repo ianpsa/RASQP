@@ -1,0 +1,26 @@
+{
+  "completed_utc": "2026-11-04T12:10:24.626967+00:00",
+  "rust_tests": 21,
+  "cross_language_tests": 30,
+  "python_reference_tests": 70,
+  "cargo_fmt": "passed",
+  "cargo_clippy_warnings_denied": "passed",
+  "cargo_doc": "passed",
+  "cargo_package_verification": "passed",
+  "actionlint": "v1.7.7 passed ci.yml and release.yml",
+  "local_platform": "linux-x86_64",
+  "remote_ci_executed": false,
+  "remote_release_published": false,
+  "native_run_cost": {
+    "circuits": 129200,
+    "includes": "all logged native samples including calibration/reference; exact oracle computation not shots",
+    "jobs": 1993,
+    "seconds": 0.680108067,
+    "shots": 77388288
+  },
+  "protocol_sha256": "d771d0df8a6d08ffa3929a966c9164514edac09425d64eed98beb4a1c2bd9792",
+  "release_archive": "dist/rasqp-v0.3.0-linux-x86_64.tar.gz",
+  "release_sha256": "0eb2e0d710afc3b6e9ece5b62004d75ecef9aba6bfb7058cb52be3990bb40d84",
+  "archive_smoke": "checksum, extracted binary version and Bell probabilities, source crate presence, mismatched-tag rejection passed",
+  "research_claim": "bounded empirical feasibility; scientific novelty and quantum advantage not established"
+}
