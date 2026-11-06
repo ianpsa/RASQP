@@ -1,0 +1,17 @@
+{
+  "request": {
+    "job_id": "job-\u03b1",
+    "nonce": "nonce-\ud83d\ude00",
+    "circuit_digest": "776f406fe568ad02981ee0e0a665bab29510f9c5f420ada7a632e79b21f2a8ce",
+    "backend": "aer",
+    "width": 1,
+    "shots": 100,
+    "artifact_digest": "00d96bab0fea4ac0ca6c166db3bfddea5435bff05d12099ec8058d8edfb362e4",
+    "context_digest": "96bb4520c905c04d1a84bbba8b609e3cd1020d685dfbe3bd776a9e959cffaa38"
+  },
+  "counts": [
+    100,
+    0
+  ],
+  "tag": "2e80439dd3598dfd7c8dd18180a0f94d3c95e4f8c2d5f11fc145fc8f983f23cd"
+}
