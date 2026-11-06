@@ -1,0 +1,60 @@
+# Native build and release outputs (Cargo.lock remains versioned).
+/target/
+/dist/
+
+# Local Python reference implementation; not part of the Rust repository.
+/legacy/python/
+
+# Python environments, caches, and packaging artifacts.
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Temporary experiments and runtime state. Published result snapshots stay visible.
+.sandbox-tmp/
+/results/runs/
+/results/ci/
+*.log
+*.sqlite
+*.sqlite3
+*.db
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite-journal
+*.sqlite3-wal
+*.sqlite3-shm
+*.sqlite3-journal
+*.db-wal
+*.db-shm
+*.db-journal
+
+# Local credentials and editor/OS state.
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# LaTeX build outputs; manuscript sources and reference PDFs stay visible.
+/article/build/
+/article/generated/
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.toc
+*.out
+/article/rasqp_revised.pdf

@@ -1,0 +1,40 @@
+name: CI
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+  workflow_dispatch:
+  workflow_call:
+permissions:
+  contents: read
+jobs:
+  rust:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Install pinned Rust toolchain
+        run: rustup show
+      - run: cargo fmt --all --check
+      - run: cargo clippy --locked --all-targets -- -D warnings
+      - run: cargo test --locked --all-targets
+      - run: cargo build --locked --release
+      - run: cargo doc --locked --no-deps
+      - run: cargo package --locked
+  native-laboratory:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - run: cargo build --locked --release
+      - name: Full native Rust experiment suite in Linux seccomp
+        run: target/release/rasqp-lab all results/ci/native
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: native-research-evidence
+          path: results/ci/native
+          if-no-files-found: error
+  # Python reference parity is a local check documented in legacy/README.txt.
+  # Its ignored source archive is intentionally unavailable in a fresh checkout.
