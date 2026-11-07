@@ -1,0 +1,12 @@
+.........................                                                [100%]
+=============================== warnings summary ===============================
+research/ibm/test_ibm.py::test_restricted_gate_channels_and_idle_relaxation_match_full_five_qubit_backend
+  /home/archvarius/Desktop/rasqp/research/ibm/common.py:120: DeprecationWarning: from_dict has been deprecated as of qiskit-aer 0.15.0 and will be removed no earlier than 3 months from that release date.
+    return NoiseModel.from_dict(restricted), restricted, asymmetric_readout(backend, physical)
+
+research/ibm/test_ibm.py::test_sampler_v2_local_mode_preserves_logical_width_and_actual_bitstrings
+  /home/archvarius/Desktop/rasqp/research/ibm/test_ibm.py:60: DeprecationWarning: The SamplerV2 class is deprecated as of qiskit-ibm-runtime 0.50.0 and will be removed no sooner than 3 months after the release date. `qiskit_ibm_runtime.executor_sampler.Sampler` provides a new Sampler implementation that runs all the pre- and post-processing in the client side. The top-level `qiskit_ibm_runtime.Sampler` import will be updated to point to the client-side sampler in an upcoming release, with the legacy Sampler being available until the deprecation is completed.
+    sampler=SamplerV2(mode=backend,options={'simulator':{'seed_simulator':29671}})
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+25 passed, 2 warnings in 1.64s

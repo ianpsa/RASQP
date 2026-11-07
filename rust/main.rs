@@ -37,6 +37,13 @@ enum Command {
         verifier: rasqp::verification::JointVerifier,
         counts: Vec<Vec<u64>>,
     },
+    /// Calibrate only on supplied clean batches and evaluate external observations.
+    EvaluateJoint {
+        references: Vec<Vec<f64>>,
+        clean: Vec<Vec<Vec<u64>>>,
+        batches: Vec<Vec<Vec<u64>>>,
+        alpha: f64,
+    },
     /// Gate an already collected, signed batch before releasing its counts.
     ProtectBatch {
         entries: Vec<rasqp::guard::BatchEntry>,
@@ -73,7 +80,7 @@ fn run() -> Result<Value, Box<dyn std::error::Error>> {
     }
     if args.get(1).map(String::as_str) == Some("--help") {
         return Ok(
-            json!({"usage":"rasqp [LEDGER_PATH] < command.json", "operations":["digest","normalize","normalize_trace","inspect","score","joint_score","protect","protect_batch","probabilities","equivalent","qasm","align","select_probes","paired","holm"],"key":"Protection operations read a hex key (>=32 bytes) from RASQP_KEY_HEX. Trusted caller supplies policy, references and expected requests."}),
+            json!({"usage":"rasqp [LEDGER_PATH] < command.json", "operations":["digest","normalize","normalize_trace","inspect","score","joint_score","evaluate_joint","protect","protect_batch","probabilities","equivalent","qasm","align","select_probes","paired","holm"],"key":"Protection operations read a hex key (>=32 bytes) from RASQP_KEY_HEX. Trusted caller supplies policy, references and expected requests."}),
         );
     }
     let mut bytes = Vec::new();
@@ -84,6 +91,24 @@ fn run() -> Result<Value, Box<dyn std::error::Error>> {
         return Err("input exceeds 8 MiB".into());
     }
     Ok(match serde_json::from_slice::<Command>(&bytes)? {
+        Command::EvaluateJoint {
+            references,
+            clean,
+            batches,
+            alpha,
+        } => {
+            let verifier =
+                rasqp::verification::JointVerifier::calibrate(references, &clean, alpha)?;
+            let scores = batches
+                .iter()
+                .map(|b| verifier.score(b))
+                .collect::<rasqp::Result<Vec<_>>>()?;
+            let rejected: Vec<_> = scores
+                .iter()
+                .map(|s| *s > verifier.threshold + 1e-12)
+                .collect();
+            json!({"verifier":verifier,"scores":scores,"rejected":rejected})
+        }
         Command::NormalizeTrace { circuit } => serde_json::to_value(
             rasqp::research::normalization::Normalizer::default().run(&circuit)?,
         )?,

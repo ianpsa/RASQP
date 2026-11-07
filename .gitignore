@@ -7,6 +7,7 @@
 
 # Python environments, caches, and packaging artifacts.
 .venv/
+.venv-ibm/
 venv/
 __pycache__/
 *.py[cod]
@@ -40,6 +41,7 @@ htmlcov/
 .env
 .env.*
 !.env.example
+.ibm/
 .DS_Store
 Thumbs.db
 *.swp

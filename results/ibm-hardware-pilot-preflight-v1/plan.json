@@ -1,0 +1,1022 @@
+{
+  "version": "ibm-hardware-pilot-v1",
+  "backend": "fake_torino",
+  "local_mock": true,
+  "workloads": [
+    {
+      "index": 0,
+      "source": {
+        "source_path": "small/qaoa_n3/qaoa_n3_transpiled.qasm",
+        "source_sha256": "478c75c52bebbe673e522c7864f711bb97278afe65bd48ca9aa6c004f095e12e",
+        "conversion": {
+          "terminal_measurements": [
+            [
+              2,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "source_classical_bits": 3,
+          "lowered_global_phase": 0.7853981633974483
+        }
+      },
+      "physical_qubits": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "index": 1,
+      "source": {
+        "source_path": "small/variational_n4/variational_n4.qasm",
+        "source_sha256": "df4ced794da7fd4ca56eb2b02bce53ee77207bec77286cb4626115c6a9b6357d",
+        "conversion": {
+          "terminal_measurements": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "source_classical_bits": 4,
+          "lowered_global_phase": 0.0
+        }
+      },
+      "physical_qubits": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "stages": {
+    "reference": {
+      "pubs": [
+        {
+          "circuit_index": 17,
+          "workload": 1,
+          "case": "clean",
+          "probe": 2,
+          "logical_to_physical_measurement": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "duration_seconds": 3.048000000000001e-06,
+          "operations": {
+            "rz": 66,
+            "sx": 40,
+            "delay": 18,
+            "cz": 16,
+            "measure": 4,
+            "barrier": 1
+          },
+          "shots": 8192
+        },
+        {
+          "circuit_index": 2,
+          "workload": 0,
+          "case": "clean",
+          "probe": 2,
+          "logical_to_physical_measurement": [
+            0,
+            1,
+            2
+          ],
+          "duration_seconds": 2.7920000000000005e-06,
+          "operations": {
+            "sx": 22,
+            "rz": 20,
+            "cz": 12,
+            "delay": 8,
+            "measure": 3,
+            "barrier": 1
+          },
+          "shots": 8192
+        },
+        {
+          "circuit_index": 15,
+          "workload": 1,
+          "case": "clean",
+          "probe": 0,
+          "logical_to_physical_measurement": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "duration_seconds": 2.9840000000000006e-06,
+          "operations": {
+            "rz": 58,
+            "sx": 32,
+            "delay": 17,
+            "cz": 16,
+            "measure": 4,
+            "x": 2,
+            "barrier": 1
+          },
+          "shots": 8192
+        },
+        {
+          "circuit_index": 1,
+          "workload": 0,
+          "case": "clean",
+          "probe": 1,
+          "logical_to_physical_measurement": [
+            0,
+            1,
+            2
+          ],
+          "duration_seconds": 2.7920000000000005e-06,
+          "operations": {
+            "sx": 23,
+            "rz": 22,
+            "cz": 12,
+            "delay": 7,
+            "measure": 3,
+            "x": 1,
+            "barrier": 1
+          },
+          "shots": 8192
+        },
+        {
+          "circuit_index": 0,
+          "workload": 0,
+          "case": "clean",
+          "probe": 0,
+          "logical_to_physical_measurement": [
+            0,
+            1,
+            2
+          ],
+          "duration_seconds": 2.7920000000000005e-06,
+          "operations": {
+            "rz": 24,
+            "sx": 23,
+            "cz": 12,
+            "delay": 7,
+            "measure": 3,
+            "barrier": 1
+          },
+          "shots": 8192
+        },
+        {
+          "circuit_index": 16,
+          "workload": 1,
+          "case": "clean",
+          "probe": 1,
+          "logical_to_physical_measurement": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "duration_seconds": 2.9840000000000006e-06,
+          "operations": {
+            "rz": 58,
+            "sx": 32,
+            "delay": 18,
+            "cz": 16,
+            "measure": 4,
+            "barrier": 1
+          },
+          "shots": 8192
+        }
+      ],
+      "shots": 49152,
+      "conservative_estimate_seconds": 24.430475264
+    },
+    "calibration": {
+      "pubs": [
+        {
+          "circuit_index": 1,
+          "workload": 0,
+          "case": "clean",
+          "probe": 1,
+          "logical_to_physical_measurement": [
+            0,
+            1,
+            2
+          ],
+          "duration_seconds": 2.7920000000000005e-06,
+          "operations": {
+            "sx": 23,
+            "rz": 22,
+            "cz": 12,
+            "delay": 7,
+            "measure": 3,
+            "x": 1,
+            "barrier": 1
+          },
+          "shots": 32512
+        },
+        {
+          "circuit_index": 2,
+          "workload": 0,
+          "case": "clean",
+          "probe": 2,
+          "logical_to_physical_measurement": [
+            0,
+            1,
+            2
+          ],
+          "duration_seconds": 2.7920000000000005e-06,
+          "operations": {
+            "sx": 22,
+            "rz": 20,
+            "cz": 12,
+            "delay": 8,
+            "measure": 3,
+            "barrier": 1
+          },
+          "shots": 32512
+        },
+        {
+          "circuit_index": 0,
+          "workload": 0,
+          "case": "clean",
+          "probe": 0,
+          "logical_to_physical_measurement": [
+            0,
+            1,
+            2
+          ],
+          "duration_seconds": 2.7920000000000005e-06,
+          "operations": {
+            "rz": 24,
+            "sx": 23,
+            "cz": 12,
+            "delay": 7,
+            "measure": 3,
+            "barrier": 1
+          },
+          "shots": 32512
+        },
+        {
+          "circuit_index": 16,
+          "workload": 1,
+          "case": "clean",
+          "probe": 1,
+          "logical_to_physical_measurement": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "duration_seconds": 2.9840000000000006e-06,
+          "operations": {
+            "rz": 58,
+            "sx": 32,
+            "delay": 18,
+            "cz": 16,
+            "measure": 4,
+            "barrier": 1
+          },
+          "shots": 32512
+        },
+        {
+          "circuit_index": 15,
+          "workload": 1,
+          "case": "clean",
+          "probe": 0,
+          "logical_to_physical_measurement": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "duration_seconds": 2.9840000000000006e-06,
+          "operations": {
+            "rz": 58,
+            "sx": 32,
+            "delay": 17,
+            "cz": 16,
+            "measure": 4,
+            "x": 2,
+            "barrier": 1
+          },
+          "shots": 32512
+        },
+        {
+          "circuit_index": 17,
+          "workload": 1,
+          "case": "clean",
+          "probe": 2,
+          "logical_to_physical_measurement": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "duration_seconds": 3.048000000000001e-06,
+          "operations": {
+            "rz": 66,
+            "sx": 40,
+            "delay": 18,
+            "cz": 16,
+            "measure": 4,
+            "barrier": 1
+          },
+          "shots": 32512
+        }
+      ],
+      "shots": 195072,
+      "conservative_estimate_seconds": 61.333448704
+    },
+    "evaluation": {
+      "pubs": [
+        {
+          "circuit_index": 28,
+          "workload": 1,
+          "case": "rz0_0.12",
+          "probe": 1,
+          "logical_to_physical_measurement": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "duration_seconds": 2.9840000000000006e-06,
+          "operations": {
+            "rz": 58,
+            "sx": 32,
+            "delay": 18,
+            "cz": 16,
+            "measure": 4,
+            "barrier": 1
+          },
+          "shots": 16384
+        },
+        {
+          "circuit_index": 23,
+          "workload": 1,
+          "case": "x0",
+          "probe": 2,
+          "logical_to_physical_measurement": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "duration_seconds": 3.048000000000001e-06,
+          "operations": {
+            "rz": 66,
+            "sx": 40,
+            "delay": 18,
+            "cz": 16,
+            "measure": 4,
+            "barrier": 1
+          },
+          "shots": 16384
+        },
+        {
+          "circuit_index": 11,
+          "workload": 0,
+          "case": "z0",
+          "probe": 2,
+          "logical_to_physical_measurement": [
+            0,
+            1,
+            2
+          ],
+          "duration_seconds": 2.7920000000000005e-06,
+          "operations": {
+            "sx": 22,
+            "rz": 20,
+            "cz": 12,
+            "delay": 8,
+            "measure": 3,
+            "barrier": 1
+          },
+          "shots": 16384
+        },
+        {
+          "circuit_index": 9,
+          "workload": 0,
+          "case": "z0",
+          "probe": 0,
+          "logical_to_physical_measurement": [
+            0,
+            1,
+            2
+          ],
+          "duration_seconds": 2.7920000000000005e-06,
+          "operations": {
+            "rz": 24,
+            "sx": 23,
+            "cz": 12,
+            "delay": 7,
+            "measure": 3,
+            "barrier": 1
+          },
+          "shots": 16384
+        },
+        {
+          "circuit_index": 8,
+          "workload": 0,
+          "case": "x0",
+          "probe": 2,
+          "logical_to_physical_measurement": [
+            0,
+            1,
+            2
+          ],
+          "duration_seconds": 2.7920000000000005e-06,
+          "operations": {
+            "sx": 22,
+            "rz": 20,
+            "cz": 12,
+            "delay": 8,
+            "measure": 3,
+            "barrier": 1
+          },
+          "shots": 16384
+        },
+        {
+          "circuit_index": 10,
+          "workload": 0,
+          "case": "z0",
+          "probe": 1,
+          "logical_to_physical_measurement": [
+            0,
+            1,
+            2
+          ],
+          "duration_seconds": 2.7920000000000005e-06,
+          "operations": {
+            "sx": 23,
+            "rz": 22,
+            "cz": 12,
+            "delay": 7,
+            "measure": 3,
+            "x": 1,
+            "barrier": 1
+          },
+          "shots": 16384
+        },
+        {
+          "circuit_index": 15,
+          "workload": 1,
+          "case": "clean",
+          "probe": 0,
+          "logical_to_physical_measurement": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "duration_seconds": 2.9840000000000006e-06,
+          "operations": {
+            "rz": 58,
+            "sx": 32,
+            "delay": 17,
+            "cz": 16,
+            "measure": 4,
+            "x": 2,
+            "barrier": 1
+          },
+          "shots": 16384
+        },
+        {
+          "circuit_index": 27,
+          "workload": 1,
+          "case": "rz0_0.12",
+          "probe": 0,
+          "logical_to_physical_measurement": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "duration_seconds": 2.9840000000000006e-06,
+          "operations": {
+            "rz": 58,
+            "sx": 32,
+            "delay": 17,
+            "cz": 16,
+            "measure": 4,
+            "x": 2,
+            "barrier": 1
+          },
+          "shots": 16384
+        },
+        {
+          "circuit_index": 20,
+          "workload": 1,
+          "case": "equivalent_x_pair",
+          "probe": 2,
+          "logical_to_physical_measurement": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "duration_seconds": 3.048000000000001e-06,
+          "operations": {
+            "rz": 66,
+            "sx": 40,
+            "delay": 18,
+            "cz": 16,
+            "measure": 4,
+            "barrier": 1
+          },
+          "shots": 16384
+        },
+        {
+          "circuit_index": 6,
+          "workload": 0,
+          "case": "x0",
+          "probe": 0,
+          "logical_to_physical_measurement": [
+            0,
+            1,
+            2
+          ],
+          "duration_seconds": 2.7920000000000005e-06,
+          "operations": {
+            "rz": 24,
+            "sx": 23,
+            "cz": 12,
+            "delay": 7,
+            "measure": 3,
+            "barrier": 1
+          },
+          "shots": 16384
+        },
+        {
+          "circuit_index": 18,
+          "workload": 1,
+          "case": "equivalent_x_pair",
+          "probe": 0,
+          "logical_to_physical_measurement": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "duration_seconds": 2.9840000000000006e-06,
+          "operations": {
+            "rz": 58,
+            "sx": 32,
+            "delay": 17,
+            "cz": 16,
+            "measure": 4,
+            "x": 2,
+            "barrier": 1
+          },
+          "shots": 16384
+        },
+        {
+          "circuit_index": 13,
+          "workload": 0,
+          "case": "rz0_0.12",
+          "probe": 1,
+          "logical_to_physical_measurement": [
+            0,
+            1,
+            2
+          ],
+          "duration_seconds": 2.7920000000000005e-06,
+          "operations": {
+            "sx": 23,
+            "rz": 22,
+            "cz": 12,
+            "delay": 7,
+            "measure": 3,
+            "x": 1,
+            "barrier": 1
+          },
+          "shots": 16384
+        },
+        {
+          "circuit_index": 26,
+          "workload": 1,
+          "case": "z0",
+          "probe": 2,
+          "logical_to_physical_measurement": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "duration_seconds": 3.048000000000001e-06,
+          "operations": {
+            "rz": 66,
+            "sx": 40,
+            "delay": 18,
+            "cz": 16,
+            "measure": 4,
+            "barrier": 1
+          },
+          "shots": 16384
+        },
+        {
+          "circuit_index": 21,
+          "workload": 1,
+          "case": "x0",
+          "probe": 0,
+          "logical_to_physical_measurement": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "duration_seconds": 2.9840000000000006e-06,
+          "operations": {
+            "rz": 58,
+            "sx": 32,
+            "delay": 17,
+            "cz": 16,
+            "measure": 4,
+            "x": 3,
+            "barrier": 1
+          },
+          "shots": 16384
+        },
+        {
+          "circuit_index": 4,
+          "workload": 0,
+          "case": "equivalent_x_pair",
+          "probe": 1,
+          "logical_to_physical_measurement": [
+            0,
+            1,
+            2
+          ],
+          "duration_seconds": 2.7920000000000005e-06,
+          "operations": {
+            "sx": 23,
+            "rz": 22,
+            "cz": 12,
+            "delay": 7,
+            "measure": 3,
+            "x": 1,
+            "barrier": 1
+          },
+          "shots": 16384
+        },
+        {
+          "circuit_index": 0,
+          "workload": 0,
+          "case": "clean",
+          "probe": 0,
+          "logical_to_physical_measurement": [
+            0,
+            1,
+            2
+          ],
+          "duration_seconds": 2.7920000000000005e-06,
+          "operations": {
+            "rz": 24,
+            "sx": 23,
+            "cz": 12,
+            "delay": 7,
+            "measure": 3,
+            "barrier": 1
+          },
+          "shots": 16384
+        },
+        {
+          "circuit_index": 12,
+          "workload": 0,
+          "case": "rz0_0.12",
+          "probe": 0,
+          "logical_to_physical_measurement": [
+            0,
+            1,
+            2
+          ],
+          "duration_seconds": 2.7920000000000005e-06,
+          "operations": {
+            "rz": 24,
+            "sx": 23,
+            "cz": 12,
+            "delay": 7,
+            "measure": 3,
+            "barrier": 1
+          },
+          "shots": 16384
+        },
+        {
+          "circuit_index": 2,
+          "workload": 0,
+          "case": "clean",
+          "probe": 2,
+          "logical_to_physical_measurement": [
+            0,
+            1,
+            2
+          ],
+          "duration_seconds": 2.7920000000000005e-06,
+          "operations": {
+            "sx": 22,
+            "rz": 20,
+            "cz": 12,
+            "delay": 8,
+            "measure": 3,
+            "barrier": 1
+          },
+          "shots": 16384
+        },
+        {
+          "circuit_index": 3,
+          "workload": 0,
+          "case": "equivalent_x_pair",
+          "probe": 0,
+          "logical_to_physical_measurement": [
+            0,
+            1,
+            2
+          ],
+          "duration_seconds": 2.7920000000000005e-06,
+          "operations": {
+            "rz": 24,
+            "sx": 23,
+            "cz": 12,
+            "delay": 7,
+            "measure": 3,
+            "barrier": 1
+          },
+          "shots": 16384
+        },
+        {
+          "circuit_index": 5,
+          "workload": 0,
+          "case": "equivalent_x_pair",
+          "probe": 2,
+          "logical_to_physical_measurement": [
+            0,
+            1,
+            2
+          ],
+          "duration_seconds": 2.7920000000000005e-06,
+          "operations": {
+            "sx": 22,
+            "rz": 20,
+            "cz": 12,
+            "delay": 8,
+            "measure": 3,
+            "barrier": 1
+          },
+          "shots": 16384
+        },
+        {
+          "circuit_index": 7,
+          "workload": 0,
+          "case": "x0",
+          "probe": 1,
+          "logical_to_physical_measurement": [
+            0,
+            1,
+            2
+          ],
+          "duration_seconds": 2.7920000000000005e-06,
+          "operations": {
+            "sx": 23,
+            "rz": 22,
+            "cz": 12,
+            "delay": 7,
+            "measure": 3,
+            "x": 1,
+            "barrier": 1
+          },
+          "shots": 16384
+        },
+        {
+          "circuit_index": 17,
+          "workload": 1,
+          "case": "clean",
+          "probe": 2,
+          "logical_to_physical_measurement": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "duration_seconds": 3.048000000000001e-06,
+          "operations": {
+            "rz": 66,
+            "sx": 40,
+            "delay": 18,
+            "cz": 16,
+            "measure": 4,
+            "barrier": 1
+          },
+          "shots": 16384
+        },
+        {
+          "circuit_index": 24,
+          "workload": 1,
+          "case": "z0",
+          "probe": 0,
+          "logical_to_physical_measurement": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "duration_seconds": 2.9840000000000006e-06,
+          "operations": {
+            "rz": 58,
+            "sx": 32,
+            "delay": 17,
+            "cz": 16,
+            "measure": 4,
+            "x": 2,
+            "barrier": 1
+          },
+          "shots": 16384
+        },
+        {
+          "circuit_index": 19,
+          "workload": 1,
+          "case": "equivalent_x_pair",
+          "probe": 1,
+          "logical_to_physical_measurement": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "duration_seconds": 2.9840000000000006e-06,
+          "operations": {
+            "rz": 58,
+            "sx": 32,
+            "delay": 18,
+            "cz": 16,
+            "measure": 4,
+            "barrier": 1
+          },
+          "shots": 16384
+        },
+        {
+          "circuit_index": 16,
+          "workload": 1,
+          "case": "clean",
+          "probe": 1,
+          "logical_to_physical_measurement": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "duration_seconds": 2.9840000000000006e-06,
+          "operations": {
+            "rz": 58,
+            "sx": 32,
+            "delay": 18,
+            "cz": 16,
+            "measure": 4,
+            "barrier": 1
+          },
+          "shots": 16384
+        },
+        {
+          "circuit_index": 29,
+          "workload": 1,
+          "case": "rz0_0.12",
+          "probe": 2,
+          "logical_to_physical_measurement": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "duration_seconds": 3.048000000000001e-06,
+          "operations": {
+            "rz": 66,
+            "sx": 40,
+            "delay": 18,
+            "cz": 16,
+            "measure": 4,
+            "barrier": 1
+          },
+          "shots": 16384
+        },
+        {
+          "circuit_index": 14,
+          "workload": 0,
+          "case": "rz0_0.12",
+          "probe": 2,
+          "logical_to_physical_measurement": [
+            0,
+            1,
+            2
+          ],
+          "duration_seconds": 2.7920000000000005e-06,
+          "operations": {
+            "sx": 23,
+            "rz": 21,
+            "cz": 12,
+            "delay": 7,
+            "measure": 3,
+            "barrier": 1
+          },
+          "shots": 16384
+        },
+        {
+          "circuit_index": 1,
+          "workload": 0,
+          "case": "clean",
+          "probe": 1,
+          "logical_to_physical_measurement": [
+            0,
+            1,
+            2
+          ],
+          "duration_seconds": 2.7920000000000005e-06,
+          "operations": {
+            "sx": 23,
+            "rz": 22,
+            "cz": 12,
+            "delay": 7,
+            "measure": 3,
+            "x": 1,
+            "barrier": 1
+          },
+          "shots": 16384
+        },
+        {
+          "circuit_index": 25,
+          "workload": 1,
+          "case": "z0",
+          "probe": 1,
+          "logical_to_physical_measurement": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "duration_seconds": 2.9840000000000006e-06,
+          "operations": {
+            "rz": 58,
+            "sx": 32,
+            "delay": 18,
+            "cz": 16,
+            "measure": 4,
+            "barrier": 1
+          },
+          "shots": 16384
+        },
+        {
+          "circuit_index": 22,
+          "workload": 1,
+          "case": "x0",
+          "probe": 1,
+          "logical_to_physical_measurement": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "duration_seconds": 2.9840000000000006e-06,
+          "operations": {
+            "rz": 58,
+            "sx": 32,
+            "delay": 18,
+            "cz": 16,
+            "measure": 4,
+            "x": 1,
+            "barrier": 1
+          },
+          "shots": 16384
+        }
+      ],
+      "shots": 491520,
+      "conservative_estimate_seconds": 184.30475264
+    }
+  },
+  "rep_delay_seconds": 0.00025,
+  "estimated_seconds": 270.068676608,
+  "total_shots": 735744,
+  "within_budget": true,
+  "protocol_sha256": "be4dbdcdab63fee4077cea464842207d0913459fb2d0643fb5ab50faddcc2500",
+  "isa_sha256": "c068eb531f1259cf498f962e4dc5854be60093234fde329286d5527aca1cf058",
+  "properties_sha256": "5caf9172693a689566dc5f1a82778f252ba2950c5a767884a172fda448ba11d8",
+  "detector_sha256": {
+    "rust/research/probes.rs": "3ff31d32139177dbf45b90cee506f5e0c2984be386e31d35c8c12c0224cfe05f",
+    "rust/research/verification.rs": "8a3f7b3ea9eb10106c2e452c8e0499d60bc9c4f91e498c8af1ae30424a338462",
+    "rust/research/statistics.rs": "24526fb3ab43e2fe96b74d8b8e82437101ef396a82f0313e3856b709cfc15c8d"
+  }
+}

@@ -1,0 +1,1724 @@
+{
+  "version": "web-variants-v1",
+  "source": {
+    "kind": "Mechanism-level reimplementations from primary articles on newly generated workloads; not an independently published infected dataset or reproduction of complete QNN/hardware experiments",
+    "swap": "https://arxiv.org/html/2506.24081v1",
+    "encoding": "https://arxiv.org/html/2302.08090v1",
+    "encoding_artifact": "https://github.com/chuchengc/Qtrojan/tree/bc8ae00fcf87ed30ed13ef04af4fdf1b8bdea8ea",
+    "encoding_notebook_sha256": "75c23803667e9d119a35a6504e42c31e525e4e13640b30ff42c9a61eb56bfc26",
+    "parameter": "https://arxiv.org/html/2209.11872v1",
+    "conditional": "https://arxiv.org/html/2502.08880v1"
+  },
+  "scope": "Mechanism-level reimplementations from primary articles on newly generated workloads; not an independently published infected dataset or reproduction of complete QNN/hardware experiments",
+  "bases": 32,
+  "variants": 320,
+  "detector_unchanged": true,
+  "detector_sha256": {
+    "rust/research/probes.rs": "3ff31d32139177dbf45b90cee506f5e0c2984be386e31d35c8c12c0224cfe05f",
+    "rust/research/verification.rs": "8a3f7b3ea9eb10106c2e452c8e0499d60bc9c4f91e498c8af1ae30424a338462",
+    "rust/research/statistics.rs": "24526fb3ab43e2fe96b74d8b8e82437101ef396a82f0313e3856b709cfc15c8d"
+  },
+  "protocol_sha256": "41c5bfca97fa25ca4b89bed7d4a8297b03ffc1ee75ecd703836b71dbbfa7531b",
+  "input_sha256": "ed516fdd7ea344bb82fceab285892aed51a889315473676ceedb3c6be6a40857",
+  "raw_sha256": "66d0efee991001acb9fc33b8c759ba368204d1a41d10136e36fff98d5915bf3d",
+  "native_qiskit_max_tvd_error": 2.275957200481571e-15,
+  "raw_verified": {
+    "shots": 127303680,
+    "circuits": 327616,
+    "executor_calls": 3520,
+    "decisions_checked": 196608
+  },
+  "cost": {
+    "circuits": 327616,
+    "executor_calls": 3520,
+    "qpu_shots": 0,
+    "shots": 127303680
+  },
+  "conditions": [
+    {
+      "noise": 0.0,
+      "workload": "encoding_variational",
+      "variant": "swap_start",
+      "bases": 16,
+      "operator_changed": 16,
+      "ideal_invisible": 16,
+      "methods": {
+        "fixed_0Z": {
+          "macro_detection": 0.0078125,
+          "macro_clean_fpr": 0.01171875,
+          "contexts_failing_clean_bound": 3,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.0078125
+        },
+        "portfolio_joint": {
+          "macro_detection": 0.0087890625,
+          "macro_clean_fpr": 0.0126953125,
+          "contexts_failing_clean_bound": 3,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.0087890625
+        },
+        "portfolio_naive_or": {
+          "macro_detection": 0.029296875,
+          "macro_clean_fpr": 0.037109375,
+          "contexts_failing_clean_bound": 12,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.029296875
+        },
+        "portfolio_bonferroni_or": {
+          "macro_detection": 0.0048828125,
+          "macro_clean_fpr": 0.005859375,
+          "contexts_failing_clean_bound": 1,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.0048828125
+        }
+      }
+    },
+    {
+      "noise": 0.0,
+      "workload": "encoding_variational",
+      "variant": "swap_middle",
+      "bases": 16,
+      "operator_changed": 16,
+      "ideal_invisible": 0,
+      "methods": {
+        "fixed_0Z": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.01171875,
+          "contexts_failing_clean_bound": 3,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        },
+        "portfolio_joint": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.0126953125,
+          "contexts_failing_clean_bound": 3,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        },
+        "portfolio_naive_or": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.037109375,
+          "contexts_failing_clean_bound": 12,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        },
+        "portfolio_bonferroni_or": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.005859375,
+          "contexts_failing_clean_bound": 1,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        }
+      }
+    },
+    {
+      "noise": 0.0,
+      "workload": "encoding_variational",
+      "variant": "swap_end",
+      "bases": 16,
+      "operator_changed": 16,
+      "ideal_invisible": 0,
+      "methods": {
+        "fixed_0Z": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.01171875,
+          "contexts_failing_clean_bound": 3,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        },
+        "portfolio_joint": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.0126953125,
+          "contexts_failing_clean_bound": 3,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        },
+        "portfolio_naive_or": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.037109375,
+          "contexts_failing_clean_bound": 12,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        },
+        "portfolio_bonferroni_or": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.005859375,
+          "contexts_failing_clean_bound": 1,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        }
+      }
+    },
+    {
+      "noise": 0.0,
+      "workload": "encoding_variational",
+      "variant": "parameter_scale_plus10",
+      "bases": 16,
+      "operator_changed": 16,
+      "ideal_invisible": 0,
+      "methods": {
+        "fixed_0Z": {
+          "macro_detection": 0.9208984375,
+          "macro_clean_fpr": 0.01171875,
+          "contexts_failing_clean_bound": 3,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.9208984375
+        },
+        "portfolio_joint": {
+          "macro_detection": 0.7353515625,
+          "macro_clean_fpr": 0.0126953125,
+          "contexts_failing_clean_bound": 3,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.7353515625
+        },
+        "portfolio_naive_or": {
+          "macro_detection": 0.8447265625,
+          "macro_clean_fpr": 0.037109375,
+          "contexts_failing_clean_bound": 12,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.8447265625
+        },
+        "portfolio_bonferroni_or": {
+          "macro_detection": 0.62109375,
+          "macro_clean_fpr": 0.005859375,
+          "contexts_failing_clean_bound": 1,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.62109375
+        }
+      }
+    },
+    {
+      "noise": 0.0,
+      "workload": "encoding_variational",
+      "variant": "parameter_scale_plus50",
+      "bases": 16,
+      "operator_changed": 16,
+      "ideal_invisible": 0,
+      "methods": {
+        "fixed_0Z": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.01171875,
+          "contexts_failing_clean_bound": 3,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        },
+        "portfolio_joint": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.0126953125,
+          "contexts_failing_clean_bound": 3,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        },
+        "portfolio_naive_or": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.037109375,
+          "contexts_failing_clean_bound": 12,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        },
+        "portfolio_bonferroni_or": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.005859375,
+          "contexts_failing_clean_bound": 1,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        }
+      }
+    },
+    {
+      "noise": 0.0,
+      "workload": "encoding_variational",
+      "variant": "parameter_scale_minus50",
+      "bases": 16,
+      "operator_changed": 16,
+      "ideal_invisible": 0,
+      "methods": {
+        "fixed_0Z": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.01171875,
+          "contexts_failing_clean_bound": 3,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        },
+        "portfolio_joint": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.0126953125,
+          "contexts_failing_clean_bound": 3,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        },
+        "portfolio_naive_or": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.037109375,
+          "contexts_failing_clean_bound": 12,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        },
+        "portfolio_bonferroni_or": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.005859375,
+          "contexts_failing_clean_bound": 1,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        }
+      }
+    },
+    {
+      "noise": 0.0,
+      "workload": "encoding_variational",
+      "variant": "mixed_trigger_mcx_001",
+      "bases": 16,
+      "operator_changed": 16,
+      "ideal_invisible": 16,
+      "methods": {
+        "fixed_0Z": {
+          "macro_detection": 0.0078125,
+          "macro_clean_fpr": 0.01171875,
+          "contexts_failing_clean_bound": 3,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.0078125
+        },
+        "portfolio_joint": {
+          "macro_detection": 0.0087890625,
+          "macro_clean_fpr": 0.0126953125,
+          "contexts_failing_clean_bound": 3,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.0087890625
+        },
+        "portfolio_naive_or": {
+          "macro_detection": 0.025390625,
+          "macro_clean_fpr": 0.037109375,
+          "contexts_failing_clean_bound": 12,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.025390625
+        },
+        "portfolio_bonferroni_or": {
+          "macro_detection": 0.00390625,
+          "macro_clean_fpr": 0.005859375,
+          "contexts_failing_clean_bound": 1,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.00390625
+        }
+      }
+    },
+    {
+      "noise": 0.0,
+      "workload": "encoding_variational",
+      "variant": "mixed_trigger_phase_010",
+      "bases": 16,
+      "operator_changed": 16,
+      "ideal_invisible": 0,
+      "methods": {
+        "fixed_0Z": {
+          "macro_detection": 0.01171875,
+          "macro_clean_fpr": 0.01171875,
+          "contexts_failing_clean_bound": 3,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.01171875
+        },
+        "portfolio_joint": {
+          "macro_detection": 0.0205078125,
+          "macro_clean_fpr": 0.0126953125,
+          "contexts_failing_clean_bound": 3,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.0205078125
+        },
+        "portfolio_naive_or": {
+          "macro_detection": 0.0546875,
+          "macro_clean_fpr": 0.037109375,
+          "contexts_failing_clean_bound": 12,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.0546875
+        },
+        "portfolio_bonferroni_or": {
+          "macro_detection": 0.0107421875,
+          "macro_clean_fpr": 0.005859375,
+          "contexts_failing_clean_bound": 1,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.0107421875
+        }
+      }
+    },
+    {
+      "noise": 0.0,
+      "workload": "encoding_variational",
+      "variant": "qtrojan_encoding_sandwich",
+      "bases": 16,
+      "operator_changed": 16,
+      "ideal_invisible": 0,
+      "methods": {
+        "fixed_0Z": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.01171875,
+          "contexts_failing_clean_bound": 3,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        },
+        "portfolio_joint": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.0126953125,
+          "contexts_failing_clean_bound": 3,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        },
+        "portfolio_naive_or": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.037109375,
+          "contexts_failing_clean_bound": 12,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        },
+        "portfolio_bonferroni_or": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.005859375,
+          "contexts_failing_clean_bound": 1,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        }
+      }
+    },
+    {
+      "noise": 0.0,
+      "workload": "encoding_variational",
+      "variant": "encoding_layer_erasure",
+      "bases": 16,
+      "operator_changed": 16,
+      "ideal_invisible": 0,
+      "methods": {
+        "fixed_0Z": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.01171875,
+          "contexts_failing_clean_bound": 3,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        },
+        "portfolio_joint": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.0126953125,
+          "contexts_failing_clean_bound": 3,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        },
+        "portfolio_naive_or": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.037109375,
+          "contexts_failing_clean_bound": 12,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        },
+        "portfolio_bonferroni_or": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.005859375,
+          "contexts_failing_clean_bound": 1,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        }
+      }
+    },
+    {
+      "noise": 0.0,
+      "workload": "qaoa_maxcut",
+      "variant": "swap_start",
+      "bases": 16,
+      "operator_changed": 16,
+      "ideal_invisible": 16,
+      "methods": {
+        "fixed_0Z": {
+          "macro_detection": 0.013671875,
+          "macro_clean_fpr": 0.013671875,
+          "contexts_failing_clean_bound": 2,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.013671875
+        },
+        "portfolio_joint": {
+          "macro_detection": 0.0078125,
+          "macro_clean_fpr": 0.0029296875,
+          "contexts_failing_clean_bound": 0,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.0078125
+        },
+        "portfolio_naive_or": {
+          "macro_detection": 0.025390625,
+          "macro_clean_fpr": 0.0263671875,
+          "contexts_failing_clean_bound": 7,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.025390625
+        },
+        "portfolio_bonferroni_or": {
+          "macro_detection": 0.005859375,
+          "macro_clean_fpr": 0.0029296875,
+          "contexts_failing_clean_bound": 0,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.005859375
+        }
+      }
+    },
+    {
+      "noise": 0.0,
+      "workload": "qaoa_maxcut",
+      "variant": "swap_middle",
+      "bases": 16,
+      "operator_changed": 16,
+      "ideal_invisible": 4,
+      "methods": {
+        "fixed_0Z": {
+          "macro_detection": 0.755859375,
+          "macro_clean_fpr": 0.013671875,
+          "contexts_failing_clean_bound": 2,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.755859375
+        },
+        "portfolio_joint": {
+          "macro_detection": 0.751953125,
+          "macro_clean_fpr": 0.0029296875,
+          "contexts_failing_clean_bound": 0,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.751953125
+        },
+        "portfolio_naive_or": {
+          "macro_detection": 0.7548828125,
+          "macro_clean_fpr": 0.0263671875,
+          "contexts_failing_clean_bound": 7,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.7548828125
+        },
+        "portfolio_bonferroni_or": {
+          "macro_detection": 0.75,
+          "macro_clean_fpr": 0.0029296875,
+          "contexts_failing_clean_bound": 0,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.75
+        }
+      }
+    },
+    {
+      "noise": 0.0,
+      "workload": "qaoa_maxcut",
+      "variant": "swap_end",
+      "bases": 16,
+      "operator_changed": 16,
+      "ideal_invisible": 4,
+      "methods": {
+        "fixed_0Z": {
+          "macro_detection": 0.75390625,
+          "macro_clean_fpr": 0.013671875,
+          "contexts_failing_clean_bound": 2,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.75390625
+        },
+        "portfolio_joint": {
+          "macro_detection": 0.7529296875,
+          "macro_clean_fpr": 0.0029296875,
+          "contexts_failing_clean_bound": 0,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.7529296875
+        },
+        "portfolio_naive_or": {
+          "macro_detection": 0.759765625,
+          "macro_clean_fpr": 0.0263671875,
+          "contexts_failing_clean_bound": 7,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.759765625
+        },
+        "portfolio_bonferroni_or": {
+          "macro_detection": 0.7470703125,
+          "macro_clean_fpr": 0.0029296875,
+          "contexts_failing_clean_bound": 0,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.7470703125
+        }
+      }
+    },
+    {
+      "noise": 0.0,
+      "workload": "qaoa_maxcut",
+      "variant": "parameter_scale_plus10",
+      "bases": 16,
+      "operator_changed": 16,
+      "ideal_invisible": 0,
+      "methods": {
+        "fixed_0Z": {
+          "macro_detection": 0.7021484375,
+          "macro_clean_fpr": 0.013671875,
+          "contexts_failing_clean_bound": 2,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.7021484375
+        },
+        "portfolio_joint": {
+          "macro_detection": 0.4375,
+          "macro_clean_fpr": 0.0029296875,
+          "contexts_failing_clean_bound": 0,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.4375
+        },
+        "portfolio_naive_or": {
+          "macro_detection": 0.5498046875,
+          "macro_clean_fpr": 0.0263671875,
+          "contexts_failing_clean_bound": 7,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.5498046875
+        },
+        "portfolio_bonferroni_or": {
+          "macro_detection": 0.4052734375,
+          "macro_clean_fpr": 0.0029296875,
+          "contexts_failing_clean_bound": 0,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.4052734375
+        }
+      }
+    },
+    {
+      "noise": 0.0,
+      "workload": "qaoa_maxcut",
+      "variant": "parameter_scale_plus50",
+      "bases": 16,
+      "operator_changed": 16,
+      "ideal_invisible": 0,
+      "methods": {
+        "fixed_0Z": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.013671875,
+          "contexts_failing_clean_bound": 2,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        },
+        "portfolio_joint": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.0029296875,
+          "contexts_failing_clean_bound": 0,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": true,
+          "operator_changed_detection": 1.0
+        },
+        "portfolio_naive_or": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.0263671875,
+          "contexts_failing_clean_bound": 7,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        },
+        "portfolio_bonferroni_or": {
+          "macro_detection": 0.9931640625,
+          "macro_clean_fpr": 0.0029296875,
+          "contexts_failing_clean_bound": 0,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": true,
+          "operator_changed_detection": 0.9931640625
+        }
+      }
+    },
+    {
+      "noise": 0.0,
+      "workload": "qaoa_maxcut",
+      "variant": "parameter_scale_minus50",
+      "bases": 16,
+      "operator_changed": 16,
+      "ideal_invisible": 0,
+      "methods": {
+        "fixed_0Z": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.013671875,
+          "contexts_failing_clean_bound": 2,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        },
+        "portfolio_joint": {
+          "macro_detection": 0.9990234375,
+          "macro_clean_fpr": 0.0029296875,
+          "contexts_failing_clean_bound": 0,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": true,
+          "operator_changed_detection": 0.9990234375
+        },
+        "portfolio_naive_or": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.0263671875,
+          "contexts_failing_clean_bound": 7,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        },
+        "portfolio_bonferroni_or": {
+          "macro_detection": 0.9951171875,
+          "macro_clean_fpr": 0.0029296875,
+          "contexts_failing_clean_bound": 0,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": true,
+          "operator_changed_detection": 0.9951171875
+        }
+      }
+    },
+    {
+      "noise": 0.0,
+      "workload": "qaoa_maxcut",
+      "variant": "mixed_trigger_mcx_001",
+      "bases": 16,
+      "operator_changed": 16,
+      "ideal_invisible": 16,
+      "methods": {
+        "fixed_0Z": {
+          "macro_detection": 0.013671875,
+          "macro_clean_fpr": 0.013671875,
+          "contexts_failing_clean_bound": 2,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.013671875
+        },
+        "portfolio_joint": {
+          "macro_detection": 0.013671875,
+          "macro_clean_fpr": 0.0029296875,
+          "contexts_failing_clean_bound": 0,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.013671875
+        },
+        "portfolio_naive_or": {
+          "macro_detection": 0.033203125,
+          "macro_clean_fpr": 0.0263671875,
+          "contexts_failing_clean_bound": 7,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.033203125
+        },
+        "portfolio_bonferroni_or": {
+          "macro_detection": 0.009765625,
+          "macro_clean_fpr": 0.0029296875,
+          "contexts_failing_clean_bound": 0,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.009765625
+        }
+      }
+    },
+    {
+      "noise": 0.0,
+      "workload": "qaoa_maxcut",
+      "variant": "mixed_trigger_phase_010",
+      "bases": 16,
+      "operator_changed": 16,
+      "ideal_invisible": 0,
+      "methods": {
+        "fixed_0Z": {
+          "macro_detection": 0.01171875,
+          "macro_clean_fpr": 0.013671875,
+          "contexts_failing_clean_bound": 2,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.01171875
+        },
+        "portfolio_joint": {
+          "macro_detection": 0.01953125,
+          "macro_clean_fpr": 0.0029296875,
+          "contexts_failing_clean_bound": 0,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.01953125
+        },
+        "portfolio_naive_or": {
+          "macro_detection": 0.0498046875,
+          "macro_clean_fpr": 0.0263671875,
+          "contexts_failing_clean_bound": 7,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.0498046875
+        },
+        "portfolio_bonferroni_or": {
+          "macro_detection": 0.0107421875,
+          "macro_clean_fpr": 0.0029296875,
+          "contexts_failing_clean_bound": 0,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.0107421875
+        }
+      }
+    },
+    {
+      "noise": 0.0,
+      "workload": "qaoa_maxcut",
+      "variant": "cost_layer_erasure",
+      "bases": 16,
+      "operator_changed": 16,
+      "ideal_invisible": 0,
+      "methods": {
+        "fixed_0Z": {
+          "macro_detection": 0.958984375,
+          "macro_clean_fpr": 0.013671875,
+          "contexts_failing_clean_bound": 2,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.958984375
+        },
+        "portfolio_joint": {
+          "macro_detection": 0.888671875,
+          "macro_clean_fpr": 0.0029296875,
+          "contexts_failing_clean_bound": 0,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.888671875
+        },
+        "portfolio_naive_or": {
+          "macro_detection": 0.9130859375,
+          "macro_clean_fpr": 0.0263671875,
+          "contexts_failing_clean_bound": 7,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.9130859375
+        },
+        "portfolio_bonferroni_or": {
+          "macro_detection": 0.876953125,
+          "macro_clean_fpr": 0.0029296875,
+          "contexts_failing_clean_bound": 0,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.876953125
+        }
+      }
+    },
+    {
+      "noise": 0.0,
+      "workload": "qaoa_maxcut",
+      "variant": "mixer_sign_flip",
+      "bases": 16,
+      "operator_changed": 16,
+      "ideal_invisible": 0,
+      "methods": {
+        "fixed_0Z": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.013671875,
+          "contexts_failing_clean_bound": 2,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        },
+        "portfolio_joint": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.0029296875,
+          "contexts_failing_clean_bound": 0,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": true,
+          "operator_changed_detection": 1.0
+        },
+        "portfolio_naive_or": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.0263671875,
+          "contexts_failing_clean_bound": 7,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        },
+        "portfolio_bonferroni_or": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.0029296875,
+          "contexts_failing_clean_bound": 0,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": true,
+          "operator_changed_detection": 1.0
+        }
+      }
+    },
+    {
+      "noise": 0.005,
+      "workload": "encoding_variational",
+      "variant": "swap_start",
+      "bases": 16,
+      "operator_changed": 16,
+      "ideal_invisible": 16,
+      "methods": {
+        "fixed_0Z": {
+          "macro_detection": 0.0107421875,
+          "macro_clean_fpr": 0.009765625,
+          "contexts_failing_clean_bound": 3,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.0107421875
+        },
+        "portfolio_joint": {
+          "macro_detection": 0.00390625,
+          "macro_clean_fpr": 0.0126953125,
+          "contexts_failing_clean_bound": 4,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.00390625
+        },
+        "portfolio_naive_or": {
+          "macro_detection": 0.0283203125,
+          "macro_clean_fpr": 0.0390625,
+          "contexts_failing_clean_bound": 11,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.0283203125
+        },
+        "portfolio_bonferroni_or": {
+          "macro_detection": 0.0029296875,
+          "macro_clean_fpr": 0.009765625,
+          "contexts_failing_clean_bound": 3,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.0029296875
+        }
+      }
+    },
+    {
+      "noise": 0.005,
+      "workload": "encoding_variational",
+      "variant": "swap_middle",
+      "bases": 16,
+      "operator_changed": 16,
+      "ideal_invisible": 0,
+      "methods": {
+        "fixed_0Z": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.009765625,
+          "contexts_failing_clean_bound": 3,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        },
+        "portfolio_joint": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.0126953125,
+          "contexts_failing_clean_bound": 4,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        },
+        "portfolio_naive_or": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.0390625,
+          "contexts_failing_clean_bound": 11,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        },
+        "portfolio_bonferroni_or": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.009765625,
+          "contexts_failing_clean_bound": 3,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        }
+      }
+    },
+    {
+      "noise": 0.005,
+      "workload": "encoding_variational",
+      "variant": "swap_end",
+      "bases": 16,
+      "operator_changed": 16,
+      "ideal_invisible": 0,
+      "methods": {
+        "fixed_0Z": {
+          "macro_detection": 0.9912109375,
+          "macro_clean_fpr": 0.009765625,
+          "contexts_failing_clean_bound": 3,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.9912109375
+        },
+        "portfolio_joint": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.0126953125,
+          "contexts_failing_clean_bound": 4,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        },
+        "portfolio_naive_or": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.0390625,
+          "contexts_failing_clean_bound": 11,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        },
+        "portfolio_bonferroni_or": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.009765625,
+          "contexts_failing_clean_bound": 3,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        }
+      }
+    },
+    {
+      "noise": 0.005,
+      "workload": "encoding_variational",
+      "variant": "parameter_scale_plus10",
+      "bases": 16,
+      "operator_changed": 16,
+      "ideal_invisible": 0,
+      "methods": {
+        "fixed_0Z": {
+          "macro_detection": 0.83203125,
+          "macro_clean_fpr": 0.009765625,
+          "contexts_failing_clean_bound": 3,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.83203125
+        },
+        "portfolio_joint": {
+          "macro_detection": 0.505859375,
+          "macro_clean_fpr": 0.0126953125,
+          "contexts_failing_clean_bound": 4,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.505859375
+        },
+        "portfolio_naive_or": {
+          "macro_detection": 0.6474609375,
+          "macro_clean_fpr": 0.0390625,
+          "contexts_failing_clean_bound": 11,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.6474609375
+        },
+        "portfolio_bonferroni_or": {
+          "macro_detection": 0.416015625,
+          "macro_clean_fpr": 0.009765625,
+          "contexts_failing_clean_bound": 3,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.416015625
+        }
+      }
+    },
+    {
+      "noise": 0.005,
+      "workload": "encoding_variational",
+      "variant": "parameter_scale_plus50",
+      "bases": 16,
+      "operator_changed": 16,
+      "ideal_invisible": 0,
+      "methods": {
+        "fixed_0Z": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.009765625,
+          "contexts_failing_clean_bound": 3,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        },
+        "portfolio_joint": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.0126953125,
+          "contexts_failing_clean_bound": 4,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        },
+        "portfolio_naive_or": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.0390625,
+          "contexts_failing_clean_bound": 11,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        },
+        "portfolio_bonferroni_or": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.009765625,
+          "contexts_failing_clean_bound": 3,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        }
+      }
+    },
+    {
+      "noise": 0.005,
+      "workload": "encoding_variational",
+      "variant": "parameter_scale_minus50",
+      "bases": 16,
+      "operator_changed": 16,
+      "ideal_invisible": 0,
+      "methods": {
+        "fixed_0Z": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.009765625,
+          "contexts_failing_clean_bound": 3,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        },
+        "portfolio_joint": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.0126953125,
+          "contexts_failing_clean_bound": 4,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        },
+        "portfolio_naive_or": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.0390625,
+          "contexts_failing_clean_bound": 11,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        },
+        "portfolio_bonferroni_or": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.009765625,
+          "contexts_failing_clean_bound": 3,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        }
+      }
+    },
+    {
+      "noise": 0.005,
+      "workload": "encoding_variational",
+      "variant": "mixed_trigger_mcx_001",
+      "bases": 16,
+      "operator_changed": 16,
+      "ideal_invisible": 16,
+      "methods": {
+        "fixed_0Z": {
+          "macro_detection": 0.1865234375,
+          "macro_clean_fpr": 0.009765625,
+          "contexts_failing_clean_bound": 3,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.1865234375
+        },
+        "portfolio_joint": {
+          "macro_detection": 0.068359375,
+          "macro_clean_fpr": 0.0126953125,
+          "contexts_failing_clean_bound": 4,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.068359375
+        },
+        "portfolio_naive_or": {
+          "macro_detection": 0.1552734375,
+          "macro_clean_fpr": 0.0390625,
+          "contexts_failing_clean_bound": 11,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.1552734375
+        },
+        "portfolio_bonferroni_or": {
+          "macro_detection": 0.0625,
+          "macro_clean_fpr": 0.009765625,
+          "contexts_failing_clean_bound": 3,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.0625
+        }
+      }
+    },
+    {
+      "noise": 0.005,
+      "workload": "encoding_variational",
+      "variant": "mixed_trigger_phase_010",
+      "bases": 16,
+      "operator_changed": 16,
+      "ideal_invisible": 0,
+      "methods": {
+        "fixed_0Z": {
+          "macro_detection": 0.5712890625,
+          "macro_clean_fpr": 0.009765625,
+          "contexts_failing_clean_bound": 3,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.5712890625
+        },
+        "portfolio_joint": {
+          "macro_detection": 0.2568359375,
+          "macro_clean_fpr": 0.0126953125,
+          "contexts_failing_clean_bound": 4,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.2568359375
+        },
+        "portfolio_naive_or": {
+          "macro_detection": 0.421875,
+          "macro_clean_fpr": 0.0390625,
+          "contexts_failing_clean_bound": 11,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.421875
+        },
+        "portfolio_bonferroni_or": {
+          "macro_detection": 0.22265625,
+          "macro_clean_fpr": 0.009765625,
+          "contexts_failing_clean_bound": 3,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.22265625
+        }
+      }
+    },
+    {
+      "noise": 0.005,
+      "workload": "encoding_variational",
+      "variant": "qtrojan_encoding_sandwich",
+      "bases": 16,
+      "operator_changed": 16,
+      "ideal_invisible": 0,
+      "methods": {
+        "fixed_0Z": {
+          "macro_detection": 0.9912109375,
+          "macro_clean_fpr": 0.009765625,
+          "contexts_failing_clean_bound": 3,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.9912109375
+        },
+        "portfolio_joint": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.0126953125,
+          "contexts_failing_clean_bound": 4,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        },
+        "portfolio_naive_or": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.0390625,
+          "contexts_failing_clean_bound": 11,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        },
+        "portfolio_bonferroni_or": {
+          "macro_detection": 0.9990234375,
+          "macro_clean_fpr": 0.009765625,
+          "contexts_failing_clean_bound": 3,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.9990234375
+        }
+      }
+    },
+    {
+      "noise": 0.005,
+      "workload": "encoding_variational",
+      "variant": "encoding_layer_erasure",
+      "bases": 16,
+      "operator_changed": 16,
+      "ideal_invisible": 0,
+      "methods": {
+        "fixed_0Z": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.009765625,
+          "contexts_failing_clean_bound": 3,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        },
+        "portfolio_joint": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.0126953125,
+          "contexts_failing_clean_bound": 4,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        },
+        "portfolio_naive_or": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.0390625,
+          "contexts_failing_clean_bound": 11,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        },
+        "portfolio_bonferroni_or": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.009765625,
+          "contexts_failing_clean_bound": 3,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        }
+      }
+    },
+    {
+      "noise": 0.005,
+      "workload": "qaoa_maxcut",
+      "variant": "swap_start",
+      "bases": 16,
+      "operator_changed": 16,
+      "ideal_invisible": 16,
+      "methods": {
+        "fixed_0Z": {
+          "macro_detection": 0.0126953125,
+          "macro_clean_fpr": 0.01171875,
+          "contexts_failing_clean_bound": 2,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.0126953125
+        },
+        "portfolio_joint": {
+          "macro_detection": 0.009765625,
+          "macro_clean_fpr": 0.0087890625,
+          "contexts_failing_clean_bound": 2,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.009765625
+        },
+        "portfolio_naive_or": {
+          "macro_detection": 0.0361328125,
+          "macro_clean_fpr": 0.0283203125,
+          "contexts_failing_clean_bound": 7,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.0361328125
+        },
+        "portfolio_bonferroni_or": {
+          "macro_detection": 0.0048828125,
+          "macro_clean_fpr": 0.005859375,
+          "contexts_failing_clean_bound": 2,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.0048828125
+        }
+      }
+    },
+    {
+      "noise": 0.005,
+      "workload": "qaoa_maxcut",
+      "variant": "swap_middle",
+      "bases": 16,
+      "operator_changed": 16,
+      "ideal_invisible": 4,
+      "methods": {
+        "fixed_0Z": {
+          "macro_detection": 0.7490234375,
+          "macro_clean_fpr": 0.01171875,
+          "contexts_failing_clean_bound": 2,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.7490234375
+        },
+        "portfolio_joint": {
+          "macro_detection": 0.75390625,
+          "macro_clean_fpr": 0.0087890625,
+          "contexts_failing_clean_bound": 2,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.75390625
+        },
+        "portfolio_naive_or": {
+          "macro_detection": 0.763671875,
+          "macro_clean_fpr": 0.0283203125,
+          "contexts_failing_clean_bound": 7,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.763671875
+        },
+        "portfolio_bonferroni_or": {
+          "macro_detection": 0.7353515625,
+          "macro_clean_fpr": 0.005859375,
+          "contexts_failing_clean_bound": 2,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.7353515625
+        }
+      }
+    },
+    {
+      "noise": 0.005,
+      "workload": "qaoa_maxcut",
+      "variant": "swap_end",
+      "bases": 16,
+      "operator_changed": 16,
+      "ideal_invisible": 4,
+      "methods": {
+        "fixed_0Z": {
+          "macro_detection": 0.7568359375,
+          "macro_clean_fpr": 0.01171875,
+          "contexts_failing_clean_bound": 2,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.7568359375
+        },
+        "portfolio_joint": {
+          "macro_detection": 0.7216796875,
+          "macro_clean_fpr": 0.0087890625,
+          "contexts_failing_clean_bound": 2,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.7216796875
+        },
+        "portfolio_naive_or": {
+          "macro_detection": 0.7421875,
+          "macro_clean_fpr": 0.0283203125,
+          "contexts_failing_clean_bound": 7,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.7421875
+        },
+        "portfolio_bonferroni_or": {
+          "macro_detection": 0.7021484375,
+          "macro_clean_fpr": 0.005859375,
+          "contexts_failing_clean_bound": 2,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.7021484375
+        }
+      }
+    },
+    {
+      "noise": 0.005,
+      "workload": "qaoa_maxcut",
+      "variant": "parameter_scale_plus10",
+      "bases": 16,
+      "operator_changed": 16,
+      "ideal_invisible": 0,
+      "methods": {
+        "fixed_0Z": {
+          "macro_detection": 0.5966796875,
+          "macro_clean_fpr": 0.01171875,
+          "contexts_failing_clean_bound": 2,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.5966796875
+        },
+        "portfolio_joint": {
+          "macro_detection": 0.3056640625,
+          "macro_clean_fpr": 0.0087890625,
+          "contexts_failing_clean_bound": 2,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.3056640625
+        },
+        "portfolio_naive_or": {
+          "macro_detection": 0.423828125,
+          "macro_clean_fpr": 0.0283203125,
+          "contexts_failing_clean_bound": 7,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.423828125
+        },
+        "portfolio_bonferroni_or": {
+          "macro_detection": 0.263671875,
+          "macro_clean_fpr": 0.005859375,
+          "contexts_failing_clean_bound": 2,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.263671875
+        }
+      }
+    },
+    {
+      "noise": 0.005,
+      "workload": "qaoa_maxcut",
+      "variant": "parameter_scale_plus50",
+      "bases": 16,
+      "operator_changed": 16,
+      "ideal_invisible": 0,
+      "methods": {
+        "fixed_0Z": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.01171875,
+          "contexts_failing_clean_bound": 2,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        },
+        "portfolio_joint": {
+          "macro_detection": 0.9599609375,
+          "macro_clean_fpr": 0.0087890625,
+          "contexts_failing_clean_bound": 2,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.9599609375
+        },
+        "portfolio_naive_or": {
+          "macro_detection": 0.9833984375,
+          "macro_clean_fpr": 0.0283203125,
+          "contexts_failing_clean_bound": 7,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.9833984375
+        },
+        "portfolio_bonferroni_or": {
+          "macro_detection": 0.9443359375,
+          "macro_clean_fpr": 0.005859375,
+          "contexts_failing_clean_bound": 2,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.9443359375
+        }
+      }
+    },
+    {
+      "noise": 0.005,
+      "workload": "qaoa_maxcut",
+      "variant": "parameter_scale_minus50",
+      "bases": 16,
+      "operator_changed": 16,
+      "ideal_invisible": 0,
+      "methods": {
+        "fixed_0Z": {
+          "macro_detection": 1.0,
+          "macro_clean_fpr": 0.01171875,
+          "contexts_failing_clean_bound": 2,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 1.0
+        },
+        "portfolio_joint": {
+          "macro_detection": 0.986328125,
+          "macro_clean_fpr": 0.0087890625,
+          "contexts_failing_clean_bound": 2,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.986328125
+        },
+        "portfolio_naive_or": {
+          "macro_detection": 0.99609375,
+          "macro_clean_fpr": 0.0283203125,
+          "contexts_failing_clean_bound": 7,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.99609375
+        },
+        "portfolio_bonferroni_or": {
+          "macro_detection": 0.96875,
+          "macro_clean_fpr": 0.005859375,
+          "contexts_failing_clean_bound": 2,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.96875
+        }
+      }
+    },
+    {
+      "noise": 0.005,
+      "workload": "qaoa_maxcut",
+      "variant": "mixed_trigger_mcx_001",
+      "bases": 16,
+      "operator_changed": 16,
+      "ideal_invisible": 16,
+      "methods": {
+        "fixed_0Z": {
+          "macro_detection": 0.1376953125,
+          "macro_clean_fpr": 0.01171875,
+          "contexts_failing_clean_bound": 2,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.1376953125
+        },
+        "portfolio_joint": {
+          "macro_detection": 0.060546875,
+          "macro_clean_fpr": 0.0087890625,
+          "contexts_failing_clean_bound": 2,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.060546875
+        },
+        "portfolio_naive_or": {
+          "macro_detection": 0.126953125,
+          "macro_clean_fpr": 0.0283203125,
+          "contexts_failing_clean_bound": 7,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.126953125
+        },
+        "portfolio_bonferroni_or": {
+          "macro_detection": 0.0458984375,
+          "macro_clean_fpr": 0.005859375,
+          "contexts_failing_clean_bound": 2,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.0458984375
+        }
+      }
+    },
+    {
+      "noise": 0.005,
+      "workload": "qaoa_maxcut",
+      "variant": "mixed_trigger_phase_010",
+      "bases": 16,
+      "operator_changed": 16,
+      "ideal_invisible": 0,
+      "methods": {
+        "fixed_0Z": {
+          "macro_detection": 0.2998046875,
+          "macro_clean_fpr": 0.01171875,
+          "contexts_failing_clean_bound": 2,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.2998046875
+        },
+        "portfolio_joint": {
+          "macro_detection": 0.1552734375,
+          "macro_clean_fpr": 0.0087890625,
+          "contexts_failing_clean_bound": 2,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.1552734375
+        },
+        "portfolio_naive_or": {
+          "macro_detection": 0.2841796875,
+          "macro_clean_fpr": 0.0283203125,
+          "contexts_failing_clean_bound": 7,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.2841796875
+        },
+        "portfolio_bonferroni_or": {
+          "macro_detection": 0.1279296875,
+          "macro_clean_fpr": 0.005859375,
+          "contexts_failing_clean_bound": 2,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.1279296875
+        }
+      }
+    },
+    {
+      "noise": 0.005,
+      "workload": "qaoa_maxcut",
+      "variant": "cost_layer_erasure",
+      "bases": 16,
+      "operator_changed": 16,
+      "ideal_invisible": 0,
+      "methods": {
+        "fixed_0Z": {
+          "macro_detection": 0.9130859375,
+          "macro_clean_fpr": 0.01171875,
+          "contexts_failing_clean_bound": 2,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.9130859375
+        },
+        "portfolio_joint": {
+          "macro_detection": 0.830078125,
+          "macro_clean_fpr": 0.0087890625,
+          "contexts_failing_clean_bound": 2,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.830078125
+        },
+        "portfolio_naive_or": {
+          "macro_detection": 0.8740234375,
+          "macro_clean_fpr": 0.0283203125,
+          "contexts_failing_clean_bound": 7,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.8740234375
+        },
+        "portfolio_bonferroni_or": {
+          "macro_detection": 0.8115234375,
+          "macro_clean_fpr": 0.005859375,
+          "contexts_failing_clean_bound": 2,
+          "detection_requirement_pass": false,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.8115234375
+        }
+      }
+    },
+    {
+      "noise": 0.005,
+      "workload": "qaoa_maxcut",
+      "variant": "mixer_sign_flip",
+      "bases": 16,
+      "operator_changed": 16,
+      "ideal_invisible": 0,
+      "methods": {
+        "fixed_0Z": {
+          "macro_detection": 0.9970703125,
+          "macro_clean_fpr": 0.01171875,
+          "contexts_failing_clean_bound": 2,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.9970703125
+        },
+        "portfolio_joint": {
+          "macro_detection": 0.998046875,
+          "macro_clean_fpr": 0.0087890625,
+          "contexts_failing_clean_bound": 2,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.998046875
+        },
+        "portfolio_naive_or": {
+          "macro_detection": 0.9990234375,
+          "macro_clean_fpr": 0.0283203125,
+          "contexts_failing_clean_bound": 7,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.9990234375
+        },
+        "portfolio_bonferroni_or": {
+          "macro_detection": 0.99609375,
+          "macro_clean_fpr": 0.005859375,
+          "contexts_failing_clean_bound": 2,
+          "detection_requirement_pass": true,
+          "combined_requirement_pass": false,
+          "operator_changed_detection": 0.99609375
+        }
+      }
+    }
+  ],
+  "unimplemented": {
+    "CutBackdoor": "https://arxiv.org/abs/2607.18126 requires cut execution, poisoned parameter training and signed reconstruction; not reproduced by full-circuit probes",
+    "QAD": "https://netslab.ucd.ie/quantum-attack-dataset-qad/ identified as an additional dataset; not imported or evaluated in this suite",
+    "hardware": "Pulse, crosstalk, multi-tenant hardware attacks and QNN classification accuracy are outside this simulator evaluation"
+  }
+}

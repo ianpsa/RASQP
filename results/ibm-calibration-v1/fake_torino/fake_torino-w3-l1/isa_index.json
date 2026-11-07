@@ -1,0 +1,401 @@
+[
+  {
+    "circuit_index": 0,
+    "case": "clean",
+    "probe": 0,
+    "logical_to_compact_measurement": [
+      0,
+      1
+    ],
+    "operations": {
+      "rz": 19,
+      "sx": 14,
+      "cz": 3,
+      "delay": 2,
+      "measure": 2,
+      "barrier": 1
+    },
+    "density_normalization_error": 1.4629111255715088e-09,
+    "duration_seconds": 2.02e-06
+  },
+  {
+    "circuit_index": 1,
+    "case": "clean",
+    "probe": 1,
+    "logical_to_compact_measurement": [
+      0,
+      1
+    ],
+    "operations": {
+      "rz": 19,
+      "sx": 14,
+      "cz": 3,
+      "delay": 2,
+      "measure": 2,
+      "barrier": 1
+    },
+    "density_normalization_error": 1.4629117917053236e-09,
+    "duration_seconds": 2.02e-06
+  },
+  {
+    "circuit_index": 2,
+    "case": "clean",
+    "probe": 2,
+    "logical_to_compact_measurement": [
+      0,
+      1
+    ],
+    "operations": {
+      "rz": 19,
+      "sx": 14,
+      "cz": 3,
+      "delay": 2,
+      "measure": 2,
+      "barrier": 1
+    },
+    "density_normalization_error": 1.4629122357945334e-09,
+    "duration_seconds": 2.02e-06
+  },
+  {
+    "circuit_index": 3,
+    "case": "x0",
+    "probe": 0,
+    "logical_to_compact_measurement": [
+      0,
+      1
+    ],
+    "operations": {
+      "rz": 19,
+      "sx": 14,
+      "cz": 3,
+      "delay": 2,
+      "measure": 2,
+      "barrier": 1
+    },
+    "density_normalization_error": 1.4629114586384162e-09,
+    "duration_seconds": 2.02e-06
+  },
+  {
+    "circuit_index": 4,
+    "case": "x0",
+    "probe": 1,
+    "logical_to_compact_measurement": [
+      0,
+      1
+    ],
+    "operations": {
+      "rz": 19,
+      "sx": 14,
+      "cz": 3,
+      "delay": 2,
+      "measure": 2,
+      "barrier": 1
+    },
+    "density_normalization_error": 1.4629122357945334e-09,
+    "duration_seconds": 2.02e-06
+  },
+  {
+    "circuit_index": 5,
+    "case": "x0",
+    "probe": 2,
+    "logical_to_compact_measurement": [
+      0,
+      1
+    ],
+    "operations": {
+      "rz": 19,
+      "sx": 14,
+      "cz": 3,
+      "delay": 2,
+      "measure": 2,
+      "barrier": 1
+    },
+    "density_normalization_error": 1.4629125688614408e-09,
+    "duration_seconds": 2.02e-06
+  },
+  {
+    "circuit_index": 6,
+    "case": "z0",
+    "probe": 0,
+    "logical_to_compact_measurement": [
+      0,
+      1
+    ],
+    "operations": {
+      "rz": 19,
+      "sx": 14,
+      "cz": 3,
+      "delay": 2,
+      "measure": 2,
+      "barrier": 1
+    },
+    "density_normalization_error": 1.4629111255715088e-09,
+    "duration_seconds": 2.02e-06
+  },
+  {
+    "circuit_index": 7,
+    "case": "z0",
+    "probe": 1,
+    "logical_to_compact_measurement": [
+      0,
+      1
+    ],
+    "operations": {
+      "rz": 19,
+      "sx": 14,
+      "cz": 3,
+      "delay": 2,
+      "measure": 2,
+      "barrier": 1
+    },
+    "density_normalization_error": 1.4629116806830211e-09,
+    "duration_seconds": 2.02e-06
+  },
+  {
+    "circuit_index": 8,
+    "case": "z0",
+    "probe": 2,
+    "logical_to_compact_measurement": [
+      0,
+      1
+    ],
+    "operations": {
+      "rz": 19,
+      "sx": 14,
+      "cz": 3,
+      "delay": 2,
+      "measure": 2,
+      "barrier": 1
+    },
+    "density_normalization_error": 1.4629122357945334e-09,
+    "duration_seconds": 2.02e-06
+  },
+  {
+    "circuit_index": 9,
+    "case": "rz0_0.12",
+    "probe": 0,
+    "logical_to_compact_measurement": [
+      0,
+      1
+    ],
+    "operations": {
+      "rz": 19,
+      "sx": 14,
+      "cz": 3,
+      "delay": 2,
+      "measure": 2,
+      "barrier": 1
+    },
+    "density_normalization_error": 1.4629111255715088e-09,
+    "duration_seconds": 2.02e-06
+  },
+  {
+    "circuit_index": 10,
+    "case": "rz0_0.12",
+    "probe": 1,
+    "logical_to_compact_measurement": [
+      0,
+      1
+    ],
+    "operations": {
+      "rz": 19,
+      "sx": 14,
+      "cz": 3,
+      "delay": 2,
+      "measure": 2,
+      "barrier": 1
+    },
+    "density_normalization_error": 1.4629116806830211e-09,
+    "duration_seconds": 2.02e-06
+  },
+  {
+    "circuit_index": 11,
+    "case": "rz0_0.12",
+    "probe": 2,
+    "logical_to_compact_measurement": [
+      0,
+      1
+    ],
+    "operations": {
+      "rz": 19,
+      "sx": 14,
+      "cz": 3,
+      "delay": 2,
+      "measure": 2,
+      "barrier": 1
+    },
+    "density_normalization_error": 1.4629122357945334e-09,
+    "duration_seconds": 2.02e-06
+  },
+  {
+    "circuit_index": 12,
+    "case": "cx01",
+    "probe": 0,
+    "logical_to_compact_measurement": [
+      0,
+      1
+    ],
+    "operations": {
+      "rz": 21,
+      "sx": 15,
+      "cz": 4,
+      "delay": 3,
+      "measure": 2,
+      "barrier": 1
+    },
+    "density_normalization_error": 1.9505486115178883e-09,
+    "duration_seconds": 2.12e-06
+  },
+  {
+    "circuit_index": 13,
+    "case": "cx01",
+    "probe": 1,
+    "logical_to_compact_measurement": [
+      0,
+      1
+    ],
+    "operations": {
+      "rz": 21,
+      "sx": 15,
+      "cz": 4,
+      "delay": 3,
+      "measure": 2,
+      "barrier": 1
+    },
+    "density_normalization_error": 1.950549499696308e-09,
+    "duration_seconds": 2.12e-06
+  },
+  {
+    "circuit_index": 14,
+    "case": "cx01",
+    "probe": 2,
+    "logical_to_compact_measurement": [
+      0,
+      1
+    ],
+    "operations": {
+      "rz": 21,
+      "sx": 15,
+      "cz": 4,
+      "delay": 3,
+      "measure": 2,
+      "barrier": 1
+    },
+    "density_normalization_error": 1.9505496107186104e-09,
+    "duration_seconds": 2.12e-06
+  },
+  {
+    "circuit_index": 15,
+    "case": "swap_end",
+    "probe": 0,
+    "logical_to_compact_measurement": [
+      0,
+      1
+    ],
+    "operations": {
+      "rz": 19,
+      "sx": 18,
+      "cz": 6,
+      "delay": 2,
+      "measure": 2,
+      "barrier": 1
+    },
+    "density_normalization_error": 2.925824027499857e-09,
+    "duration_seconds": 2.2880000000000004e-06
+  },
+  {
+    "circuit_index": 16,
+    "case": "swap_end",
+    "probe": 1,
+    "logical_to_compact_measurement": [
+      0,
+      1
+    ],
+    "operations": {
+      "rz": 19,
+      "sx": 18,
+      "cz": 6,
+      "delay": 2,
+      "measure": 2,
+      "barrier": 1
+    },
+    "density_normalization_error": 2.9258243605667644e-09,
+    "duration_seconds": 2.2880000000000004e-06
+  },
+  {
+    "circuit_index": 17,
+    "case": "swap_end",
+    "probe": 2,
+    "logical_to_compact_measurement": [
+      0,
+      1
+    ],
+    "operations": {
+      "rz": 23,
+      "sx": 20,
+      "cz": 6,
+      "delay": 2,
+      "measure": 2,
+      "barrier": 1
+    },
+    "density_normalization_error": 2.9258251377228817e-09,
+    "duration_seconds": 2.3200000000000002e-06
+  },
+  {
+    "circuit_index": 18,
+    "case": "parameter_scale_1.1",
+    "probe": 0,
+    "logical_to_compact_measurement": [
+      0,
+      1
+    ],
+    "operations": {
+      "rz": 19,
+      "sx": 14,
+      "cz": 3,
+      "delay": 2,
+      "measure": 2,
+      "barrier": 1
+    },
+    "density_normalization_error": 1.4629111255715088e-09,
+    "duration_seconds": 2.02e-06
+  },
+  {
+    "circuit_index": 19,
+    "case": "parameter_scale_1.1",
+    "probe": 1,
+    "logical_to_compact_measurement": [
+      0,
+      1
+    ],
+    "operations": {
+      "rz": 19,
+      "sx": 14,
+      "cz": 3,
+      "delay": 2,
+      "measure": 2,
+      "barrier": 1
+    },
+    "density_normalization_error": 1.4629117917053236e-09,
+    "duration_seconds": 2.02e-06
+  },
+  {
+    "circuit_index": 20,
+    "case": "parameter_scale_1.1",
+    "probe": 2,
+    "logical_to_compact_measurement": [
+      0,
+      1
+    ],
+    "operations": {
+      "rz": 19,
+      "sx": 14,
+      "cz": 3,
+      "delay": 2,
+      "measure": 2,
+      "barrier": 1
+    },
+    "density_normalization_error": 1.4629122357945334e-09,
+    "duration_seconds": 2.02e-06
+  }
+]

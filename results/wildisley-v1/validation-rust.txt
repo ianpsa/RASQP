@@ -1,0 +1,102 @@
+   Compiling rasqp v0.3.0 (/home/archvarius/Desktop/rasqp)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.61s
+     Running unittests rust/lib.rs (target/debug/deps/rasqp-f9c7df70cb6e6a29)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests rust/main.rs (target/debug/deps/rasqp-4116737031657936)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests rust/external_main.rs (target/debug/deps/rasqp_external-6fcaf5bfc9df3214)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests rust/lab_main.rs (target/debug/deps/rasqp_lab-aff8fda81d5e3ba5)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests rust/release_main.rs (target/debug/deps/rasqp_release-d18ee8e99c784c9d)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/adversarial_evaluation.rs (target/debug/deps/adversarial_evaluation-74154bfbd6e50402)
+
+running 3 tests
+test audit_swap_is_invisible_to_every_global_catalogue_probe ... ok
+test audit_runtime_accepts_fabrication_without_sampled_workload_execution ... ok
+test audit_runtime_reuses_calibration_for_an_allowed_different_raw_circuit ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.28s
+
+     Running tests/external_dataset.rs (target/debug/deps/external_dataset-9561a2ad463c9804)
+
+running 1 test
+test external_cli_records_all_counts_and_checks_bound_input ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.64s
+
+     Running tests/native_research.rs (target/debug/deps/native_research-435589037882ee04)
+
+running 11 tests
+test bell_and_all_basis_gates_use_little_endian ... ok
+test compiler_pass_and_export_are_explicit_and_validated ... ok
+test density_noise_has_correct_analytic_limits ... ok
+test native_artifact_fingerprint_detects_changed_bytes ... ok
+test trace_offsets_and_alignment_localize_insertions ... ok
+test statistical_boundaries_and_policy_states ... ok
+test probes_and_portfolio_activate_phase_and_dormant_payloads ... ok
+test transformations_preserve_only_declared_properties ... ok
+test random_sampling_is_seeded_and_preserves_shot_count ... ok
+test checks_detect_noncommuting_errors_and_keep_dynamic_flags ... ok
+test simulator_inverse_and_operator_properties ... ok
+
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/runtime_flow.rs (target/debug/deps/runtime_flow-27da0a73694e13e3)
+
+running 3 tests
+test guard_releases_counts_only_after_workload_and_probe_pass ... ok
+test guard_rechecks_artifact_and_commits_policy_fields ... ok
+test guard_blocks_preflight_and_measurement_violations ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/rust_runtime.rs (target/debug/deps/rust_runtime-ec4f2f944b8113f0)
+
+running 10 tests
+test conformal_small_calibration_and_strict_boundary ... ok
+test malformed_inputs_and_overflow_fail_closed ... ok
+test joint_calibration_checks_order_and_dimensions ... ok
+test normalization_preserves_cost_and_unknown_semantics ... ok
+test invalid_auth_does_not_burn_nonce ... ok
+test joint_batch_never_partially_releases_and_consumes_rejected_responses ... ok
+test binding_all_fields_and_counts ... ok
+test result_gate_quarantines_context_and_unknown_variants ... ok
+test replay_survives_restart_and_concurrency ... ok
+test normalization_has_a_work_budget ... ok
+
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.14s
+
+     Running unittests examples/protect.rs (target/debug/examples/protect-105bb7a1cf3b6ece)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests examples/runtime.rs (target/debug/examples/runtime-f43d9e041501676e)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

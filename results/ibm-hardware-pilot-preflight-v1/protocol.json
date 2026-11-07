@@ -1,0 +1,23 @@
+{
+  "version": "ibm-hardware-pilot-v1",
+  "status": "Prospective exploratory hardware pilot; no physical result exists until authenticated job IDs and actual counts are collected. Ten-minute user allowance, conservative seven-minute submission ceiling.",
+  "seed": 29681000,
+  "workloads": ["small/qaoa_n3/qaoa_n3_transpiled.qasm", "small/variational_n4/variational_n4.qasm"],
+  "cases": ["clean", "equivalent_x_pair", "x0", "z0", "rz0_0.12"],
+  "probes": [["0","Z"],["1","Z"],["+","X"]],
+  "reference_shots_per_probe": 8192,
+  "calibration_repetitions": 127,
+  "evaluation_repetitions": 64,
+  "shots_per_probe": 256,
+  "alpha": 0.01,
+  "max_jobs": 3,
+  "stage_execution_caps_seconds": {"reference": 60, "calibration": 120, "evaluation": 240},
+  "reserved_maximum_qpu_seconds": 420,
+  "user_total_allowance_seconds": 600,
+  "maximum_total_shots": 735744,
+  "mode": "Single-job SamplerV2 submissions, no session, no automatic retry or resubmission, mitigation/twirling/dynamical-decoupling disabled. Submit reference, calibration, then evaluation only after the preceding stage has been retrieved. Randomize PUB order within each stage. To reduce program overhead, each distinct circuit uses one PUB; retain actual ordered shot bitstrings and partition into 256-shot observations. Probe blocks are acquired sequentially, so stationarity between them is an explicit assumption; these are not independent physical recalibrations or randomized interleaved decisions. Persist intent before network submission and job ID immediately afterward; ambiguous submission stops for manual recovery.",
+  "budget": "Prepare and review the exact ISA circuit plan and conservative usage estimate before submission. Hard cap: three submit attempts, configured max_execution_time 60s reference, 120s calibration and 240s evaluation (420s total). These limits cannot be equated with an exact billing guarantee; job overhead and calibration-dependent rep_delay are also recorded. Refuse a plan whose estimated usage exceeds 420 seconds or whose stage estimate exceeds its cap; no paid plan is auto-selected. Only an instance whose live plan is Open Plan is accepted by this version.",
+  "layout": "Fixed connected physical-qubit path per workload selected from topology only before calibration. Transpile every circuit against selected hardware target; record output-to-logical classical measurement mapping. Device operations, versioned calibration properties and compiled circuit hashes bind the experiment. Do not assume the provider calibration remains fixed between stages.",
+  "criteria": "Use original clean-only reference and calibration; preserve all per-workload Wilson95 intervals and exact shot totals. Low repetition count is a budget-constrained pilot, not full confirmation. Equivalent rewrites and clean contexts must be retained. Do not tune probes, alpha or attack size from hardware outcomes.",
+  "scope": "Physical gate-level circuit interventions on diagnostic article workloads; no real intrusion, quantum cryptographic verification, arbitrary-host attestation or industrial deployment. Separate public probes do not authenticate an untrusted workload. Authenticated provider job association is recorded; SDK component scoring is not automatic protection of arbitrary application code."
+}

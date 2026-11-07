@@ -23,6 +23,10 @@ path = "rust/lab_main.rs"
 name = "rasqp-release"
 path = "rust/release_main.rs"
 
+[[bin]]
+name = "rasqp-external"
+path = "rust/external_main.rs"
+
 [dependencies]
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"

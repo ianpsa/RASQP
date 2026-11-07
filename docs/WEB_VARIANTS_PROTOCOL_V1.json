@@ -1,0 +1,44 @@
+{
+  "version": "web-variants-v1",
+  "status": "Exploratory literature-derived challenge suite fixed before its evaluation. Prior detector and Wildisley results were known; not an independent preregistration or claim that the attack concepts were never seen during development.",
+  "source": {
+    "kind": "Mechanism-level reimplementations from primary articles on newly generated workloads; not an independently published infected dataset or reproduction of complete QNN/hardware experiments",
+    "swap": "https://arxiv.org/html/2506.24081v1",
+    "encoding": "https://arxiv.org/html/2302.08090v1",
+    "encoding_artifact": "https://github.com/chuchengc/Qtrojan/tree/bc8ae00fcf87ed30ed13ef04af4fdf1b8bdea8ea",
+    "encoding_notebook_sha256": "75c23803667e9d119a35a6504e42c31e525e4e13640b30ff42c9a61eb56bfc26",
+    "parameter": "https://arxiv.org/html/2209.11872v1",
+    "conditional": "https://arxiv.org/html/2502.08880v1"
+  },
+  "seed": 29551000,
+  "generator_seed": 29551,
+  "variant_parameters": {"phase_angle": 0.3, "encoding_target": [0.2, 0.4, 0.6, 0.8]},
+  "workloads": {"width": 4, "encoding_variational": 16, "qaoa_maxcut": 16, "parameters": "Fresh deterministic seeds and feature/ansatz parameters; no Wildisley circuits or infected rows reused"},
+  "max_qubits": 4,
+  "max_lowered_gates": 4080,
+  "noise": [0.0, 0.005],
+  "reference_shots_per_probe": 8192,
+  "calibration_repetitions": 511,
+  "evaluation_repetitions": 64,
+  "shots_per_decision": 768,
+  "alpha": 0.01,
+  "portfolio": [["0", "Z"], ["1", "Z"], ["+", "X"]],
+  "methods": ["fixed_0Z", "portfolio_joint", "portfolio_naive_or", "portfolio_bonferroni_or"],
+  "variants": {
+    "both_workloads": ["swap_start", "swap_middle", "swap_end", "parameter_scale_plus10", "parameter_scale_plus50", "parameter_scale_minus50", "mixed_trigger_mcx_001", "mixed_trigger_phase_010"],
+    "encoding_variational": ["qtrojan_encoding_sandwich", "encoding_layer_erasure"],
+    "qaoa_maxcut": ["cost_layer_erasure", "mixer_sign_flip"]
+  },
+  "definitions": "SWAP is three CX gates at the declared location. Parameter scaling multiplies variational parameters (not encoded features) by 1.1, 1.5 or 0.5. QTrojan sandwich places RX(pi/2) before RY encoding and RX(3pi/2),RY(target) after it on every qubit. Multi-control diagnostic variants use three controls with mixed 0/1 activation and are placed before the workload. All are trusted local circuit interventions; upstream notebook code is inspected, not executed.",
+  "novelty": "SWAP was already a known diagnostic blind spot in the adversarial audit. Rotation perturbations and ordinary CX were already used in development. The new test assesses fixed-detector transfer to these parameterizations/compositions and fresh workloads, not universally unseen attacks. No detector retuning, probe selection, or attacked calibration is allowed.",
+  "controls": ["independent_clean", "equivalent_x_pair_scored_against_original_context"],
+  "criteria": "Report every variant separately for each workload and noise. Per-family requirement: macro detection >=0.90 and every contributing clean context Wilson95 upper<=0.10. A failed variant stays failed; do not replace with a favorable overall average. Also report semantic-equivalence cases separately instead of claiming an attack when the operator is unchanged.",
+  "statistics": "64 repeated sampled decisions per case, conditional Wilson95 and macro rates across fresh base contexts. Report per-family counts and ideally invisible cases. These are mechanism tests with fixed seeds, not full application attack-success rates or simultaneous population guarantees.",
+  "deferred": {
+    "CutBackdoor": "https://arxiv.org/abs/2607.18126 requires cut execution, poisoned parameter training and signed reconstruction; not reproduced by full-circuit probes",
+    "QAD": "https://netslab.ucd.ie/quantum-attack-dataset-qad/ identified as an additional dataset; not imported or evaluated in this suite",
+    "hardware": "Pulse, crosstalk, multi-tenant hardware attacks and QNN classification accuracy are outside this simulator evaluation"
+  },
+  "squash_caution": "Only the physically defined untargeted SWAP-insertion mechanism is adopted. An isolated scalar exp(i delta) multiplying a whole state is global phase and cannot alter fidelity; no such targeted-phase formula is used as a physical attack.",
+  "reporting": "Hash detector files before preparation and after evaluation; verify against Wildisley-v1 source hashes. Save clean calibration, all raw counts/seeds, thresholds, exact operator equivalence and Qiskit/native probe-distance checks. Preserve all older runs."
+}

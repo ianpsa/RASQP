@@ -1,0 +1,20 @@
+{
+  "source_files_sha256": {
+    "docs/IBM_CALIBRATION_PROTOCOL_V1.json": "f0a893191e8359d0d3877983265f2b34537521a08d1310c4e227284166834706",
+    "docs/IBM_HARDWARE_PILOT_V1.json": "be4dbdcdab63fee4077cea464842207d0913459fb2d0643fb5ab50faddcc2500",
+    "research/ibm/common.py": "dcea93bae44e7f9a97c67acb8a88cbaa7622a076f63b2f5da2ac18f62a7d71be",
+    "research/ibm/calibrated.py": "69e4fa420270e385e9d33265e117a639b5bcae7cc061a4d1d634b46bf92a5b43",
+    "research/ibm/interpret.py": "1f7727c42c71bbf463351514bcc0796107987a942b6b22fdb5a0839768abbfb9",
+    "research/ibm/hardware.py": "1db27450a9321b19ff69d914628989296fcc68698edc65ec07ac642926c79b16",
+    "research/ibm/test_ibm.py": "153686338fbe496a8b4d8f8a625b8686b2e6f781283c7b84eee87e40cde6ebff",
+    "research/ibm/requirements.lock.txt": "3893be71c229981f81fa423b727b4bf7e2f0a5302b04c97bde3c15dc3d6540d7",
+    "rust/main.rs": "7f1e23d8c02e12f5393932986a19165e25ed8ab77e8da05422643ee0449ad9d9"
+  },
+  "plan_sha256": "b0e75155ef4e750b179609ad63442475e9fea3fd600db257621be2ca1f5258d1",
+  "mock_only": true,
+  "submitted_jobs": 0,
+  "estimated_seconds": 270.068676608,
+  "maximum_runtime_caps_seconds": 420,
+  "user_allowance_seconds": 600,
+  "hardware_access": "Not configured; deferred by user pending local tests."
+}

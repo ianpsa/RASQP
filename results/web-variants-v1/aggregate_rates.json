@@ -1,0 +1,170 @@
+[
+  {
+    "noise": 0.0,
+    "variant": "cost_layer_erasure",
+    "base_contexts": 16,
+    "joint_detection": 0.888671875,
+    "fixed_detection": 0.958984375
+  },
+  {
+    "noise": 0.0,
+    "variant": "encoding_layer_erasure",
+    "base_contexts": 16,
+    "joint_detection": 1.0,
+    "fixed_detection": 1.0
+  },
+  {
+    "noise": 0.0,
+    "variant": "mixed_trigger_mcx_001",
+    "base_contexts": 32,
+    "joint_detection": 0.01123046875,
+    "fixed_detection": 0.0107421875
+  },
+  {
+    "noise": 0.0,
+    "variant": "mixed_trigger_phase_010",
+    "base_contexts": 32,
+    "joint_detection": 0.02001953125,
+    "fixed_detection": 0.01171875
+  },
+  {
+    "noise": 0.0,
+    "variant": "mixer_sign_flip",
+    "base_contexts": 16,
+    "joint_detection": 1.0,
+    "fixed_detection": 1.0
+  },
+  {
+    "noise": 0.0,
+    "variant": "parameter_scale_minus50",
+    "base_contexts": 32,
+    "joint_detection": 0.99951171875,
+    "fixed_detection": 1.0
+  },
+  {
+    "noise": 0.0,
+    "variant": "parameter_scale_plus10",
+    "base_contexts": 32,
+    "joint_detection": 0.58642578125,
+    "fixed_detection": 0.8115234375
+  },
+  {
+    "noise": 0.0,
+    "variant": "parameter_scale_plus50",
+    "base_contexts": 32,
+    "joint_detection": 1.0,
+    "fixed_detection": 1.0
+  },
+  {
+    "noise": 0.0,
+    "variant": "qtrojan_encoding_sandwich",
+    "base_contexts": 16,
+    "joint_detection": 1.0,
+    "fixed_detection": 1.0
+  },
+  {
+    "noise": 0.0,
+    "variant": "swap_end",
+    "base_contexts": 32,
+    "joint_detection": 0.87646484375,
+    "fixed_detection": 0.876953125
+  },
+  {
+    "noise": 0.0,
+    "variant": "swap_middle",
+    "base_contexts": 32,
+    "joint_detection": 0.8759765625,
+    "fixed_detection": 0.8779296875
+  },
+  {
+    "noise": 0.0,
+    "variant": "swap_start",
+    "base_contexts": 32,
+    "joint_detection": 0.00830078125,
+    "fixed_detection": 0.0107421875
+  },
+  {
+    "noise": 0.005,
+    "variant": "cost_layer_erasure",
+    "base_contexts": 16,
+    "joint_detection": 0.830078125,
+    "fixed_detection": 0.9130859375
+  },
+  {
+    "noise": 0.005,
+    "variant": "encoding_layer_erasure",
+    "base_contexts": 16,
+    "joint_detection": 1.0,
+    "fixed_detection": 1.0
+  },
+  {
+    "noise": 0.005,
+    "variant": "mixed_trigger_mcx_001",
+    "base_contexts": 32,
+    "joint_detection": 0.064453125,
+    "fixed_detection": 0.162109375
+  },
+  {
+    "noise": 0.005,
+    "variant": "mixed_trigger_phase_010",
+    "base_contexts": 32,
+    "joint_detection": 0.2060546875,
+    "fixed_detection": 0.435546875
+  },
+  {
+    "noise": 0.005,
+    "variant": "mixer_sign_flip",
+    "base_contexts": 16,
+    "joint_detection": 0.998046875,
+    "fixed_detection": 0.9970703125
+  },
+  {
+    "noise": 0.005,
+    "variant": "parameter_scale_minus50",
+    "base_contexts": 32,
+    "joint_detection": 0.9931640625,
+    "fixed_detection": 1.0
+  },
+  {
+    "noise": 0.005,
+    "variant": "parameter_scale_plus10",
+    "base_contexts": 32,
+    "joint_detection": 0.40576171875,
+    "fixed_detection": 0.71435546875
+  },
+  {
+    "noise": 0.005,
+    "variant": "parameter_scale_plus50",
+    "base_contexts": 32,
+    "joint_detection": 0.97998046875,
+    "fixed_detection": 1.0
+  },
+  {
+    "noise": 0.005,
+    "variant": "qtrojan_encoding_sandwich",
+    "base_contexts": 16,
+    "joint_detection": 1.0,
+    "fixed_detection": 0.9912109375
+  },
+  {
+    "noise": 0.005,
+    "variant": "swap_end",
+    "base_contexts": 32,
+    "joint_detection": 0.86083984375,
+    "fixed_detection": 0.8740234375
+  },
+  {
+    "noise": 0.005,
+    "variant": "swap_middle",
+    "base_contexts": 32,
+    "joint_detection": 0.876953125,
+    "fixed_detection": 0.87451171875
+  },
+  {
+    "noise": 0.005,
+    "variant": "swap_start",
+    "base_contexts": 32,
+    "joint_detection": 0.0068359375,
+    "fixed_detection": 0.01171875
+  }
+]

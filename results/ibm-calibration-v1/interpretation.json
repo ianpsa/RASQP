@@ -1,0 +1,276 @@
+{
+  "status": "Post hoc explanatory stratification; original criteria and every failed context remain unchanged.",
+  "summary_sha256": "37058df97d8f8f7cb296c09487ec53927819c33e49354336f3b54775be907a64",
+  "source_diagnostics": {
+    "small/qaoa_n3/qaoa_n3_transpiled.qasm": {
+      "source": {
+        "source_path": "small/qaoa_n3/qaoa_n3_transpiled.qasm",
+        "source_sha256": "478c75c52bebbe673e522c7864f711bb97278afe65bd48ca9aa6c004f095e12e",
+        "conversion": {
+          "terminal_measurements": [
+            [
+              2,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "source_classical_bits": 3,
+          "lowered_global_phase": 0.7853981633974483
+        }
+      },
+      "explicit_rotations_scaled": 17,
+      "operator_changed": {
+        "clean": false,
+        "equivalent_optimized": false,
+        "x0": true,
+        "z0": true,
+        "rz0_0.12": true,
+        "cx01": true,
+        "swap_end": true,
+        "parameter_scale_1.1": true
+      }
+    },
+    "small/qft_n4/qft_n4.qasm": {
+      "source": {
+        "source_path": "small/qft_n4/qft_n4.qasm",
+        "source_sha256": "62c6c8c7ddd95ac2b5367420b9925dbf82d6fb45725f089f01619a639621ad60",
+        "conversion": {
+          "terminal_measurements": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "source_classical_bits": 4,
+          "lowered_global_phase": 1.6689710972195775
+        }
+      },
+      "explicit_rotations_scaled": 0,
+      "operator_changed": {
+        "clean": false,
+        "equivalent_optimized": false,
+        "x0": true,
+        "z0": true,
+        "rz0_0.12": true,
+        "cx01": true,
+        "swap_end": true,
+        "parameter_scale_1.1": false
+      }
+    },
+    "small/quantumwalks_n2/quantumwalks_n2.qasm": {
+      "source": {
+        "source_path": "small/quantumwalks_n2/quantumwalks_n2.qasm",
+        "source_sha256": "dea93828107b2b17f6381ed75cb8d985bc8790be74a7378179b441932a84e80b",
+        "conversion": {
+          "terminal_measurements": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "source_classical_bits": 2,
+          "lowered_global_phase": 6.1870129156757265
+        }
+      },
+      "explicit_rotations_scaled": 0,
+      "operator_changed": {
+        "clean": false,
+        "x0": true,
+        "z0": true,
+        "rz0_0.12": true,
+        "cx01": true,
+        "swap_end": true,
+        "parameter_scale_1.1": false
+      }
+    },
+    "small/variational_n4/variational_n4.qasm": {
+      "source": {
+        "source_path": "small/variational_n4/variational_n4.qasm",
+        "source_sha256": "df4ced794da7fd4ca56eb2b02bce53ee77207bec77286cb4626115c6a9b6357d",
+        "conversion": {
+          "terminal_measurements": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "source_classical_bits": 4,
+          "lowered_global_phase": 0.0
+        }
+      },
+      "explicit_rotations_scaled": 28,
+      "operator_changed": {
+        "clean": false,
+        "equivalent_optimized": false,
+        "x0": true,
+        "z0": true,
+        "rz0_0.12": true,
+        "cx01": true,
+        "swap_end": true,
+        "parameter_scale_1.1": true
+      }
+    }
+  },
+  "selected_qubits_assignment_error_range": [
+    0.00634765625,
+    0.25732421875
+  ],
+  "conditional_rates": [
+    {
+      "backend": "fake_sherbrooke",
+      "case": "x0",
+      "all_context_acquisitions": 24,
+      "operator_changed_context_acquisitions": 24,
+      "ideally_visible_context_acquisitions": 18,
+      "all_macro_alarm_rate": 0.7517903645833334,
+      "operator_changed_macro_alarm_rate": 0.7517903645833334,
+      "ideally_visible_macro_alarm_rate": 1.0
+    },
+    {
+      "backend": "fake_sherbrooke",
+      "case": "z0",
+      "all_context_acquisitions": 24,
+      "operator_changed_context_acquisitions": 24,
+      "ideally_visible_context_acquisitions": 12,
+      "all_macro_alarm_rate": 0.5045572916666666,
+      "operator_changed_macro_alarm_rate": 0.5045572916666666,
+      "ideally_visible_macro_alarm_rate": 1.0
+    },
+    {
+      "backend": "fake_sherbrooke",
+      "case": "cx01",
+      "all_context_acquisitions": 24,
+      "operator_changed_context_acquisitions": 24,
+      "ideally_visible_context_acquisitions": 18,
+      "all_macro_alarm_rate": 0.8758138020833334,
+      "operator_changed_macro_alarm_rate": 0.8758138020833334,
+      "ideally_visible_macro_alarm_rate": 1.0
+    },
+    {
+      "backend": "fake_sherbrooke",
+      "case": "rz0_0.12",
+      "all_context_acquisitions": 24,
+      "operator_changed_context_acquisitions": 24,
+      "ideally_visible_context_acquisitions": 18,
+      "all_macro_alarm_rate": 0.016438802083333332,
+      "operator_changed_macro_alarm_rate": 0.016438802083333332,
+      "ideally_visible_macro_alarm_rate": 0.018229166666666668
+    },
+    {
+      "backend": "fake_sherbrooke",
+      "case": "swap_end",
+      "all_context_acquisitions": 24,
+      "operator_changed_context_acquisitions": 24,
+      "ideally_visible_context_acquisitions": 18,
+      "all_macro_alarm_rate": 0.6751302083333334,
+      "operator_changed_macro_alarm_rate": 0.6751302083333334,
+      "ideally_visible_macro_alarm_rate": 0.7326388888888888
+    },
+    {
+      "backend": "fake_sherbrooke",
+      "case": "parameter_scale_1.1",
+      "all_context_acquisitions": 24,
+      "operator_changed_context_acquisitions": 12,
+      "ideally_visible_context_acquisitions": 12,
+      "all_macro_alarm_rate": 0.3162434895833333,
+      "operator_changed_macro_alarm_rate": 0.6214192708333334,
+      "ideally_visible_macro_alarm_rate": 0.6214192708333334
+    },
+    {
+      "backend": "fake_torino",
+      "case": "x0",
+      "all_context_acquisitions": 24,
+      "operator_changed_context_acquisitions": 24,
+      "ideally_visible_context_acquisitions": 18,
+      "all_macro_alarm_rate": 0.75244140625,
+      "operator_changed_macro_alarm_rate": 0.75244140625,
+      "ideally_visible_macro_alarm_rate": 0.9997829861111112
+    },
+    {
+      "backend": "fake_torino",
+      "case": "z0",
+      "all_context_acquisitions": 24,
+      "operator_changed_context_acquisitions": 24,
+      "ideally_visible_context_acquisitions": 12,
+      "all_macro_alarm_rate": 0.5048828125,
+      "operator_changed_macro_alarm_rate": 0.5048828125,
+      "ideally_visible_macro_alarm_rate": 1.0
+    },
+    {
+      "backend": "fake_torino",
+      "case": "cx01",
+      "all_context_acquisitions": 24,
+      "operator_changed_context_acquisitions": 24,
+      "ideally_visible_context_acquisitions": 18,
+      "all_macro_alarm_rate": 0.75537109375,
+      "operator_changed_macro_alarm_rate": 0.75537109375,
+      "ideally_visible_macro_alarm_rate": 1.0
+    },
+    {
+      "backend": "fake_torino",
+      "case": "rz0_0.12",
+      "all_context_acquisitions": 24,
+      "operator_changed_context_acquisitions": 24,
+      "ideally_visible_context_acquisitions": 18,
+      "all_macro_alarm_rate": 0.015625,
+      "operator_changed_macro_alarm_rate": 0.015625,
+      "ideally_visible_macro_alarm_rate": 0.017578125
+    },
+    {
+      "backend": "fake_torino",
+      "case": "swap_end",
+      "all_context_acquisitions": 24,
+      "operator_changed_context_acquisitions": 24,
+      "ideally_visible_context_acquisitions": 18,
+      "all_macro_alarm_rate": 0.5066731770833334,
+      "operator_changed_macro_alarm_rate": 0.5066731770833334,
+      "ideally_visible_macro_alarm_rate": 0.6705729166666666
+    },
+    {
+      "backend": "fake_torino",
+      "case": "parameter_scale_1.1",
+      "all_context_acquisitions": 24,
+      "operator_changed_context_acquisitions": 12,
+      "ideally_visible_context_acquisitions": 12,
+      "all_macro_alarm_rate": 0.4026692708333333,
+      "operator_changed_macro_alarm_rate": 0.7955729166666666,
+      "ideally_visible_macro_alarm_rate": 0.7955729166666666
+    }
+  ],
+  "limits": "Quantum noise can expose extra-gate noise even when a logical mutation preserves the ideal measured distributions. Alarm rates are not harmful-application-impact rates. Parameter scaling changes only explicit RX/RY/RZ source instructions: QFT and quantum-walk sources lack those instructions, so those parameter cases are unchanged controls. These facts do not rescue any prespecified failed criterion."
+}

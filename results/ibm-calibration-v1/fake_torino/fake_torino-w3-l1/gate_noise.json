@@ -1,0 +1,8500 @@
+{
+  "errors": [
+    {
+      "type": "qerror",
+      "id": "b22c72689d1c4b1f98c6892222ccedbc",
+      "operations": [
+        "reset"
+      ],
+      "instructions": [
+        [
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          }
+        ]
+      ],
+      "probabilities": [
+        0.9895331933213671,
+        0.0005859542209605742,
+        0.00988085245767234
+      ],
+      "gate_qubits": [
+        [
+          0
+        ]
+      ]
+    },
+    {
+      "type": "qerror",
+      "id": "a99434a1bcba47bfa11b0044897fcbad",
+      "operations": [
+        "reset"
+      ],
+      "instructions": [
+        [
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          }
+        ]
+      ],
+      "probabilities": [
+        0.9926714156984738,
+        0.0006862163461782963,
+        0.006642367955347894
+      ],
+      "gate_qubits": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "type": "qerror",
+      "id": "3b2ea01b87414e75b871a415223b47cd",
+      "operations": [
+        "id"
+      ],
+      "instructions": [
+        [
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "x",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "x",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "x",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "y",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "y",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "y",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          }
+        ]
+      ],
+      "probabilities": [
+        0.9993830527313134,
+        1.1192187341102315e-05,
+        0.0001877051314453734,
+        0.00013932225537035644,
+        1.560283395469139e-09,
+        2.616764631548092e-08,
+        0.00013932225537035644,
+        1.560283395469139e-09,
+        2.616764631548092e-08,
+        0.00013932225537035644,
+        1.560283395469139e-09,
+        2.616764631548092e-08
+      ],
+      "gate_qubits": [
+        [
+          0
+        ]
+      ]
+    },
+    {
+      "type": "qerror",
+      "id": "66c9c9ef1629405993957d3cbe4642c4",
+      "operations": [
+        "id"
+      ],
+      "instructions": [
+        [
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "x",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "x",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "x",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "y",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "y",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "y",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          }
+        ]
+      ],
+      "probabilities": [
+        0.9996872956488512,
+        1.3069813920109489e-05,
+        0.00012601323192724934,
+        5.786571777614788e-05,
+        7.565307341401681e-10,
+        7.2941270200194705e-09,
+        5.786571777614788e-05,
+        7.565307341401681e-10,
+        7.2941270200194705e-09,
+        5.786571777614788e-05,
+        7.565307341401681e-10,
+        7.2941270200194705e-09
+      ],
+      "gate_qubits": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "type": "qerror",
+      "id": "9d3768118a9e429c9663abd8eed96e20",
+      "operations": [
+        "sx"
+      ],
+      "instructions": [
+        [
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "x",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "x",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "x",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "y",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "y",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "y",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          }
+        ]
+      ],
+      "probabilities": [
+        0.9993830527313134,
+        1.1192187341102315e-05,
+        0.0001877051314453734,
+        0.00013932225537035644,
+        1.560283395469139e-09,
+        2.616764631548092e-08,
+        0.00013932225537035644,
+        1.560283395469139e-09,
+        2.616764631548092e-08,
+        0.00013932225537035644,
+        1.560283395469139e-09,
+        2.616764631548092e-08
+      ],
+      "gate_qubits": [
+        [
+          0
+        ]
+      ]
+    },
+    {
+      "type": "qerror",
+      "id": "c6944443a0ee4c869c5d84c53424da86",
+      "operations": [
+        "sx"
+      ],
+      "instructions": [
+        [
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "x",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "x",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "x",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "y",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "y",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "y",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          }
+        ]
+      ],
+      "probabilities": [
+        0.9996872956488512,
+        1.3069813920109489e-05,
+        0.00012601323192724934,
+        5.786571777614788e-05,
+        7.565307341401681e-10,
+        7.2941270200194705e-09,
+        5.786571777614788e-05,
+        7.565307341401681e-10,
+        7.2941270200194705e-09,
+        5.786571777614788e-05,
+        7.565307341401681e-10,
+        7.2941270200194705e-09
+      ],
+      "gate_qubits": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "type": "qerror",
+      "id": "47e83efe483a4c809cdfefb4fca6f763",
+      "operations": [
+        "x"
+      ],
+      "instructions": [
+        [
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "x",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "x",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "x",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "y",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "y",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "y",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          }
+        ]
+      ],
+      "probabilities": [
+        0.9993830527313134,
+        1.1192187341102315e-05,
+        0.0001877051314453734,
+        0.00013932225537035644,
+        1.560283395469139e-09,
+        2.616764631548092e-08,
+        0.00013932225537035644,
+        1.560283395469139e-09,
+        2.616764631548092e-08,
+        0.00013932225537035644,
+        1.560283395469139e-09,
+        2.616764631548092e-08
+      ],
+      "gate_qubits": [
+        [
+          0
+        ]
+      ]
+    },
+    {
+      "type": "qerror",
+      "id": "79d567bc9dbb462391de8683e86765cd",
+      "operations": [
+        "x"
+      ],
+      "instructions": [
+        [
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "x",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "x",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "x",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "y",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "y",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "y",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          }
+        ]
+      ],
+      "probabilities": [
+        0.9996872956488512,
+        1.3069813920109489e-05,
+        0.00012601323192724934,
+        5.786571777614788e-05,
+        7.565307341401681e-10,
+        7.2941270200194705e-09,
+        5.786571777614788e-05,
+        7.565307341401681e-10,
+        7.2941270200194705e-09,
+        5.786571777614788e-05,
+        7.565307341401681e-10,
+        7.2941270200194705e-09
+      ],
+      "gate_qubits": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "type": "qerror",
+      "id": "5fdd857392634636b1ee80edf5313af7",
+      "operations": [
+        "cz"
+      ],
+      "instructions": [
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "II"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "II"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "II"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "II"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "II"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "II"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "II"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "II"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "II"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IX"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IX"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IX"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IX"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IX"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IX"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IX"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IX"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IX"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IY"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IY"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IY"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IY"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IY"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IY"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IY"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IY"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IY"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IZ"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IZ"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IZ"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IZ"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IZ"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IZ"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IZ"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IZ"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IZ"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XI"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XI"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XI"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XI"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XI"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XI"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XI"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XI"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XI"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XX"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XX"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XX"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XX"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XX"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XX"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XX"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XX"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XX"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XY"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XY"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XY"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XY"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XY"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XY"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XY"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XY"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XY"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XZ"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XZ"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XZ"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XZ"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XZ"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XZ"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XZ"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XZ"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XZ"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YI"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YI"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YI"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YI"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YI"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YI"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YI"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YI"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YI"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YX"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YX"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YX"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YX"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YX"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YX"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YX"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YX"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YX"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YY"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YY"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YY"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YY"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YY"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YY"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YY"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YY"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YY"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YZ"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YZ"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YZ"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YZ"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YZ"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YZ"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YZ"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YZ"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YZ"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZI"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZI"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZI"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZI"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZI"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZI"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZI"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZI"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZI"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZX"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZX"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZX"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZX"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZX"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZX"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZX"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZX"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZX"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZY"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZY"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZY"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZY"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZY"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZY"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZY"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZY"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZY"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZZ"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZZ"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZZ"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZZ"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZZ"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZZ"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZZ"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZZ"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZZ"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ]
+      ],
+      "probabilities": [
+        0.9953824294112258,
+        2.3688190941523868e-05,
+        0.00039732365460474215,
+        2.76537565994559e-05,
+        6.581063189610582e-10,
+        1.1038462515502698e-08,
+        0.000266647834864718,
+        6.345706574462595e-09,
+        1.0643697247454818e-07,
+        0.0002599553334971076,
+        6.186437889796202e-09,
+        1.0376554788108909e-07,
+        7.222090029770344e-09,
+        1.7187187815166625e-13,
+        2.8828188239269542e-12,
+        6.963808561453164e-08,
+        1.6572527503976134e-12,
+        2.7797214275130328e-11,
+        0.0002599553334971076,
+        6.186437889796202e-09,
+        1.0376554788108909e-07,
+        7.222090029770344e-09,
+        1.7187187815166625e-13,
+        2.8828188239269542e-12,
+        6.963808561453164e-08,
+        1.6572527503976134e-12,
+        2.7797214275130328e-11,
+        0.0002599553334971076,
+        6.186437889796202e-09,
+        1.0376554788108909e-07,
+        7.222090029770344e-09,
+        1.7187187815166625e-13,
+        2.8828188239269542e-12,
+        6.963808561453164e-08,
+        1.6572527503976134e-12,
+        2.7797214275130328e-11,
+        0.0002599553334971076,
+        6.186437889796202e-09,
+        1.0376554788108909e-07,
+        7.222090029770344e-09,
+        1.7187187815166625e-13,
+        2.8828188239269542e-12,
+        6.963808561453164e-08,
+        1.6572527503976134e-12,
+        2.7797214275130328e-11,
+        0.0002599553334971076,
+        6.186437889796202e-09,
+        1.0376554788108909e-07,
+        7.222090029770344e-09,
+        1.7187187815166625e-13,
+        2.8828188239269542e-12,
+        6.963808561453164e-08,
+        1.6572527503976134e-12,
+        2.7797214275130328e-11,
+        0.0002599553334971076,
+        6.186437889796202e-09,
+        1.0376554788108909e-07,
+        7.222090029770344e-09,
+        1.7187187815166625e-13,
+        2.8828188239269542e-12,
+        6.963808561453164e-08,
+        1.6572527503976134e-12,
+        2.7797214275130328e-11,
+        0.0002599553334971076,
+        6.186437889796202e-09,
+        1.0376554788108909e-07,
+        7.222090029770344e-09,
+        1.7187187815166625e-13,
+        2.8828188239269542e-12,
+        6.963808561453164e-08,
+        1.6572527503976134e-12,
+        2.7797214275130328e-11,
+        0.0002599553334971076,
+        6.186437889796202e-09,
+        1.0376554788108909e-07,
+        7.222090029770344e-09,
+        1.7187187815166625e-13,
+        2.8828188239269542e-12,
+        6.963808561453164e-08,
+        1.6572527503976134e-12,
+        2.7797214275130328e-11,
+        0.0002599553334971076,
+        6.186437889796202e-09,
+        1.0376554788108909e-07,
+        7.222090029770344e-09,
+        1.7187187815166625e-13,
+        2.8828188239269542e-12,
+        6.963808561453164e-08,
+        1.6572527503976134e-12,
+        2.7797214275130328e-11,
+        0.0002599553334971076,
+        6.186437889796202e-09,
+        1.0376554788108909e-07,
+        7.222090029770344e-09,
+        1.7187187815166625e-13,
+        2.8828188239269542e-12,
+        6.963808561453164e-08,
+        1.6572527503976134e-12,
+        2.7797214275130328e-11,
+        0.0002599553334971076,
+        6.186437889796202e-09,
+        1.0376554788108909e-07,
+        7.222090029770344e-09,
+        1.7187187815166625e-13,
+        2.8828188239269542e-12,
+        6.963808561453164e-08,
+        1.6572527503976134e-12,
+        2.7797214275130328e-11,
+        0.0002599553334971076,
+        6.186437889796202e-09,
+        1.0376554788108909e-07,
+        7.222090029770344e-09,
+        1.7187187815166625e-13,
+        2.8828188239269542e-12,
+        6.963808561453164e-08,
+        1.6572527503976134e-12,
+        2.7797214275130328e-11,
+        0.0002599553334971076,
+        6.186437889796202e-09,
+        1.0376554788108909e-07,
+        7.222090029770344e-09,
+        1.7187187815166625e-13,
+        2.8828188239269542e-12,
+        6.963808561453164e-08,
+        1.6572527503976134e-12,
+        2.7797214275130328e-11,
+        0.0002599553334971076,
+        6.186437889796202e-09,
+        1.0376554788108909e-07,
+        7.222090029770344e-09,
+        1.7187187815166625e-13,
+        2.8828188239269542e-12,
+        6.963808561453164e-08,
+        1.6572527503976134e-12,
+        2.7797214275130328e-11,
+        0.0002599553334971076,
+        6.186437889796202e-09,
+        1.0376554788108909e-07,
+        7.222090029770344e-09,
+        1.7187187815166625e-13,
+        2.8828188239269542e-12,
+        6.963808561453164e-08,
+        1.6572527503976134e-12,
+        2.7797214275130328e-11
+      ],
+      "gate_qubits": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "type": "qerror",
+      "id": "8d1bbe2475094980a2f500e01b6954cb",
+      "operations": [
+        "cz"
+      ],
+      "instructions": [
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "II"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "II"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "II"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "II"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "II"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "II"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "II"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "II"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "II"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IX"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IX"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IX"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IX"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IX"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IX"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IX"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IX"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IX"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IY"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IY"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IY"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IY"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IY"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IY"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IY"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IY"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IY"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IZ"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IZ"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IZ"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IZ"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IZ"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IZ"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IZ"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IZ"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "IZ"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XI"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XI"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XI"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XI"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XI"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XI"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XI"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XI"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XI"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XX"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XX"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XX"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XX"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XX"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XX"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XX"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XX"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XX"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XY"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XY"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XY"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XY"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XY"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XY"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XY"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XY"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XY"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XZ"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XZ"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XZ"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XZ"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XZ"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XZ"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XZ"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XZ"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "XZ"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YI"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YI"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YI"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YI"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YI"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YI"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YI"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YI"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YI"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YX"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YX"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YX"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YX"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YX"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YX"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YX"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YX"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YX"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YY"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YY"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YY"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YY"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YY"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YY"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YY"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YY"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YY"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YZ"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YZ"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YZ"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YZ"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YZ"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YZ"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YZ"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YZ"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "YZ"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZI"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZI"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZI"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZI"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZI"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZI"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZI"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZI"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZI"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZX"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZX"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZX"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZX"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZX"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZX"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZX"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZX"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZX"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZY"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZY"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZY"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZY"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZY"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZY"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZY"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZY"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZY"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZZ"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZZ"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZZ"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZZ"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZZ"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZZ"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZZ"
+            ]
+          },
+          {
+            "name": "id",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZZ"
+            ]
+          },
+          {
+            "name": "z",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "name": "pauli",
+            "qubits": [
+              0,
+              1
+            ],
+            "params": [
+              "ZZ"
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              0
+            ]
+          },
+          {
+            "name": "reset",
+            "qubits": [
+              1
+            ]
+          }
+        ]
+      ],
+      "probabilities": [
+        0.9953824294112258,
+        2.76537565994559e-05,
+        0.000266647834864718,
+        2.3688190941523868e-05,
+        6.581063189610582e-10,
+        6.345706574462595e-09,
+        0.00039732365460474215,
+        1.1038462515502698e-08,
+        1.0643697247454818e-07,
+        0.0002599553334971076,
+        7.222090029770344e-09,
+        6.963808561453164e-08,
+        6.186437889796202e-09,
+        1.7187187815166625e-13,
+        1.6572527503976134e-12,
+        1.0376554788108909e-07,
+        2.8828188239269542e-12,
+        2.7797214275130328e-11,
+        0.0002599553334971076,
+        7.222090029770344e-09,
+        6.963808561453164e-08,
+        6.186437889796202e-09,
+        1.7187187815166625e-13,
+        1.6572527503976134e-12,
+        1.0376554788108909e-07,
+        2.8828188239269542e-12,
+        2.7797214275130328e-11,
+        0.0002599553334971076,
+        7.222090029770344e-09,
+        6.963808561453164e-08,
+        6.186437889796202e-09,
+        1.7187187815166625e-13,
+        1.6572527503976134e-12,
+        1.0376554788108909e-07,
+        2.8828188239269542e-12,
+        2.7797214275130328e-11,
+        0.0002599553334971076,
+        7.222090029770344e-09,
+        6.963808561453164e-08,
+        6.186437889796202e-09,
+        1.7187187815166625e-13,
+        1.6572527503976134e-12,
+        1.0376554788108909e-07,
+        2.8828188239269542e-12,
+        2.7797214275130328e-11,
+        0.0002599553334971076,
+        7.222090029770344e-09,
+        6.963808561453164e-08,
+        6.186437889796202e-09,
+        1.7187187815166625e-13,
+        1.6572527503976134e-12,
+        1.0376554788108909e-07,
+        2.8828188239269542e-12,
+        2.7797214275130328e-11,
+        0.0002599553334971076,
+        7.222090029770344e-09,
+        6.963808561453164e-08,
+        6.186437889796202e-09,
+        1.7187187815166625e-13,
+        1.6572527503976134e-12,
+        1.0376554788108909e-07,
+        2.8828188239269542e-12,
+        2.7797214275130328e-11,
+        0.0002599553334971076,
+        7.222090029770344e-09,
+        6.963808561453164e-08,
+        6.186437889796202e-09,
+        1.7187187815166625e-13,
+        1.6572527503976134e-12,
+        1.0376554788108909e-07,
+        2.8828188239269542e-12,
+        2.7797214275130328e-11,
+        0.0002599553334971076,
+        7.222090029770344e-09,
+        6.963808561453164e-08,
+        6.186437889796202e-09,
+        1.7187187815166625e-13,
+        1.6572527503976134e-12,
+        1.0376554788108909e-07,
+        2.8828188239269542e-12,
+        2.7797214275130328e-11,
+        0.0002599553334971076,
+        7.222090029770344e-09,
+        6.963808561453164e-08,
+        6.186437889796202e-09,
+        1.7187187815166625e-13,
+        1.6572527503976134e-12,
+        1.0376554788108909e-07,
+        2.8828188239269542e-12,
+        2.7797214275130328e-11,
+        0.0002599553334971076,
+        7.222090029770344e-09,
+        6.963808561453164e-08,
+        6.186437889796202e-09,
+        1.7187187815166625e-13,
+        1.6572527503976134e-12,
+        1.0376554788108909e-07,
+        2.8828188239269542e-12,
+        2.7797214275130328e-11,
+        0.0002599553334971076,
+        7.222090029770344e-09,
+        6.963808561453164e-08,
+        6.186437889796202e-09,
+        1.7187187815166625e-13,
+        1.6572527503976134e-12,
+        1.0376554788108909e-07,
+        2.8828188239269542e-12,
+        2.7797214275130328e-11,
+        0.0002599553334971076,
+        7.222090029770344e-09,
+        6.963808561453164e-08,
+        6.186437889796202e-09,
+        1.7187187815166625e-13,
+        1.6572527503976134e-12,
+        1.0376554788108909e-07,
+        2.8828188239269542e-12,
+        2.7797214275130328e-11,
+        0.0002599553334971076,
+        7.222090029770344e-09,
+        6.963808561453164e-08,
+        6.186437889796202e-09,
+        1.7187187815166625e-13,
+        1.6572527503976134e-12,
+        1.0376554788108909e-07,
+        2.8828188239269542e-12,
+        2.7797214275130328e-11,
+        0.0002599553334971076,
+        7.222090029770344e-09,
+        6.963808561453164e-08,
+        6.186437889796202e-09,
+        1.7187187815166625e-13,
+        1.6572527503976134e-12,
+        1.0376554788108909e-07,
+        2.8828188239269542e-12,
+        2.7797214275130328e-11,
+        0.0002599553334971076,
+        7.222090029770344e-09,
+        6.963808561453164e-08,
+        6.186437889796202e-09,
+        1.7187187815166625e-13,
+        1.6572527503976134e-12,
+        1.0376554788108909e-07,
+        2.8828188239269542e-12,
+        2.7797214275130328e-11
+      ],
+      "gate_qubits": [
+        [
+          1,
+          0
+        ]
+      ]
+    }
+  ]
+}

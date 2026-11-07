@@ -1,0 +1,7798 @@
+{
+  "version": "ibm-calibration-v1",
+  "contexts": [
+    {
+      "id": "fake_torino-w0-l0",
+      "backend_snapshot": "fake_torino",
+      "workload": "small/qaoa_n3/qaoa_n3_transpiled.qasm",
+      "physical_qubits": [
+        0,
+        1,
+        2
+      ],
+      "snapshot_date": "2025-02-26T15:26:08-05:00",
+      "source": {
+        "source_path": "small/qaoa_n3/qaoa_n3_transpiled.qasm",
+        "source_sha256": "478c75c52bebbe673e522c7864f711bb97278afe65bd48ca9aa6c004f095e12e",
+        "conversion": {
+          "terminal_measurements": [
+            [
+              2,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "source_classical_bits": 3,
+          "lowered_global_phase": 0.7853981633974483
+        }
+      },
+      "omitted_cases": [],
+      "t1_seconds": [
+        0.0002240872756806737,
+        0.0002660304697898787,
+        0.00017039288579492653
+      ],
+      "t2_seconds": [
+        0.0003145961798898144,
+        0.00020401606029050957,
+        0.0001522363560239665
+      ],
+      "readout_mean_assignment_error": [
+        0.166748046875,
+        0.02294921875,
+        0.048095703125
+      ],
+      "posthoc_ideal_probe_tvd": {
+        "clean": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "equivalent_optimized": [
+          3.365363543395006e-16,
+          5.134781488891349e-16,
+          5.828670879282072e-16
+        ],
+        "x0": [
+          0.466631297736241,
+          0.1555151876668274,
+          0.0
+        ],
+        "z0": [
+          0.0,
+          0.0,
+          5.689893001203927e-16
+        ],
+        "rz0_0.12": [
+          1.5265566588595902e-16,
+          2.3592239273284576e-16,
+          0.05924980959068467
+        ],
+        "cx01": [
+          0.2333156488681205,
+          0.14501709850228361,
+          1.734723475976807e-16
+        ],
+        "swap_end": [
+          0.14501709850228392,
+          0.1450170985022841,
+          2.5673907444456745e-16
+        ],
+        "parameter_scale_1.1": [
+          0.41412748816868516,
+          0.39073718085751885,
+          0.3470910898229484
+        ]
+      }
+    },
+    {
+      "id": "fake_torino-w0-l1",
+      "backend_snapshot": "fake_torino",
+      "workload": "small/qaoa_n3/qaoa_n3_transpiled.qasm",
+      "physical_qubits": [
+        3,
+        4,
+        5
+      ],
+      "snapshot_date": "2025-02-26T15:26:08-05:00",
+      "source": {
+        "source_path": "small/qaoa_n3/qaoa_n3_transpiled.qasm",
+        "source_sha256": "478c75c52bebbe673e522c7864f711bb97278afe65bd48ca9aa6c004f095e12e",
+        "conversion": {
+          "terminal_measurements": [
+            [
+              2,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "source_classical_bits": 3,
+          "lowered_global_phase": 0.7853981633974483
+        }
+      },
+      "omitted_cases": [],
+      "t1_seconds": [
+        0.0002538814962117616,
+        0.00015589025123004087,
+        0.0001747834526671273
+      ],
+      "t2_seconds": [
+        0.000210262295822859,
+        0.00019045983198349143,
+        0.00014593778977686292
+      ],
+      "readout_mean_assignment_error": [
+        0.01513671875,
+        0.059814453125,
+        0.00634765625
+      ],
+      "posthoc_ideal_probe_tvd": {
+        "clean": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "equivalent_optimized": [
+          3.365363543395006e-16,
+          5.134781488891349e-16,
+          5.828670879282072e-16
+        ],
+        "x0": [
+          0.466631297736241,
+          0.1555151876668274,
+          0.0
+        ],
+        "z0": [
+          0.0,
+          0.0,
+          5.689893001203927e-16
+        ],
+        "rz0_0.12": [
+          1.5265566588595902e-16,
+          2.3592239273284576e-16,
+          0.05924980959068467
+        ],
+        "cx01": [
+          0.2333156488681205,
+          0.14501709850228361,
+          1.734723475976807e-16
+        ],
+        "swap_end": [
+          0.14501709850228392,
+          0.1450170985022841,
+          2.5673907444456745e-16
+        ],
+        "parameter_scale_1.1": [
+          0.41412748816868516,
+          0.39073718085751885,
+          0.3470910898229484
+        ]
+      }
+    },
+    {
+      "id": "fake_torino-w1-l0",
+      "backend_snapshot": "fake_torino",
+      "workload": "small/qft_n4/qft_n4.qasm",
+      "physical_qubits": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "snapshot_date": "2025-02-26T15:26:08-05:00",
+      "source": {
+        "source_path": "small/qft_n4/qft_n4.qasm",
+        "source_sha256": "62c6c8c7ddd95ac2b5367420b9925dbf82d6fb45725f089f01619a639621ad60",
+        "conversion": {
+          "terminal_measurements": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "source_classical_bits": 4,
+          "lowered_global_phase": 1.6689710972195775
+        }
+      },
+      "omitted_cases": [],
+      "t1_seconds": [
+        0.0002240872756806737,
+        0.0002660304697898787,
+        0.00017039288579492653,
+        0.0002538814962117616
+      ],
+      "t2_seconds": [
+        0.0003145961798898144,
+        0.00020401606029050957,
+        0.0001522363560239665,
+        0.000210262295822859
+      ],
+      "readout_mean_assignment_error": [
+        0.166748046875,
+        0.02294921875,
+        0.048095703125,
+        0.01513671875
+      ],
+      "posthoc_ideal_probe_tvd": {
+        "clean": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "equivalent_optimized": [
+          1.8041124150158794e-16,
+          2.220446049250313e-16,
+          1.6653345369377348e-16
+        ],
+        "x0": [
+          0.0,
+          5.551115123125783e-17,
+          0.0
+        ],
+        "z0": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rz0_0.12": [
+          5.551115123125783e-17,
+          8.326672684688674e-17,
+          0.0
+        ],
+        "cx01": [
+          0.0,
+          5.551115123125783e-17,
+          0.0
+        ],
+        "swap_end": [
+          0.0,
+          5.551115123125783e-17,
+          0.0
+        ],
+        "parameter_scale_1.1": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "fake_torino-w1-l1",
+      "backend_snapshot": "fake_torino",
+      "workload": "small/qft_n4/qft_n4.qasm",
+      "physical_qubits": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "snapshot_date": "2025-02-26T15:26:08-05:00",
+      "source": {
+        "source_path": "small/qft_n4/qft_n4.qasm",
+        "source_sha256": "62c6c8c7ddd95ac2b5367420b9925dbf82d6fb45725f089f01619a639621ad60",
+        "conversion": {
+          "terminal_measurements": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "source_classical_bits": 4,
+          "lowered_global_phase": 1.6689710972195775
+        }
+      },
+      "omitted_cases": [],
+      "t1_seconds": [
+        0.00015589025123004087,
+        0.0001747834526671273,
+        5.048965925950245e-05,
+        0.00021431959303732146
+      ],
+      "t2_seconds": [
+        0.00019045983198349143,
+        0.00014593778977686292,
+        9.368714923319543e-05,
+        6.157472185374021e-05
+      ],
+      "readout_mean_assignment_error": [
+        0.059814453125,
+        0.00634765625,
+        0.0185546875,
+        0.01611328125
+      ],
+      "posthoc_ideal_probe_tvd": {
+        "clean": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "equivalent_optimized": [
+          1.8041124150158794e-16,
+          2.220446049250313e-16,
+          1.6653345369377348e-16
+        ],
+        "x0": [
+          0.0,
+          5.551115123125783e-17,
+          0.0
+        ],
+        "z0": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rz0_0.12": [
+          5.551115123125783e-17,
+          8.326672684688674e-17,
+          0.0
+        ],
+        "cx01": [
+          0.0,
+          5.551115123125783e-17,
+          0.0
+        ],
+        "swap_end": [
+          0.0,
+          5.551115123125783e-17,
+          0.0
+        ],
+        "parameter_scale_1.1": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "fake_torino-w2-l0",
+      "backend_snapshot": "fake_torino",
+      "workload": "small/variational_n4/variational_n4.qasm",
+      "physical_qubits": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "snapshot_date": "2025-02-26T15:26:08-05:00",
+      "source": {
+        "source_path": "small/variational_n4/variational_n4.qasm",
+        "source_sha256": "df4ced794da7fd4ca56eb2b02bce53ee77207bec77286cb4626115c6a9b6357d",
+        "conversion": {
+          "terminal_measurements": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "source_classical_bits": 4,
+          "lowered_global_phase": 0.0
+        }
+      },
+      "omitted_cases": [],
+      "t1_seconds": [
+        0.0002240872756806737,
+        0.0002660304697898787,
+        0.00017039288579492653,
+        0.0002538814962117616
+      ],
+      "t2_seconds": [
+        0.0003145961798898144,
+        0.00020401606029050957,
+        0.0001522363560239665,
+        0.000210262295822859
+      ],
+      "readout_mean_assignment_error": [
+        0.166748046875,
+        0.02294921875,
+        0.048095703125,
+        0.01513671875
+      ],
+      "posthoc_ideal_probe_tvd": {
+        "clean": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "equivalent_optimized": [
+          7.267424102829285e-16,
+          6.4309451860977735e-16,
+          8.948062407541533e-16
+        ],
+        "x0": [
+          0.9999999999999987,
+          0.9999999999999991,
+          4.026127592800981e-17
+        ],
+        "z0": [
+          0.0,
+          0.0,
+          0.7044031272291775
+        ],
+        "rz0_0.12": [
+          1.3900488290800872e-16,
+          2.2226991568900095e-16,
+          0.002532809696790141
+        ],
+        "cx01": [
+          0.49621242235770474,
+          0.5037875776422942,
+          0.3522158414786242
+        ],
+        "swap_end": [
+          0.007575155284379631,
+          0.00757515528438002,
+          0.49999994421730964
+        ],
+        "parameter_scale_1.1": [
+          0.09999703601751427,
+          0.09999703601751428,
+          0.06109116906990196
+        ]
+      }
+    },
+    {
+      "id": "fake_torino-w2-l1",
+      "backend_snapshot": "fake_torino",
+      "workload": "small/variational_n4/variational_n4.qasm",
+      "physical_qubits": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "snapshot_date": "2025-02-26T15:26:08-05:00",
+      "source": {
+        "source_path": "small/variational_n4/variational_n4.qasm",
+        "source_sha256": "df4ced794da7fd4ca56eb2b02bce53ee77207bec77286cb4626115c6a9b6357d",
+        "conversion": {
+          "terminal_measurements": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "source_classical_bits": 4,
+          "lowered_global_phase": 0.0
+        }
+      },
+      "omitted_cases": [],
+      "t1_seconds": [
+        0.00015589025123004087,
+        0.0001747834526671273,
+        5.048965925950245e-05,
+        0.00021431959303732146
+      ],
+      "t2_seconds": [
+        0.00019045983198349143,
+        0.00014593778977686292,
+        9.368714923319543e-05,
+        6.157472185374021e-05
+      ],
+      "readout_mean_assignment_error": [
+        0.059814453125,
+        0.00634765625,
+        0.0185546875,
+        0.01611328125
+      ],
+      "posthoc_ideal_probe_tvd": {
+        "clean": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "equivalent_optimized": [
+          7.267424102829285e-16,
+          6.4309451860977735e-16,
+          8.948062407541533e-16
+        ],
+        "x0": [
+          0.9999999999999987,
+          0.9999999999999991,
+          4.026127592800981e-17
+        ],
+        "z0": [
+          0.0,
+          0.0,
+          0.7044031272291775
+        ],
+        "rz0_0.12": [
+          1.3900488290800872e-16,
+          2.2226991568900095e-16,
+          0.002532809696790141
+        ],
+        "cx01": [
+          0.49621242235770474,
+          0.5037875776422942,
+          0.3522158414786242
+        ],
+        "swap_end": [
+          0.007575155284379631,
+          0.00757515528438002,
+          0.49999994421730964
+        ],
+        "parameter_scale_1.1": [
+          0.09999703601751427,
+          0.09999703601751428,
+          0.06109116906990196
+        ]
+      }
+    },
+    {
+      "id": "fake_torino-w3-l0",
+      "backend_snapshot": "fake_torino",
+      "workload": "small/quantumwalks_n2/quantumwalks_n2.qasm",
+      "physical_qubits": [
+        0,
+        1
+      ],
+      "snapshot_date": "2025-02-26T15:26:08-05:00",
+      "source": {
+        "source_path": "small/quantumwalks_n2/quantumwalks_n2.qasm",
+        "source_sha256": "dea93828107b2b17f6381ed75cb8d985bc8790be74a7378179b441932a84e80b",
+        "conversion": {
+          "terminal_measurements": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "source_classical_bits": 2,
+          "lowered_global_phase": 6.1870129156757265
+        }
+      },
+      "omitted_cases": [
+        "equivalent_optimized"
+      ],
+      "t1_seconds": [
+        0.0002240872756806737,
+        0.0002660304697898787
+      ],
+      "t2_seconds": [
+        0.0003145961798898144,
+        0.00020401606029050957
+      ],
+      "readout_mean_assignment_error": [
+        0.166748046875,
+        0.02294921875
+      ],
+      "posthoc_ideal_probe_tvd": {
+        "clean": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "x0": [
+          0.989926846053319,
+          0.9949602392075014,
+          7.153987332950617e-19
+        ],
+        "z0": [
+          0.0,
+          0.0,
+          0.9987400598018749
+        ],
+        "rz0_0.12": [
+          1.951563910473908e-18,
+          2.3857741750601437e-18,
+          0.0035848356641153293
+        ],
+        "cx01": [
+          9.107298248878237e-18,
+          0.9924392999802848,
+          3.3451263380983244e-17
+        ],
+        "swap_end": [
+          5.306663181554871e-07,
+          0.0025188179021538113,
+          0.0006291741442727151
+        ],
+        "parameter_scale_1.1": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "fake_torino-w3-l1",
+      "backend_snapshot": "fake_torino",
+      "workload": "small/quantumwalks_n2/quantumwalks_n2.qasm",
+      "physical_qubits": [
+        2,
+        3
+      ],
+      "snapshot_date": "2025-02-26T15:26:08-05:00",
+      "source": {
+        "source_path": "small/quantumwalks_n2/quantumwalks_n2.qasm",
+        "source_sha256": "dea93828107b2b17f6381ed75cb8d985bc8790be74a7378179b441932a84e80b",
+        "conversion": {
+          "terminal_measurements": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "source_classical_bits": 2,
+          "lowered_global_phase": 6.1870129156757265
+        }
+      },
+      "omitted_cases": [
+        "equivalent_optimized"
+      ],
+      "t1_seconds": [
+        0.00017039288579492653,
+        0.0002538814962117616
+      ],
+      "t2_seconds": [
+        0.0001522363560239665,
+        0.000210262295822859
+      ],
+      "readout_mean_assignment_error": [
+        0.048095703125,
+        0.01513671875
+      ],
+      "posthoc_ideal_probe_tvd": {
+        "clean": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "x0": [
+          0.989926846053319,
+          0.9949602392075014,
+          7.153987332950617e-19
+        ],
+        "z0": [
+          0.0,
+          0.0,
+          0.9987400598018749
+        ],
+        "rz0_0.12": [
+          1.951563910473908e-18,
+          2.3857741750601437e-18,
+          0.0035848356641153293
+        ],
+        "cx01": [
+          9.107298248878237e-18,
+          0.9924392999802848,
+          3.3451263380983244e-17
+        ],
+        "swap_end": [
+          5.306663181554871e-07,
+          0.0025188179021538113,
+          0.0006291741442727151
+        ],
+        "parameter_scale_1.1": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "fake_sherbrooke-w0-l0",
+      "backend_snapshot": "fake_sherbrooke",
+      "workload": "small/qaoa_n3/qaoa_n3_transpiled.qasm",
+      "physical_qubits": [
+        0,
+        1,
+        2
+      ],
+      "snapshot_date": "2025-02-26T14:43:10-05:00",
+      "source": {
+        "source_path": "small/qaoa_n3/qaoa_n3_transpiled.qasm",
+        "source_sha256": "478c75c52bebbe673e522c7864f711bb97278afe65bd48ca9aa6c004f095e12e",
+        "conversion": {
+          "terminal_measurements": [
+            [
+              2,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "source_classical_bits": 3,
+          "lowered_global_phase": 0.7853981633974483
+        }
+      },
+      "omitted_cases": [],
+      "t1_seconds": [
+        0.0003815685857300125,
+        0.0002337908986939142,
+        0.00027038813239310157
+      ],
+      "t2_seconds": [
+        0.00013170442930164934,
+        0.00025100498025618936,
+        0.00023033227118877795
+      ],
+      "readout_mean_assignment_error": [
+        0.01123046875,
+        0.0244140625,
+        0.021484375
+      ],
+      "posthoc_ideal_probe_tvd": {
+        "clean": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "equivalent_optimized": [
+          3.365363543395006e-16,
+          5.134781488891349e-16,
+          5.828670879282072e-16
+        ],
+        "x0": [
+          0.466631297736241,
+          0.1555151876668274,
+          0.0
+        ],
+        "z0": [
+          0.0,
+          0.0,
+          5.689893001203927e-16
+        ],
+        "rz0_0.12": [
+          1.5265566588595902e-16,
+          2.3592239273284576e-16,
+          0.05924980959068467
+        ],
+        "cx01": [
+          0.2333156488681205,
+          0.14501709850228361,
+          1.734723475976807e-16
+        ],
+        "swap_end": [
+          0.14501709850228392,
+          0.1450170985022841,
+          2.5673907444456745e-16
+        ],
+        "parameter_scale_1.1": [
+          0.41412748816868516,
+          0.39073718085751885,
+          0.3470910898229484
+        ]
+      }
+    },
+    {
+      "id": "fake_sherbrooke-w0-l1",
+      "backend_snapshot": "fake_sherbrooke",
+      "workload": "small/qaoa_n3/qaoa_n3_transpiled.qasm",
+      "physical_qubits": [
+        3,
+        4,
+        5
+      ],
+      "snapshot_date": "2025-02-26T14:43:10-05:00",
+      "source": {
+        "source_path": "small/qaoa_n3/qaoa_n3_transpiled.qasm",
+        "source_sha256": "478c75c52bebbe673e522c7864f711bb97278afe65bd48ca9aa6c004f095e12e",
+        "conversion": {
+          "terminal_measurements": [
+            [
+              2,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "source_classical_bits": 3,
+          "lowered_global_phase": 0.7853981633974483
+        }
+      },
+      "omitted_cases": [],
+      "t1_seconds": [
+        0.00032877490279905415,
+        0.00029174788958364803,
+        0.00017275909991425791
+      ],
+      "t2_seconds": [
+        0.00033342844078530065,
+        0.00019244484206910214,
+        7.891898308667757e-05
+      ],
+      "readout_mean_assignment_error": [
+        0.011962890625,
+        0.020751953125,
+        0.060546875
+      ],
+      "posthoc_ideal_probe_tvd": {
+        "clean": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "equivalent_optimized": [
+          3.365363543395006e-16,
+          5.134781488891349e-16,
+          5.828670879282072e-16
+        ],
+        "x0": [
+          0.466631297736241,
+          0.1555151876668274,
+          0.0
+        ],
+        "z0": [
+          0.0,
+          0.0,
+          5.689893001203927e-16
+        ],
+        "rz0_0.12": [
+          1.5265566588595902e-16,
+          2.3592239273284576e-16,
+          0.05924980959068467
+        ],
+        "cx01": [
+          0.2333156488681205,
+          0.14501709850228361,
+          1.734723475976807e-16
+        ],
+        "swap_end": [
+          0.14501709850228392,
+          0.1450170985022841,
+          2.5673907444456745e-16
+        ],
+        "parameter_scale_1.1": [
+          0.41412748816868516,
+          0.39073718085751885,
+          0.3470910898229484
+        ]
+      }
+    },
+    {
+      "id": "fake_sherbrooke-w1-l0",
+      "backend_snapshot": "fake_sherbrooke",
+      "workload": "small/qft_n4/qft_n4.qasm",
+      "physical_qubits": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "snapshot_date": "2025-02-26T14:43:10-05:00",
+      "source": {
+        "source_path": "small/qft_n4/qft_n4.qasm",
+        "source_sha256": "62c6c8c7ddd95ac2b5367420b9925dbf82d6fb45725f089f01619a639621ad60",
+        "conversion": {
+          "terminal_measurements": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "source_classical_bits": 4,
+          "lowered_global_phase": 1.6689710972195775
+        }
+      },
+      "omitted_cases": [],
+      "t1_seconds": [
+        0.0003815685857300125,
+        0.0002337908986939142,
+        0.00027038813239310157,
+        0.00032877490279905415
+      ],
+      "t2_seconds": [
+        0.00013170442930164934,
+        0.00025100498025618936,
+        0.00023033227118877795,
+        0.00033342844078530065
+      ],
+      "readout_mean_assignment_error": [
+        0.01123046875,
+        0.0244140625,
+        0.021484375,
+        0.011962890625
+      ],
+      "posthoc_ideal_probe_tvd": {
+        "clean": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "equivalent_optimized": [
+          1.8041124150158794e-16,
+          2.220446049250313e-16,
+          1.6653345369377348e-16
+        ],
+        "x0": [
+          0.0,
+          5.551115123125783e-17,
+          0.0
+        ],
+        "z0": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rz0_0.12": [
+          5.551115123125783e-17,
+          8.326672684688674e-17,
+          0.0
+        ],
+        "cx01": [
+          0.0,
+          5.551115123125783e-17,
+          0.0
+        ],
+        "swap_end": [
+          0.0,
+          5.551115123125783e-17,
+          0.0
+        ],
+        "parameter_scale_1.1": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "fake_sherbrooke-w1-l1",
+      "backend_snapshot": "fake_sherbrooke",
+      "workload": "small/qft_n4/qft_n4.qasm",
+      "physical_qubits": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "snapshot_date": "2025-02-26T14:43:10-05:00",
+      "source": {
+        "source_path": "small/qft_n4/qft_n4.qasm",
+        "source_sha256": "62c6c8c7ddd95ac2b5367420b9925dbf82d6fb45725f089f01619a639621ad60",
+        "conversion": {
+          "terminal_measurements": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "source_classical_bits": 4,
+          "lowered_global_phase": 1.6689710972195775
+        }
+      },
+      "omitted_cases": [],
+      "t1_seconds": [
+        0.00029174788958364803,
+        0.00017275909991425791,
+        0.00023740349651795418,
+        0.00023052219090722952
+      ],
+      "t2_seconds": [
+        0.00019244484206910214,
+        7.891898308667757e-05,
+        4.444146850625187e-05,
+        1.817731355943345e-05
+      ],
+      "readout_mean_assignment_error": [
+        0.020751953125,
+        0.060546875,
+        0.25732421875,
+        0.0498046875
+      ],
+      "posthoc_ideal_probe_tvd": {
+        "clean": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "equivalent_optimized": [
+          1.8041124150158794e-16,
+          2.220446049250313e-16,
+          1.6653345369377348e-16
+        ],
+        "x0": [
+          0.0,
+          5.551115123125783e-17,
+          0.0
+        ],
+        "z0": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rz0_0.12": [
+          5.551115123125783e-17,
+          8.326672684688674e-17,
+          0.0
+        ],
+        "cx01": [
+          0.0,
+          5.551115123125783e-17,
+          0.0
+        ],
+        "swap_end": [
+          0.0,
+          5.551115123125783e-17,
+          0.0
+        ],
+        "parameter_scale_1.1": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "fake_sherbrooke-w2-l0",
+      "backend_snapshot": "fake_sherbrooke",
+      "workload": "small/variational_n4/variational_n4.qasm",
+      "physical_qubits": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "snapshot_date": "2025-02-26T14:43:10-05:00",
+      "source": {
+        "source_path": "small/variational_n4/variational_n4.qasm",
+        "source_sha256": "df4ced794da7fd4ca56eb2b02bce53ee77207bec77286cb4626115c6a9b6357d",
+        "conversion": {
+          "terminal_measurements": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "source_classical_bits": 4,
+          "lowered_global_phase": 0.0
+        }
+      },
+      "omitted_cases": [],
+      "t1_seconds": [
+        0.0003815685857300125,
+        0.0002337908986939142,
+        0.00027038813239310157,
+        0.00032877490279905415
+      ],
+      "t2_seconds": [
+        0.00013170442930164934,
+        0.00025100498025618936,
+        0.00023033227118877795,
+        0.00033342844078530065
+      ],
+      "readout_mean_assignment_error": [
+        0.01123046875,
+        0.0244140625,
+        0.021484375,
+        0.011962890625
+      ],
+      "posthoc_ideal_probe_tvd": {
+        "clean": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "equivalent_optimized": [
+          7.267424102829285e-16,
+          6.4309451860977735e-16,
+          8.948062407541533e-16
+        ],
+        "x0": [
+          0.9999999999999987,
+          0.9999999999999991,
+          4.026127592800981e-17
+        ],
+        "z0": [
+          0.0,
+          0.0,
+          0.7044031272291775
+        ],
+        "rz0_0.12": [
+          1.3900488290800872e-16,
+          2.2226991568900095e-16,
+          0.002532809696790141
+        ],
+        "cx01": [
+          0.49621242235770474,
+          0.5037875776422942,
+          0.3522158414786242
+        ],
+        "swap_end": [
+          0.007575155284379631,
+          0.00757515528438002,
+          0.49999994421730964
+        ],
+        "parameter_scale_1.1": [
+          0.09999703601751427,
+          0.09999703601751428,
+          0.06109116906990196
+        ]
+      }
+    },
+    {
+      "id": "fake_sherbrooke-w2-l1",
+      "backend_snapshot": "fake_sherbrooke",
+      "workload": "small/variational_n4/variational_n4.qasm",
+      "physical_qubits": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "snapshot_date": "2025-02-26T14:43:10-05:00",
+      "source": {
+        "source_path": "small/variational_n4/variational_n4.qasm",
+        "source_sha256": "df4ced794da7fd4ca56eb2b02bce53ee77207bec77286cb4626115c6a9b6357d",
+        "conversion": {
+          "terminal_measurements": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "source_classical_bits": 4,
+          "lowered_global_phase": 0.0
+        }
+      },
+      "omitted_cases": [],
+      "t1_seconds": [
+        0.00029174788958364803,
+        0.00017275909991425791,
+        0.00023740349651795418,
+        0.00023052219090722952
+      ],
+      "t2_seconds": [
+        0.00019244484206910214,
+        7.891898308667757e-05,
+        4.444146850625187e-05,
+        1.817731355943345e-05
+      ],
+      "readout_mean_assignment_error": [
+        0.020751953125,
+        0.060546875,
+        0.25732421875,
+        0.0498046875
+      ],
+      "posthoc_ideal_probe_tvd": {
+        "clean": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "equivalent_optimized": [
+          7.267424102829285e-16,
+          6.4309451860977735e-16,
+          8.948062407541533e-16
+        ],
+        "x0": [
+          0.9999999999999987,
+          0.9999999999999991,
+          4.026127592800981e-17
+        ],
+        "z0": [
+          0.0,
+          0.0,
+          0.7044031272291775
+        ],
+        "rz0_0.12": [
+          1.3900488290800872e-16,
+          2.2226991568900095e-16,
+          0.002532809696790141
+        ],
+        "cx01": [
+          0.49621242235770474,
+          0.5037875776422942,
+          0.3522158414786242
+        ],
+        "swap_end": [
+          0.007575155284379631,
+          0.00757515528438002,
+          0.49999994421730964
+        ],
+        "parameter_scale_1.1": [
+          0.09999703601751427,
+          0.09999703601751428,
+          0.06109116906990196
+        ]
+      }
+    },
+    {
+      "id": "fake_sherbrooke-w3-l0",
+      "backend_snapshot": "fake_sherbrooke",
+      "workload": "small/quantumwalks_n2/quantumwalks_n2.qasm",
+      "physical_qubits": [
+        0,
+        1
+      ],
+      "snapshot_date": "2025-02-26T14:43:10-05:00",
+      "source": {
+        "source_path": "small/quantumwalks_n2/quantumwalks_n2.qasm",
+        "source_sha256": "dea93828107b2b17f6381ed75cb8d985bc8790be74a7378179b441932a84e80b",
+        "conversion": {
+          "terminal_measurements": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "source_classical_bits": 2,
+          "lowered_global_phase": 6.1870129156757265
+        }
+      },
+      "omitted_cases": [
+        "equivalent_optimized"
+      ],
+      "t1_seconds": [
+        0.0003815685857300125,
+        0.0002337908986939142
+      ],
+      "t2_seconds": [
+        0.00013170442930164934,
+        0.00025100498025618936
+      ],
+      "readout_mean_assignment_error": [
+        0.01123046875,
+        0.0244140625
+      ],
+      "posthoc_ideal_probe_tvd": {
+        "clean": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "x0": [
+          0.989926846053319,
+          0.9949602392075014,
+          7.153987332950617e-19
+        ],
+        "z0": [
+          0.0,
+          0.0,
+          0.9987400598018749
+        ],
+        "rz0_0.12": [
+          1.951563910473908e-18,
+          2.3857741750601437e-18,
+          0.0035848356641153293
+        ],
+        "cx01": [
+          9.107298248878237e-18,
+          0.9924392999802848,
+          3.3451263380983244e-17
+        ],
+        "swap_end": [
+          5.306663181554871e-07,
+          0.0025188179021538113,
+          0.0006291741442727151
+        ],
+        "parameter_scale_1.1": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "fake_sherbrooke-w3-l1",
+      "backend_snapshot": "fake_sherbrooke",
+      "workload": "small/quantumwalks_n2/quantumwalks_n2.qasm",
+      "physical_qubits": [
+        2,
+        3
+      ],
+      "snapshot_date": "2025-02-26T14:43:10-05:00",
+      "source": {
+        "source_path": "small/quantumwalks_n2/quantumwalks_n2.qasm",
+        "source_sha256": "dea93828107b2b17f6381ed75cb8d985bc8790be74a7378179b441932a84e80b",
+        "conversion": {
+          "terminal_measurements": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "source_classical_bits": 2,
+          "lowered_global_phase": 6.1870129156757265
+        }
+      },
+      "omitted_cases": [
+        "equivalent_optimized"
+      ],
+      "t1_seconds": [
+        0.00027038813239310157,
+        0.00032877490279905415
+      ],
+      "t2_seconds": [
+        0.00023033227118877795,
+        0.00033342844078530065
+      ],
+      "readout_mean_assignment_error": [
+        0.021484375,
+        0.011962890625
+      ],
+      "posthoc_ideal_probe_tvd": {
+        "clean": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "x0": [
+          0.989926846053319,
+          0.9949602392075014,
+          7.153987332950617e-19
+        ],
+        "z0": [
+          0.0,
+          0.0,
+          0.9987400598018749
+        ],
+        "rz0_0.12": [
+          1.951563910473908e-18,
+          2.3857741750601437e-18,
+          0.0035848356641153293
+        ],
+        "cx01": [
+          9.107298248878237e-18,
+          0.9924392999802848,
+          3.3451263380983244e-17
+        ],
+        "swap_end": [
+          5.306663181554871e-07,
+          0.0025188179021538113,
+          0.0006291741442727151
+        ],
+        "parameter_scale_1.1": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "context": "fake_torino-w0-l0",
+      "acquisition": 0,
+      "case": "benign_readout_drift_x2",
+      "alarms": 38,
+      "decisions": 256,
+      "rate": 0.1484375,
+      "wilson95": [
+        0.1100947469586396,
+        0.19717515209080125
+      ],
+      "threshold": 0.1239013671875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w0-l0",
+      "acquisition": 0,
+      "case": "clean",
+      "alarms": 4,
+      "decisions": 256,
+      "rate": 0.015625,
+      "wilson95": [
+        0.006092598203366294,
+        0.039479262709196654
+      ],
+      "threshold": 0.1239013671875,
+      "clean_bound_pass": true,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w0-l0",
+      "acquisition": 0,
+      "case": "equivalent_optimized",
+      "alarms": 3,
+      "decisions": 256,
+      "rate": 0.01171875,
+      "wilson95": [
+        0.003993287123007758,
+        0.033881572667882304
+      ],
+      "threshold": 0.1239013671875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w0-l0",
+      "acquisition": 0,
+      "case": "x0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1239013671875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_torino-w0-l0",
+      "acquisition": 0,
+      "case": "z0",
+      "alarms": 4,
+      "decisions": 256,
+      "rate": 0.015625,
+      "wilson95": [
+        0.006092598203366294,
+        0.039479262709196654
+      ],
+      "threshold": 0.1239013671875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": false
+    },
+    {
+      "context": "fake_torino-w0-l0",
+      "acquisition": 0,
+      "case": "rz0_0.12",
+      "alarms": 2,
+      "decisions": 256,
+      "rate": 0.0078125,
+      "wilson95": [
+        0.002145090367681419,
+        0.028032768301535768
+      ],
+      "threshold": 0.1239013671875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w0-l0",
+      "acquisition": 0,
+      "case": "cx01",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1239013671875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_torino-w0-l0",
+      "acquisition": 0,
+      "case": "swap_end",
+      "alarms": 251,
+      "decisions": 256,
+      "rate": 0.98046875,
+      "wilson95": [
+        0.9551018677503436,
+        0.9916292702154206
+      ],
+      "threshold": 0.1239013671875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w0-l0",
+      "acquisition": 0,
+      "case": "parameter_scale_1.1",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1239013671875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w0-l0",
+      "acquisition": 1,
+      "case": "benign_readout_drift_x2",
+      "alarms": 10,
+      "decisions": 256,
+      "rate": 0.0390625,
+      "wilson95": [
+        0.0213540358427329,
+        0.07039983179986732
+      ],
+      "threshold": 0.12890625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w0-l0",
+      "acquisition": 1,
+      "case": "clean",
+      "alarms": 0,
+      "decisions": 256,
+      "rate": 0.0,
+      "wilson95": [
+        0.0,
+        0.01478385642587143
+      ],
+      "threshold": 0.12890625,
+      "clean_bound_pass": true,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w0-l0",
+      "acquisition": 1,
+      "case": "equivalent_optimized",
+      "alarms": 1,
+      "decisions": 256,
+      "rate": 0.00390625,
+      "wilson95": [
+        0.0006898821669617927,
+        0.021790975380582514
+      ],
+      "threshold": 0.12890625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w0-l0",
+      "acquisition": 1,
+      "case": "x0",
+      "alarms": 255,
+      "decisions": 256,
+      "rate": 0.99609375,
+      "wilson95": [
+        0.9782090246194175,
+        0.9993101178330381
+      ],
+      "threshold": 0.12890625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_torino-w0-l0",
+      "acquisition": 1,
+      "case": "z0",
+      "alarms": 1,
+      "decisions": 256,
+      "rate": 0.00390625,
+      "wilson95": [
+        0.0006898821669617927,
+        0.021790975380582514
+      ],
+      "threshold": 0.12890625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": false
+    },
+    {
+      "context": "fake_torino-w0-l0",
+      "acquisition": 1,
+      "case": "rz0_0.12",
+      "alarms": 2,
+      "decisions": 256,
+      "rate": 0.0078125,
+      "wilson95": [
+        0.002145090367681419,
+        0.028032768301535768
+      ],
+      "threshold": 0.12890625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w0-l0",
+      "acquisition": 1,
+      "case": "cx01",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.12890625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_torino-w0-l0",
+      "acquisition": 1,
+      "case": "swap_end",
+      "alarms": 241,
+      "decisions": 256,
+      "rate": 0.94140625,
+      "wilson95": [
+        0.9055877343822104,
+        0.9641733923668249
+      ],
+      "threshold": 0.12890625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w0-l0",
+      "acquisition": 1,
+      "case": "parameter_scale_1.1",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.12890625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w0-l0",
+      "acquisition": 2,
+      "case": "benign_readout_drift_x2",
+      "alarms": 32,
+      "decisions": 256,
+      "rate": 0.125,
+      "wilson95": [
+        0.08995183318684266,
+        0.17113605913256094
+      ],
+      "threshold": 0.123779296875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w0-l0",
+      "acquisition": 2,
+      "case": "clean",
+      "alarms": 4,
+      "decisions": 256,
+      "rate": 0.015625,
+      "wilson95": [
+        0.006092598203366294,
+        0.039479262709196654
+      ],
+      "threshold": 0.123779296875,
+      "clean_bound_pass": true,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w0-l0",
+      "acquisition": 2,
+      "case": "equivalent_optimized",
+      "alarms": 2,
+      "decisions": 256,
+      "rate": 0.0078125,
+      "wilson95": [
+        0.002145090367681419,
+        0.028032768301535768
+      ],
+      "threshold": 0.123779296875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w0-l0",
+      "acquisition": 2,
+      "case": "x0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.123779296875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_torino-w0-l0",
+      "acquisition": 2,
+      "case": "z0",
+      "alarms": 4,
+      "decisions": 256,
+      "rate": 0.015625,
+      "wilson95": [
+        0.006092598203366294,
+        0.039479262709196654
+      ],
+      "threshold": 0.123779296875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": false
+    },
+    {
+      "context": "fake_torino-w0-l0",
+      "acquisition": 2,
+      "case": "rz0_0.12",
+      "alarms": 4,
+      "decisions": 256,
+      "rate": 0.015625,
+      "wilson95": [
+        0.006092598203366294,
+        0.039479262709196654
+      ],
+      "threshold": 0.123779296875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w0-l0",
+      "acquisition": 2,
+      "case": "cx01",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.123779296875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_torino-w0-l0",
+      "acquisition": 2,
+      "case": "swap_end",
+      "alarms": 249,
+      "decisions": 256,
+      "rate": 0.97265625,
+      "wilson95": [
+        0.9446442920775396,
+        0.9866928436448789
+      ],
+      "threshold": 0.123779296875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w0-l0",
+      "acquisition": 2,
+      "case": "parameter_scale_1.1",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.123779296875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w0-l1",
+      "acquisition": 0,
+      "case": "benign_readout_drift_x2",
+      "alarms": 6,
+      "decisions": 256,
+      "rate": 0.0234375,
+      "wilson95": [
+        0.010784867555857603,
+        0.0501809956000511
+      ],
+      "threshold": 0.1307373046875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w0-l1",
+      "acquisition": 0,
+      "case": "clean",
+      "alarms": 1,
+      "decisions": 256,
+      "rate": 0.00390625,
+      "wilson95": [
+        0.0006898821669617927,
+        0.021790975380582514
+      ],
+      "threshold": 0.1307373046875,
+      "clean_bound_pass": true,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w0-l1",
+      "acquisition": 0,
+      "case": "equivalent_optimized",
+      "alarms": 0,
+      "decisions": 256,
+      "rate": 0.0,
+      "wilson95": [
+        0.0,
+        0.01478385642587143
+      ],
+      "threshold": 0.1307373046875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w0-l1",
+      "acquisition": 0,
+      "case": "x0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1307373046875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_torino-w0-l1",
+      "acquisition": 0,
+      "case": "z0",
+      "alarms": 2,
+      "decisions": 256,
+      "rate": 0.0078125,
+      "wilson95": [
+        0.002145090367681419,
+        0.028032768301535768
+      ],
+      "threshold": 0.1307373046875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": false
+    },
+    {
+      "context": "fake_torino-w0-l1",
+      "acquisition": 0,
+      "case": "rz0_0.12",
+      "alarms": 12,
+      "decisions": 256,
+      "rate": 0.046875,
+      "wilson95": [
+        0.027014851001628076,
+        0.0801330188843179
+      ],
+      "threshold": 0.1307373046875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w0-l1",
+      "acquisition": 0,
+      "case": "cx01",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1307373046875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_torino-w0-l1",
+      "acquisition": 0,
+      "case": "swap_end",
+      "alarms": 254,
+      "decisions": 256,
+      "rate": 0.9921875,
+      "wilson95": [
+        0.9719672316984642,
+        0.9978549096323186
+      ],
+      "threshold": 0.1307373046875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w0-l1",
+      "acquisition": 0,
+      "case": "parameter_scale_1.1",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1307373046875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w0-l1",
+      "acquisition": 1,
+      "case": "benign_readout_drift_x2",
+      "alarms": 3,
+      "decisions": 256,
+      "rate": 0.01171875,
+      "wilson95": [
+        0.003993287123007758,
+        0.033881572667882304
+      ],
+      "threshold": 0.1251220703125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w0-l1",
+      "acquisition": 1,
+      "case": "clean",
+      "alarms": 5,
+      "decisions": 256,
+      "rate": 0.01953125,
+      "wilson95": [
+        0.008370729784579391,
+        0.04489813224965644
+      ],
+      "threshold": 0.1251220703125,
+      "clean_bound_pass": true,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w0-l1",
+      "acquisition": 1,
+      "case": "equivalent_optimized",
+      "alarms": 5,
+      "decisions": 256,
+      "rate": 0.01953125,
+      "wilson95": [
+        0.008370729784579391,
+        0.04489813224965644
+      ],
+      "threshold": 0.1251220703125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w0-l1",
+      "acquisition": 1,
+      "case": "x0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1251220703125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_torino-w0-l1",
+      "acquisition": 1,
+      "case": "z0",
+      "alarms": 2,
+      "decisions": 256,
+      "rate": 0.0078125,
+      "wilson95": [
+        0.002145090367681419,
+        0.028032768301535768
+      ],
+      "threshold": 0.1251220703125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": false
+    },
+    {
+      "context": "fake_torino-w0-l1",
+      "acquisition": 1,
+      "case": "rz0_0.12",
+      "alarms": 9,
+      "decisions": 256,
+      "rate": 0.03515625,
+      "wilson95": [
+        0.018604096092635542,
+        0.0654527704282918
+      ],
+      "threshold": 0.1251220703125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w0-l1",
+      "acquisition": 1,
+      "case": "cx01",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1251220703125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_torino-w0-l1",
+      "acquisition": 1,
+      "case": "swap_end",
+      "alarms": 254,
+      "decisions": 256,
+      "rate": 0.9921875,
+      "wilson95": [
+        0.9719672316984642,
+        0.9978549096323186
+      ],
+      "threshold": 0.1251220703125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w0-l1",
+      "acquisition": 1,
+      "case": "parameter_scale_1.1",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1251220703125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w0-l1",
+      "acquisition": 2,
+      "case": "benign_readout_drift_x2",
+      "alarms": 7,
+      "decisions": 256,
+      "rate": 0.02734375,
+      "wilson95": [
+        0.013307156355121155,
+        0.05535570792246043
+      ],
+      "threshold": 0.12548828125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w0-l1",
+      "acquisition": 2,
+      "case": "clean",
+      "alarms": 1,
+      "decisions": 256,
+      "rate": 0.00390625,
+      "wilson95": [
+        0.0006898821669617927,
+        0.021790975380582514
+      ],
+      "threshold": 0.12548828125,
+      "clean_bound_pass": true,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w0-l1",
+      "acquisition": 2,
+      "case": "equivalent_optimized",
+      "alarms": 4,
+      "decisions": 256,
+      "rate": 0.015625,
+      "wilson95": [
+        0.006092598203366294,
+        0.039479262709196654
+      ],
+      "threshold": 0.12548828125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w0-l1",
+      "acquisition": 2,
+      "case": "x0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.12548828125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_torino-w0-l1",
+      "acquisition": 2,
+      "case": "z0",
+      "alarms": 0,
+      "decisions": 256,
+      "rate": 0.0,
+      "wilson95": [
+        0.0,
+        0.01478385642587143
+      ],
+      "threshold": 0.12548828125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": false
+    },
+    {
+      "context": "fake_torino-w0-l1",
+      "acquisition": 2,
+      "case": "rz0_0.12",
+      "alarms": 12,
+      "decisions": 256,
+      "rate": 0.046875,
+      "wilson95": [
+        0.027014851001628076,
+        0.0801330188843179
+      ],
+      "threshold": 0.12548828125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w0-l1",
+      "acquisition": 2,
+      "case": "cx01",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.12548828125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_torino-w0-l1",
+      "acquisition": 2,
+      "case": "swap_end",
+      "alarms": 252,
+      "decisions": 256,
+      "rate": 0.984375,
+      "wilson95": [
+        0.9605207372908033,
+        0.9939074017966336
+      ],
+      "threshold": 0.12548828125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w0-l1",
+      "acquisition": 2,
+      "case": "parameter_scale_1.1",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.12548828125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w1-l0",
+      "acquisition": 0,
+      "case": "benign_readout_drift_x2",
+      "alarms": 1,
+      "decisions": 256,
+      "rate": 0.00390625,
+      "wilson95": [
+        0.0006898821669617927,
+        0.021790975380582514
+      ],
+      "threshold": 0.1536865234375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w1-l0",
+      "acquisition": 0,
+      "case": "clean",
+      "alarms": 4,
+      "decisions": 256,
+      "rate": 0.015625,
+      "wilson95": [
+        0.006092598203366294,
+        0.039479262709196654
+      ],
+      "threshold": 0.1536865234375,
+      "clean_bound_pass": true,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w1-l0",
+      "acquisition": 0,
+      "case": "equivalent_optimized",
+      "alarms": 3,
+      "decisions": 256,
+      "rate": 0.01171875,
+      "wilson95": [
+        0.003993287123007758,
+        0.033881572667882304
+      ],
+      "threshold": 0.1536865234375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w1-l0",
+      "acquisition": 0,
+      "case": "x0",
+      "alarms": 3,
+      "decisions": 256,
+      "rate": 0.01171875,
+      "wilson95": [
+        0.003993287123007758,
+        0.033881572667882304
+      ],
+      "threshold": 0.1536865234375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": false
+    },
+    {
+      "context": "fake_torino-w1-l0",
+      "acquisition": 0,
+      "case": "z0",
+      "alarms": 4,
+      "decisions": 256,
+      "rate": 0.015625,
+      "wilson95": [
+        0.006092598203366294,
+        0.039479262709196654
+      ],
+      "threshold": 0.1536865234375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": false
+    },
+    {
+      "context": "fake_torino-w1-l0",
+      "acquisition": 0,
+      "case": "rz0_0.12",
+      "alarms": 5,
+      "decisions": 256,
+      "rate": 0.01953125,
+      "wilson95": [
+        0.008370729784579391,
+        0.04489813224965644
+      ],
+      "threshold": 0.1536865234375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w1-l0",
+      "acquisition": 0,
+      "case": "cx01",
+      "alarms": 4,
+      "decisions": 256,
+      "rate": 0.015625,
+      "wilson95": [
+        0.006092598203366294,
+        0.039479262709196654
+      ],
+      "threshold": 0.1536865234375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": false
+    },
+    {
+      "context": "fake_torino-w1-l0",
+      "acquisition": 0,
+      "case": "swap_end",
+      "alarms": 5,
+      "decisions": 256,
+      "rate": 0.01953125,
+      "wilson95": [
+        0.008370729784579391,
+        0.04489813224965644
+      ],
+      "threshold": 0.1536865234375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w1-l0",
+      "acquisition": 0,
+      "case": "parameter_scale_1.1",
+      "alarms": 2,
+      "decisions": 256,
+      "rate": 0.0078125,
+      "wilson95": [
+        0.002145090367681419,
+        0.028032768301535768
+      ],
+      "threshold": 0.1536865234375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w1-l0",
+      "acquisition": 1,
+      "case": "benign_readout_drift_x2",
+      "alarms": 0,
+      "decisions": 256,
+      "rate": 0.0,
+      "wilson95": [
+        0.0,
+        0.01478385642587143
+      ],
+      "threshold": 0.1549072265625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w1-l0",
+      "acquisition": 1,
+      "case": "clean",
+      "alarms": 2,
+      "decisions": 256,
+      "rate": 0.0078125,
+      "wilson95": [
+        0.002145090367681419,
+        0.028032768301535768
+      ],
+      "threshold": 0.1549072265625,
+      "clean_bound_pass": true,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w1-l0",
+      "acquisition": 1,
+      "case": "equivalent_optimized",
+      "alarms": 5,
+      "decisions": 256,
+      "rate": 0.01953125,
+      "wilson95": [
+        0.008370729784579391,
+        0.04489813224965644
+      ],
+      "threshold": 0.1549072265625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w1-l0",
+      "acquisition": 1,
+      "case": "x0",
+      "alarms": 2,
+      "decisions": 256,
+      "rate": 0.0078125,
+      "wilson95": [
+        0.002145090367681419,
+        0.028032768301535768
+      ],
+      "threshold": 0.1549072265625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": false
+    },
+    {
+      "context": "fake_torino-w1-l0",
+      "acquisition": 1,
+      "case": "z0",
+      "alarms": 2,
+      "decisions": 256,
+      "rate": 0.0078125,
+      "wilson95": [
+        0.002145090367681419,
+        0.028032768301535768
+      ],
+      "threshold": 0.1549072265625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": false
+    },
+    {
+      "context": "fake_torino-w1-l0",
+      "acquisition": 1,
+      "case": "rz0_0.12",
+      "alarms": 3,
+      "decisions": 256,
+      "rate": 0.01171875,
+      "wilson95": [
+        0.003993287123007758,
+        0.033881572667882304
+      ],
+      "threshold": 0.1549072265625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w1-l0",
+      "acquisition": 1,
+      "case": "cx01",
+      "alarms": 7,
+      "decisions": 256,
+      "rate": 0.02734375,
+      "wilson95": [
+        0.013307156355121155,
+        0.05535570792246043
+      ],
+      "threshold": 0.1549072265625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": false
+    },
+    {
+      "context": "fake_torino-w1-l0",
+      "acquisition": 1,
+      "case": "swap_end",
+      "alarms": 4,
+      "decisions": 256,
+      "rate": 0.015625,
+      "wilson95": [
+        0.006092598203366294,
+        0.039479262709196654
+      ],
+      "threshold": 0.1549072265625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w1-l0",
+      "acquisition": 1,
+      "case": "parameter_scale_1.1",
+      "alarms": 1,
+      "decisions": 256,
+      "rate": 0.00390625,
+      "wilson95": [
+        0.0006898821669617927,
+        0.021790975380582514
+      ],
+      "threshold": 0.1549072265625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w1-l0",
+      "acquisition": 2,
+      "case": "benign_readout_drift_x2",
+      "alarms": 3,
+      "decisions": 256,
+      "rate": 0.01171875,
+      "wilson95": [
+        0.003993287123007758,
+        0.033881572667882304
+      ],
+      "threshold": 0.1531982421875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w1-l0",
+      "acquisition": 2,
+      "case": "clean",
+      "alarms": 2,
+      "decisions": 256,
+      "rate": 0.0078125,
+      "wilson95": [
+        0.002145090367681419,
+        0.028032768301535768
+      ],
+      "threshold": 0.1531982421875,
+      "clean_bound_pass": true,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w1-l0",
+      "acquisition": 2,
+      "case": "equivalent_optimized",
+      "alarms": 4,
+      "decisions": 256,
+      "rate": 0.015625,
+      "wilson95": [
+        0.006092598203366294,
+        0.039479262709196654
+      ],
+      "threshold": 0.1531982421875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w1-l0",
+      "acquisition": 2,
+      "case": "x0",
+      "alarms": 0,
+      "decisions": 256,
+      "rate": 0.0,
+      "wilson95": [
+        0.0,
+        0.01478385642587143
+      ],
+      "threshold": 0.1531982421875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": false
+    },
+    {
+      "context": "fake_torino-w1-l0",
+      "acquisition": 2,
+      "case": "z0",
+      "alarms": 2,
+      "decisions": 256,
+      "rate": 0.0078125,
+      "wilson95": [
+        0.002145090367681419,
+        0.028032768301535768
+      ],
+      "threshold": 0.1531982421875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": false
+    },
+    {
+      "context": "fake_torino-w1-l0",
+      "acquisition": 2,
+      "case": "rz0_0.12",
+      "alarms": 2,
+      "decisions": 256,
+      "rate": 0.0078125,
+      "wilson95": [
+        0.002145090367681419,
+        0.028032768301535768
+      ],
+      "threshold": 0.1531982421875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w1-l0",
+      "acquisition": 2,
+      "case": "cx01",
+      "alarms": 3,
+      "decisions": 256,
+      "rate": 0.01171875,
+      "wilson95": [
+        0.003993287123007758,
+        0.033881572667882304
+      ],
+      "threshold": 0.1531982421875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": false
+    },
+    {
+      "context": "fake_torino-w1-l0",
+      "acquisition": 2,
+      "case": "swap_end",
+      "alarms": 1,
+      "decisions": 256,
+      "rate": 0.00390625,
+      "wilson95": [
+        0.0006898821669617927,
+        0.021790975380582514
+      ],
+      "threshold": 0.1531982421875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w1-l0",
+      "acquisition": 2,
+      "case": "parameter_scale_1.1",
+      "alarms": 3,
+      "decisions": 256,
+      "rate": 0.01171875,
+      "wilson95": [
+        0.003993287123007758,
+        0.033881572667882304
+      ],
+      "threshold": 0.1531982421875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w1-l1",
+      "acquisition": 0,
+      "case": "benign_readout_drift_x2",
+      "alarms": 6,
+      "decisions": 256,
+      "rate": 0.0234375,
+      "wilson95": [
+        0.010784867555857603,
+        0.0501809956000511
+      ],
+      "threshold": 0.1522216796875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w1-l1",
+      "acquisition": 0,
+      "case": "clean",
+      "alarms": 7,
+      "decisions": 256,
+      "rate": 0.02734375,
+      "wilson95": [
+        0.013307156355121155,
+        0.05535570792246043
+      ],
+      "threshold": 0.1522216796875,
+      "clean_bound_pass": true,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w1-l1",
+      "acquisition": 0,
+      "case": "equivalent_optimized",
+      "alarms": 3,
+      "decisions": 256,
+      "rate": 0.01171875,
+      "wilson95": [
+        0.003993287123007758,
+        0.033881572667882304
+      ],
+      "threshold": 0.1522216796875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w1-l1",
+      "acquisition": 0,
+      "case": "x0",
+      "alarms": 6,
+      "decisions": 256,
+      "rate": 0.0234375,
+      "wilson95": [
+        0.010784867555857603,
+        0.0501809956000511
+      ],
+      "threshold": 0.1522216796875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": false
+    },
+    {
+      "context": "fake_torino-w1-l1",
+      "acquisition": 0,
+      "case": "z0",
+      "alarms": 4,
+      "decisions": 256,
+      "rate": 0.015625,
+      "wilson95": [
+        0.006092598203366294,
+        0.039479262709196654
+      ],
+      "threshold": 0.1522216796875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": false
+    },
+    {
+      "context": "fake_torino-w1-l1",
+      "acquisition": 0,
+      "case": "rz0_0.12",
+      "alarms": 2,
+      "decisions": 256,
+      "rate": 0.0078125,
+      "wilson95": [
+        0.002145090367681419,
+        0.028032768301535768
+      ],
+      "threshold": 0.1522216796875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w1-l1",
+      "acquisition": 0,
+      "case": "cx01",
+      "alarms": 8,
+      "decisions": 256,
+      "rate": 0.03125,
+      "wilson95": [
+        0.015918258891511296,
+        0.06044160650774316
+      ],
+      "threshold": 0.1522216796875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": false
+    },
+    {
+      "context": "fake_torino-w1-l1",
+      "acquisition": 0,
+      "case": "swap_end",
+      "alarms": 9,
+      "decisions": 256,
+      "rate": 0.03515625,
+      "wilson95": [
+        0.018604096092635542,
+        0.0654527704282918
+      ],
+      "threshold": 0.1522216796875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w1-l1",
+      "acquisition": 0,
+      "case": "parameter_scale_1.1",
+      "alarms": 2,
+      "decisions": 256,
+      "rate": 0.0078125,
+      "wilson95": [
+        0.002145090367681419,
+        0.028032768301535768
+      ],
+      "threshold": 0.1522216796875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w1-l1",
+      "acquisition": 1,
+      "case": "benign_readout_drift_x2",
+      "alarms": 7,
+      "decisions": 256,
+      "rate": 0.02734375,
+      "wilson95": [
+        0.013307156355121155,
+        0.05535570792246043
+      ],
+      "threshold": 0.150390625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w1-l1",
+      "acquisition": 1,
+      "case": "clean",
+      "alarms": 2,
+      "decisions": 256,
+      "rate": 0.0078125,
+      "wilson95": [
+        0.002145090367681419,
+        0.028032768301535768
+      ],
+      "threshold": 0.150390625,
+      "clean_bound_pass": true,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w1-l1",
+      "acquisition": 1,
+      "case": "equivalent_optimized",
+      "alarms": 5,
+      "decisions": 256,
+      "rate": 0.01953125,
+      "wilson95": [
+        0.008370729784579391,
+        0.04489813224965644
+      ],
+      "threshold": 0.150390625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w1-l1",
+      "acquisition": 1,
+      "case": "x0",
+      "alarms": 3,
+      "decisions": 256,
+      "rate": 0.01171875,
+      "wilson95": [
+        0.003993287123007758,
+        0.033881572667882304
+      ],
+      "threshold": 0.150390625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": false
+    },
+    {
+      "context": "fake_torino-w1-l1",
+      "acquisition": 1,
+      "case": "z0",
+      "alarms": 4,
+      "decisions": 256,
+      "rate": 0.015625,
+      "wilson95": [
+        0.006092598203366294,
+        0.039479262709196654
+      ],
+      "threshold": 0.150390625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": false
+    },
+    {
+      "context": "fake_torino-w1-l1",
+      "acquisition": 1,
+      "case": "rz0_0.12",
+      "alarms": 3,
+      "decisions": 256,
+      "rate": 0.01171875,
+      "wilson95": [
+        0.003993287123007758,
+        0.033881572667882304
+      ],
+      "threshold": 0.150390625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w1-l1",
+      "acquisition": 1,
+      "case": "cx01",
+      "alarms": 7,
+      "decisions": 256,
+      "rate": 0.02734375,
+      "wilson95": [
+        0.013307156355121155,
+        0.05535570792246043
+      ],
+      "threshold": 0.150390625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": false
+    },
+    {
+      "context": "fake_torino-w1-l1",
+      "acquisition": 1,
+      "case": "swap_end",
+      "alarms": 3,
+      "decisions": 256,
+      "rate": 0.01171875,
+      "wilson95": [
+        0.003993287123007758,
+        0.033881572667882304
+      ],
+      "threshold": 0.150390625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w1-l1",
+      "acquisition": 1,
+      "case": "parameter_scale_1.1",
+      "alarms": 4,
+      "decisions": 256,
+      "rate": 0.015625,
+      "wilson95": [
+        0.006092598203366294,
+        0.039479262709196654
+      ],
+      "threshold": 0.150390625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w1-l1",
+      "acquisition": 2,
+      "case": "benign_readout_drift_x2",
+      "alarms": 3,
+      "decisions": 256,
+      "rate": 0.01171875,
+      "wilson95": [
+        0.003993287123007758,
+        0.033881572667882304
+      ],
+      "threshold": 0.1541748046875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w1-l1",
+      "acquisition": 2,
+      "case": "clean",
+      "alarms": 2,
+      "decisions": 256,
+      "rate": 0.0078125,
+      "wilson95": [
+        0.002145090367681419,
+        0.028032768301535768
+      ],
+      "threshold": 0.1541748046875,
+      "clean_bound_pass": true,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w1-l1",
+      "acquisition": 2,
+      "case": "equivalent_optimized",
+      "alarms": 3,
+      "decisions": 256,
+      "rate": 0.01171875,
+      "wilson95": [
+        0.003993287123007758,
+        0.033881572667882304
+      ],
+      "threshold": 0.1541748046875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w1-l1",
+      "acquisition": 2,
+      "case": "x0",
+      "alarms": 2,
+      "decisions": 256,
+      "rate": 0.0078125,
+      "wilson95": [
+        0.002145090367681419,
+        0.028032768301535768
+      ],
+      "threshold": 0.1541748046875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": false
+    },
+    {
+      "context": "fake_torino-w1-l1",
+      "acquisition": 2,
+      "case": "z0",
+      "alarms": 1,
+      "decisions": 256,
+      "rate": 0.00390625,
+      "wilson95": [
+        0.0006898821669617927,
+        0.021790975380582514
+      ],
+      "threshold": 0.1541748046875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": false
+    },
+    {
+      "context": "fake_torino-w1-l1",
+      "acquisition": 2,
+      "case": "rz0_0.12",
+      "alarms": 0,
+      "decisions": 256,
+      "rate": 0.0,
+      "wilson95": [
+        0.0,
+        0.01478385642587143
+      ],
+      "threshold": 0.1541748046875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w1-l1",
+      "acquisition": 2,
+      "case": "cx01",
+      "alarms": 4,
+      "decisions": 256,
+      "rate": 0.015625,
+      "wilson95": [
+        0.006092598203366294,
+        0.039479262709196654
+      ],
+      "threshold": 0.1541748046875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": false
+    },
+    {
+      "context": "fake_torino-w1-l1",
+      "acquisition": 2,
+      "case": "swap_end",
+      "alarms": 1,
+      "decisions": 256,
+      "rate": 0.00390625,
+      "wilson95": [
+        0.0006898821669617927,
+        0.021790975380582514
+      ],
+      "threshold": 0.1541748046875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w1-l1",
+      "acquisition": 2,
+      "case": "parameter_scale_1.1",
+      "alarms": 1,
+      "decisions": 256,
+      "rate": 0.00390625,
+      "wilson95": [
+        0.0006898821669617927,
+        0.021790975380582514
+      ],
+      "threshold": 0.1541748046875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w2-l0",
+      "acquisition": 0,
+      "case": "benign_readout_drift_x2",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.140625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w2-l0",
+      "acquisition": 0,
+      "case": "clean",
+      "alarms": 3,
+      "decisions": 256,
+      "rate": 0.01171875,
+      "wilson95": [
+        0.003993287123007758,
+        0.033881572667882304
+      ],
+      "threshold": 0.140625,
+      "clean_bound_pass": true,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w2-l0",
+      "acquisition": 0,
+      "case": "equivalent_optimized",
+      "alarms": 0,
+      "decisions": 256,
+      "rate": 0.0,
+      "wilson95": [
+        0.0,
+        0.01478385642587143
+      ],
+      "threshold": 0.140625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w2-l0",
+      "acquisition": 0,
+      "case": "x0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.140625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_torino-w2-l0",
+      "acquisition": 0,
+      "case": "z0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.140625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_torino-w2-l0",
+      "acquisition": 0,
+      "case": "rz0_0.12",
+      "alarms": 1,
+      "decisions": 256,
+      "rate": 0.00390625,
+      "wilson95": [
+        0.0006898821669617927,
+        0.021790975380582514
+      ],
+      "threshold": 0.140625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w2-l0",
+      "acquisition": 0,
+      "case": "cx01",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.140625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_torino-w2-l0",
+      "acquisition": 0,
+      "case": "swap_end",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.140625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w2-l0",
+      "acquisition": 0,
+      "case": "parameter_scale_1.1",
+      "alarms": 121,
+      "decisions": 256,
+      "rate": 0.47265625,
+      "wilson95": [
+        0.4123556863984164,
+        0.5337653057498734
+      ],
+      "threshold": 0.140625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w2-l0",
+      "acquisition": 1,
+      "case": "benign_readout_drift_x2",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1395263671875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w2-l0",
+      "acquisition": 1,
+      "case": "clean",
+      "alarms": 0,
+      "decisions": 256,
+      "rate": 0.0,
+      "wilson95": [
+        0.0,
+        0.01478385642587143
+      ],
+      "threshold": 0.1395263671875,
+      "clean_bound_pass": true,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w2-l0",
+      "acquisition": 1,
+      "case": "equivalent_optimized",
+      "alarms": 4,
+      "decisions": 256,
+      "rate": 0.015625,
+      "wilson95": [
+        0.006092598203366294,
+        0.039479262709196654
+      ],
+      "threshold": 0.1395263671875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w2-l0",
+      "acquisition": 1,
+      "case": "x0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1395263671875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_torino-w2-l0",
+      "acquisition": 1,
+      "case": "z0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1395263671875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_torino-w2-l0",
+      "acquisition": 1,
+      "case": "rz0_0.12",
+      "alarms": 3,
+      "decisions": 256,
+      "rate": 0.01171875,
+      "wilson95": [
+        0.003993287123007758,
+        0.033881572667882304
+      ],
+      "threshold": 0.1395263671875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w2-l0",
+      "acquisition": 1,
+      "case": "cx01",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1395263671875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_torino-w2-l0",
+      "acquisition": 1,
+      "case": "swap_end",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1395263671875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w2-l0",
+      "acquisition": 1,
+      "case": "parameter_scale_1.1",
+      "alarms": 169,
+      "decisions": 256,
+      "rate": 0.66015625,
+      "wilson95": [
+        0.600148571924018,
+        0.71542847406457
+      ],
+      "threshold": 0.1395263671875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w2-l0",
+      "acquisition": 2,
+      "case": "benign_readout_drift_x2",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1409912109375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w2-l0",
+      "acquisition": 2,
+      "case": "clean",
+      "alarms": 0,
+      "decisions": 256,
+      "rate": 0.0,
+      "wilson95": [
+        0.0,
+        0.01478385642587143
+      ],
+      "threshold": 0.1409912109375,
+      "clean_bound_pass": true,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w2-l0",
+      "acquisition": 2,
+      "case": "equivalent_optimized",
+      "alarms": 3,
+      "decisions": 256,
+      "rate": 0.01171875,
+      "wilson95": [
+        0.003993287123007758,
+        0.033881572667882304
+      ],
+      "threshold": 0.1409912109375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w2-l0",
+      "acquisition": 2,
+      "case": "x0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1409912109375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_torino-w2-l0",
+      "acquisition": 2,
+      "case": "z0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1409912109375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_torino-w2-l0",
+      "acquisition": 2,
+      "case": "rz0_0.12",
+      "alarms": 3,
+      "decisions": 256,
+      "rate": 0.01171875,
+      "wilson95": [
+        0.003993287123007758,
+        0.033881572667882304
+      ],
+      "threshold": 0.1409912109375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w2-l0",
+      "acquisition": 2,
+      "case": "cx01",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1409912109375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_torino-w2-l0",
+      "acquisition": 2,
+      "case": "swap_end",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1409912109375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w2-l0",
+      "acquisition": 2,
+      "case": "parameter_scale_1.1",
+      "alarms": 138,
+      "decisions": 256,
+      "rate": 0.5390625,
+      "wilson95": [
+        0.47787362687823687,
+        0.599096384338492
+      ],
+      "threshold": 0.1409912109375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w2-l1",
+      "acquisition": 0,
+      "case": "benign_readout_drift_x2",
+      "alarms": 73,
+      "decisions": 256,
+      "rate": 0.28515625,
+      "wilson95": [
+        0.23334463740263667,
+        0.3433203009053549
+      ],
+      "threshold": 0.130615234375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w2-l1",
+      "acquisition": 0,
+      "case": "clean",
+      "alarms": 2,
+      "decisions": 256,
+      "rate": 0.0078125,
+      "wilson95": [
+        0.002145090367681419,
+        0.028032768301535768
+      ],
+      "threshold": 0.130615234375,
+      "clean_bound_pass": true,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w2-l1",
+      "acquisition": 0,
+      "case": "equivalent_optimized",
+      "alarms": 5,
+      "decisions": 256,
+      "rate": 0.01953125,
+      "wilson95": [
+        0.008370729784579391,
+        0.04489813224965644
+      ],
+      "threshold": 0.130615234375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w2-l1",
+      "acquisition": 0,
+      "case": "x0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.130615234375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_torino-w2-l1",
+      "acquisition": 0,
+      "case": "z0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.130615234375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_torino-w2-l1",
+      "acquisition": 0,
+      "case": "rz0_0.12",
+      "alarms": 6,
+      "decisions": 256,
+      "rate": 0.0234375,
+      "wilson95": [
+        0.010784867555857603,
+        0.0501809956000511
+      ],
+      "threshold": 0.130615234375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w2-l1",
+      "acquisition": 0,
+      "case": "cx01",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.130615234375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_torino-w2-l1",
+      "acquisition": 0,
+      "case": "swap_end",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.130615234375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w2-l1",
+      "acquisition": 0,
+      "case": "parameter_scale_1.1",
+      "alarms": 181,
+      "decisions": 256,
+      "rate": 0.70703125,
+      "wilson95": [
+        0.6485479046466456,
+        0.759393154802017
+      ],
+      "threshold": 0.130615234375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w2-l1",
+      "acquisition": 1,
+      "case": "benign_readout_drift_x2",
+      "alarms": 44,
+      "decisions": 256,
+      "rate": 0.171875,
+      "wilson95": [
+        0.13059812036467136,
+        0.2228537854148068
+      ],
+      "threshold": 0.1405029296875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w2-l1",
+      "acquisition": 1,
+      "case": "clean",
+      "alarms": 0,
+      "decisions": 256,
+      "rate": 0.0,
+      "wilson95": [
+        0.0,
+        0.01478385642587143
+      ],
+      "threshold": 0.1405029296875,
+      "clean_bound_pass": true,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w2-l1",
+      "acquisition": 1,
+      "case": "equivalent_optimized",
+      "alarms": 1,
+      "decisions": 256,
+      "rate": 0.00390625,
+      "wilson95": [
+        0.0006898821669617927,
+        0.021790975380582514
+      ],
+      "threshold": 0.1405029296875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w2-l1",
+      "acquisition": 1,
+      "case": "x0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1405029296875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_torino-w2-l1",
+      "acquisition": 1,
+      "case": "z0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1405029296875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_torino-w2-l1",
+      "acquisition": 1,
+      "case": "rz0_0.12",
+      "alarms": 0,
+      "decisions": 256,
+      "rate": 0.0,
+      "wilson95": [
+        0.0,
+        0.01478385642587143
+      ],
+      "threshold": 0.1405029296875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w2-l1",
+      "acquisition": 1,
+      "case": "cx01",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1405029296875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_torino-w2-l1",
+      "acquisition": 1,
+      "case": "swap_end",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1405029296875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w2-l1",
+      "acquisition": 1,
+      "case": "parameter_scale_1.1",
+      "alarms": 135,
+      "decisions": 256,
+      "rate": 0.52734375,
+      "wilson95": [
+        0.4662346942501266,
+        0.5876443136015835
+      ],
+      "threshold": 0.1405029296875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w2-l1",
+      "acquisition": 2,
+      "case": "benign_readout_drift_x2",
+      "alarms": 51,
+      "decisions": 256,
+      "rate": 0.19921875,
+      "wilson95": [
+        0.15489813913670408,
+        0.2524327744944842
+      ],
+      "threshold": 0.13623046875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w2-l1",
+      "acquisition": 2,
+      "case": "clean",
+      "alarms": 3,
+      "decisions": 256,
+      "rate": 0.01171875,
+      "wilson95": [
+        0.003993287123007758,
+        0.033881572667882304
+      ],
+      "threshold": 0.13623046875,
+      "clean_bound_pass": true,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w2-l1",
+      "acquisition": 2,
+      "case": "equivalent_optimized",
+      "alarms": 1,
+      "decisions": 256,
+      "rate": 0.00390625,
+      "wilson95": [
+        0.0006898821669617927,
+        0.021790975380582514
+      ],
+      "threshold": 0.13623046875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w2-l1",
+      "acquisition": 2,
+      "case": "x0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.13623046875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_torino-w2-l1",
+      "acquisition": 2,
+      "case": "z0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.13623046875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_torino-w2-l1",
+      "acquisition": 2,
+      "case": "rz0_0.12",
+      "alarms": 2,
+      "decisions": 256,
+      "rate": 0.0078125,
+      "wilson95": [
+        0.002145090367681419,
+        0.028032768301535768
+      ],
+      "threshold": 0.13623046875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w2-l1",
+      "acquisition": 2,
+      "case": "cx01",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.13623046875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_torino-w2-l1",
+      "acquisition": 2,
+      "case": "swap_end",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.13623046875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w2-l1",
+      "acquisition": 2,
+      "case": "parameter_scale_1.1",
+      "alarms": 164,
+      "decisions": 256,
+      "rate": 0.640625,
+      "wilson95": [
+        0.5801685439877934,
+        0.6969234963924303
+      ],
+      "threshold": 0.13623046875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w3-l0",
+      "acquisition": 0,
+      "case": "benign_readout_drift_x2",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.0753173828125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w3-l0",
+      "acquisition": 0,
+      "case": "clean",
+      "alarms": 1,
+      "decisions": 256,
+      "rate": 0.00390625,
+      "wilson95": [
+        0.0006898821669617927,
+        0.021790975380582514
+      ],
+      "threshold": 0.0753173828125,
+      "clean_bound_pass": true,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w3-l0",
+      "acquisition": 0,
+      "case": "x0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.0753173828125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_torino-w3-l0",
+      "acquisition": 0,
+      "case": "z0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.0753173828125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_torino-w3-l0",
+      "acquisition": 0,
+      "case": "rz0_0.12",
+      "alarms": 3,
+      "decisions": 256,
+      "rate": 0.01171875,
+      "wilson95": [
+        0.003993287123007758,
+        0.033881572667882304
+      ],
+      "threshold": 0.0753173828125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w3-l0",
+      "acquisition": 0,
+      "case": "cx01",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.0753173828125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_torino-w3-l0",
+      "acquisition": 0,
+      "case": "swap_end",
+      "alarms": 8,
+      "decisions": 256,
+      "rate": 0.03125,
+      "wilson95": [
+        0.015918258891511296,
+        0.06044160650774316
+      ],
+      "threshold": 0.0753173828125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w3-l0",
+      "acquisition": 0,
+      "case": "parameter_scale_1.1",
+      "alarms": 3,
+      "decisions": 256,
+      "rate": 0.01171875,
+      "wilson95": [
+        0.003993287123007758,
+        0.033881572667882304
+      ],
+      "threshold": 0.0753173828125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w3-l0",
+      "acquisition": 1,
+      "case": "benign_readout_drift_x2",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.0748291015625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w3-l0",
+      "acquisition": 1,
+      "case": "clean",
+      "alarms": 4,
+      "decisions": 256,
+      "rate": 0.015625,
+      "wilson95": [
+        0.006092598203366294,
+        0.039479262709196654
+      ],
+      "threshold": 0.0748291015625,
+      "clean_bound_pass": true,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w3-l0",
+      "acquisition": 1,
+      "case": "x0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.0748291015625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_torino-w3-l0",
+      "acquisition": 1,
+      "case": "z0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.0748291015625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_torino-w3-l0",
+      "acquisition": 1,
+      "case": "rz0_0.12",
+      "alarms": 6,
+      "decisions": 256,
+      "rate": 0.0234375,
+      "wilson95": [
+        0.010784867555857603,
+        0.0501809956000511
+      ],
+      "threshold": 0.0748291015625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w3-l0",
+      "acquisition": 1,
+      "case": "cx01",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.0748291015625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_torino-w3-l0",
+      "acquisition": 1,
+      "case": "swap_end",
+      "alarms": 7,
+      "decisions": 256,
+      "rate": 0.02734375,
+      "wilson95": [
+        0.013307156355121155,
+        0.05535570792246043
+      ],
+      "threshold": 0.0748291015625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w3-l0",
+      "acquisition": 1,
+      "case": "parameter_scale_1.1",
+      "alarms": 6,
+      "decisions": 256,
+      "rate": 0.0234375,
+      "wilson95": [
+        0.010784867555857603,
+        0.0501809956000511
+      ],
+      "threshold": 0.0748291015625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w3-l0",
+      "acquisition": 2,
+      "case": "benign_readout_drift_x2",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.0736083984375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w3-l0",
+      "acquisition": 2,
+      "case": "clean",
+      "alarms": 2,
+      "decisions": 256,
+      "rate": 0.0078125,
+      "wilson95": [
+        0.002145090367681419,
+        0.028032768301535768
+      ],
+      "threshold": 0.0736083984375,
+      "clean_bound_pass": true,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w3-l0",
+      "acquisition": 2,
+      "case": "x0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.0736083984375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_torino-w3-l0",
+      "acquisition": 2,
+      "case": "z0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.0736083984375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_torino-w3-l0",
+      "acquisition": 2,
+      "case": "rz0_0.12",
+      "alarms": 5,
+      "decisions": 256,
+      "rate": 0.01953125,
+      "wilson95": [
+        0.008370729784579391,
+        0.04489813224965644
+      ],
+      "threshold": 0.0736083984375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w3-l0",
+      "acquisition": 2,
+      "case": "cx01",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.0736083984375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_torino-w3-l0",
+      "acquisition": 2,
+      "case": "swap_end",
+      "alarms": 9,
+      "decisions": 256,
+      "rate": 0.03515625,
+      "wilson95": [
+        0.018604096092635542,
+        0.0654527704282918
+      ],
+      "threshold": 0.0736083984375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w3-l0",
+      "acquisition": 2,
+      "case": "parameter_scale_1.1",
+      "alarms": 2,
+      "decisions": 256,
+      "rate": 0.0078125,
+      "wilson95": [
+        0.002145090367681419,
+        0.028032768301535768
+      ],
+      "threshold": 0.0736083984375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w3-l1",
+      "acquisition": 0,
+      "case": "benign_readout_drift_x2",
+      "alarms": 250,
+      "decisions": 256,
+      "rate": 0.9765625,
+      "wilson95": [
+        0.9498190043999489,
+        0.9892151324441424
+      ],
+      "threshold": 0.0469970703125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w3-l1",
+      "acquisition": 0,
+      "case": "clean",
+      "alarms": 4,
+      "decisions": 256,
+      "rate": 0.015625,
+      "wilson95": [
+        0.006092598203366294,
+        0.039479262709196654
+      ],
+      "threshold": 0.0469970703125,
+      "clean_bound_pass": true,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w3-l1",
+      "acquisition": 0,
+      "case": "x0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.0469970703125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_torino-w3-l1",
+      "acquisition": 0,
+      "case": "z0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.0469970703125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_torino-w3-l1",
+      "acquisition": 0,
+      "case": "rz0_0.12",
+      "alarms": 5,
+      "decisions": 256,
+      "rate": 0.01953125,
+      "wilson95": [
+        0.008370729784579391,
+        0.04489813224965644
+      ],
+      "threshold": 0.0469970703125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w3-l1",
+      "acquisition": 0,
+      "case": "cx01",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.0469970703125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_torino-w3-l1",
+      "acquisition": 0,
+      "case": "swap_end",
+      "alarms": 11,
+      "decisions": 256,
+      "rate": 0.04296875,
+      "wilson95": [
+        0.024159813300607562,
+        0.07529105546366555
+      ],
+      "threshold": 0.0469970703125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w3-l1",
+      "acquisition": 0,
+      "case": "parameter_scale_1.1",
+      "alarms": 4,
+      "decisions": 256,
+      "rate": 0.015625,
+      "wilson95": [
+        0.006092598203366294,
+        0.039479262709196654
+      ],
+      "threshold": 0.0469970703125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w3-l1",
+      "acquisition": 1,
+      "case": "benign_readout_drift_x2",
+      "alarms": 238,
+      "decisions": 256,
+      "rate": 0.9296875,
+      "wilson95": [
+        0.8916056708459876,
+        0.9550644525380292
+      ],
+      "threshold": 0.0489501953125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w3-l1",
+      "acquisition": 1,
+      "case": "clean",
+      "alarms": 5,
+      "decisions": 256,
+      "rate": 0.01953125,
+      "wilson95": [
+        0.008370729784579391,
+        0.04489813224965644
+      ],
+      "threshold": 0.0489501953125,
+      "clean_bound_pass": true,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w3-l1",
+      "acquisition": 1,
+      "case": "x0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.0489501953125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_torino-w3-l1",
+      "acquisition": 1,
+      "case": "z0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.0489501953125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_torino-w3-l1",
+      "acquisition": 1,
+      "case": "rz0_0.12",
+      "alarms": 5,
+      "decisions": 256,
+      "rate": 0.01953125,
+      "wilson95": [
+        0.008370729784579391,
+        0.04489813224965644
+      ],
+      "threshold": 0.0489501953125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w3-l1",
+      "acquisition": 1,
+      "case": "cx01",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.0489501953125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_torino-w3-l1",
+      "acquisition": 1,
+      "case": "swap_end",
+      "alarms": 10,
+      "decisions": 256,
+      "rate": 0.0390625,
+      "wilson95": [
+        0.0213540358427329,
+        0.07039983179986732
+      ],
+      "threshold": 0.0489501953125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w3-l1",
+      "acquisition": 1,
+      "case": "parameter_scale_1.1",
+      "alarms": 1,
+      "decisions": 256,
+      "rate": 0.00390625,
+      "wilson95": [
+        0.0006898821669617927,
+        0.021790975380582514
+      ],
+      "threshold": 0.0489501953125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w3-l1",
+      "acquisition": 2,
+      "case": "benign_readout_drift_x2",
+      "alarms": 240,
+      "decisions": 256,
+      "rate": 0.9375,
+      "wilson95": [
+        0.9008977667558741,
+        0.9611663588714884
+      ],
+      "threshold": 0.0556640625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w3-l1",
+      "acquisition": 2,
+      "case": "clean",
+      "alarms": 1,
+      "decisions": 256,
+      "rate": 0.00390625,
+      "wilson95": [
+        0.0006898821669617927,
+        0.021790975380582514
+      ],
+      "threshold": 0.0556640625,
+      "clean_bound_pass": true,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w3-l1",
+      "acquisition": 2,
+      "case": "x0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.0556640625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_torino-w3-l1",
+      "acquisition": 2,
+      "case": "z0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.0556640625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_torino-w3-l1",
+      "acquisition": 2,
+      "case": "rz0_0.12",
+      "alarms": 1,
+      "decisions": 256,
+      "rate": 0.00390625,
+      "wilson95": [
+        0.0006898821669617927,
+        0.021790975380582514
+      ],
+      "threshold": 0.0556640625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w3-l1",
+      "acquisition": 2,
+      "case": "cx01",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.0556640625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_torino-w3-l1",
+      "acquisition": 2,
+      "case": "swap_end",
+      "alarms": 8,
+      "decisions": 256,
+      "rate": 0.03125,
+      "wilson95": [
+        0.015918258891511296,
+        0.06044160650774316
+      ],
+      "threshold": 0.0556640625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_torino-w3-l1",
+      "acquisition": 2,
+      "case": "parameter_scale_1.1",
+      "alarms": 1,
+      "decisions": 256,
+      "rate": 0.00390625,
+      "wilson95": [
+        0.0006898821669617927,
+        0.021790975380582514
+      ],
+      "threshold": 0.0556640625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w0-l0",
+      "acquisition": 0,
+      "case": "benign_readout_drift_x2",
+      "alarms": 4,
+      "decisions": 256,
+      "rate": 0.015625,
+      "wilson95": [
+        0.006092598203366294,
+        0.039479262709196654
+      ],
+      "threshold": 0.1259765625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w0-l0",
+      "acquisition": 0,
+      "case": "clean",
+      "alarms": 4,
+      "decisions": 256,
+      "rate": 0.015625,
+      "wilson95": [
+        0.006092598203366294,
+        0.039479262709196654
+      ],
+      "threshold": 0.1259765625,
+      "clean_bound_pass": true,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w0-l0",
+      "acquisition": 0,
+      "case": "equivalent_optimized",
+      "alarms": 1,
+      "decisions": 256,
+      "rate": 0.00390625,
+      "wilson95": [
+        0.0006898821669617927,
+        0.021790975380582514
+      ],
+      "threshold": 0.1259765625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w0-l0",
+      "acquisition": 0,
+      "case": "x0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1259765625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w0-l0",
+      "acquisition": 0,
+      "case": "z0",
+      "alarms": 2,
+      "decisions": 256,
+      "rate": 0.0078125,
+      "wilson95": [
+        0.002145090367681419,
+        0.028032768301535768
+      ],
+      "threshold": 0.1259765625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": false
+    },
+    {
+      "context": "fake_sherbrooke-w0-l0",
+      "acquisition": 0,
+      "case": "rz0_0.12",
+      "alarms": 1,
+      "decisions": 256,
+      "rate": 0.00390625,
+      "wilson95": [
+        0.0006898821669617927,
+        0.021790975380582514
+      ],
+      "threshold": 0.1259765625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w0-l0",
+      "acquisition": 0,
+      "case": "cx01",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1259765625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w0-l0",
+      "acquisition": 0,
+      "case": "swap_end",
+      "alarms": 251,
+      "decisions": 256,
+      "rate": 0.98046875,
+      "wilson95": [
+        0.9551018677503436,
+        0.9916292702154206
+      ],
+      "threshold": 0.1259765625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w0-l0",
+      "acquisition": 0,
+      "case": "parameter_scale_1.1",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1259765625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w0-l0",
+      "acquisition": 1,
+      "case": "benign_readout_drift_x2",
+      "alarms": 4,
+      "decisions": 256,
+      "rate": 0.015625,
+      "wilson95": [
+        0.006092598203366294,
+        0.039479262709196654
+      ],
+      "threshold": 0.1197509765625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w0-l0",
+      "acquisition": 1,
+      "case": "clean",
+      "alarms": 3,
+      "decisions": 256,
+      "rate": 0.01171875,
+      "wilson95": [
+        0.003993287123007758,
+        0.033881572667882304
+      ],
+      "threshold": 0.1197509765625,
+      "clean_bound_pass": true,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w0-l0",
+      "acquisition": 1,
+      "case": "equivalent_optimized",
+      "alarms": 3,
+      "decisions": 256,
+      "rate": 0.01171875,
+      "wilson95": [
+        0.003993287123007758,
+        0.033881572667882304
+      ],
+      "threshold": 0.1197509765625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w0-l0",
+      "acquisition": 1,
+      "case": "x0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1197509765625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w0-l0",
+      "acquisition": 1,
+      "case": "z0",
+      "alarms": 8,
+      "decisions": 256,
+      "rate": 0.03125,
+      "wilson95": [
+        0.015918258891511296,
+        0.06044160650774316
+      ],
+      "threshold": 0.1197509765625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": false
+    },
+    {
+      "context": "fake_sherbrooke-w0-l0",
+      "acquisition": 1,
+      "case": "rz0_0.12",
+      "alarms": 17,
+      "decisions": 256,
+      "rate": 0.06640625,
+      "wilson95": [
+        0.04187072285916844,
+        0.10376215263514196
+      ],
+      "threshold": 0.1197509765625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w0-l0",
+      "acquisition": 1,
+      "case": "cx01",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1197509765625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w0-l0",
+      "acquisition": 1,
+      "case": "swap_end",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1197509765625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w0-l0",
+      "acquisition": 1,
+      "case": "parameter_scale_1.1",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1197509765625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w0-l0",
+      "acquisition": 2,
+      "case": "benign_readout_drift_x2",
+      "alarms": 6,
+      "decisions": 256,
+      "rate": 0.0234375,
+      "wilson95": [
+        0.010784867555857603,
+        0.0501809956000511
+      ],
+      "threshold": 0.121826171875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w0-l0",
+      "acquisition": 2,
+      "case": "clean",
+      "alarms": 4,
+      "decisions": 256,
+      "rate": 0.015625,
+      "wilson95": [
+        0.006092598203366294,
+        0.039479262709196654
+      ],
+      "threshold": 0.121826171875,
+      "clean_bound_pass": true,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w0-l0",
+      "acquisition": 2,
+      "case": "equivalent_optimized",
+      "alarms": 3,
+      "decisions": 256,
+      "rate": 0.01171875,
+      "wilson95": [
+        0.003993287123007758,
+        0.033881572667882304
+      ],
+      "threshold": 0.121826171875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w0-l0",
+      "acquisition": 2,
+      "case": "x0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.121826171875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w0-l0",
+      "acquisition": 2,
+      "case": "z0",
+      "alarms": 3,
+      "decisions": 256,
+      "rate": 0.01171875,
+      "wilson95": [
+        0.003993287123007758,
+        0.033881572667882304
+      ],
+      "threshold": 0.121826171875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": false
+    },
+    {
+      "context": "fake_sherbrooke-w0-l0",
+      "acquisition": 2,
+      "case": "rz0_0.12",
+      "alarms": 8,
+      "decisions": 256,
+      "rate": 0.03125,
+      "wilson95": [
+        0.015918258891511296,
+        0.06044160650774316
+      ],
+      "threshold": 0.121826171875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w0-l0",
+      "acquisition": 2,
+      "case": "cx01",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.121826171875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w0-l0",
+      "acquisition": 2,
+      "case": "swap_end",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.121826171875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w0-l0",
+      "acquisition": 2,
+      "case": "parameter_scale_1.1",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.121826171875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w0-l1",
+      "acquisition": 0,
+      "case": "benign_readout_drift_x2",
+      "alarms": 2,
+      "decisions": 256,
+      "rate": 0.0078125,
+      "wilson95": [
+        0.002145090367681419,
+        0.028032768301535768
+      ],
+      "threshold": 0.1278076171875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w0-l1",
+      "acquisition": 0,
+      "case": "clean",
+      "alarms": 2,
+      "decisions": 256,
+      "rate": 0.0078125,
+      "wilson95": [
+        0.002145090367681419,
+        0.028032768301535768
+      ],
+      "threshold": 0.1278076171875,
+      "clean_bound_pass": true,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w0-l1",
+      "acquisition": 0,
+      "case": "equivalent_optimized",
+      "alarms": 0,
+      "decisions": 256,
+      "rate": 0.0,
+      "wilson95": [
+        0.0,
+        0.01478385642587143
+      ],
+      "threshold": 0.1278076171875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w0-l1",
+      "acquisition": 0,
+      "case": "x0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1278076171875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w0-l1",
+      "acquisition": 0,
+      "case": "z0",
+      "alarms": 3,
+      "decisions": 256,
+      "rate": 0.01171875,
+      "wilson95": [
+        0.003993287123007758,
+        0.033881572667882304
+      ],
+      "threshold": 0.1278076171875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": false
+    },
+    {
+      "context": "fake_sherbrooke-w0-l1",
+      "acquisition": 0,
+      "case": "rz0_0.12",
+      "alarms": 8,
+      "decisions": 256,
+      "rate": 0.03125,
+      "wilson95": [
+        0.015918258891511296,
+        0.06044160650774316
+      ],
+      "threshold": 0.1278076171875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w0-l1",
+      "acquisition": 0,
+      "case": "cx01",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1278076171875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w0-l1",
+      "acquisition": 0,
+      "case": "swap_end",
+      "alarms": 255,
+      "decisions": 256,
+      "rate": 0.99609375,
+      "wilson95": [
+        0.9782090246194175,
+        0.9993101178330381
+      ],
+      "threshold": 0.1278076171875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w0-l1",
+      "acquisition": 0,
+      "case": "parameter_scale_1.1",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1278076171875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w0-l1",
+      "acquisition": 1,
+      "case": "benign_readout_drift_x2",
+      "alarms": 4,
+      "decisions": 256,
+      "rate": 0.015625,
+      "wilson95": [
+        0.006092598203366294,
+        0.039479262709196654
+      ],
+      "threshold": 0.123046875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w0-l1",
+      "acquisition": 1,
+      "case": "clean",
+      "alarms": 4,
+      "decisions": 256,
+      "rate": 0.015625,
+      "wilson95": [
+        0.006092598203366294,
+        0.039479262709196654
+      ],
+      "threshold": 0.123046875,
+      "clean_bound_pass": true,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w0-l1",
+      "acquisition": 1,
+      "case": "equivalent_optimized",
+      "alarms": 6,
+      "decisions": 256,
+      "rate": 0.0234375,
+      "wilson95": [
+        0.010784867555857603,
+        0.0501809956000511
+      ],
+      "threshold": 0.123046875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w0-l1",
+      "acquisition": 1,
+      "case": "x0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.123046875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w0-l1",
+      "acquisition": 1,
+      "case": "z0",
+      "alarms": 0,
+      "decisions": 256,
+      "rate": 0.0,
+      "wilson95": [
+        0.0,
+        0.01478385642587143
+      ],
+      "threshold": 0.123046875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": false
+    },
+    {
+      "context": "fake_sherbrooke-w0-l1",
+      "acquisition": 1,
+      "case": "rz0_0.12",
+      "alarms": 5,
+      "decisions": 256,
+      "rate": 0.01953125,
+      "wilson95": [
+        0.008370729784579391,
+        0.04489813224965644
+      ],
+      "threshold": 0.123046875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w0-l1",
+      "acquisition": 1,
+      "case": "cx01",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.123046875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w0-l1",
+      "acquisition": 1,
+      "case": "swap_end",
+      "alarms": 253,
+      "decisions": 256,
+      "rate": 0.98828125,
+      "wilson95": [
+        0.9661184273321177,
+        0.9960067128769923
+      ],
+      "threshold": 0.123046875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w0-l1",
+      "acquisition": 1,
+      "case": "parameter_scale_1.1",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.123046875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w0-l1",
+      "acquisition": 2,
+      "case": "benign_readout_drift_x2",
+      "alarms": 4,
+      "decisions": 256,
+      "rate": 0.015625,
+      "wilson95": [
+        0.006092598203366294,
+        0.039479262709196654
+      ],
+      "threshold": 0.1260986328125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w0-l1",
+      "acquisition": 2,
+      "case": "clean",
+      "alarms": 2,
+      "decisions": 256,
+      "rate": 0.0078125,
+      "wilson95": [
+        0.002145090367681419,
+        0.028032768301535768
+      ],
+      "threshold": 0.1260986328125,
+      "clean_bound_pass": true,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w0-l1",
+      "acquisition": 2,
+      "case": "equivalent_optimized",
+      "alarms": 3,
+      "decisions": 256,
+      "rate": 0.01171875,
+      "wilson95": [
+        0.003993287123007758,
+        0.033881572667882304
+      ],
+      "threshold": 0.1260986328125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w0-l1",
+      "acquisition": 2,
+      "case": "x0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1260986328125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w0-l1",
+      "acquisition": 2,
+      "case": "z0",
+      "alarms": 1,
+      "decisions": 256,
+      "rate": 0.00390625,
+      "wilson95": [
+        0.0006898821669617927,
+        0.021790975380582514
+      ],
+      "threshold": 0.1260986328125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": false
+    },
+    {
+      "context": "fake_sherbrooke-w0-l1",
+      "acquisition": 2,
+      "case": "rz0_0.12",
+      "alarms": 5,
+      "decisions": 256,
+      "rate": 0.01953125,
+      "wilson95": [
+        0.008370729784579391,
+        0.04489813224965644
+      ],
+      "threshold": 0.1260986328125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w0-l1",
+      "acquisition": 2,
+      "case": "cx01",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1260986328125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w0-l1",
+      "acquisition": 2,
+      "case": "swap_end",
+      "alarms": 251,
+      "decisions": 256,
+      "rate": 0.98046875,
+      "wilson95": [
+        0.9551018677503436,
+        0.9916292702154206
+      ],
+      "threshold": 0.1260986328125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w0-l1",
+      "acquisition": 2,
+      "case": "parameter_scale_1.1",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1260986328125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w1-l0",
+      "acquisition": 0,
+      "case": "benign_readout_drift_x2",
+      "alarms": 5,
+      "decisions": 256,
+      "rate": 0.01953125,
+      "wilson95": [
+        0.008370729784579391,
+        0.04489813224965644
+      ],
+      "threshold": 0.152587890625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w1-l0",
+      "acquisition": 0,
+      "case": "clean",
+      "alarms": 3,
+      "decisions": 256,
+      "rate": 0.01171875,
+      "wilson95": [
+        0.003993287123007758,
+        0.033881572667882304
+      ],
+      "threshold": 0.152587890625,
+      "clean_bound_pass": true,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w1-l0",
+      "acquisition": 0,
+      "case": "equivalent_optimized",
+      "alarms": 3,
+      "decisions": 256,
+      "rate": 0.01171875,
+      "wilson95": [
+        0.003993287123007758,
+        0.033881572667882304
+      ],
+      "threshold": 0.152587890625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w1-l0",
+      "acquisition": 0,
+      "case": "x0",
+      "alarms": 4,
+      "decisions": 256,
+      "rate": 0.015625,
+      "wilson95": [
+        0.006092598203366294,
+        0.039479262709196654
+      ],
+      "threshold": 0.152587890625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": false
+    },
+    {
+      "context": "fake_sherbrooke-w1-l0",
+      "acquisition": 0,
+      "case": "z0",
+      "alarms": 4,
+      "decisions": 256,
+      "rate": 0.015625,
+      "wilson95": [
+        0.006092598203366294,
+        0.039479262709196654
+      ],
+      "threshold": 0.152587890625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": false
+    },
+    {
+      "context": "fake_sherbrooke-w1-l0",
+      "acquisition": 0,
+      "case": "rz0_0.12",
+      "alarms": 4,
+      "decisions": 256,
+      "rate": 0.015625,
+      "wilson95": [
+        0.006092598203366294,
+        0.039479262709196654
+      ],
+      "threshold": 0.152587890625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w1-l0",
+      "acquisition": 0,
+      "case": "cx01",
+      "alarms": 2,
+      "decisions": 256,
+      "rate": 0.0078125,
+      "wilson95": [
+        0.002145090367681419,
+        0.028032768301535768
+      ],
+      "threshold": 0.152587890625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": false
+    },
+    {
+      "context": "fake_sherbrooke-w1-l0",
+      "acquisition": 0,
+      "case": "swap_end",
+      "alarms": 1,
+      "decisions": 256,
+      "rate": 0.00390625,
+      "wilson95": [
+        0.0006898821669617927,
+        0.021790975380582514
+      ],
+      "threshold": 0.152587890625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w1-l0",
+      "acquisition": 0,
+      "case": "parameter_scale_1.1",
+      "alarms": 7,
+      "decisions": 256,
+      "rate": 0.02734375,
+      "wilson95": [
+        0.013307156355121155,
+        0.05535570792246043
+      ],
+      "threshold": 0.152587890625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w1-l0",
+      "acquisition": 1,
+      "case": "benign_readout_drift_x2",
+      "alarms": 4,
+      "decisions": 256,
+      "rate": 0.015625,
+      "wilson95": [
+        0.006092598203366294,
+        0.039479262709196654
+      ],
+      "threshold": 0.1563720703125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w1-l0",
+      "acquisition": 1,
+      "case": "clean",
+      "alarms": 1,
+      "decisions": 256,
+      "rate": 0.00390625,
+      "wilson95": [
+        0.0006898821669617927,
+        0.021790975380582514
+      ],
+      "threshold": 0.1563720703125,
+      "clean_bound_pass": true,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w1-l0",
+      "acquisition": 1,
+      "case": "equivalent_optimized",
+      "alarms": 3,
+      "decisions": 256,
+      "rate": 0.01171875,
+      "wilson95": [
+        0.003993287123007758,
+        0.033881572667882304
+      ],
+      "threshold": 0.1563720703125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w1-l0",
+      "acquisition": 1,
+      "case": "x0",
+      "alarms": 1,
+      "decisions": 256,
+      "rate": 0.00390625,
+      "wilson95": [
+        0.0006898821669617927,
+        0.021790975380582514
+      ],
+      "threshold": 0.1563720703125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": false
+    },
+    {
+      "context": "fake_sherbrooke-w1-l0",
+      "acquisition": 1,
+      "case": "z0",
+      "alarms": 2,
+      "decisions": 256,
+      "rate": 0.0078125,
+      "wilson95": [
+        0.002145090367681419,
+        0.028032768301535768
+      ],
+      "threshold": 0.1563720703125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": false
+    },
+    {
+      "context": "fake_sherbrooke-w1-l0",
+      "acquisition": 1,
+      "case": "rz0_0.12",
+      "alarms": 6,
+      "decisions": 256,
+      "rate": 0.0234375,
+      "wilson95": [
+        0.010784867555857603,
+        0.0501809956000511
+      ],
+      "threshold": 0.1563720703125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w1-l0",
+      "acquisition": 1,
+      "case": "cx01",
+      "alarms": 1,
+      "decisions": 256,
+      "rate": 0.00390625,
+      "wilson95": [
+        0.0006898821669617927,
+        0.021790975380582514
+      ],
+      "threshold": 0.1563720703125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": false
+    },
+    {
+      "context": "fake_sherbrooke-w1-l0",
+      "acquisition": 1,
+      "case": "swap_end",
+      "alarms": 0,
+      "decisions": 256,
+      "rate": 0.0,
+      "wilson95": [
+        0.0,
+        0.01478385642587143
+      ],
+      "threshold": 0.1563720703125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w1-l0",
+      "acquisition": 1,
+      "case": "parameter_scale_1.1",
+      "alarms": 3,
+      "decisions": 256,
+      "rate": 0.01171875,
+      "wilson95": [
+        0.003993287123007758,
+        0.033881572667882304
+      ],
+      "threshold": 0.1563720703125,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w1-l0",
+      "acquisition": 2,
+      "case": "benign_readout_drift_x2",
+      "alarms": 5,
+      "decisions": 256,
+      "rate": 0.01953125,
+      "wilson95": [
+        0.008370729784579391,
+        0.04489813224965644
+      ],
+      "threshold": 0.15576171875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w1-l0",
+      "acquisition": 2,
+      "case": "clean",
+      "alarms": 1,
+      "decisions": 256,
+      "rate": 0.00390625,
+      "wilson95": [
+        0.0006898821669617927,
+        0.021790975380582514
+      ],
+      "threshold": 0.15576171875,
+      "clean_bound_pass": true,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w1-l0",
+      "acquisition": 2,
+      "case": "equivalent_optimized",
+      "alarms": 1,
+      "decisions": 256,
+      "rate": 0.00390625,
+      "wilson95": [
+        0.0006898821669617927,
+        0.021790975380582514
+      ],
+      "threshold": 0.15576171875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w1-l0",
+      "acquisition": 2,
+      "case": "x0",
+      "alarms": 2,
+      "decisions": 256,
+      "rate": 0.0078125,
+      "wilson95": [
+        0.002145090367681419,
+        0.028032768301535768
+      ],
+      "threshold": 0.15576171875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": false
+    },
+    {
+      "context": "fake_sherbrooke-w1-l0",
+      "acquisition": 2,
+      "case": "z0",
+      "alarms": 2,
+      "decisions": 256,
+      "rate": 0.0078125,
+      "wilson95": [
+        0.002145090367681419,
+        0.028032768301535768
+      ],
+      "threshold": 0.15576171875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": false
+    },
+    {
+      "context": "fake_sherbrooke-w1-l0",
+      "acquisition": 2,
+      "case": "rz0_0.12",
+      "alarms": 2,
+      "decisions": 256,
+      "rate": 0.0078125,
+      "wilson95": [
+        0.002145090367681419,
+        0.028032768301535768
+      ],
+      "threshold": 0.15576171875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w1-l0",
+      "acquisition": 2,
+      "case": "cx01",
+      "alarms": 2,
+      "decisions": 256,
+      "rate": 0.0078125,
+      "wilson95": [
+        0.002145090367681419,
+        0.028032768301535768
+      ],
+      "threshold": 0.15576171875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": false
+    },
+    {
+      "context": "fake_sherbrooke-w1-l0",
+      "acquisition": 2,
+      "case": "swap_end",
+      "alarms": 3,
+      "decisions": 256,
+      "rate": 0.01171875,
+      "wilson95": [
+        0.003993287123007758,
+        0.033881572667882304
+      ],
+      "threshold": 0.15576171875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w1-l0",
+      "acquisition": 2,
+      "case": "parameter_scale_1.1",
+      "alarms": 2,
+      "decisions": 256,
+      "rate": 0.0078125,
+      "wilson95": [
+        0.002145090367681419,
+        0.028032768301535768
+      ],
+      "threshold": 0.15576171875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w1-l1",
+      "acquisition": 0,
+      "case": "benign_readout_drift_x2",
+      "alarms": 5,
+      "decisions": 256,
+      "rate": 0.01953125,
+      "wilson95": [
+        0.008370729784579391,
+        0.04489813224965644
+      ],
+      "threshold": 0.15234375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w1-l1",
+      "acquisition": 0,
+      "case": "clean",
+      "alarms": 2,
+      "decisions": 256,
+      "rate": 0.0078125,
+      "wilson95": [
+        0.002145090367681419,
+        0.028032768301535768
+      ],
+      "threshold": 0.15234375,
+      "clean_bound_pass": true,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w1-l1",
+      "acquisition": 0,
+      "case": "equivalent_optimized",
+      "alarms": 3,
+      "decisions": 256,
+      "rate": 0.01171875,
+      "wilson95": [
+        0.003993287123007758,
+        0.033881572667882304
+      ],
+      "threshold": 0.15234375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w1-l1",
+      "acquisition": 0,
+      "case": "x0",
+      "alarms": 0,
+      "decisions": 256,
+      "rate": 0.0,
+      "wilson95": [
+        0.0,
+        0.01478385642587143
+      ],
+      "threshold": 0.15234375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": false
+    },
+    {
+      "context": "fake_sherbrooke-w1-l1",
+      "acquisition": 0,
+      "case": "z0",
+      "alarms": 1,
+      "decisions": 256,
+      "rate": 0.00390625,
+      "wilson95": [
+        0.0006898821669617927,
+        0.021790975380582514
+      ],
+      "threshold": 0.15234375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": false
+    },
+    {
+      "context": "fake_sherbrooke-w1-l1",
+      "acquisition": 0,
+      "case": "rz0_0.12",
+      "alarms": 1,
+      "decisions": 256,
+      "rate": 0.00390625,
+      "wilson95": [
+        0.0006898821669617927,
+        0.021790975380582514
+      ],
+      "threshold": 0.15234375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w1-l1",
+      "acquisition": 0,
+      "case": "cx01",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.15234375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w1-l1",
+      "acquisition": 0,
+      "case": "swap_end",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.15234375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w1-l1",
+      "acquisition": 0,
+      "case": "parameter_scale_1.1",
+      "alarms": 3,
+      "decisions": 256,
+      "rate": 0.01171875,
+      "wilson95": [
+        0.003993287123007758,
+        0.033881572667882304
+      ],
+      "threshold": 0.15234375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w1-l1",
+      "acquisition": 1,
+      "case": "benign_readout_drift_x2",
+      "alarms": 1,
+      "decisions": 256,
+      "rate": 0.00390625,
+      "wilson95": [
+        0.0006898821669617927,
+        0.021790975380582514
+      ],
+      "threshold": 0.1566162109375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w1-l1",
+      "acquisition": 1,
+      "case": "clean",
+      "alarms": 1,
+      "decisions": 256,
+      "rate": 0.00390625,
+      "wilson95": [
+        0.0006898821669617927,
+        0.021790975380582514
+      ],
+      "threshold": 0.1566162109375,
+      "clean_bound_pass": true,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w1-l1",
+      "acquisition": 1,
+      "case": "equivalent_optimized",
+      "alarms": 1,
+      "decisions": 256,
+      "rate": 0.00390625,
+      "wilson95": [
+        0.0006898821669617927,
+        0.021790975380582514
+      ],
+      "threshold": 0.1566162109375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w1-l1",
+      "acquisition": 1,
+      "case": "x0",
+      "alarms": 2,
+      "decisions": 256,
+      "rate": 0.0078125,
+      "wilson95": [
+        0.002145090367681419,
+        0.028032768301535768
+      ],
+      "threshold": 0.1566162109375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": false
+    },
+    {
+      "context": "fake_sherbrooke-w1-l1",
+      "acquisition": 1,
+      "case": "z0",
+      "alarms": 1,
+      "decisions": 256,
+      "rate": 0.00390625,
+      "wilson95": [
+        0.0006898821669617927,
+        0.021790975380582514
+      ],
+      "threshold": 0.1566162109375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": false
+    },
+    {
+      "context": "fake_sherbrooke-w1-l1",
+      "acquisition": 1,
+      "case": "rz0_0.12",
+      "alarms": 1,
+      "decisions": 256,
+      "rate": 0.00390625,
+      "wilson95": [
+        0.0006898821669617927,
+        0.021790975380582514
+      ],
+      "threshold": 0.1566162109375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w1-l1",
+      "acquisition": 1,
+      "case": "cx01",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1566162109375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w1-l1",
+      "acquisition": 1,
+      "case": "swap_end",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1566162109375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w1-l1",
+      "acquisition": 1,
+      "case": "parameter_scale_1.1",
+      "alarms": 0,
+      "decisions": 256,
+      "rate": 0.0,
+      "wilson95": [
+        0.0,
+        0.01478385642587143
+      ],
+      "threshold": 0.1566162109375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w1-l1",
+      "acquisition": 2,
+      "case": "benign_readout_drift_x2",
+      "alarms": 5,
+      "decisions": 256,
+      "rate": 0.01953125,
+      "wilson95": [
+        0.008370729784579391,
+        0.04489813224965644
+      ],
+      "threshold": 0.152099609375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w1-l1",
+      "acquisition": 2,
+      "case": "clean",
+      "alarms": 2,
+      "decisions": 256,
+      "rate": 0.0078125,
+      "wilson95": [
+        0.002145090367681419,
+        0.028032768301535768
+      ],
+      "threshold": 0.152099609375,
+      "clean_bound_pass": true,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w1-l1",
+      "acquisition": 2,
+      "case": "equivalent_optimized",
+      "alarms": 5,
+      "decisions": 256,
+      "rate": 0.01953125,
+      "wilson95": [
+        0.008370729784579391,
+        0.04489813224965644
+      ],
+      "threshold": 0.152099609375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w1-l1",
+      "acquisition": 2,
+      "case": "x0",
+      "alarms": 2,
+      "decisions": 256,
+      "rate": 0.0078125,
+      "wilson95": [
+        0.002145090367681419,
+        0.028032768301535768
+      ],
+      "threshold": 0.152099609375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": false
+    },
+    {
+      "context": "fake_sherbrooke-w1-l1",
+      "acquisition": 2,
+      "case": "z0",
+      "alarms": 1,
+      "decisions": 256,
+      "rate": 0.00390625,
+      "wilson95": [
+        0.0006898821669617927,
+        0.021790975380582514
+      ],
+      "threshold": 0.152099609375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": false
+    },
+    {
+      "context": "fake_sherbrooke-w1-l1",
+      "acquisition": 2,
+      "case": "rz0_0.12",
+      "alarms": 3,
+      "decisions": 256,
+      "rate": 0.01171875,
+      "wilson95": [
+        0.003993287123007758,
+        0.033881572667882304
+      ],
+      "threshold": 0.152099609375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w1-l1",
+      "acquisition": 2,
+      "case": "cx01",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.152099609375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w1-l1",
+      "acquisition": 2,
+      "case": "swap_end",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.152099609375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w1-l1",
+      "acquisition": 2,
+      "case": "parameter_scale_1.1",
+      "alarms": 5,
+      "decisions": 256,
+      "rate": 0.01953125,
+      "wilson95": [
+        0.008370729784579391,
+        0.04489813224965644
+      ],
+      "threshold": 0.152099609375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w2-l0",
+      "acquisition": 0,
+      "case": "benign_readout_drift_x2",
+      "alarms": 8,
+      "decisions": 256,
+      "rate": 0.03125,
+      "wilson95": [
+        0.015918258891511296,
+        0.06044160650774316
+      ],
+      "threshold": 0.1422119140625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w2-l0",
+      "acquisition": 0,
+      "case": "clean",
+      "alarms": 1,
+      "decisions": 256,
+      "rate": 0.00390625,
+      "wilson95": [
+        0.0006898821669617927,
+        0.021790975380582514
+      ],
+      "threshold": 0.1422119140625,
+      "clean_bound_pass": true,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w2-l0",
+      "acquisition": 0,
+      "case": "equivalent_optimized",
+      "alarms": 2,
+      "decisions": 256,
+      "rate": 0.0078125,
+      "wilson95": [
+        0.002145090367681419,
+        0.028032768301535768
+      ],
+      "threshold": 0.1422119140625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w2-l0",
+      "acquisition": 0,
+      "case": "x0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1422119140625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w2-l0",
+      "acquisition": 0,
+      "case": "z0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1422119140625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w2-l0",
+      "acquisition": 0,
+      "case": "rz0_0.12",
+      "alarms": 2,
+      "decisions": 256,
+      "rate": 0.0078125,
+      "wilson95": [
+        0.002145090367681419,
+        0.028032768301535768
+      ],
+      "threshold": 0.1422119140625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w2-l0",
+      "acquisition": 0,
+      "case": "cx01",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1422119140625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w2-l0",
+      "acquisition": 0,
+      "case": "swap_end",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1422119140625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w2-l0",
+      "acquisition": 0,
+      "case": "parameter_scale_1.1",
+      "alarms": 117,
+      "decisions": 256,
+      "rate": 0.45703125,
+      "wilson95": [
+        0.3970936285540288,
+        0.5182393591075696
+      ],
+      "threshold": 0.1422119140625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w2-l0",
+      "acquisition": 1,
+      "case": "benign_readout_drift_x2",
+      "alarms": 5,
+      "decisions": 256,
+      "rate": 0.01953125,
+      "wilson95": [
+        0.008370729784579391,
+        0.04489813224965644
+      ],
+      "threshold": 0.138671875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w2-l0",
+      "acquisition": 1,
+      "case": "clean",
+      "alarms": 0,
+      "decisions": 256,
+      "rate": 0.0,
+      "wilson95": [
+        0.0,
+        0.01478385642587143
+      ],
+      "threshold": 0.138671875,
+      "clean_bound_pass": true,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w2-l0",
+      "acquisition": 1,
+      "case": "equivalent_optimized",
+      "alarms": 3,
+      "decisions": 256,
+      "rate": 0.01171875,
+      "wilson95": [
+        0.003993287123007758,
+        0.033881572667882304
+      ],
+      "threshold": 0.138671875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w2-l0",
+      "acquisition": 1,
+      "case": "x0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.138671875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w2-l0",
+      "acquisition": 1,
+      "case": "z0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.138671875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w2-l0",
+      "acquisition": 1,
+      "case": "rz0_0.12",
+      "alarms": 1,
+      "decisions": 256,
+      "rate": 0.00390625,
+      "wilson95": [
+        0.0006898821669617927,
+        0.021790975380582514
+      ],
+      "threshold": 0.138671875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w2-l0",
+      "acquisition": 1,
+      "case": "cx01",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.138671875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w2-l0",
+      "acquisition": 1,
+      "case": "swap_end",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.138671875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w2-l0",
+      "acquisition": 1,
+      "case": "parameter_scale_1.1",
+      "alarms": 116,
+      "decisions": 256,
+      "rate": 0.453125,
+      "wilson95": [
+        0.3932873375109957,
+        0.5143486490289297
+      ],
+      "threshold": 0.138671875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w2-l0",
+      "acquisition": 2,
+      "case": "benign_readout_drift_x2",
+      "alarms": 12,
+      "decisions": 256,
+      "rate": 0.046875,
+      "wilson95": [
+        0.027014851001628076,
+        0.0801330188843179
+      ],
+      "threshold": 0.1392822265625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w2-l0",
+      "acquisition": 2,
+      "case": "clean",
+      "alarms": 2,
+      "decisions": 256,
+      "rate": 0.0078125,
+      "wilson95": [
+        0.002145090367681419,
+        0.028032768301535768
+      ],
+      "threshold": 0.1392822265625,
+      "clean_bound_pass": true,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w2-l0",
+      "acquisition": 2,
+      "case": "equivalent_optimized",
+      "alarms": 0,
+      "decisions": 256,
+      "rate": 0.0,
+      "wilson95": [
+        0.0,
+        0.01478385642587143
+      ],
+      "threshold": 0.1392822265625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w2-l0",
+      "acquisition": 2,
+      "case": "x0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1392822265625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w2-l0",
+      "acquisition": 2,
+      "case": "z0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1392822265625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w2-l0",
+      "acquisition": 2,
+      "case": "rz0_0.12",
+      "alarms": 0,
+      "decisions": 256,
+      "rate": 0.0,
+      "wilson95": [
+        0.0,
+        0.01478385642587143
+      ],
+      "threshold": 0.1392822265625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w2-l0",
+      "acquisition": 2,
+      "case": "cx01",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1392822265625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w2-l0",
+      "acquisition": 2,
+      "case": "swap_end",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1392822265625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w2-l0",
+      "acquisition": 2,
+      "case": "parameter_scale_1.1",
+      "alarms": 122,
+      "decisions": 256,
+      "rate": 0.4765625,
+      "wilson95": [
+        0.41618039421813385,
+        0.5376375990518288
+      ],
+      "threshold": 0.1392822265625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w2-l1",
+      "acquisition": 0,
+      "case": "benign_readout_drift_x2",
+      "alarms": 1,
+      "decisions": 256,
+      "rate": 0.00390625,
+      "wilson95": [
+        0.0006898821669617927,
+        0.021790975380582514
+      ],
+      "threshold": 0.1490478515625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w2-l1",
+      "acquisition": 0,
+      "case": "clean",
+      "alarms": 4,
+      "decisions": 256,
+      "rate": 0.015625,
+      "wilson95": [
+        0.006092598203366294,
+        0.039479262709196654
+      ],
+      "threshold": 0.1490478515625,
+      "clean_bound_pass": true,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w2-l1",
+      "acquisition": 0,
+      "case": "equivalent_optimized",
+      "alarms": 1,
+      "decisions": 256,
+      "rate": 0.00390625,
+      "wilson95": [
+        0.0006898821669617927,
+        0.021790975380582514
+      ],
+      "threshold": 0.1490478515625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w2-l1",
+      "acquisition": 0,
+      "case": "x0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1490478515625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w2-l1",
+      "acquisition": 0,
+      "case": "z0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1490478515625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w2-l1",
+      "acquisition": 0,
+      "case": "rz0_0.12",
+      "alarms": 3,
+      "decisions": 256,
+      "rate": 0.01171875,
+      "wilson95": [
+        0.003993287123007758,
+        0.033881572667882304
+      ],
+      "threshold": 0.1490478515625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w2-l1",
+      "acquisition": 0,
+      "case": "cx01",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1490478515625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w2-l1",
+      "acquisition": 0,
+      "case": "swap_end",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1490478515625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w2-l1",
+      "acquisition": 0,
+      "case": "parameter_scale_1.1",
+      "alarms": 4,
+      "decisions": 256,
+      "rate": 0.015625,
+      "wilson95": [
+        0.006092598203366294,
+        0.039479262709196654
+      ],
+      "threshold": 0.1490478515625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w2-l1",
+      "acquisition": 1,
+      "case": "benign_readout_drift_x2",
+      "alarms": 3,
+      "decisions": 256,
+      "rate": 0.01171875,
+      "wilson95": [
+        0.003993287123007758,
+        0.033881572667882304
+      ],
+      "threshold": 0.1502685546875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w2-l1",
+      "acquisition": 1,
+      "case": "clean",
+      "alarms": 2,
+      "decisions": 256,
+      "rate": 0.0078125,
+      "wilson95": [
+        0.002145090367681419,
+        0.028032768301535768
+      ],
+      "threshold": 0.1502685546875,
+      "clean_bound_pass": true,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w2-l1",
+      "acquisition": 1,
+      "case": "equivalent_optimized",
+      "alarms": 1,
+      "decisions": 256,
+      "rate": 0.00390625,
+      "wilson95": [
+        0.0006898821669617927,
+        0.021790975380582514
+      ],
+      "threshold": 0.1502685546875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w2-l1",
+      "acquisition": 1,
+      "case": "x0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1502685546875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w2-l1",
+      "acquisition": 1,
+      "case": "z0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1502685546875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w2-l1",
+      "acquisition": 1,
+      "case": "rz0_0.12",
+      "alarms": 6,
+      "decisions": 256,
+      "rate": 0.0234375,
+      "wilson95": [
+        0.010784867555857603,
+        0.0501809956000511
+      ],
+      "threshold": 0.1502685546875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w2-l1",
+      "acquisition": 1,
+      "case": "cx01",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1502685546875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w2-l1",
+      "acquisition": 1,
+      "case": "swap_end",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.1502685546875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w2-l1",
+      "acquisition": 1,
+      "case": "parameter_scale_1.1",
+      "alarms": 5,
+      "decisions": 256,
+      "rate": 0.01953125,
+      "wilson95": [
+        0.008370729784579391,
+        0.04489813224965644
+      ],
+      "threshold": 0.1502685546875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w2-l1",
+      "acquisition": 2,
+      "case": "benign_readout_drift_x2",
+      "alarms": 2,
+      "decisions": 256,
+      "rate": 0.0078125,
+      "wilson95": [
+        0.002145090367681419,
+        0.028032768301535768
+      ],
+      "threshold": 0.146484375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w2-l1",
+      "acquisition": 2,
+      "case": "clean",
+      "alarms": 2,
+      "decisions": 256,
+      "rate": 0.0078125,
+      "wilson95": [
+        0.002145090367681419,
+        0.028032768301535768
+      ],
+      "threshold": 0.146484375,
+      "clean_bound_pass": true,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w2-l1",
+      "acquisition": 2,
+      "case": "equivalent_optimized",
+      "alarms": 3,
+      "decisions": 256,
+      "rate": 0.01171875,
+      "wilson95": [
+        0.003993287123007758,
+        0.033881572667882304
+      ],
+      "threshold": 0.146484375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w2-l1",
+      "acquisition": 2,
+      "case": "x0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.146484375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w2-l1",
+      "acquisition": 2,
+      "case": "z0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.146484375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w2-l1",
+      "acquisition": 2,
+      "case": "rz0_0.12",
+      "alarms": 2,
+      "decisions": 256,
+      "rate": 0.0078125,
+      "wilson95": [
+        0.002145090367681419,
+        0.028032768301535768
+      ],
+      "threshold": 0.146484375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w2-l1",
+      "acquisition": 2,
+      "case": "cx01",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.146484375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w2-l1",
+      "acquisition": 2,
+      "case": "swap_end",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.146484375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w2-l1",
+      "acquisition": 2,
+      "case": "parameter_scale_1.1",
+      "alarms": 9,
+      "decisions": 256,
+      "rate": 0.03515625,
+      "wilson95": [
+        0.018604096092635542,
+        0.0654527704282918
+      ],
+      "threshold": 0.146484375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w3-l0",
+      "acquisition": 0,
+      "case": "benign_readout_drift_x2",
+      "alarms": 141,
+      "decisions": 256,
+      "rate": 0.55078125,
+      "wilson95": [
+        0.4895457648520954,
+        0.6105152497296519
+      ],
+      "threshold": 0.0526123046875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w3-l0",
+      "acquisition": 0,
+      "case": "clean",
+      "alarms": 3,
+      "decisions": 256,
+      "rate": 0.01171875,
+      "wilson95": [
+        0.003993287123007758,
+        0.033881572667882304
+      ],
+      "threshold": 0.0526123046875,
+      "clean_bound_pass": true,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w3-l0",
+      "acquisition": 0,
+      "case": "x0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.0526123046875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w3-l0",
+      "acquisition": 0,
+      "case": "z0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.0526123046875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w3-l0",
+      "acquisition": 0,
+      "case": "rz0_0.12",
+      "alarms": 1,
+      "decisions": 256,
+      "rate": 0.00390625,
+      "wilson95": [
+        0.0006898821669617927,
+        0.021790975380582514
+      ],
+      "threshold": 0.0526123046875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w3-l0",
+      "acquisition": 0,
+      "case": "cx01",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.0526123046875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w3-l0",
+      "acquisition": 0,
+      "case": "swap_end",
+      "alarms": 32,
+      "decisions": 256,
+      "rate": 0.125,
+      "wilson95": [
+        0.08995183318684266,
+        0.17113605913256094
+      ],
+      "threshold": 0.0526123046875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w3-l0",
+      "acquisition": 0,
+      "case": "parameter_scale_1.1",
+      "alarms": 1,
+      "decisions": 256,
+      "rate": 0.00390625,
+      "wilson95": [
+        0.0006898821669617927,
+        0.021790975380582514
+      ],
+      "threshold": 0.0526123046875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w3-l0",
+      "acquisition": 1,
+      "case": "benign_readout_drift_x2",
+      "alarms": 178,
+      "decisions": 256,
+      "rate": 0.6953125,
+      "wilson95": [
+        0.6363862715072103,
+        0.7484637845764336
+      ],
+      "threshold": 0.0478515625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w3-l0",
+      "acquisition": 1,
+      "case": "clean",
+      "alarms": 3,
+      "decisions": 256,
+      "rate": 0.01171875,
+      "wilson95": [
+        0.003993287123007758,
+        0.033881572667882304
+      ],
+      "threshold": 0.0478515625,
+      "clean_bound_pass": true,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w3-l0",
+      "acquisition": 1,
+      "case": "x0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.0478515625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w3-l0",
+      "acquisition": 1,
+      "case": "z0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.0478515625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w3-l0",
+      "acquisition": 1,
+      "case": "rz0_0.12",
+      "alarms": 3,
+      "decisions": 256,
+      "rate": 0.01171875,
+      "wilson95": [
+        0.003993287123007758,
+        0.033881572667882304
+      ],
+      "threshold": 0.0478515625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w3-l0",
+      "acquisition": 1,
+      "case": "cx01",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.0478515625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w3-l0",
+      "acquisition": 1,
+      "case": "swap_end",
+      "alarms": 37,
+      "decisions": 256,
+      "rate": 0.14453125,
+      "wilson95": [
+        0.10671067600593546,
+        0.1928622219218325
+      ],
+      "threshold": 0.0478515625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w3-l0",
+      "acquisition": 1,
+      "case": "parameter_scale_1.1",
+      "alarms": 2,
+      "decisions": 256,
+      "rate": 0.0078125,
+      "wilson95": [
+        0.002145090367681419,
+        0.028032768301535768
+      ],
+      "threshold": 0.0478515625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w3-l0",
+      "acquisition": 2,
+      "case": "benign_readout_drift_x2",
+      "alarms": 216,
+      "decisions": 256,
+      "rate": 0.84375,
+      "wilson95": [
+        0.7942285422215228,
+        0.8831075564856906
+      ],
+      "threshold": 0.045166015625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w3-l0",
+      "acquisition": 2,
+      "case": "clean",
+      "alarms": 12,
+      "decisions": 256,
+      "rate": 0.046875,
+      "wilson95": [
+        0.027014851001628076,
+        0.0801330188843179
+      ],
+      "threshold": 0.045166015625,
+      "clean_bound_pass": true,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w3-l0",
+      "acquisition": 2,
+      "case": "x0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.045166015625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w3-l0",
+      "acquisition": 2,
+      "case": "z0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.045166015625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w3-l0",
+      "acquisition": 2,
+      "case": "rz0_0.12",
+      "alarms": 10,
+      "decisions": 256,
+      "rate": 0.0390625,
+      "wilson95": [
+        0.0213540358427329,
+        0.07039983179986732
+      ],
+      "threshold": 0.045166015625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w3-l0",
+      "acquisition": 2,
+      "case": "cx01",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.045166015625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w3-l0",
+      "acquisition": 2,
+      "case": "swap_end",
+      "alarms": 63,
+      "decisions": 256,
+      "rate": 0.24609375,
+      "wilson95": [
+        0.19734067215723067,
+        0.3023542549340322
+      ],
+      "threshold": 0.045166015625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w3-l0",
+      "acquisition": 2,
+      "case": "parameter_scale_1.1",
+      "alarms": 5,
+      "decisions": 256,
+      "rate": 0.01953125,
+      "wilson95": [
+        0.008370729784579391,
+        0.04489813224965644
+      ],
+      "threshold": 0.045166015625,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w3-l1",
+      "acquisition": 0,
+      "case": "benign_readout_drift_x2",
+      "alarms": 154,
+      "decisions": 256,
+      "rate": 0.6015625,
+      "wilson95": [
+        0.540515032751419,
+        0.6596069964120759
+      ],
+      "threshold": 0.0506591796875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w3-l1",
+      "acquisition": 0,
+      "case": "clean",
+      "alarms": 2,
+      "decisions": 256,
+      "rate": 0.0078125,
+      "wilson95": [
+        0.002145090367681419,
+        0.028032768301535768
+      ],
+      "threshold": 0.0506591796875,
+      "clean_bound_pass": true,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w3-l1",
+      "acquisition": 0,
+      "case": "x0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.0506591796875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w3-l1",
+      "acquisition": 0,
+      "case": "z0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.0506591796875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w3-l1",
+      "acquisition": 0,
+      "case": "rz0_0.12",
+      "alarms": 1,
+      "decisions": 256,
+      "rate": 0.00390625,
+      "wilson95": [
+        0.0006898821669617927,
+        0.021790975380582514
+      ],
+      "threshold": 0.0506591796875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w3-l1",
+      "acquisition": 0,
+      "case": "cx01",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.0506591796875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w3-l1",
+      "acquisition": 0,
+      "case": "swap_end",
+      "alarms": 58,
+      "decisions": 256,
+      "rate": 0.2265625,
+      "wilson95": [
+        0.1795467073799799,
+        0.28166321410291856
+      ],
+      "threshold": 0.0506591796875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w3-l1",
+      "acquisition": 0,
+      "case": "parameter_scale_1.1",
+      "alarms": 2,
+      "decisions": 256,
+      "rate": 0.0078125,
+      "wilson95": [
+        0.002145090367681419,
+        0.028032768301535768
+      ],
+      "threshold": 0.0506591796875,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w3-l1",
+      "acquisition": 1,
+      "case": "benign_readout_drift_x2",
+      "alarms": 144,
+      "decisions": 256,
+      "rate": 0.5625,
+      "wilson95": [
+        0.5012513172897817,
+        0.6219007006569843
+      ],
+      "threshold": 0.052490234375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w3-l1",
+      "acquisition": 1,
+      "case": "clean",
+      "alarms": 3,
+      "decisions": 256,
+      "rate": 0.01171875,
+      "wilson95": [
+        0.003993287123007758,
+        0.033881572667882304
+      ],
+      "threshold": 0.052490234375,
+      "clean_bound_pass": true,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w3-l1",
+      "acquisition": 1,
+      "case": "x0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.052490234375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w3-l1",
+      "acquisition": 1,
+      "case": "z0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.052490234375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w3-l1",
+      "acquisition": 1,
+      "case": "rz0_0.12",
+      "alarms": 5,
+      "decisions": 256,
+      "rate": 0.01953125,
+      "wilson95": [
+        0.008370729784579391,
+        0.04489813224965644
+      ],
+      "threshold": 0.052490234375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w3-l1",
+      "acquisition": 1,
+      "case": "cx01",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.052490234375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w3-l1",
+      "acquisition": 1,
+      "case": "swap_end",
+      "alarms": 61,
+      "decisions": 256,
+      "rate": 0.23828125,
+      "wilson95": [
+        0.1902054003663705,
+        0.2940955244815466
+      ],
+      "threshold": 0.052490234375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w3-l1",
+      "acquisition": 1,
+      "case": "parameter_scale_1.1",
+      "alarms": 2,
+      "decisions": 256,
+      "rate": 0.0078125,
+      "wilson95": [
+        0.002145090367681419,
+        0.028032768301535768
+      ],
+      "threshold": 0.052490234375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w3-l1",
+      "acquisition": 2,
+      "case": "benign_readout_drift_x2",
+      "alarms": 162,
+      "decisions": 256,
+      "rate": 0.6328125,
+      "wilson95": [
+        0.5722056515609918,
+        0.6894923865758861
+      ],
+      "threshold": 0.048583984375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w3-l1",
+      "acquisition": 2,
+      "case": "clean",
+      "alarms": 1,
+      "decisions": 256,
+      "rate": 0.00390625,
+      "wilson95": [
+        0.0006898821669617927,
+        0.021790975380582514
+      ],
+      "threshold": 0.048583984375,
+      "clean_bound_pass": true,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w3-l1",
+      "acquisition": 2,
+      "case": "x0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.048583984375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w3-l1",
+      "acquisition": 2,
+      "case": "z0",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.048583984375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w3-l1",
+      "acquisition": 2,
+      "case": "rz0_0.12",
+      "alarms": 6,
+      "decisions": 256,
+      "rate": 0.0234375,
+      "wilson95": [
+        0.010784867555857603,
+        0.0501809956000511
+      ],
+      "threshold": 0.048583984375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w3-l1",
+      "acquisition": 2,
+      "case": "cx01",
+      "alarms": 256,
+      "decisions": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "threshold": 0.048583984375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": true
+    },
+    {
+      "context": "fake_sherbrooke-w3-l1",
+      "acquisition": 2,
+      "case": "swap_end",
+      "alarms": 67,
+      "decisions": 256,
+      "rate": 0.26171875,
+      "wilson95": [
+        0.21167863808724405,
+        0.31880429349071027
+      ],
+      "threshold": 0.048583984375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    },
+    {
+      "context": "fake_sherbrooke-w3-l1",
+      "acquisition": 2,
+      "case": "parameter_scale_1.1",
+      "alarms": 2,
+      "decisions": 256,
+      "rate": 0.0078125,
+      "wilson95": [
+        0.002145090367681419,
+        0.028032768301535768
+      ],
+      "threshold": 0.048583984375,
+      "clean_bound_pass": null,
+      "detection_bound_pass": null
+    }
+  ],
+  "cost": {
+    "sampled_shots": 102592512,
+    "qpu_shots": 0
+  },
+  "detector_sha256": {
+    "rust/research/probes.rs": "3ff31d32139177dbf45b90cee506f5e0c2984be386e31d35c8c12c0224cfe05f",
+    "rust/research/verification.rs": "8a3f7b3ea9eb10106c2e452c8e0499d60bc9c4f91e498c8af1ae30424a338462",
+    "rust/research/statistics.rs": "24526fb3ab43e2fe96b74d8b8e82437101ef396a82f0313e3856b709cfc15c8d"
+  },
+  "source_files_sha256": {
+    "research/ibm/common.py": "dcea93bae44e7f9a97c67acb8a88cbaa7622a076f63b2f5da2ac18f62a7d71be",
+    "research/ibm/calibrated.py": "69e4fa420270e385e9d33265e117a639b5bcae7cc061a4d1d634b46bf92a5b43",
+    "docs/IBM_CALIBRATION_PROTOCOL_V1.json": "f0a893191e8359d0d3877983265f2b34537521a08d1310c4e227284166834706",
+    "rust/main.rs": "7f1e23d8c02e12f5393932986a19165e25ed8ab77e8da05422643ee0449ad9d9"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "version": "false-positives-v1",
+  "status": "Exploratory external-artifact audit fixed before this run; earlier RASQP results and limitations were known. Not external preregistration.",
+  "sample_policy": "mixed_controls",
+  "seed": 29661000,
+  "max_qubits": 8,
+  "benchmark_max_qubits": 4,
+  "max_lowered_gates": 4080,
+  "lowering": {"basis": ["x", "z", "h", "rx", "ry", "rz", "cx"], "seed_transpiler": 19451},
+  "noise": [0.0, 0.005],
+  "reference_shots_per_probe": 8192,
+  "calibration_repetitions": 511,
+  "evaluation_repetitions": 256,
+  "shots_per_decision": 768,
+  "alpha": 0.01,
+  "portfolio": [["0", "Z"], ["1", "Z"], ["+", "X"]],
+  "methods": ["fixed_0Z", "portfolio_joint", "portfolio_naive_or", "portfolio_bonferroni_or"],
+  "source": {
+    "QASMBench": {"repository": "https://github.com/pnnl/QASMBench", "article": "https://arxiv.org/abs/2005.13018", "commit": "357b942396d5c2b7cbc1c229c585a6ef5ccaebac", "archive_sha256": "2f9dd728496daac52044ba58532daf12e15d48f5f49a390530cebc8782d00208", "subdirectory": "small"},
+    "VeriQBench": {"repository": "https://github.com/Veri-Q/Benchmark", "article": "https://arxiv.org/abs/2206.10880", "commit": "9be108313844e30c5df5780989a68cac4d966cfe", "archive_sha256": "dc0d208176b961438fc8796daa60690a385e25eadae69c385b69bdc9ce1c2787", "subdirectory": "combinational"},
+    "QDoor": {"repository": "https://github.com/chuchengc/QDoor", "article_title": "QDoor: Exploiting Approximate Synthesis for Backdoor Attacks in Quantum Neural Networks", "commit": "2ab751fc2c8dd858a3d2a82ede600c0b45ac4a67", "archive_sha256": "75200c1e6e415e62588bee6cbe98eff644c9cc2b2596e845a5a352529db045bb"}
+  },
+  "selection": "All parseable unitary QASMBench small and VeriQBench combinational QASM circuits of width 1--4 and at most 4080 lowered gates. Record all exclusions. Preserve terminal measurement mappings; the evaluated boundary is the full-register unitary block, not the source partial-output application. No selection by observed alarm or desired result. QDoor author parameters are a separate eight-qubit exception.",
+  "benign_controls": "For every eligible source: original, Qiskit optimization_level=3 rewrite scored against original calibration, and appended XX identity. Independently approve and calibrate the optimized raw circuit as another context. Verify ideal operators of exact rewrites; noisy implementation behavior may change. Approximate QDoor synthesis is not exact equivalence.",
+  "qdoor": {"feature_vectors": [[0,0,0,0,0,0,0,0],[0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8],[1,0.2,0.3,0.4,0.5,0.6,0.7,0.8]], "artifacts": ["model/init_whole8.pt", "model/backdoor_init.pt", "model/backdoor.pt", "qasm/circuit.qasm"], "boundary": "Circuit-level replay of author-supplied trained numeric parameters and statically inspected topology. Compare original clean calibration to compiled initialization and trained backdoor; also independently approve compiled initialization before comparing trained backdoor. Feature vectors are explicit diagnostics, not PCA/MNIST samples. No article classification accuracy, attack-success rate, pulse trigger or approximate compiler reproduction is claimed. No torch.load, pickle deserialization or upstream code execution."},
+  "criteria": "Matched approved clean context: report every-context Wilson95 upper false-alarm bound <=0.10. Report mean and worst context; no overall guarantee from pooled related circuits. Exact benign rewrite alarms under original context measure calibration-transfer failure, separate from approved-context false positives. Author-labeled attacked artifacts report detection per case without claiming all published attacks covered.",
+  "statistics": "256 independent sampled decisions conditional on one clean reference/calibration per raw context. Thresholds and detector unchanged; increasing evaluation repetitions affects interval precision only. Macro summaries weight base contexts equally. Duplicate source artifacts and potential prior Wildisley overlap are recorded; not independent new populations.",
+  "reporting": "Save input source hashes, lowering/operator checks, source inventory, raw samples and independent reconstruction of every decision. Report structural accept/inconclusive/reject separately from behavioral alarms. These are SDK component evaluations, not end-to-end GuardedRuntime or QPU executions. Do not infer malicious intent from an alarm."
+}

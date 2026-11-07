@@ -1,0 +1,1938 @@
+{
+  "version": "wildisley-external-v1",
+  "source": {
+    "repository": "https://github.com/apenas-will/IC-QT-2026",
+    "commit": "48ec00d02776e602e3336c8db66ea9fda8c59576",
+    "archive_sha256": "6c9a4d053239ce390dde16d91629217bcd9a550fb5f72f7af357d756ce22142d",
+    "dataset": "results/datasets/dataset_trojan_final/full",
+    "article": "https://sol.sbc.org.br/index.php/sbseg_estendido/article/view/44500",
+    "expected_golden": 535,
+    "expected_infected": 5350
+  },
+  "protocol_sha256": "4ca8cc89b85a7df550af6f35a65a3fac925a13d0e1df803725273e0c3eb908e5",
+  "metadata_sha256": "ba422549eabd96b0b91546a27d5333ff59823777f5106dda4b9c1f6faa79312b",
+  "published_predictions_sha256": "71d824a7d34eddb520b05229c864906f99a969ce59994928b5de7746283dd6e6",
+  "input_sha256": "0bbd075212e572d01ca651501215e88c65e158562798c2c38c1f20df23d737a6",
+  "inventory_sha256": "b34e4f4b7eb95b4aec61aa7f29bacb4ba3bad358d5b6d46c4a9702d417898a62",
+  "qiskit": "2.6.1",
+  "numpy": "2.5.4",
+  "source_rows": 5885,
+  "source_bases": 535,
+  "eligible_bases": 296,
+  "eligible_rows": 3256,
+  "excluded_groups": [
+    {
+      "base_circuit_id": "0",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "1",
+      "fold": 4,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "2",
+      "fold": 3,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "5",
+      "fold": 1,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "6",
+      "fold": 4,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "7",
+      "fold": 3,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "8",
+      "fold": 2,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "9",
+      "fold": 1,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "10",
+      "fold": 3,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "11",
+      "fold": 2,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "12",
+      "fold": 1,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "13",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "21",
+      "fold": 1,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "22",
+      "fold": 1,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "23",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "24",
+      "fold": 4,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "25",
+      "fold": 3,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "29",
+      "fold": 4,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "30",
+      "fold": 2,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "31",
+      "fold": 1,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "32",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "33",
+      "fold": 4,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "34",
+      "fold": 3,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "35",
+      "fold": 2,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "36",
+      "fold": 1,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "37",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "44",
+      "fold": 2,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "45",
+      "fold": 1,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "46",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "47",
+      "fold": 4,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "48",
+      "fold": 3,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "49",
+      "fold": 2,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "50",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "51",
+      "fold": 4,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "52",
+      "fold": 3,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "53",
+      "fold": 2,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "54",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "62",
+      "fold": 1,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "63",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "64",
+      "fold": 4,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "65",
+      "fold": 3,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "66",
+      "fold": 2,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "67",
+      "fold": 1,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "73",
+      "fold": 4,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "74",
+      "fold": 3,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "75",
+      "fold": 2,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "76",
+      "fold": 1,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "77",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "78",
+      "fold": 4,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "79",
+      "fold": 3,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "80",
+      "fold": 1,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "81",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "82",
+      "fold": 4,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "93",
+      "fold": 2,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "104",
+      "fold": 3,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "106",
+      "fold": 1,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "107",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "108",
+      "fold": 4,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "109",
+      "fold": 3,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "110",
+      "fold": 1,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "111",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "112",
+      "fold": 4,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "116",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "117",
+      "fold": 4,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "122",
+      "fold": 3,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "142",
+      "fold": 1,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "143",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "144",
+      "fold": 4,
+      "sample_count": 11,
+      "reasons": {
+        "ValueError:mid_circuit_measurement": 11
+      }
+    },
+    {
+      "base_circuit_id": "145",
+      "fold": 3,
+      "sample_count": 11,
+      "reasons": {
+        "ValueError:mid_circuit_measurement": 11
+      }
+    },
+    {
+      "base_circuit_id": "146",
+      "fold": 2,
+      "sample_count": 11,
+      "reasons": {
+        "ValueError:mid_circuit_measurement": 11
+      }
+    },
+    {
+      "base_circuit_id": "147",
+      "fold": 1,
+      "sample_count": 11,
+      "reasons": {
+        "ValueError:mid_circuit_measurement": 11
+      }
+    },
+    {
+      "base_circuit_id": "148",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "ValueError:mid_circuit_measurement": 11
+      }
+    },
+    {
+      "base_circuit_id": "149",
+      "fold": 4,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "150",
+      "fold": 2,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "151",
+      "fold": 1,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "152",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "153",
+      "fold": 4,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "154",
+      "fold": 3,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "155",
+      "fold": 2,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "156",
+      "fold": 1,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "157",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "ValueError:mid_circuit_measurement": 11
+      }
+    },
+    {
+      "base_circuit_id": "158",
+      "fold": 4,
+      "sample_count": 11,
+      "reasons": {
+        "ValueError:mid_circuit_measurement": 11
+      }
+    },
+    {
+      "base_circuit_id": "159",
+      "fold": 3,
+      "sample_count": 11,
+      "reasons": {
+        "ValueError:mid_circuit_measurement": 11
+      }
+    },
+    {
+      "base_circuit_id": "160",
+      "fold": 1,
+      "sample_count": 11,
+      "reasons": {
+        "ValueError:mid_circuit_measurement": 11
+      }
+    },
+    {
+      "base_circuit_id": "161",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "ValueError:mid_circuit_measurement": 11
+      }
+    },
+    {
+      "base_circuit_id": "162",
+      "fold": 4,
+      "sample_count": 11,
+      "reasons": {
+        "ValueError:mid_circuit_measurement": 11
+      }
+    },
+    {
+      "base_circuit_id": "163",
+      "fold": 3,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "164",
+      "fold": 2,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "165",
+      "fold": 1,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "166",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "167",
+      "fold": 4,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "168",
+      "fold": 3,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "169",
+      "fold": 2,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "170",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "171",
+      "fold": 4,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "172",
+      "fold": 3,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "173",
+      "fold": 2,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "174",
+      "fold": 1,
+      "sample_count": 11,
+      "reasons": {
+        "ValueError:mid_circuit_measurement": 11
+      }
+    },
+    {
+      "base_circuit_id": "175",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "ValueError:mid_circuit_measurement": 11
+      }
+    },
+    {
+      "base_circuit_id": "176",
+      "fold": 4,
+      "sample_count": 11,
+      "reasons": {
+        "ValueError:mid_circuit_measurement": 11
+      }
+    },
+    {
+      "base_circuit_id": "177",
+      "fold": 3,
+      "sample_count": 11,
+      "reasons": {
+        "ValueError:mid_circuit_measurement": 11
+      }
+    },
+    {
+      "base_circuit_id": "178",
+      "fold": 2,
+      "sample_count": 11,
+      "reasons": {
+        "ValueError:mid_circuit_measurement": 11
+      }
+    },
+    {
+      "base_circuit_id": "179",
+      "fold": 1,
+      "sample_count": 11,
+      "reasons": {
+        "ValueError:mid_circuit_measurement": 11
+      }
+    },
+    {
+      "base_circuit_id": "180",
+      "fold": 4,
+      "sample_count": 11,
+      "reasons": {
+        "ValueError:mid_circuit_measurement": 11
+      }
+    },
+    {
+      "base_circuit_id": "181",
+      "fold": 3,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "187",
+      "fold": 2,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "188",
+      "fold": 1,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "189",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "190",
+      "fold": 3,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "191",
+      "fold": 2,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "192",
+      "fold": 1,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "193",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "194",
+      "fold": 4,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "195",
+      "fold": 3,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "196",
+      "fold": 2,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "197",
+      "fold": 1,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "198",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "211",
+      "fold": 4,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "214",
+      "fold": 1,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "215",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "216",
+      "fold": 4,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "217",
+      "fold": 3,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "218",
+      "fold": 2,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "220",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "221",
+      "fold": 4,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "222",
+      "fold": 3,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "223",
+      "fold": 2,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "224",
+      "fold": 1,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "225",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "226",
+      "fold": 4,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "227",
+      "fold": 3,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "228",
+      "fold": 2,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "229",
+      "fold": 1,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "230",
+      "fold": 4,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "231",
+      "fold": 3,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "232",
+      "fold": 2,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "233",
+      "fold": 1,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "234",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "235",
+      "fold": 4,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "236",
+      "fold": 3,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "237",
+      "fold": 2,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "238",
+      "fold": 1,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "244",
+      "fold": 4,
+      "sample_count": 11,
+      "reasons": {
+        "ValueError:mid_circuit_measurement": 11
+      }
+    },
+    {
+      "base_circuit_id": "245",
+      "fold": 3,
+      "sample_count": 11,
+      "reasons": {
+        "ValueError:mid_circuit_measurement": 11
+      }
+    },
+    {
+      "base_circuit_id": "254",
+      "fold": 3,
+      "sample_count": 11,
+      "reasons": {
+        "ValueError:lowered_gate_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "255",
+      "fold": 2,
+      "sample_count": 11,
+      "reasons": {
+        "ValueError:lowered_gate_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "263",
+      "fold": 3,
+      "sample_count": 11,
+      "reasons": {
+        "ValueError:lowered_gate_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "266",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "ValueError:mid_circuit_measurement": 11
+      }
+    },
+    {
+      "base_circuit_id": "267",
+      "fold": 4,
+      "sample_count": 11,
+      "reasons": {
+        "ValueError:mid_circuit_measurement": 11
+      }
+    },
+    {
+      "base_circuit_id": "268",
+      "fold": 3,
+      "sample_count": 11,
+      "reasons": {
+        "ValueError:mid_circuit_measurement": 11
+      }
+    },
+    {
+      "base_circuit_id": "269",
+      "fold": 2,
+      "sample_count": 11,
+      "reasons": {
+        "ValueError:mid_circuit_measurement": 11
+      }
+    },
+    {
+      "base_circuit_id": "270",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "271",
+      "fold": 4,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "286",
+      "fold": 3,
+      "sample_count": 11,
+      "reasons": {
+        "ValueError:mid_circuit_measurement": 11
+      }
+    },
+    {
+      "base_circuit_id": "287",
+      "fold": 2,
+      "sample_count": 11,
+      "reasons": {
+        "ValueError:mid_circuit_measurement": 11
+      }
+    },
+    {
+      "base_circuit_id": "290",
+      "fold": 3,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "291",
+      "fold": 2,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "297",
+      "fold": 1,
+      "sample_count": 11,
+      "reasons": {
+        "ValueError:mid_circuit_measurement": 11
+      }
+    },
+    {
+      "base_circuit_id": "310",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "311",
+      "fold": 4,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "351",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "352",
+      "fold": 4,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "354",
+      "fold": 2,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "370",
+      "fold": 4,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "371",
+      "fold": 3,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "372",
+      "fold": 2,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "373",
+      "fold": 1,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "374",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "376",
+      "fold": 3,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "377",
+      "fold": 2,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "378",
+      "fold": 1,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "379",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "380",
+      "fold": 3,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "381",
+      "fold": 2,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "382",
+      "fold": 1,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "383",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "384",
+      "fold": 4,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "398",
+      "fold": 4,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "399",
+      "fold": 3,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "405",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "412",
+      "fold": 2,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "413",
+      "fold": 1,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "414",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "427",
+      "fold": 1,
+      "sample_count": 11,
+      "reasons": {
+        "ValueError:lowered_gate_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "428",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "ValueError:lowered_gate_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "430",
+      "fold": 2,
+      "sample_count": 11,
+      "reasons": {
+        "ValueError:lowered_gate_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "431",
+      "fold": 1,
+      "sample_count": 11,
+      "reasons": {
+        "ValueError:lowered_gate_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "432",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "ValueError:lowered_gate_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "433",
+      "fold": 4,
+      "sample_count": 11,
+      "reasons": {
+        "ValueError:lowered_gate_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "434",
+      "fold": 3,
+      "sample_count": 11,
+      "reasons": {
+        "ValueError:lowered_gate_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "435",
+      "fold": 2,
+      "sample_count": 11,
+      "reasons": {
+        "ValueError:lowered_gate_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "436",
+      "fold": 1,
+      "sample_count": 11,
+      "reasons": {
+        "ValueError:lowered_gate_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "437",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "ValueError:lowered_gate_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "438",
+      "fold": 4,
+      "sample_count": 11,
+      "reasons": {
+        "ValueError:lowered_gate_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "439",
+      "fold": 3,
+      "sample_count": 11,
+      "reasons": {
+        "ValueError:lowered_gate_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "440",
+      "fold": 1,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "441",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "443",
+      "fold": 3,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "447",
+      "fold": 4,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "448",
+      "fold": 3,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "449",
+      "fold": 2,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "467",
+      "fold": 2,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "471",
+      "fold": 2,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "472",
+      "fold": 1,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "473",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "474",
+      "fold": 4,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "475",
+      "fold": 3,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "495",
+      "fold": 1,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "496",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "497",
+      "fold": 4,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "498",
+      "fold": 3,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "499",
+      "fold": 2,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "500",
+      "fold": 4,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "501",
+      "fold": 3,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "502",
+      "fold": 2,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "503",
+      "fold": 1,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "504",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "508",
+      "fold": 1,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "509",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "510",
+      "fold": 3,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "511",
+      "fold": 2,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "512",
+      "fold": 1,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "514",
+      "fold": 4,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "515",
+      "fold": 3,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "516",
+      "fold": 2,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "517",
+      "fold": 1,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "518",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "519",
+      "fold": 4,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "520",
+      "fold": 2,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "521",
+      "fold": 1,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "522",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "527",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "528",
+      "fold": 4,
+      "sample_count": 11,
+      "reasons": {
+        "ValueError:lowered_gate_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "529",
+      "fold": 3,
+      "sample_count": 11,
+      "reasons": {
+        "ValueError:lowered_gate_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "530",
+      "fold": 1,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "531",
+      "fold": 5,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "532",
+      "fold": 4,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "534",
+      "fold": 2,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    },
+    {
+      "base_circuit_id": "535",
+      "fold": 1,
+      "sample_count": 11,
+      "reasons": {
+        "width_exceeds_native_density_budget": 11
+      }
+    }
+  ],
+  "conversion_state_max_error": 7.797202980288388e-14
+}

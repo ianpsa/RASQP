@@ -1,0 +1,24 @@
+{
+  "version": "web-variants-v1",
+  "protocol_sha256": "41c5bfca97fa25ca4b89bed7d4a8297b03ffc1ee75ecd703836b71dbbfa7531b",
+  "input_sha256": "ed516fdd7ea344bb82fceab285892aed51a889315473676ceedb3c6be6a40857",
+  "detector_sha256": {
+    "rust/research/probes.rs": "3ff31d32139177dbf45b90cee506f5e0c2984be386e31d35c8c12c0224cfe05f",
+    "rust/research/verification.rs": "8a3f7b3ea9eb10106c2e452c8e0499d60bc9c4f91e498c8af1ae30424a338462",
+    "rust/research/statistics.rs": "24526fb3ab43e2fe96b74d8b8e82437101ef396a82f0313e3856b709cfc15c8d"
+  },
+  "source": {
+    "kind": "Mechanism-level reimplementations from primary articles on newly generated workloads; not an independently published infected dataset or reproduction of complete QNN/hardware experiments",
+    "swap": "https://arxiv.org/html/2506.24081v1",
+    "encoding": "https://arxiv.org/html/2302.08090v1",
+    "encoding_artifact": "https://github.com/chuchengc/Qtrojan/tree/bc8ae00fcf87ed30ed13ef04af4fdf1b8bdea8ea",
+    "encoding_notebook_sha256": "75c23803667e9d119a35a6504e42c31e525e4e13640b30ff42c9a61eb56bfc26",
+    "parameter": "https://arxiv.org/html/2209.11872v1",
+    "conditional": "https://arxiv.org/html/2502.08880v1"
+  },
+  "qiskit": "2.6.1",
+  "numpy": "2.5.4",
+  "bases": 32,
+  "variants": 320,
+  "meaning": "New locally generated benchmark circuits and article-derived interventions; no external attack dataset or QNN training reproduced."
+}

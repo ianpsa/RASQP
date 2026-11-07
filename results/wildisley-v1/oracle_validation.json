@@ -1,0 +1,9 @@
+{
+  "source_commit": "48ec00d02776e602e3336c8db66ea9fda8c59576",
+  "native_summary_sha256": "096737b6cf764f020d592133d7f6b4d5983945dd9cfb6106a09eed3ae4d7704a",
+  "source_samples_checked": 3256,
+  "probe_distances_checked_in_two_contexts": 19536,
+  "maximum_absolute_tvd_error": 2.1660451210436804e-13,
+  "tolerance": 1e-09,
+  "scope": "Original author QASM simulated directly by Qiskit versus recorded native ideal TVDs for all three fixed probes; no claim of all-input operator equivalence or noisy-hardware validation."
+}

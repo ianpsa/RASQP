@@ -1,0 +1,530 @@
+[
+  {
+    "circuit_index": 0,
+    "case": "clean",
+    "probe": 0,
+    "logical_to_compact_measurement": [
+      0,
+      3,
+      1,
+      2
+    ],
+    "operations": {
+      "rz": 72,
+      "sx": 44,
+      "ecr": 24,
+      "delay": 15,
+      "x": 6,
+      "measure": 4,
+      "barrier": 1
+    },
+    "density_normalization_error": 3.774758283725532e-15,
+    "duration_seconds": 1.2544000000000002e-05
+  },
+  {
+    "circuit_index": 1,
+    "case": "clean",
+    "probe": 1,
+    "logical_to_compact_measurement": [
+      0,
+      3,
+      1,
+      2
+    ],
+    "operations": {
+      "rz": 71,
+      "sx": 44,
+      "ecr": 24,
+      "delay": 14,
+      "x": 7,
+      "measure": 4,
+      "barrier": 1
+    },
+    "density_normalization_error": 3.1086244689504383e-15,
+    "duration_seconds": 1.2544000000000002e-05
+  },
+  {
+    "circuit_index": 2,
+    "case": "clean",
+    "probe": 2,
+    "logical_to_compact_measurement": [
+      0,
+      3,
+      1,
+      2
+    ],
+    "operations": {
+      "rz": 71,
+      "sx": 45,
+      "ecr": 24,
+      "delay": 13,
+      "x": 9,
+      "measure": 4,
+      "barrier": 1
+    },
+    "density_normalization_error": 3.1086244689504383e-15,
+    "duration_seconds": 1.2600888888888891e-05
+  },
+  {
+    "circuit_index": 3,
+    "case": "equivalent_optimized",
+    "probe": 0,
+    "logical_to_compact_measurement": [
+      0,
+      3,
+      1,
+      2
+    ],
+    "operations": {
+      "rz": 69,
+      "sx": 44,
+      "ecr": 24,
+      "delay": 15,
+      "x": 6,
+      "measure": 4,
+      "barrier": 1
+    },
+    "density_normalization_error": 4.440892098500626e-15,
+    "duration_seconds": 1.2544000000000002e-05
+  },
+  {
+    "circuit_index": 4,
+    "case": "equivalent_optimized",
+    "probe": 1,
+    "logical_to_compact_measurement": [
+      0,
+      3,
+      1,
+      2
+    ],
+    "operations": {
+      "rz": 68,
+      "sx": 44,
+      "ecr": 24,
+      "delay": 14,
+      "x": 7,
+      "measure": 4,
+      "barrier": 1
+    },
+    "density_normalization_error": 2.6645352591003757e-15,
+    "duration_seconds": 1.2544000000000002e-05
+  },
+  {
+    "circuit_index": 5,
+    "case": "equivalent_optimized",
+    "probe": 2,
+    "logical_to_compact_measurement": [
+      0,
+      3,
+      1,
+      2
+    ],
+    "operations": {
+      "rz": 70,
+      "sx": 49,
+      "ecr": 24,
+      "delay": 13,
+      "x": 7,
+      "measure": 4,
+      "barrier": 1
+    },
+    "density_normalization_error": 3.3306690738754696e-15,
+    "duration_seconds": 1.2600888888888891e-05
+  },
+  {
+    "circuit_index": 6,
+    "case": "x0",
+    "probe": 0,
+    "logical_to_compact_measurement": [
+      0,
+      3,
+      1,
+      2
+    ],
+    "operations": {
+      "rz": 72,
+      "sx": 44,
+      "ecr": 24,
+      "delay": 15,
+      "x": 7,
+      "measure": 4,
+      "barrier": 1
+    },
+    "density_normalization_error": 3.9968028886505635e-15,
+    "duration_seconds": 1.2600888888888891e-05
+  },
+  {
+    "circuit_index": 7,
+    "case": "x0",
+    "probe": 1,
+    "logical_to_compact_measurement": [
+      0,
+      3,
+      1,
+      2
+    ],
+    "operations": {
+      "rz": 71,
+      "sx": 44,
+      "ecr": 24,
+      "delay": 14,
+      "x": 8,
+      "measure": 4,
+      "barrier": 1
+    },
+    "density_normalization_error": 3.774758283725532e-15,
+    "duration_seconds": 1.2600888888888891e-05
+  },
+  {
+    "circuit_index": 8,
+    "case": "x0",
+    "probe": 2,
+    "logical_to_compact_measurement": [
+      0,
+      3,
+      1,
+      2
+    ],
+    "operations": {
+      "rz": 72,
+      "sx": 45,
+      "ecr": 24,
+      "delay": 13,
+      "x": 9,
+      "measure": 4,
+      "barrier": 1
+    },
+    "density_normalization_error": 2.6645352591003757e-15,
+    "duration_seconds": 1.2600888888888891e-05
+  },
+  {
+    "circuit_index": 9,
+    "case": "z0",
+    "probe": 0,
+    "logical_to_compact_measurement": [
+      0,
+      3,
+      1,
+      2
+    ],
+    "operations": {
+      "rz": 72,
+      "sx": 44,
+      "ecr": 24,
+      "delay": 15,
+      "x": 6,
+      "measure": 4,
+      "barrier": 1
+    },
+    "density_normalization_error": 3.552713678800501e-15,
+    "duration_seconds": 1.2544000000000002e-05
+  },
+  {
+    "circuit_index": 10,
+    "case": "z0",
+    "probe": 1,
+    "logical_to_compact_measurement": [
+      0,
+      3,
+      1,
+      2
+    ],
+    "operations": {
+      "rz": 71,
+      "sx": 44,
+      "ecr": 24,
+      "delay": 14,
+      "x": 7,
+      "measure": 4,
+      "barrier": 1
+    },
+    "density_normalization_error": 3.1086244689504383e-15,
+    "duration_seconds": 1.2544000000000002e-05
+  },
+  {
+    "circuit_index": 11,
+    "case": "z0",
+    "probe": 2,
+    "logical_to_compact_measurement": [
+      0,
+      3,
+      1,
+      2
+    ],
+    "operations": {
+      "rz": 71,
+      "sx": 45,
+      "ecr": 24,
+      "delay": 13,
+      "x": 9,
+      "measure": 4,
+      "barrier": 1
+    },
+    "density_normalization_error": 2.6645352591003757e-15,
+    "duration_seconds": 1.2600888888888891e-05
+  },
+  {
+    "circuit_index": 12,
+    "case": "rz0_0.12",
+    "probe": 0,
+    "logical_to_compact_measurement": [
+      0,
+      3,
+      1,
+      2
+    ],
+    "operations": {
+      "rz": 72,
+      "sx": 44,
+      "ecr": 24,
+      "delay": 15,
+      "x": 6,
+      "measure": 4,
+      "barrier": 1
+    },
+    "density_normalization_error": 3.9968028886505635e-15,
+    "duration_seconds": 1.2544000000000002e-05
+  },
+  {
+    "circuit_index": 13,
+    "case": "rz0_0.12",
+    "probe": 1,
+    "logical_to_compact_measurement": [
+      0,
+      3,
+      1,
+      2
+    ],
+    "operations": {
+      "rz": 71,
+      "sx": 44,
+      "ecr": 24,
+      "delay": 14,
+      "x": 7,
+      "measure": 4,
+      "barrier": 1
+    },
+    "density_normalization_error": 3.1086244689504383e-15,
+    "duration_seconds": 1.2544000000000002e-05
+  },
+  {
+    "circuit_index": 14,
+    "case": "rz0_0.12",
+    "probe": 2,
+    "logical_to_compact_measurement": [
+      0,
+      3,
+      1,
+      2
+    ],
+    "operations": {
+      "rz": 71,
+      "sx": 45,
+      "ecr": 24,
+      "delay": 13,
+      "x": 9,
+      "measure": 4,
+      "barrier": 1
+    },
+    "density_normalization_error": 3.1086244689504383e-15,
+    "duration_seconds": 1.2600888888888891e-05
+  },
+  {
+    "circuit_index": 15,
+    "case": "cx01",
+    "probe": 0,
+    "logical_to_compact_measurement": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "operations": {
+      "rz": 77,
+      "sx": 48,
+      "ecr": 25,
+      "delay": 15,
+      "x": 6,
+      "measure": 4,
+      "barrier": 1
+    },
+    "density_normalization_error": 2.6645352591003757e-15,
+    "duration_seconds": 1.3781333333333336e-05
+  },
+  {
+    "circuit_index": 16,
+    "case": "cx01",
+    "probe": 1,
+    "logical_to_compact_measurement": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "operations": {
+      "rz": 76,
+      "sx": 48,
+      "ecr": 25,
+      "delay": 14,
+      "x": 7,
+      "measure": 4,
+      "barrier": 1
+    },
+    "density_normalization_error": 1.9984014443252818e-15,
+    "duration_seconds": 1.3781333333333336e-05
+  },
+  {
+    "circuit_index": 17,
+    "case": "cx01",
+    "probe": 2,
+    "logical_to_compact_measurement": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "operations": {
+      "rz": 72,
+      "sx": 45,
+      "ecr": 25,
+      "delay": 13,
+      "x": 9,
+      "measure": 4,
+      "barrier": 1
+    },
+    "density_normalization_error": 2.220446049250313e-15,
+    "duration_seconds": 1.3781333333333336e-05
+  },
+  {
+    "circuit_index": 18,
+    "case": "swap_end",
+    "probe": 0,
+    "logical_to_compact_measurement": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "operations": {
+      "rz": 82,
+      "sx": 52,
+      "ecr": 27,
+      "delay": 15,
+      "x": 6,
+      "measure": 4,
+      "barrier": 1
+    },
+    "density_normalization_error": 6.661338147750939e-16,
+    "duration_seconds": 1.4428444444444448e-05
+  },
+  {
+    "circuit_index": 19,
+    "case": "swap_end",
+    "probe": 1,
+    "logical_to_compact_measurement": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "operations": {
+      "rz": 81,
+      "sx": 52,
+      "ecr": 27,
+      "delay": 14,
+      "x": 7,
+      "measure": 4,
+      "barrier": 1
+    },
+    "density_normalization_error": 0.0,
+    "duration_seconds": 1.4428444444444448e-05
+  },
+  {
+    "circuit_index": 20,
+    "case": "swap_end",
+    "probe": 2,
+    "logical_to_compact_measurement": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "operations": {
+      "rz": 76,
+      "sx": 49,
+      "ecr": 27,
+      "delay": 13,
+      "x": 9,
+      "measure": 4,
+      "barrier": 1
+    },
+    "density_normalization_error": 0.0,
+    "duration_seconds": 1.437155555555556e-05
+  },
+  {
+    "circuit_index": 21,
+    "case": "parameter_scale_1.1",
+    "probe": 0,
+    "logical_to_compact_measurement": [
+      0,
+      3,
+      1,
+      2
+    ],
+    "operations": {
+      "rz": 72,
+      "sx": 44,
+      "ecr": 24,
+      "delay": 15,
+      "x": 6,
+      "measure": 4,
+      "barrier": 1
+    },
+    "density_normalization_error": 3.774758283725532e-15,
+    "duration_seconds": 1.2544000000000002e-05
+  },
+  {
+    "circuit_index": 22,
+    "case": "parameter_scale_1.1",
+    "probe": 1,
+    "logical_to_compact_measurement": [
+      0,
+      3,
+      1,
+      2
+    ],
+    "operations": {
+      "rz": 71,
+      "sx": 44,
+      "ecr": 24,
+      "delay": 14,
+      "x": 7,
+      "measure": 4,
+      "barrier": 1
+    },
+    "density_normalization_error": 3.1086244689504383e-15,
+    "duration_seconds": 1.2544000000000002e-05
+  },
+  {
+    "circuit_index": 23,
+    "case": "parameter_scale_1.1",
+    "probe": 2,
+    "logical_to_compact_measurement": [
+      0,
+      3,
+      1,
+      2
+    ],
+    "operations": {
+      "rz": 71,
+      "sx": 45,
+      "ecr": 24,
+      "delay": 13,
+      "x": 9,
+      "measure": 4,
+      "barrier": 1
+    },
+    "density_normalization_error": 3.1086244689504383e-15,
+    "duration_seconds": 1.2600888888888891e-05
+  }
+]

@@ -1,0 +1,5231 @@
+{
+  "version": "false-positives-v1",
+  "preparation": {
+    "version": "false-positives-v1",
+    "protocol_sha256": "122af7843168aea0e55f5c4477fb922204b6887a616d3c28673ddda97d092a13",
+    "input_sha256": "a11d81e942b46a5f7ba663770dcff5a8b1f1df2272728f3a97ce239735338b65",
+    "detector_sha256": {
+      "rust/research/probes.rs": "3ff31d32139177dbf45b90cee506f5e0c2984be386e31d35c8c12c0224cfe05f",
+      "rust/research/verification.rs": "8a3f7b3ea9eb10106c2e452c8e0499d60bc9c4f91e498c8af1ae30424a338462",
+      "rust/research/statistics.rs": "24526fb3ab43e2fe96b74d8b8e82437101ef396a82f0313e3856b709cfc15c8d"
+    },
+    "source": {
+      "QASMBench": {
+        "repository": "https://github.com/pnnl/QASMBench",
+        "article": "https://arxiv.org/abs/2005.13018",
+        "commit": "357b942396d5c2b7cbc1c229c585a6ef5ccaebac",
+        "archive_sha256": "2f9dd728496daac52044ba58532daf12e15d48f5f49a390530cebc8782d00208",
+        "subdirectory": "small"
+      },
+      "VeriQBench": {
+        "repository": "https://github.com/Veri-Q/Benchmark",
+        "article": "https://arxiv.org/abs/2206.10880",
+        "commit": "9be108313844e30c5df5780989a68cac4d966cfe",
+        "archive_sha256": "dc0d208176b961438fc8796daa60690a385e25eadae69c385b69bdc9ce1c2787",
+        "subdirectory": "combinational"
+      },
+      "QDoor": {
+        "repository": "https://github.com/chuchengc/QDoor",
+        "article_title": "QDoor: Exploiting Approximate Synthesis for Backdoor Attacks in Quantum Neural Networks",
+        "commit": "2ab751fc2c8dd858a3d2a82ede600c0b45ac4a67",
+        "archive_sha256": "75200c1e6e415e62588bee6cbe98eff644c9cc2b2596e845a5a352529db045bb"
+      }
+    },
+    "qiskit": "2.6.1",
+    "numpy": "2.5.4",
+    "groups": 196,
+    "eligible_benchmark_circuits": 98,
+    "inventory_counts": {
+      "QASMBench": 85,
+      "VeriQBench": 665
+    },
+    "exclusions": {
+      "width_budget": 645,
+      "mid_circuit_measurement": 5,
+      "\"vqe_uccsd_n4.qasm:225,8: 'q' is not defined in this scope\"": 1,
+      "\"vqe_uccsd_n4_transpiled.qasm:242,8: 'q' is not defined in this scope\"": 1
+    },
+    "byte_identical_wildisley_eligible": 6,
+    "source_files_sha256": {
+      "sources/QASMBench/small/adder_n4/adder_n4.qasm": "30f0be9eb50d37ab2de7c87676e32ff7c66bc67eff32dfeafa0cf69951d92438",
+      "sources/QASMBench/small/adder_n4/adder_n4_transpiled.qasm": "80f5f2971066a785dc09549b3575d1e6185ef02c834aa4aba53720a0275c6e5d",
+      "sources/QASMBench/small/basis_change_n3/basis_change_n3.qasm": "2d998840327e516c71142442f6d9c2924962a8fad2e12e70a2c90d53a78be851",
+      "sources/QASMBench/small/basis_change_n3/basis_change_n3_transpiled.qasm": "9ab3abbaafba655004a03a8fb4f27d3fd86fe4f3b732c6d0943de018c92c1456",
+      "sources/QASMBench/small/basis_trotter_n4/basis_test_n4.qasm": "a6056d13a17783d499e4a8a87c62508534633ca0668225b49a8bf7c3c7e18a4a",
+      "sources/QASMBench/small/basis_trotter_n4/basis_test_n4_transpiled.qasm": "128a7004e39f9a298421ab71f62a2842da4f10f1f543f7a0ae8f0c3ca2e521eb",
+      "sources/QASMBench/small/basis_trotter_n4/basis_trotter_n4.qasm": "9ead0e7d5f41cb6675c19457d4e414b77cf90c78cea3e0412bcccdc3f9f73dd5",
+      "sources/QASMBench/small/basis_trotter_n4/basis_trotter_n4_transpiled.qasm": "69ca1ea778c225749fd8337b072cabfdb4b30bbeb56d0d2dd7f680918e3653e7",
+      "sources/QASMBench/small/bell_n4/bell_n4.qasm": "1f3a1115385d87f6a444189776e521d6bba1d300f96454e85cb58bb3e297bf81",
+      "sources/QASMBench/small/bell_n4/bell_n4_transpiled.qasm": "d6800ccde11e0deb01fa95e00f86bbc56e0620c9850e938f94293e414851e826",
+      "sources/QASMBench/small/cat_state_n4/cat_state_n4.qasm": "caa882935bb73087db2edbee2aa77133965bdda3aec9687166f9e96b9a2ef8ff",
+      "sources/QASMBench/small/cat_state_n4/cat_state_n4_transpiled.qasm": "0e64026e236ea56cf040fdf5f3a70108c36ae9429e66edcead19621b3a2663a5",
+      "sources/QASMBench/small/deutsch_n2/deutsch_n2.qasm": "56a7b3389495fb497df1a331abb7d4f64ac57d397aaa1c1169d0ac33a10889cd",
+      "sources/QASMBench/small/deutsch_n2/deutsch_n2_transpiled.qasm": "14c55c45de3c75127714b554dd611e96a83241c0568632367978dd6709791858",
+      "sources/QASMBench/small/dnn_n2/dnn_n2.qasm": "ce0359edb654e5dd1f54035e07cec177d2f50ae1ecd45b651ba71637854b7921",
+      "sources/QASMBench/small/dnn_n2/dnn_n2_transpiled.qasm": "a282f22f732b33f3d8c261656befffa752595a0067e94f2be2797cde82a2f096",
+      "sources/QASMBench/small/fredkin_n3/fredkin_n3.qasm": "5ede0e9d4cdc723afcdb515f16f984bf47cf53423e12fcafc10ee03bd9577996",
+      "sources/QASMBench/small/fredkin_n3/fredkin_n3_transpiled.qasm": "8cfa60c4d4d460472e675540d4f00c248415f2f2f1823523f5d5239d141db408",
+      "sources/QASMBench/small/grover_n2/grover_n2.qasm": "afd134759fa0eefb9f84a88d3e9f156cd54e83b10177d02c33bb6f519c08b813",
+      "sources/QASMBench/small/grover_n2/grover_n2_transpiled.qasm": "b08a4a6b64c420811b820153b3fa79d854d4ca3af18f94a78f09501507236961",
+      "sources/QASMBench/small/hs4_n4/hs4_n4.qasm": "f362ca9ffd7f045f517dfe4d67350794ac998f4eb427586a804eed9379340f63",
+      "sources/QASMBench/small/hs4_n4/hs4_n4_transpiled.qasm": "41e6e581ca33e9a3e69a629a0e4c34160c07b858875321fa3b3ac4f9462676a1",
+      "sources/QASMBench/small/iswap_n2/iswap_n2.qasm": "0c6d4dffaeb32c5758511cb51d5f89bcb6c97f3f60c1f5e3cbbeabb53c53ed50",
+      "sources/QASMBench/small/iswap_n2/iswap_n2_transpiled.qasm": "58c023c92814a77533214f7af2796d7efffd84498bf65e0ba0757ae07ce3309e",
+      "sources/QASMBench/small/linearsolver_n3/linearsolver_n3.qasm": "ad98aaab04fdd11eed43b6839122909c568ff848dd0b97ed09c11346dd592c42",
+      "sources/QASMBench/small/linearsolver_n3/linearsolver_n3_transpiled.qasm": "48e9044b9786935163e660e2bf3de4efe6d20aa8e09ded82c8f44a369b682b19",
+      "sources/QASMBench/small/qaoa_n3/qaoa_n3_transpiled.qasm": "478c75c52bebbe673e522c7864f711bb97278afe65bd48ca9aa6c004f095e12e",
+      "sources/QASMBench/small/qft_n4/qft_n4.qasm": "62c6c8c7ddd95ac2b5367420b9925dbf82d6fb45725f089f01619a639621ad60",
+      "sources/QASMBench/small/qft_n4/qft_n4_transpiled.qasm": "8a32fe47012dab453525a78daaa0648981a1f6092c5e29244e99f9fe77cecbf6",
+      "sources/QASMBench/small/qrng_n4/qrng_n4.qasm": "627d604f685cebe71f4d079cea6a9266a8d6a136279b6199b32cbc010079a184",
+      "sources/QASMBench/small/qrng_n4/qrng_n4_transpiled.qasm": "6301e9b06cb230021bcfc2319b4e5b520dae33096b3f097498a011a4d0e35687",
+      "sources/QASMBench/small/quantumwalks_n2/quantumwalks_n2.qasm": "dea93828107b2b17f6381ed75cb8d985bc8790be74a7378179b441932a84e80b",
+      "sources/QASMBench/small/quantumwalks_n2/quantumwalks_n2_transpiled.qasm": "91457bbe55755cd4b70471842764a9c6758d6c485d8875ac5dcd8d024937601e",
+      "sources/QASMBench/small/teleportation_n3/teleportation_n3.qasm": "71891c017af93f74cf72b1f222b26d02650ec23242ba9c96b0e8c34da93a5bd6",
+      "sources/QASMBench/small/teleportation_n3/teleportation_n3_transpiled.qasm": "4c6fcef17dd0a70c8e4d48cc49c859eaefd62d49087714564006e1e4ad4476fe",
+      "sources/QASMBench/small/toffoli_n3/toffoli_n3.qasm": "3cd72f83491b25a3c7c94fa826f85fe13f1af28079268b2c34e144299380968f",
+      "sources/QASMBench/small/toffoli_n3/toffoli_n3_transpiled.qasm": "edfc4410b4010baa5b66012f99e269b73658b332d2018bf6a588f122e9aeb949",
+      "sources/QASMBench/small/variational_n4/variational_n4.qasm": "df4ced794da7fd4ca56eb2b02bce53ee77207bec77286cb4626115c6a9b6357d",
+      "sources/QASMBench/small/variational_n4/variational_n4_transpiled.qasm": "b0d59e0a726764fef5f930309526065b76ceee0ddf0952de6436e2e16a766ac2",
+      "sources/QASMBench/small/vqe_n4/vqe_n4.qasm": "f6777e4fdd8eadcbc8a85a5135e797a96d3b91b3f494593a5b8c9fdcd37530c6",
+      "sources/QASMBench/small/vqe_n4/vqe_n4_transpiled.qasm": "9ec9cebd7bed41b41d48303baf1c59d5cce2583247d4a733482ff635deed78ae",
+      "sources/QASMBench/small/wstate_n3/wstate_n3.qasm": "9077432a88fea0f3da2c3b24558333c1a329261b20836ba82b253418d8c7b0dd",
+      "sources/QASMBench/small/wstate_n3/wstate_n3_transpiled.qasm": "3617fd9083f7b9df115c39ba052f932e0134fcd371f3214f9482104b90f497b7",
+      "sources/QDoor/backdoor.py": "8c008f2cb5aa251dd50e86e4bc98b859179d6b9508bb58e2dc86f21788fa5a57",
+      "sources/QDoor/compile.py": "ad9dda9cd17c5c7ff4370e80cc122038815d6cce8de39e69c47ac2a8cbeea4e1",
+      "sources/QDoor/model/backdoor.pt": "a626b6380672f74554bb2d076c303a6be64503d3fce070599822c8c6525a9702",
+      "sources/QDoor/model/backdoor_init.pt": "86385f47a399c49b7fab8f929888089f5326aa80872a9b41a683bcedfe0c8942",
+      "sources/QDoor/model/init_whole8.pt": "f38ea8a7d33418f3760257684fbcbd9f93925cfbec563da77cb2a73955bc1f98",
+      "sources/QDoor/original.py": "e56be9c02576a6afc3f60315c13b561571e2ea70fc6e90aa1a2df4d337a986e3",
+      "sources/QDoor/qasm/circuit.qasm": "e7275b4d98ad90ebc615d32ef5f0e34b9c58ba6a4ba511ce701abd7dc51503b5",
+      "sources/VeriQBench/combinational/adder/adder_n4.qasm": "44fa76f0e4837dda1cd0000184cb88f08d748d4bf4e39d53053bffc4de3841b0",
+      "sources/VeriQBench/combinational/bv/bv_2.qasm": "fba59b56e8cd8db6ff4a888deafb85918cceef8bcc797595a354d7cca27869ce",
+      "sources/VeriQBench/combinational/bv/bv_3.qasm": "cc5e239a0133efef8deb4c8084494cf167a336fe30befd2633fe845dc8a5cc9e",
+      "sources/VeriQBench/combinational/bv/bv_4.qasm": "62afcfc13b834b7dcf638e8aa56302d82273357689ed9d5577f6818eec7a0d66",
+      "sources/VeriQBench/combinational/grover/grover_3.qasm": "89f085f900aa9644029ef296387c73eca456d145cf39375e746536babef84386",
+      "sources/VeriQBench/combinational/pe/pe_2.qasm": "7a121e1055b05cae9157c20d26946834bf6303862e420748add6730042b72ce2",
+      "sources/VeriQBench/combinational/pe/pe_3.qasm": "360e9b8a473b7de0428cc77768378c3c9178807f6fe176a40d85a6b355cd80a3",
+      "sources/VeriQBench/combinational/qft/qft_2.qasm": "ed6b79f6949a84a07c99f2c9b0cb35d597dede52b8ab6997ee38ff9480edb0bb",
+      "sources/VeriQBench/combinational/qft/qft_3.qasm": "f3ac843f93c026cb92b23138c46a778aee08004113950e972161943186254b62",
+      "sources/VeriQBench/combinational/qft/qft_4.qasm": "2adcc286923b43f2589113aced20169dba4ffb6fedc5f3242ba57ec51e53cdf4",
+      "sources/VeriQBench/combinational/qv/quantum_volume_n2_d5_i0.qasm": "f15730ab684b063f8a9120ab4fc504b9422ef14171a0a716155a65f5564f1329",
+      "sources/VeriQBench/combinational/qv/quantum_volume_n3_d5_i0.qasm": "3c5b2081fcf7d27226949f9830153b4688c9149635f115fc22c08c684b85f9a3",
+      "sources/VeriQBench/combinational/qv/quantum_volume_n4_d5_i0.qasm": "1c6b71e6125af8357a825e1dd74f13e5a30448a4d3922f3566f20aaa7cf6c0e1",
+      "sources/VeriQBench/combinational/rand_cliff/rand_cliff_1_AG.qasm": "d03b8aa69d109a46775374c9ec55e1ffb36ca2ebf74f8dc822c640b170ebb0de",
+      "sources/VeriQBench/combinational/rand_cliff/rand_cliff_1_GD.qasm": "d07098a8130c5b75d3eb872db626a754e8ccc73d778b8fed05a3a565ee33283b",
+      "sources/VeriQBench/combinational/rand_cliff/rand_cliff_2_AG.qasm": "15fce4b32c2ddd12deec3826fa4eed8acbf4d769ce3d26488a336a6c52d24752",
+      "sources/VeriQBench/combinational/rand_cliff/rand_cliff_2_GD.qasm": "a2699363fac1eb577e83b6f953efd1d30820641e617f59779f24e79c039e7fca",
+      "sources/VeriQBench/combinational/rand_cliff/rand_cliff_3_AG.qasm": "04510c96771fd43e6c2ce41f82d4980aced3d895f8d324da42720069d41056b2",
+      "sources/VeriQBench/combinational/rand_cliff/rand_cliff_3_GD.qasm": "90c5cb09437f7b5ef8146124e0bd758217c1294601a30723d927cb72b4b14e26",
+      "sources/VeriQBench/combinational/rand_cliff/rand_cliff_4_AG.qasm": "8add78e5871c0f14be36769fd4e315dcd71f3fe877ba38e88eec0819a451cd1c",
+      "sources/VeriQBench/combinational/rand_cliff/rand_cliff_4_GD.qasm": "82614d9fee92bbf420085ca648b2b1274b61ecaf6aa949051dfea62112942db5",
+      "sources/VeriQBench/combinational/rev_circuit/3_17tc.qasm": "88f1841502912650cf5871cee70b079dc0caae9d2d46c5d253406a8f172485fe",
+      "sources/VeriQBench/combinational/rev_circuit/4_49-12-32.qasm": "5755c7b234e536c23f89c8bfd4e10b543095f3477a28426d7390ca4165854ca7",
+      "sources/VeriQBench/combinational/rev_circuit/4_49_fc.qasm": "906f9b6b46de7b1bc64763fcc366d51999ffe709864b27de18e12fff7380dfce",
+      "sources/VeriQBench/combinational/rev_circuit/4_49tc1.qasm": "ee7e9361dcd27877f299104d0f6d4a84fdd005aea568c194f24ec6f9e26f00bb",
+      "sources/VeriQBench/combinational/rev_circuit/4b15g_1.qasm": "d2dfa4ebf8796b0419d95ba91aaaf6a37763dac8ac8ee3aa7199c9c6384d91e7",
+      "sources/VeriQBench/combinational/rev_circuit/4b15g_2.qasm": "ec0da8571163e0411aaff2f49ab6a8d42544cb2c64517bd22f5534b20f3f3b5a",
+      "sources/VeriQBench/combinational/rev_circuit/4b15g_3.qasm": "c26854df3b85aa197f1769b8ba1975f2d5284b835f0fff2125d887b1e6f5eb27",
+      "sources/VeriQBench/combinational/rev_circuit/4b15g_4.qasm": "926772ab5727a10bd6f997aac4329012c8245584c3836cdd791a26b2aa49eb31",
+      "sources/VeriQBench/combinational/rev_circuit/4b15g_5.qasm": "e1fa53534ff32d67a93b1bb200fa45c57291f8a732018458a8b411b3647925fc",
+      "sources/VeriQBench/combinational/rev_circuit/ham3_fc.qasm": "25e7b1c44885432dad7e0ec1ad6ad033be7127ea33264278fa977902098f3aa5",
+      "sources/VeriQBench/combinational/rev_circuit/ham3tc.qasm": "d2492e7d88cc887546b4cfcac0a98c43c57f605eff922729282c2a3bcddadec7",
+      "sources/VeriQBench/combinational/rev_circuit/hwb4-11-21.qasm": "38b7e8a67a955ba7acb0ed173b94739957ecfce31414b1405fdd2f773ebda302",
+      "sources/VeriQBench/combinational/rev_circuit/hwb4-11-23.qasm": "5755c7b234e536c23f89c8bfd4e10b543095f3477a28426d7390ca4165854ca7",
+      "sources/VeriQBench/combinational/rev_circuit/hwb4_fc.qasm": "5755c7b234e536c23f89c8bfd4e10b543095f3477a28426d7390ca4165854ca7",
+      "sources/VeriQBench/combinational/rev_circuit/hwb4tc.qasm": "93d697b83a03deaa8230957d089b04911cb7cf99c432d448fa173d5d75516f90",
+      "sources/VeriQBench/combinational/rev_circuit/mspk_4_49_12.qasm": "170599cbb073dcf0be330c307f4fc377355c8f4293ba710960a4e25e9380c923",
+      "sources/VeriQBench/combinational/rev_circuit/mspk_4_49_13.qasm": "6253e05399a0d34e8027d82ce808ae1076b6293a6d6cccd49245750708467b00",
+      "sources/VeriQBench/combinational/rev_circuit/mspk_4_49_14.qasm": "58486ae92a6c6971ca72940ac976c5384a4cce1d1a240c9675dc4b15af293bb9",
+      "sources/VeriQBench/combinational/rev_circuit/mspk_4b15g_1.qasm": "bba9435f26e33dab428f8adcee2b4e08393d63db59d7778a9070365806200c41",
+      "sources/VeriQBench/combinational/rev_circuit/mspk_4b15g_2.qasm": "1502193901ec224fd52f92fff107c5f1ebbf99238fa685620c9f7ae267771183",
+      "sources/VeriQBench/combinational/rev_circuit/mspk_4b15g_3.qasm": "b16109b61bebcc1b821fce972d638b8b2b36f8ec64c6e118e8ce34a24f1e93fd",
+      "sources/VeriQBench/combinational/rev_circuit/mspk_4b15g_4.qasm": "22cb151ebfb63427e62db953d43f0a315fbde5a2563084c1f3f9967d70a99372",
+      "sources/VeriQBench/combinational/rev_circuit/mspk_4b15g_5.qasm": "23a8b04c4ef805e3a19ad9e98c3b598232bbb97b3152d19782ca7eaeccea2e8c",
+      "sources/VeriQBench/combinational/rev_circuit/mspk_hwb4_12.qasm": "57c97df6535c97b7d3adcd39d51d2dbd999cf0cc24a7288e3a30ef173d480b95",
+      "sources/VeriQBench/combinational/rev_circuit/mspk_hwb4_13.qasm": "0ff65091025181e6d6ac05fe81e61be3bee311d60376880e4ade7255f812fbe5",
+      "sources/VeriQBench/combinational/rev_circuit/mspk_nth_primes4_11.qasm": "761a14ab921ef85de31ded1b25109e8b53d3107de254314e75ce6d1d722be304",
+      "sources/VeriQBench/combinational/rev_circuit/mspk_nth_primes4_12.qasm": "ac8b5bde319b41118e026db83ad6ddde8b52c3994c43f621f5722bcd22060349",
+      "sources/VeriQBench/combinational/rev_circuit/mspk_nth_primes4_13.qasm": "d09d92a96ac1a10fd71d6f010bde0b42eb1b4901d0e66baf0527ae207179133f",
+      "sources/VeriQBench/combinational/rev_circuit/mspk_nth_primes4_14.qasm": "e799480fa5aed768a7a258bdf1b0b1a7daea964c7c4a4475b6e640233cad732c",
+      "sources/VeriQBench/combinational/rev_circuit/nth_prime3_inc.qasm": "994399d8aa283b43f91818417bf791747861bbf0fd6ef9e257b304ac7745960e",
+      "sources/VeriQBench/combinational/rev_circuit/nth_prime4_inc_15_51.qasm": "a536641eeec32e492143d5102373c0f6b734a93ea58811ab9c7a1216821b41b5",
+      "sources/VeriQBench/combinational/rev_circuit/nth_prime4_inc_d1.qasm": "dddebc31a1198d3c72112bec7d9a98af0d58964a741d1582289720772eadb5ae",
+      "sources/VeriQBench/combinational/rev_circuit/nth_prime4_inc_d2.qasm": "557318a56df8998cb39fd1bf546d7581eaa9511ff57da87e81f569735ea045c6",
+      "sources/VeriQBench/combinational/rev_circuit/rd32.qasm": "ff7887775041a54080cb345fe884d4a54a646b9af7c546cb98e25e17e392b49f"
+    },
+    "qdoor_diagnostics": {
+      "qasm_initialization_max_parameter_error": 2.369456506556844e-07,
+      "overlap_distance_1_minus_normalized_abs_trace": {
+        "compiled_initialization": 0.0200658428992605,
+        "trained_backdoor": 0.03411223434859045,
+        "supplied_qasm": 0.020065848106989304
+      }
+    }
+  },
+  "protocol_sha256": "122af7843168aea0e55f5c4477fb922204b6887a616d3c28673ddda97d092a13",
+  "raw_sha256": "e12b459143f0a79b599ad7d98cfbc14e49e54dfed1ca04737df7f77cf2562a51",
+  "source_code_sha256": {
+    "rust/external_main.rs": "cef564f25b4e86b78df5492e09d3bc037db29864e5a1ed04e4c27458af082525",
+    "research/false_positives/prepare.py": "0711fd51befd0e9b3723f8d780341bca42ad5fc95c4c3b3ac55b9312a3ce3940",
+    "research/false_positives/analyze.py": "2c9057902a9b6288bbca88e77d62fa91260b933866370cc020ade9ac70698575"
+  },
+  "cost": {
+    "circuits": 1812088,
+    "executor_calls": 6688,
+    "qpu_shots": 0,
+    "shots": 705024000
+  },
+  "raw_verified": {
+    "shots": 705024000,
+    "circuits": 1812088,
+    "executor_calls": 6688,
+    "decisions_checked": 1009664
+  },
+  "ideal_probe_tvd_comparisons": 2958,
+  "maximum_ideal_tvd_parity_error": 1.3992970736113886e-14,
+  "matched_benchmark_contexts": [
+    {
+      "noise": 0.0,
+      "methods": {
+        "fixed_0Z": {
+          "contexts": 190,
+          "alarms": 183,
+          "decisions": 48640,
+          "macro_alarm_rate": 0.0037623355263157895,
+          "pooled_descriptive_alarm_fraction": 0.0037623355263157895,
+          "worst_context_rate": 0.0234375,
+          "worst_context_wilson95_upper": 0.0501809956000511,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 190
+        },
+        "portfolio_joint": {
+          "contexts": 190,
+          "alarms": 228,
+          "decisions": 48640,
+          "macro_alarm_rate": 0.0046875,
+          "pooled_descriptive_alarm_fraction": 0.0046875,
+          "worst_context_rate": 0.03125,
+          "worst_context_wilson95_upper": 0.06044160650774316,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 190
+        },
+        "portfolio_naive_or": {
+          "contexts": 190,
+          "alarms": 558,
+          "decisions": 48640,
+          "macro_alarm_rate": 0.01147203947368421,
+          "pooled_descriptive_alarm_fraction": 0.01147203947368421,
+          "worst_context_rate": 0.046875,
+          "worst_context_wilson95_upper": 0.0801330188843179,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 190
+        },
+        "portfolio_bonferroni_or": {
+          "contexts": 190,
+          "alarms": 108,
+          "decisions": 48640,
+          "macro_alarm_rate": 0.0022203947368421052,
+          "pooled_descriptive_alarm_fraction": 0.0022203947368421052,
+          "worst_context_rate": 0.0390625,
+          "worst_context_wilson95_upper": 0.07039983179986732,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 190
+        }
+      }
+    },
+    {
+      "noise": 0.005,
+      "methods": {
+        "fixed_0Z": {
+          "contexts": 190,
+          "alarms": 515,
+          "decisions": 48640,
+          "macro_alarm_rate": 0.010587993421052632,
+          "pooled_descriptive_alarm_fraction": 0.010587993421052632,
+          "worst_context_rate": 0.0390625,
+          "worst_context_wilson95_upper": 0.07039983179986732,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 190
+        },
+        "portfolio_joint": {
+          "contexts": 190,
+          "alarms": 429,
+          "decisions": 48640,
+          "macro_alarm_rate": 0.008819901315789474,
+          "pooled_descriptive_alarm_fraction": 0.008819901315789474,
+          "worst_context_rate": 0.03125,
+          "worst_context_wilson95_upper": 0.06044160650774316,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 190
+        },
+        "portfolio_naive_or": {
+          "contexts": 190,
+          "alarms": 1383,
+          "decisions": 48640,
+          "macro_alarm_rate": 0.028433388157894736,
+          "pooled_descriptive_alarm_fraction": 0.028433388157894736,
+          "worst_context_rate": 0.078125,
+          "worst_context_wilson95_upper": 0.11758323829089878,
+          "contexts_exceeding_clean_upper_bound_0_10": 5,
+          "contexts_below_detection_lower_bound_0_90": 190
+        },
+        "portfolio_bonferroni_or": {
+          "contexts": 190,
+          "alarms": 274,
+          "decisions": 48640,
+          "macro_alarm_rate": 0.0056332236842105265,
+          "pooled_descriptive_alarm_fraction": 0.0056332236842105265,
+          "worst_context_rate": 0.03125,
+          "worst_context_wilson95_upper": 0.06044160650774316,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 190
+        }
+      }
+    }
+  ],
+  "categories": [
+    {
+      "noise": 0.0,
+      "category": "QASMBench:optimized:approved",
+      "methods": {
+        "fixed_0Z": {
+          "contexts": 37,
+          "alarms": 49,
+          "decisions": 9472,
+          "macro_alarm_rate": 0.005173141891891892,
+          "pooled_descriptive_alarm_fraction": 0.005173141891891892,
+          "worst_context_rate": 0.0234375,
+          "worst_context_wilson95_upper": 0.0501809956000511,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 37
+        },
+        "portfolio_joint": {
+          "contexts": 37,
+          "alarms": 85,
+          "decisions": 9472,
+          "macro_alarm_rate": 0.008973817567567568,
+          "pooled_descriptive_alarm_fraction": 0.008973817567567568,
+          "worst_context_rate": 0.03125,
+          "worst_context_wilson95_upper": 0.06044160650774316,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 37
+        },
+        "portfolio_naive_or": {
+          "contexts": 37,
+          "alarms": 161,
+          "decisions": 9472,
+          "macro_alarm_rate": 0.016997466216216218,
+          "pooled_descriptive_alarm_fraction": 0.016997466216216218,
+          "worst_context_rate": 0.046875,
+          "worst_context_wilson95_upper": 0.0801330188843179,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 37
+        },
+        "portfolio_bonferroni_or": {
+          "contexts": 37,
+          "alarms": 38,
+          "decisions": 9472,
+          "macro_alarm_rate": 0.004011824324324324,
+          "pooled_descriptive_alarm_fraction": 0.004011824324324324,
+          "worst_context_rate": 0.0234375,
+          "worst_context_wilson95_upper": 0.0501809956000511,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 37
+        }
+      },
+      "structural_inspection": {
+        "accept": 37
+      },
+      "ideal_probe_tvd_min": 0.0,
+      "ideal_probe_tvd_max": 0.0
+    },
+    {
+      "noise": 0.0,
+      "category": "QASMBench:optimized:equivalent_x_pair",
+      "methods": {
+        "fixed_0Z": {
+          "contexts": 37,
+          "alarms": 55,
+          "decisions": 9472,
+          "macro_alarm_rate": 0.0058065878378378375,
+          "pooled_descriptive_alarm_fraction": 0.0058065878378378375,
+          "worst_context_rate": 0.03515625,
+          "worst_context_wilson95_upper": 0.0654527704282918,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 37
+        },
+        "portfolio_joint": {
+          "contexts": 37,
+          "alarms": 88,
+          "decisions": 9472,
+          "macro_alarm_rate": 0.009290540540540541,
+          "pooled_descriptive_alarm_fraction": 0.009290540540540541,
+          "worst_context_rate": 0.03125,
+          "worst_context_wilson95_upper": 0.06044160650774316,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 37
+        },
+        "portfolio_naive_or": {
+          "contexts": 37,
+          "alarms": 186,
+          "decisions": 9472,
+          "macro_alarm_rate": 0.019636824324324325,
+          "pooled_descriptive_alarm_fraction": 0.019636824324324325,
+          "worst_context_rate": 0.05859375,
+          "worst_context_wilson95_upper": 0.09441226561778955,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 37
+        },
+        "portfolio_bonferroni_or": {
+          "contexts": 37,
+          "alarms": 42,
+          "decisions": 9472,
+          "macro_alarm_rate": 0.0044341216216216214,
+          "pooled_descriptive_alarm_fraction": 0.0044341216216216214,
+          "worst_context_rate": 0.0234375,
+          "worst_context_wilson95_upper": 0.0501809956000511,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 37
+        }
+      },
+      "structural_inspection": {
+        "accept": 37
+      },
+      "ideal_probe_tvd_min": 0.0,
+      "ideal_probe_tvd_max": 0.0
+    },
+    {
+      "noise": 0.0,
+      "category": "QASMBench:original:approved",
+      "methods": {
+        "fixed_0Z": {
+          "contexts": 43,
+          "alarms": 55,
+          "decisions": 11008,
+          "macro_alarm_rate": 0.004996366279069768,
+          "pooled_descriptive_alarm_fraction": 0.004996366279069768,
+          "worst_context_rate": 0.01953125,
+          "worst_context_wilson95_upper": 0.04489813224965644,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 43
+        },
+        "portfolio_joint": {
+          "contexts": 43,
+          "alarms": 81,
+          "decisions": 11008,
+          "macro_alarm_rate": 0.00735828488372093,
+          "pooled_descriptive_alarm_fraction": 0.00735828488372093,
+          "worst_context_rate": 0.0234375,
+          "worst_context_wilson95_upper": 0.0501809956000511,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 43
+        },
+        "portfolio_naive_or": {
+          "contexts": 43,
+          "alarms": 197,
+          "decisions": 11008,
+          "macro_alarm_rate": 0.01789607558139535,
+          "pooled_descriptive_alarm_fraction": 0.01789607558139535,
+          "worst_context_rate": 0.046875,
+          "worst_context_wilson95_upper": 0.0801330188843179,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 43
+        },
+        "portfolio_bonferroni_or": {
+          "contexts": 43,
+          "alarms": 28,
+          "decisions": 11008,
+          "macro_alarm_rate": 0.002543604651162791,
+          "pooled_descriptive_alarm_fraction": 0.002543604651162791,
+          "worst_context_rate": 0.015625,
+          "worst_context_wilson95_upper": 0.039479262709196654,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 43
+        }
+      },
+      "structural_inspection": {
+        "accept": 43
+      },
+      "ideal_probe_tvd_min": 0.0,
+      "ideal_probe_tvd_max": 0.0
+    },
+    {
+      "noise": 0.0,
+      "category": "QASMBench:original:equivalent_x_pair",
+      "methods": {
+        "fixed_0Z": {
+          "contexts": 43,
+          "alarms": 44,
+          "decisions": 11008,
+          "macro_alarm_rate": 0.003997093023255814,
+          "pooled_descriptive_alarm_fraction": 0.003997093023255814,
+          "worst_context_rate": 0.015625,
+          "worst_context_wilson95_upper": 0.039479262709196654,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 43
+        },
+        "portfolio_joint": {
+          "contexts": 43,
+          "alarms": 80,
+          "decisions": 11008,
+          "macro_alarm_rate": 0.007267441860465116,
+          "pooled_descriptive_alarm_fraction": 0.007267441860465116,
+          "worst_context_rate": 0.01953125,
+          "worst_context_wilson95_upper": 0.04489813224965644,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 43
+        },
+        "portfolio_naive_or": {
+          "contexts": 43,
+          "alarms": 202,
+          "decisions": 11008,
+          "macro_alarm_rate": 0.01835029069767442,
+          "pooled_descriptive_alarm_fraction": 0.01835029069767442,
+          "worst_context_rate": 0.0546875,
+          "worst_context_wilson95_upper": 0.08968958072528235,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 43
+        },
+        "portfolio_bonferroni_or": {
+          "contexts": 43,
+          "alarms": 32,
+          "decisions": 11008,
+          "macro_alarm_rate": 0.0029069767441860465,
+          "pooled_descriptive_alarm_fraction": 0.0029069767441860465,
+          "worst_context_rate": 0.01953125,
+          "worst_context_wilson95_upper": 0.04489813224965644,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 43
+        }
+      },
+      "structural_inspection": {
+        "accept": 43
+      },
+      "ideal_probe_tvd_min": 0.0,
+      "ideal_probe_tvd_max": 0.0
+    },
+    {
+      "noise": 0.0,
+      "category": "QASMBench:original:exact_optimized_rewrite",
+      "methods": {
+        "fixed_0Z": {
+          "contexts": 37,
+          "alarms": 50,
+          "decisions": 9472,
+          "macro_alarm_rate": 0.005278716216216216,
+          "pooled_descriptive_alarm_fraction": 0.005278716216216216,
+          "worst_context_rate": 0.03125,
+          "worst_context_wilson95_upper": 0.06044160650774316,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 37
+        },
+        "portfolio_joint": {
+          "contexts": 37,
+          "alarms": 63,
+          "decisions": 9472,
+          "macro_alarm_rate": 0.006651182432432432,
+          "pooled_descriptive_alarm_fraction": 0.006651182432432432,
+          "worst_context_rate": 0.02734375,
+          "worst_context_wilson95_upper": 0.05535570792246043,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 37
+        },
+        "portfolio_naive_or": {
+          "contexts": 37,
+          "alarms": 171,
+          "decisions": 9472,
+          "macro_alarm_rate": 0.01805320945945946,
+          "pooled_descriptive_alarm_fraction": 0.01805320945945946,
+          "worst_context_rate": 0.07421875,
+          "worst_context_wilson95_upper": 0.11300077054584494,
+          "contexts_exceeding_clean_upper_bound_0_10": 1,
+          "contexts_below_detection_lower_bound_0_90": 37
+        },
+        "portfolio_bonferroni_or": {
+          "contexts": 37,
+          "alarms": 29,
+          "decisions": 9472,
+          "macro_alarm_rate": 0.0030616554054054054,
+          "pooled_descriptive_alarm_fraction": 0.0030616554054054054,
+          "worst_context_rate": 0.015625,
+          "worst_context_wilson95_upper": 0.039479262709196654,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 37
+        }
+      },
+      "structural_inspection": {
+        "accept": 5,
+        "inconclusive": 32
+      },
+      "ideal_probe_tvd_min": 0.0,
+      "ideal_probe_tvd_max": 1.843974842610785e-12
+    },
+    {
+      "noise": 0.0,
+      "category": "QDoor:compiled_initialization:approved",
+      "methods": {
+        "fixed_0Z": {
+          "contexts": 3,
+          "alarms": 7,
+          "decisions": 768,
+          "macro_alarm_rate": 0.009114583333333334,
+          "pooled_descriptive_alarm_fraction": 0.009114583333333334,
+          "worst_context_rate": 0.01171875,
+          "worst_context_wilson95_upper": 0.033881572667882304,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 3
+        },
+        "portfolio_joint": {
+          "contexts": 3,
+          "alarms": 7,
+          "decisions": 768,
+          "macro_alarm_rate": 0.009114583333333334,
+          "pooled_descriptive_alarm_fraction": 0.009114583333333334,
+          "worst_context_rate": 0.01171875,
+          "worst_context_wilson95_upper": 0.033881572667882304,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 3
+        },
+        "portfolio_naive_or": {
+          "contexts": 3,
+          "alarms": 23,
+          "decisions": 768,
+          "macro_alarm_rate": 0.029947916666666668,
+          "pooled_descriptive_alarm_fraction": 0.029947916666666668,
+          "worst_context_rate": 0.03515625,
+          "worst_context_wilson95_upper": 0.0654527704282918,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 3
+        },
+        "portfolio_bonferroni_or": {
+          "contexts": 3,
+          "alarms": 3,
+          "decisions": 768,
+          "macro_alarm_rate": 0.00390625,
+          "pooled_descriptive_alarm_fraction": 0.00390625,
+          "worst_context_rate": 0.01171875,
+          "worst_context_wilson95_upper": 0.033881572667882304,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 3
+        }
+      },
+      "structural_inspection": {
+        "accept": 3
+      },
+      "ideal_probe_tvd_min": 0.0,
+      "ideal_probe_tvd_max": 0.0
+    },
+    {
+      "noise": 0.0,
+      "category": "QDoor:compiled_initialization:equivalent_x_pair",
+      "methods": {
+        "fixed_0Z": {
+          "contexts": 3,
+          "alarms": 11,
+          "decisions": 768,
+          "macro_alarm_rate": 0.014322916666666666,
+          "pooled_descriptive_alarm_fraction": 0.014322916666666666,
+          "worst_context_rate": 0.01953125,
+          "worst_context_wilson95_upper": 0.04489813224965644,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 3
+        },
+        "portfolio_joint": {
+          "contexts": 3,
+          "alarms": 2,
+          "decisions": 768,
+          "macro_alarm_rate": 0.0026041666666666665,
+          "pooled_descriptive_alarm_fraction": 0.0026041666666666665,
+          "worst_context_rate": 0.0078125,
+          "worst_context_wilson95_upper": 0.028032768301535768,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 3
+        },
+        "portfolio_naive_or": {
+          "contexts": 3,
+          "alarms": 16,
+          "decisions": 768,
+          "macro_alarm_rate": 0.020833333333333332,
+          "pooled_descriptive_alarm_fraction": 0.020833333333333332,
+          "worst_context_rate": 0.0390625,
+          "worst_context_wilson95_upper": 0.07039983179986732,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 3
+        },
+        "portfolio_bonferroni_or": {
+          "contexts": 3,
+          "alarms": 2,
+          "decisions": 768,
+          "macro_alarm_rate": 0.0026041666666666665,
+          "pooled_descriptive_alarm_fraction": 0.0026041666666666665,
+          "worst_context_rate": 0.0078125,
+          "worst_context_wilson95_upper": 0.028032768301535768,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 3
+        }
+      },
+      "structural_inspection": {
+        "accept": 3
+      },
+      "ideal_probe_tvd_min": 0.0,
+      "ideal_probe_tvd_max": 0.0
+    },
+    {
+      "noise": 0.0,
+      "category": "QDoor:compiled_initialization:trained_backdoor",
+      "methods": {
+        "fixed_0Z": {
+          "contexts": 3,
+          "alarms": 346,
+          "decisions": 768,
+          "macro_alarm_rate": 0.4505208333333333,
+          "pooled_descriptive_alarm_fraction": 0.4505208333333333,
+          "worst_context_rate": 0.85546875,
+          "worst_context_wilson95_upper": 0.8932893239940645,
+          "contexts_exceeding_clean_upper_bound_0_10": 3,
+          "contexts_below_detection_lower_bound_0_90": 3
+        },
+        "portfolio_joint": {
+          "contexts": 3,
+          "alarms": 132,
+          "decisions": 768,
+          "macro_alarm_rate": 0.171875,
+          "pooled_descriptive_alarm_fraction": 0.171875,
+          "worst_context_rate": 0.2890625,
+          "worst_context_wilson95_upper": 0.34738863905848194,
+          "contexts_exceeding_clean_upper_bound_0_10": 3,
+          "contexts_below_detection_lower_bound_0_90": 3
+        },
+        "portfolio_naive_or": {
+          "contexts": 3,
+          "alarms": 380,
+          "decisions": 768,
+          "macro_alarm_rate": 0.4947916666666667,
+          "pooled_descriptive_alarm_fraction": 0.4947916666666667,
+          "worst_context_rate": 0.7265625,
+          "worst_context_wilson95_upper": 0.7775114608188586,
+          "contexts_exceeding_clean_upper_bound_0_10": 3,
+          "contexts_below_detection_lower_bound_0_90": 3
+        },
+        "portfolio_bonferroni_or": {
+          "contexts": 3,
+          "alarms": 176,
+          "decisions": 768,
+          "macro_alarm_rate": 0.22916666666666666,
+          "pooled_descriptive_alarm_fraction": 0.22916666666666666,
+          "worst_context_rate": 0.41015625,
+          "worst_context_wilson95_upper": 0.47130417046871464,
+          "contexts_exceeding_clean_upper_bound_0_10": 3,
+          "contexts_below_detection_lower_bound_0_90": 3
+        }
+      },
+      "structural_inspection": {
+        "inconclusive": 3
+      },
+      "ideal_probe_tvd_min": 0.08958164941798043,
+      "ideal_probe_tvd_max": 0.12263110953789892
+    },
+    {
+      "noise": 0.0,
+      "category": "QDoor:original:approved",
+      "methods": {
+        "fixed_0Z": {
+          "contexts": 3,
+          "alarms": 4,
+          "decisions": 768,
+          "macro_alarm_rate": 0.005208333333333333,
+          "pooled_descriptive_alarm_fraction": 0.005208333333333333,
+          "worst_context_rate": 0.0078125,
+          "worst_context_wilson95_upper": 0.028032768301535768,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 3
+        },
+        "portfolio_joint": {
+          "contexts": 3,
+          "alarms": 9,
+          "decisions": 768,
+          "macro_alarm_rate": 0.01171875,
+          "pooled_descriptive_alarm_fraction": 0.01171875,
+          "worst_context_rate": 0.02734375,
+          "worst_context_wilson95_upper": 0.05535570792246043,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 3
+        },
+        "portfolio_naive_or": {
+          "contexts": 3,
+          "alarms": 21,
+          "decisions": 768,
+          "macro_alarm_rate": 0.02734375,
+          "pooled_descriptive_alarm_fraction": 0.02734375,
+          "worst_context_rate": 0.04296875,
+          "worst_context_wilson95_upper": 0.07529105546366555,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 3
+        },
+        "portfolio_bonferroni_or": {
+          "contexts": 3,
+          "alarms": 4,
+          "decisions": 768,
+          "macro_alarm_rate": 0.005208333333333333,
+          "pooled_descriptive_alarm_fraction": 0.005208333333333333,
+          "worst_context_rate": 0.015625,
+          "worst_context_wilson95_upper": 0.039479262709196654,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 3
+        }
+      },
+      "structural_inspection": {
+        "accept": 3
+      },
+      "ideal_probe_tvd_min": 0.0,
+      "ideal_probe_tvd_max": 0.0
+    },
+    {
+      "noise": 0.0,
+      "category": "QDoor:original:compiled_initialization",
+      "methods": {
+        "fixed_0Z": {
+          "contexts": 3,
+          "alarms": 656,
+          "decisions": 768,
+          "macro_alarm_rate": 0.8541666666666666,
+          "pooled_descriptive_alarm_fraction": 0.8541666666666666,
+          "worst_context_rate": 0.92578125,
+          "worst_context_wilson95_upper": 0.9519738928081888,
+          "contexts_exceeding_clean_upper_bound_0_10": 3,
+          "contexts_below_detection_lower_bound_0_90": 3
+        },
+        "portfolio_joint": {
+          "contexts": 3,
+          "alarms": 430,
+          "decisions": 768,
+          "macro_alarm_rate": 0.5598958333333334,
+          "pooled_descriptive_alarm_fraction": 0.5598958333333334,
+          "worst_context_rate": 0.65625,
+          "worst_context_wilson95_upper": 0.7117359228767722,
+          "contexts_exceeding_clean_upper_bound_0_10": 3,
+          "contexts_below_detection_lower_bound_0_90": 3
+        },
+        "portfolio_naive_or": {
+          "contexts": 3,
+          "alarms": 516,
+          "decisions": 768,
+          "macro_alarm_rate": 0.671875,
+          "pooled_descriptive_alarm_fraction": 0.671875,
+          "worst_context_rate": 0.73828125,
+          "worst_context_wilson95_upper": 0.7883213619127559,
+          "contexts_exceeding_clean_upper_bound_0_10": 3,
+          "contexts_below_detection_lower_bound_0_90": 3
+        },
+        "portfolio_bonferroni_or": {
+          "contexts": 3,
+          "alarms": 333,
+          "decisions": 768,
+          "macro_alarm_rate": 0.43359375,
+          "pooled_descriptive_alarm_fraction": 0.43359375,
+          "worst_context_rate": 0.51953125,
+          "worst_context_wilson95_upper": 0.5799912302619868,
+          "contexts_exceeding_clean_upper_bound_0_10": 3,
+          "contexts_below_detection_lower_bound_0_90": 3
+        }
+      },
+      "structural_inspection": {
+        "inconclusive": 3
+      },
+      "ideal_probe_tvd_min": 0.11729156022294325,
+      "ideal_probe_tvd_max": 0.13947048780792365
+    },
+    {
+      "noise": 0.0,
+      "category": "QDoor:original:equivalent_x_pair",
+      "methods": {
+        "fixed_0Z": {
+          "contexts": 3,
+          "alarms": 4,
+          "decisions": 768,
+          "macro_alarm_rate": 0.005208333333333333,
+          "pooled_descriptive_alarm_fraction": 0.005208333333333333,
+          "worst_context_rate": 0.0078125,
+          "worst_context_wilson95_upper": 0.028032768301535768,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 3
+        },
+        "portfolio_joint": {
+          "contexts": 3,
+          "alarms": 6,
+          "decisions": 768,
+          "macro_alarm_rate": 0.0078125,
+          "pooled_descriptive_alarm_fraction": 0.0078125,
+          "worst_context_rate": 0.0078125,
+          "worst_context_wilson95_upper": 0.028032768301535768,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 3
+        },
+        "portfolio_naive_or": {
+          "contexts": 3,
+          "alarms": 18,
+          "decisions": 768,
+          "macro_alarm_rate": 0.0234375,
+          "pooled_descriptive_alarm_fraction": 0.0234375,
+          "worst_context_rate": 0.03125,
+          "worst_context_wilson95_upper": 0.06044160650774316,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 3
+        },
+        "portfolio_bonferroni_or": {
+          "contexts": 3,
+          "alarms": 3,
+          "decisions": 768,
+          "macro_alarm_rate": 0.00390625,
+          "pooled_descriptive_alarm_fraction": 0.00390625,
+          "worst_context_rate": 0.01171875,
+          "worst_context_wilson95_upper": 0.033881572667882304,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 3
+        }
+      },
+      "structural_inspection": {
+        "accept": 3
+      },
+      "ideal_probe_tvd_min": 0.0,
+      "ideal_probe_tvd_max": 0.0
+    },
+    {
+      "noise": 0.0,
+      "category": "QDoor:original:trained_backdoor",
+      "methods": {
+        "fixed_0Z": {
+          "contexts": 3,
+          "alarms": 683,
+          "decisions": 768,
+          "macro_alarm_rate": 0.8893229166666666,
+          "pooled_descriptive_alarm_fraction": 0.8893229166666666,
+          "worst_context_rate": 1.0,
+          "worst_context_wilson95_upper": 0.9999999999999999,
+          "contexts_exceeding_clean_upper_bound_0_10": 3,
+          "contexts_below_detection_lower_bound_0_90": 1
+        },
+        "portfolio_joint": {
+          "contexts": 3,
+          "alarms": 747,
+          "decisions": 768,
+          "macro_alarm_rate": 0.97265625,
+          "pooled_descriptive_alarm_fraction": 0.97265625,
+          "worst_context_rate": 0.99609375,
+          "worst_context_wilson95_upper": 0.9993101178330381,
+          "contexts_exceeding_clean_upper_bound_0_10": 3,
+          "contexts_below_detection_lower_bound_0_90": 1
+        },
+        "portfolio_naive_or": {
+          "contexts": 3,
+          "alarms": 763,
+          "decisions": 768,
+          "macro_alarm_rate": 0.9934895833333334,
+          "pooled_descriptive_alarm_fraction": 0.9934895833333334,
+          "worst_context_rate": 1.0,
+          "worst_context_wilson95_upper": 0.9999999999999999,
+          "contexts_exceeding_clean_upper_bound_0_10": 3,
+          "contexts_below_detection_lower_bound_0_90": 0
+        },
+        "portfolio_bonferroni_or": {
+          "contexts": 3,
+          "alarms": 735,
+          "decisions": 768,
+          "macro_alarm_rate": 0.95703125,
+          "pooled_descriptive_alarm_fraction": 0.95703125,
+          "worst_context_rate": 0.98828125,
+          "worst_context_wilson95_upper": 0.9960067128769923,
+          "contexts_exceeding_clean_upper_bound_0_10": 3,
+          "contexts_below_detection_lower_bound_0_90": 1
+        }
+      },
+      "structural_inspection": {
+        "inconclusive": 3
+      },
+      "ideal_probe_tvd_min": 0.20190561423340384,
+      "ideal_probe_tvd_max": 0.2277374374417132
+    },
+    {
+      "noise": 0.0,
+      "category": "VeriQBench:optimized:approved",
+      "methods": {
+        "fixed_0Z": {
+          "contexts": 55,
+          "alarms": 41,
+          "decisions": 14080,
+          "macro_alarm_rate": 0.0029119318181818183,
+          "pooled_descriptive_alarm_fraction": 0.0029119318181818183,
+          "worst_context_rate": 0.01953125,
+          "worst_context_wilson95_upper": 0.04489813224965644,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 55
+        },
+        "portfolio_joint": {
+          "contexts": 55,
+          "alarms": 27,
+          "decisions": 14080,
+          "macro_alarm_rate": 0.0019176136363636364,
+          "pooled_descriptive_alarm_fraction": 0.0019176136363636364,
+          "worst_context_rate": 0.02734375,
+          "worst_context_wilson95_upper": 0.05535570792246043,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 55
+        },
+        "portfolio_naive_or": {
+          "contexts": 55,
+          "alarms": 96,
+          "decisions": 14080,
+          "macro_alarm_rate": 0.006818181818181818,
+          "pooled_descriptive_alarm_fraction": 0.006818181818181818,
+          "worst_context_rate": 0.046875,
+          "worst_context_wilson95_upper": 0.0801330188843179,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 55
+        },
+        "portfolio_bonferroni_or": {
+          "contexts": 55,
+          "alarms": 17,
+          "decisions": 14080,
+          "macro_alarm_rate": 0.0012073863636363636,
+          "pooled_descriptive_alarm_fraction": 0.0012073863636363636,
+          "worst_context_rate": 0.01171875,
+          "worst_context_wilson95_upper": 0.033881572667882304,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 55
+        }
+      },
+      "structural_inspection": {
+        "accept": 55
+      },
+      "ideal_probe_tvd_min": 0.0,
+      "ideal_probe_tvd_max": 0.0
+    },
+    {
+      "noise": 0.0,
+      "category": "VeriQBench:optimized:equivalent_x_pair",
+      "methods": {
+        "fixed_0Z": {
+          "contexts": 55,
+          "alarms": 36,
+          "decisions": 14080,
+          "macro_alarm_rate": 0.002556818181818182,
+          "pooled_descriptive_alarm_fraction": 0.002556818181818182,
+          "worst_context_rate": 0.02734375,
+          "worst_context_wilson95_upper": 0.05535570792246043,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 55
+        },
+        "portfolio_joint": {
+          "contexts": 55,
+          "alarms": 38,
+          "decisions": 14080,
+          "macro_alarm_rate": 0.0026988636363636364,
+          "pooled_descriptive_alarm_fraction": 0.0026988636363636364,
+          "worst_context_rate": 0.01953125,
+          "worst_context_wilson95_upper": 0.04489813224965644,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 55
+        },
+        "portfolio_naive_or": {
+          "contexts": 55,
+          "alarms": 110,
+          "decisions": 14080,
+          "macro_alarm_rate": 0.0078125,
+          "pooled_descriptive_alarm_fraction": 0.0078125,
+          "worst_context_rate": 0.0390625,
+          "worst_context_wilson95_upper": 0.07039983179986732,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 55
+        },
+        "portfolio_bonferroni_or": {
+          "contexts": 55,
+          "alarms": 18,
+          "decisions": 14080,
+          "macro_alarm_rate": 0.001278409090909091,
+          "pooled_descriptive_alarm_fraction": 0.001278409090909091,
+          "worst_context_rate": 0.015625,
+          "worst_context_wilson95_upper": 0.039479262709196654,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 55
+        }
+      },
+      "structural_inspection": {
+        "accept": 55
+      },
+      "ideal_probe_tvd_min": 0.0,
+      "ideal_probe_tvd_max": 0.0
+    },
+    {
+      "noise": 0.0,
+      "category": "VeriQBench:original:approved",
+      "methods": {
+        "fixed_0Z": {
+          "contexts": 55,
+          "alarms": 38,
+          "decisions": 14080,
+          "macro_alarm_rate": 0.0026988636363636364,
+          "pooled_descriptive_alarm_fraction": 0.0026988636363636364,
+          "worst_context_rate": 0.01953125,
+          "worst_context_wilson95_upper": 0.04489813224965644,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 55
+        },
+        "portfolio_joint": {
+          "contexts": 55,
+          "alarms": 35,
+          "decisions": 14080,
+          "macro_alarm_rate": 0.0024857954545454545,
+          "pooled_descriptive_alarm_fraction": 0.0024857954545454545,
+          "worst_context_rate": 0.0234375,
+          "worst_context_wilson95_upper": 0.0501809956000511,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 55
+        },
+        "portfolio_naive_or": {
+          "contexts": 55,
+          "alarms": 104,
+          "decisions": 14080,
+          "macro_alarm_rate": 0.007386363636363636,
+          "pooled_descriptive_alarm_fraction": 0.007386363636363636,
+          "worst_context_rate": 0.046875,
+          "worst_context_wilson95_upper": 0.0801330188843179,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 55
+        },
+        "portfolio_bonferroni_or": {
+          "contexts": 55,
+          "alarms": 25,
+          "decisions": 14080,
+          "macro_alarm_rate": 0.0017755681818181818,
+          "pooled_descriptive_alarm_fraction": 0.0017755681818181818,
+          "worst_context_rate": 0.0390625,
+          "worst_context_wilson95_upper": 0.07039983179986732,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 55
+        }
+      },
+      "structural_inspection": {
+        "accept": 55
+      },
+      "ideal_probe_tvd_min": 0.0,
+      "ideal_probe_tvd_max": 0.0
+    },
+    {
+      "noise": 0.0,
+      "category": "VeriQBench:original:equivalent_x_pair",
+      "methods": {
+        "fixed_0Z": {
+          "contexts": 55,
+          "alarms": 49,
+          "decisions": 14080,
+          "macro_alarm_rate": 0.0034801136363636362,
+          "pooled_descriptive_alarm_fraction": 0.0034801136363636362,
+          "worst_context_rate": 0.03125,
+          "worst_context_wilson95_upper": 0.06044160650774316,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 55
+        },
+        "portfolio_joint": {
+          "contexts": 55,
+          "alarms": 41,
+          "decisions": 14080,
+          "macro_alarm_rate": 0.0029119318181818183,
+          "pooled_descriptive_alarm_fraction": 0.0029119318181818183,
+          "worst_context_rate": 0.0234375,
+          "worst_context_wilson95_upper": 0.0501809956000511,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 55
+        },
+        "portfolio_naive_or": {
+          "contexts": 55,
+          "alarms": 118,
+          "decisions": 14080,
+          "macro_alarm_rate": 0.008380681818181818,
+          "pooled_descriptive_alarm_fraction": 0.008380681818181818,
+          "worst_context_rate": 0.04296875,
+          "worst_context_wilson95_upper": 0.07529105546366555,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 55
+        },
+        "portfolio_bonferroni_or": {
+          "contexts": 55,
+          "alarms": 28,
+          "decisions": 14080,
+          "macro_alarm_rate": 0.0019886363636363634,
+          "pooled_descriptive_alarm_fraction": 0.0019886363636363634,
+          "worst_context_rate": 0.01953125,
+          "worst_context_wilson95_upper": 0.04489813224965644,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 55
+        }
+      },
+      "structural_inspection": {
+        "accept": 55
+      },
+      "ideal_probe_tvd_min": 0.0,
+      "ideal_probe_tvd_max": 0.0
+    },
+    {
+      "noise": 0.0,
+      "category": "VeriQBench:original:exact_optimized_rewrite",
+      "methods": {
+        "fixed_0Z": {
+          "contexts": 55,
+          "alarms": 42,
+          "decisions": 14080,
+          "macro_alarm_rate": 0.0029829545454545456,
+          "pooled_descriptive_alarm_fraction": 0.0029829545454545456,
+          "worst_context_rate": 0.02734375,
+          "worst_context_wilson95_upper": 0.05535570792246043,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 55
+        },
+        "portfolio_joint": {
+          "contexts": 55,
+          "alarms": 38,
+          "decisions": 14080,
+          "macro_alarm_rate": 0.0026988636363636364,
+          "pooled_descriptive_alarm_fraction": 0.0026988636363636364,
+          "worst_context_rate": 0.01953125,
+          "worst_context_wilson95_upper": 0.04489813224965644,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 55
+        },
+        "portfolio_naive_or": {
+          "contexts": 55,
+          "alarms": 104,
+          "decisions": 14080,
+          "macro_alarm_rate": 0.007386363636363636,
+          "pooled_descriptive_alarm_fraction": 0.007386363636363636,
+          "worst_context_rate": 0.046875,
+          "worst_context_wilson95_upper": 0.0801330188843179,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 55
+        },
+        "portfolio_bonferroni_or": {
+          "contexts": 55,
+          "alarms": 20,
+          "decisions": 14080,
+          "macro_alarm_rate": 0.0014204545454545455,
+          "pooled_descriptive_alarm_fraction": 0.0014204545454545455,
+          "worst_context_rate": 0.01171875,
+          "worst_context_wilson95_upper": 0.033881572667882304,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 55
+        }
+      },
+      "structural_inspection": {
+        "inconclusive": 47,
+        "accept": 8
+      },
+      "ideal_probe_tvd_min": 0.0,
+      "ideal_probe_tvd_max": 1.612208630485945e-14
+    },
+    {
+      "noise": 0.005,
+      "category": "QASMBench:optimized:approved",
+      "methods": {
+        "fixed_0Z": {
+          "contexts": 37,
+          "alarms": 87,
+          "decisions": 9472,
+          "macro_alarm_rate": 0.009184966216216216,
+          "pooled_descriptive_alarm_fraction": 0.009184966216216216,
+          "worst_context_rate": 0.0390625,
+          "worst_context_wilson95_upper": 0.07039983179986732,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 37
+        },
+        "portfolio_joint": {
+          "contexts": 37,
+          "alarms": 83,
+          "decisions": 9472,
+          "macro_alarm_rate": 0.00876266891891892,
+          "pooled_descriptive_alarm_fraction": 0.00876266891891892,
+          "worst_context_rate": 0.02734375,
+          "worst_context_wilson95_upper": 0.05535570792246043,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 37
+        },
+        "portfolio_naive_or": {
+          "contexts": 37,
+          "alarms": 250,
+          "decisions": 9472,
+          "macro_alarm_rate": 0.026393581081081082,
+          "pooled_descriptive_alarm_fraction": 0.026393581081081082,
+          "worst_context_rate": 0.05859375,
+          "worst_context_wilson95_upper": 0.09441226561778955,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 37
+        },
+        "portfolio_bonferroni_or": {
+          "contexts": 37,
+          "alarms": 58,
+          "decisions": 9472,
+          "macro_alarm_rate": 0.006123310810810811,
+          "pooled_descriptive_alarm_fraction": 0.006123310810810811,
+          "worst_context_rate": 0.02734375,
+          "worst_context_wilson95_upper": 0.05535570792246043,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 37
+        }
+      },
+      "structural_inspection": {
+        "accept": 37
+      },
+      "ideal_probe_tvd_min": 0.0,
+      "ideal_probe_tvd_max": 0.0
+    },
+    {
+      "noise": 0.005,
+      "category": "QASMBench:optimized:equivalent_x_pair",
+      "methods": {
+        "fixed_0Z": {
+          "contexts": 37,
+          "alarms": 141,
+          "decisions": 9472,
+          "macro_alarm_rate": 0.01488597972972973,
+          "pooled_descriptive_alarm_fraction": 0.01488597972972973,
+          "worst_context_rate": 0.0390625,
+          "worst_context_wilson95_upper": 0.07039983179986732,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 37
+        },
+        "portfolio_joint": {
+          "contexts": 37,
+          "alarms": 119,
+          "decisions": 9472,
+          "macro_alarm_rate": 0.012563344594594595,
+          "pooled_descriptive_alarm_fraction": 0.012563344594594595,
+          "worst_context_rate": 0.0390625,
+          "worst_context_wilson95_upper": 0.07039983179986732,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 37
+        },
+        "portfolio_naive_or": {
+          "contexts": 37,
+          "alarms": 375,
+          "decisions": 9472,
+          "macro_alarm_rate": 0.03959037162162162,
+          "pooled_descriptive_alarm_fraction": 0.03959037162162162,
+          "worst_context_rate": 0.12109375,
+          "worst_context_wilson95_upper": 0.1667557205235664,
+          "contexts_exceeding_clean_upper_bound_0_10": 4,
+          "contexts_below_detection_lower_bound_0_90": 37
+        },
+        "portfolio_bonferroni_or": {
+          "contexts": 37,
+          "alarms": 92,
+          "decisions": 9472,
+          "macro_alarm_rate": 0.009712837837837838,
+          "pooled_descriptive_alarm_fraction": 0.009712837837837838,
+          "worst_context_rate": 0.03125,
+          "worst_context_wilson95_upper": 0.06044160650774316,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 37
+        }
+      },
+      "structural_inspection": {
+        "accept": 37
+      },
+      "ideal_probe_tvd_min": 0.0,
+      "ideal_probe_tvd_max": 0.0
+    },
+    {
+      "noise": 0.005,
+      "category": "QASMBench:original:approved",
+      "methods": {
+        "fixed_0Z": {
+          "contexts": 43,
+          "alarms": 129,
+          "decisions": 11008,
+          "macro_alarm_rate": 0.01171875,
+          "pooled_descriptive_alarm_fraction": 0.01171875,
+          "worst_context_rate": 0.0390625,
+          "worst_context_wilson95_upper": 0.07039983179986732,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 43
+        },
+        "portfolio_joint": {
+          "contexts": 43,
+          "alarms": 87,
+          "decisions": 11008,
+          "macro_alarm_rate": 0.007903343023255814,
+          "pooled_descriptive_alarm_fraction": 0.007903343023255814,
+          "worst_context_rate": 0.03125,
+          "worst_context_wilson95_upper": 0.06044160650774316,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 43
+        },
+        "portfolio_naive_or": {
+          "contexts": 43,
+          "alarms": 311,
+          "decisions": 11008,
+          "macro_alarm_rate": 0.02825218023255814,
+          "pooled_descriptive_alarm_fraction": 0.02825218023255814,
+          "worst_context_rate": 0.07421875,
+          "worst_context_wilson95_upper": 0.11300077054584494,
+          "contexts_exceeding_clean_upper_bound_0_10": 2,
+          "contexts_below_detection_lower_bound_0_90": 43
+        },
+        "portfolio_bonferroni_or": {
+          "contexts": 43,
+          "alarms": 52,
+          "decisions": 11008,
+          "macro_alarm_rate": 0.004723837209302325,
+          "pooled_descriptive_alarm_fraction": 0.004723837209302325,
+          "worst_context_rate": 0.015625,
+          "worst_context_wilson95_upper": 0.039479262709196654,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 43
+        }
+      },
+      "structural_inspection": {
+        "accept": 43
+      },
+      "ideal_probe_tvd_min": 0.0,
+      "ideal_probe_tvd_max": 0.0
+    },
+    {
+      "noise": 0.005,
+      "category": "QASMBench:original:equivalent_x_pair",
+      "methods": {
+        "fixed_0Z": {
+          "contexts": 43,
+          "alarms": 171,
+          "decisions": 11008,
+          "macro_alarm_rate": 0.015534156976744186,
+          "pooled_descriptive_alarm_fraction": 0.015534156976744186,
+          "worst_context_rate": 0.0625,
+          "worst_context_wilson95_upper": 0.09910223324412587,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 43
+        },
+        "portfolio_joint": {
+          "contexts": 43,
+          "alarms": 129,
+          "decisions": 11008,
+          "macro_alarm_rate": 0.01171875,
+          "pooled_descriptive_alarm_fraction": 0.01171875,
+          "worst_context_rate": 0.03515625,
+          "worst_context_wilson95_upper": 0.0654527704282918,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 43
+        },
+        "portfolio_naive_or": {
+          "contexts": 43,
+          "alarms": 383,
+          "decisions": 11008,
+          "macro_alarm_rate": 0.034792877906976744,
+          "pooled_descriptive_alarm_fraction": 0.034792877906976744,
+          "worst_context_rate": 0.06640625,
+          "worst_context_wilson95_upper": 0.10376215263514196,
+          "contexts_exceeding_clean_upper_bound_0_10": 3,
+          "contexts_below_detection_lower_bound_0_90": 43
+        },
+        "portfolio_bonferroni_or": {
+          "contexts": 43,
+          "alarms": 76,
+          "decisions": 11008,
+          "macro_alarm_rate": 0.006904069767441861,
+          "pooled_descriptive_alarm_fraction": 0.006904069767441861,
+          "worst_context_rate": 0.0234375,
+          "worst_context_wilson95_upper": 0.0501809956000511,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 43
+        }
+      },
+      "structural_inspection": {
+        "accept": 43
+      },
+      "ideal_probe_tvd_min": 0.0,
+      "ideal_probe_tvd_max": 0.0
+    },
+    {
+      "noise": 0.005,
+      "category": "QASMBench:original:exact_optimized_rewrite",
+      "methods": {
+        "fixed_0Z": {
+          "contexts": 37,
+          "alarms": 1754,
+          "decisions": 9472,
+          "macro_alarm_rate": 0.18517736486486486,
+          "pooled_descriptive_alarm_fraction": 0.18517736486486486,
+          "worst_context_rate": 1.0,
+          "worst_context_wilson95_upper": 0.9999999999999999,
+          "contexts_exceeding_clean_upper_bound_0_10": 10,
+          "contexts_below_detection_lower_bound_0_90": 32
+        },
+        "portfolio_joint": {
+          "contexts": 37,
+          "alarms": 1197,
+          "decisions": 9472,
+          "macro_alarm_rate": 0.12637246621621623,
+          "pooled_descriptive_alarm_fraction": 0.12637246621621623,
+          "worst_context_rate": 1.0,
+          "worst_context_wilson95_upper": 0.9999999999999999,
+          "contexts_exceeding_clean_upper_bound_0_10": 5,
+          "contexts_below_detection_lower_bound_0_90": 33
+        },
+        "portfolio_naive_or": {
+          "contexts": 37,
+          "alarms": 1523,
+          "decisions": 9472,
+          "macro_alarm_rate": 0.16078969594594594,
+          "pooled_descriptive_alarm_fraction": 0.16078969594594594,
+          "worst_context_rate": 1.0,
+          "worst_context_wilson95_upper": 0.9999999999999999,
+          "contexts_exceeding_clean_upper_bound_0_10": 8,
+          "contexts_below_detection_lower_bound_0_90": 33
+        },
+        "portfolio_bonferroni_or": {
+          "contexts": 37,
+          "alarms": 1203,
+          "decisions": 9472,
+          "macro_alarm_rate": 0.12700591216216217,
+          "pooled_descriptive_alarm_fraction": 0.12700591216216217,
+          "worst_context_rate": 1.0,
+          "worst_context_wilson95_upper": 0.9999999999999999,
+          "contexts_exceeding_clean_upper_bound_0_10": 6,
+          "contexts_below_detection_lower_bound_0_90": 33
+        }
+      },
+      "structural_inspection": {
+        "accept": 5,
+        "inconclusive": 32
+      },
+      "ideal_probe_tvd_min": 0.0,
+      "ideal_probe_tvd_max": 1.843974842610785e-12
+    },
+    {
+      "noise": 0.005,
+      "category": "QDoor:compiled_initialization:approved",
+      "methods": {
+        "fixed_0Z": {
+          "contexts": 3,
+          "alarms": 2,
+          "decisions": 768,
+          "macro_alarm_rate": 0.0026041666666666665,
+          "pooled_descriptive_alarm_fraction": 0.0026041666666666665,
+          "worst_context_rate": 0.0078125,
+          "worst_context_wilson95_upper": 0.028032768301535768,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 3
+        },
+        "portfolio_joint": {
+          "contexts": 3,
+          "alarms": 5,
+          "decisions": 768,
+          "macro_alarm_rate": 0.006510416666666667,
+          "pooled_descriptive_alarm_fraction": 0.006510416666666667,
+          "worst_context_rate": 0.01171875,
+          "worst_context_wilson95_upper": 0.033881572667882304,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 3
+        },
+        "portfolio_naive_or": {
+          "contexts": 3,
+          "alarms": 13,
+          "decisions": 768,
+          "macro_alarm_rate": 0.016927083333333332,
+          "pooled_descriptive_alarm_fraction": 0.016927083333333332,
+          "worst_context_rate": 0.0234375,
+          "worst_context_wilson95_upper": 0.0501809956000511,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 3
+        },
+        "portfolio_bonferroni_or": {
+          "contexts": 3,
+          "alarms": 4,
+          "decisions": 768,
+          "macro_alarm_rate": 0.005208333333333333,
+          "pooled_descriptive_alarm_fraction": 0.005208333333333333,
+          "worst_context_rate": 0.01171875,
+          "worst_context_wilson95_upper": 0.033881572667882304,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 3
+        }
+      },
+      "structural_inspection": {
+        "accept": 3
+      },
+      "ideal_probe_tvd_min": 0.0,
+      "ideal_probe_tvd_max": 0.0
+    },
+    {
+      "noise": 0.005,
+      "category": "QDoor:compiled_initialization:equivalent_x_pair",
+      "methods": {
+        "fixed_0Z": {
+          "contexts": 3,
+          "alarms": 6,
+          "decisions": 768,
+          "macro_alarm_rate": 0.0078125,
+          "pooled_descriptive_alarm_fraction": 0.0078125,
+          "worst_context_rate": 0.01171875,
+          "worst_context_wilson95_upper": 0.033881572667882304,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 3
+        },
+        "portfolio_joint": {
+          "contexts": 3,
+          "alarms": 8,
+          "decisions": 768,
+          "macro_alarm_rate": 0.010416666666666666,
+          "pooled_descriptive_alarm_fraction": 0.010416666666666666,
+          "worst_context_rate": 0.015625,
+          "worst_context_wilson95_upper": 0.039479262709196654,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 3
+        },
+        "portfolio_naive_or": {
+          "contexts": 3,
+          "alarms": 24,
+          "decisions": 768,
+          "macro_alarm_rate": 0.03125,
+          "pooled_descriptive_alarm_fraction": 0.03125,
+          "worst_context_rate": 0.046875,
+          "worst_context_wilson95_upper": 0.0801330188843179,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 3
+        },
+        "portfolio_bonferroni_or": {
+          "contexts": 3,
+          "alarms": 3,
+          "decisions": 768,
+          "macro_alarm_rate": 0.00390625,
+          "pooled_descriptive_alarm_fraction": 0.00390625,
+          "worst_context_rate": 0.0078125,
+          "worst_context_wilson95_upper": 0.028032768301535768,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 3
+        }
+      },
+      "structural_inspection": {
+        "accept": 3
+      },
+      "ideal_probe_tvd_min": 0.0,
+      "ideal_probe_tvd_max": 0.0
+    },
+    {
+      "noise": 0.005,
+      "category": "QDoor:compiled_initialization:trained_backdoor",
+      "methods": {
+        "fixed_0Z": {
+          "contexts": 3,
+          "alarms": 168,
+          "decisions": 768,
+          "macro_alarm_rate": 0.21875,
+          "pooled_descriptive_alarm_fraction": 0.21875,
+          "worst_context_rate": 0.5,
+          "worst_context_wilson95_upper": 0.560794441410937,
+          "contexts_exceeding_clean_upper_bound_0_10": 3,
+          "contexts_below_detection_lower_bound_0_90": 3
+        },
+        "portfolio_joint": {
+          "contexts": 3,
+          "alarms": 74,
+          "decisions": 768,
+          "macro_alarm_rate": 0.09635416666666667,
+          "pooled_descriptive_alarm_fraction": 0.09635416666666667,
+          "worst_context_rate": 0.20703125,
+          "worst_context_wilson95_upper": 0.2608176385889693,
+          "contexts_exceeding_clean_upper_bound_0_10": 2,
+          "contexts_below_detection_lower_bound_0_90": 3
+        },
+        "portfolio_naive_or": {
+          "contexts": 3,
+          "alarms": 168,
+          "decisions": 768,
+          "macro_alarm_rate": 0.21875,
+          "pooled_descriptive_alarm_fraction": 0.21875,
+          "worst_context_rate": 0.421875,
+          "worst_context_wilson95_upper": 0.4830888316531124,
+          "contexts_exceeding_clean_upper_bound_0_10": 2,
+          "contexts_below_detection_lower_bound_0_90": 3
+        },
+        "portfolio_bonferroni_or": {
+          "contexts": 3,
+          "alarms": 61,
+          "decisions": 768,
+          "macro_alarm_rate": 0.07942708333333333,
+          "pooled_descriptive_alarm_fraction": 0.07942708333333333,
+          "worst_context_rate": 0.17578125,
+          "worst_context_wilson95_upper": 0.22710285847960257,
+          "contexts_exceeding_clean_upper_bound_0_10": 1,
+          "contexts_below_detection_lower_bound_0_90": 3
+        }
+      },
+      "structural_inspection": {
+        "inconclusive": 3
+      },
+      "ideal_probe_tvd_min": 0.08958164941798043,
+      "ideal_probe_tvd_max": 0.12263110953789892
+    },
+    {
+      "noise": 0.005,
+      "category": "QDoor:original:approved",
+      "methods": {
+        "fixed_0Z": {
+          "contexts": 3,
+          "alarms": 4,
+          "decisions": 768,
+          "macro_alarm_rate": 0.005208333333333333,
+          "pooled_descriptive_alarm_fraction": 0.005208333333333333,
+          "worst_context_rate": 0.0078125,
+          "worst_context_wilson95_upper": 0.028032768301535768,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 3
+        },
+        "portfolio_joint": {
+          "contexts": 3,
+          "alarms": 6,
+          "decisions": 768,
+          "macro_alarm_rate": 0.0078125,
+          "pooled_descriptive_alarm_fraction": 0.0078125,
+          "worst_context_rate": 0.01953125,
+          "worst_context_wilson95_upper": 0.04489813224965644,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 3
+        },
+        "portfolio_naive_or": {
+          "contexts": 3,
+          "alarms": 18,
+          "decisions": 768,
+          "macro_alarm_rate": 0.0234375,
+          "pooled_descriptive_alarm_fraction": 0.0234375,
+          "worst_context_rate": 0.03125,
+          "worst_context_wilson95_upper": 0.06044160650774316,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 3
+        },
+        "portfolio_bonferroni_or": {
+          "contexts": 3,
+          "alarms": 1,
+          "decisions": 768,
+          "macro_alarm_rate": 0.0013020833333333333,
+          "pooled_descriptive_alarm_fraction": 0.0013020833333333333,
+          "worst_context_rate": 0.00390625,
+          "worst_context_wilson95_upper": 0.021790975380582514,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 3
+        }
+      },
+      "structural_inspection": {
+        "accept": 3
+      },
+      "ideal_probe_tvd_min": 0.0,
+      "ideal_probe_tvd_max": 0.0
+    },
+    {
+      "noise": 0.005,
+      "category": "QDoor:original:compiled_initialization",
+      "methods": {
+        "fixed_0Z": {
+          "contexts": 3,
+          "alarms": 751,
+          "decisions": 768,
+          "macro_alarm_rate": 0.9778645833333334,
+          "pooled_descriptive_alarm_fraction": 0.9778645833333334,
+          "worst_context_rate": 1.0,
+          "worst_context_wilson95_upper": 0.9999999999999999,
+          "contexts_exceeding_clean_upper_bound_0_10": 3,
+          "contexts_below_detection_lower_bound_0_90": 1
+        },
+        "portfolio_joint": {
+          "contexts": 3,
+          "alarms": 613,
+          "decisions": 768,
+          "macro_alarm_rate": 0.7981770833333334,
+          "pooled_descriptive_alarm_fraction": 0.7981770833333334,
+          "worst_context_rate": 0.921875,
+          "worst_context_wilson95_upper": 0.9488593594315697,
+          "contexts_exceeding_clean_upper_bound_0_10": 3,
+          "contexts_below_detection_lower_bound_0_90": 3
+        },
+        "portfolio_naive_or": {
+          "contexts": 3,
+          "alarms": 731,
+          "decisions": 768,
+          "macro_alarm_rate": 0.9518229166666666,
+          "pooled_descriptive_alarm_fraction": 0.9518229166666666,
+          "worst_context_rate": 0.984375,
+          "worst_context_wilson95_upper": 0.9939074017966336,
+          "contexts_exceeding_clean_upper_bound_0_10": 3,
+          "contexts_below_detection_lower_bound_0_90": 1
+        },
+        "portfolio_bonferroni_or": {
+          "contexts": 3,
+          "alarms": 566,
+          "decisions": 768,
+          "macro_alarm_rate": 0.7369791666666666,
+          "pooled_descriptive_alarm_fraction": 0.7369791666666666,
+          "worst_context_rate": 0.84375,
+          "worst_context_wilson95_upper": 0.8831075564856906,
+          "contexts_exceeding_clean_upper_bound_0_10": 3,
+          "contexts_below_detection_lower_bound_0_90": 3
+        }
+      },
+      "structural_inspection": {
+        "inconclusive": 3
+      },
+      "ideal_probe_tvd_min": 0.11729156022294325,
+      "ideal_probe_tvd_max": 0.13947048780792365
+    },
+    {
+      "noise": 0.005,
+      "category": "QDoor:original:equivalent_x_pair",
+      "methods": {
+        "fixed_0Z": {
+          "contexts": 3,
+          "alarms": 5,
+          "decisions": 768,
+          "macro_alarm_rate": 0.006510416666666667,
+          "pooled_descriptive_alarm_fraction": 0.006510416666666667,
+          "worst_context_rate": 0.01171875,
+          "worst_context_wilson95_upper": 0.033881572667882304,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 3
+        },
+        "portfolio_joint": {
+          "contexts": 3,
+          "alarms": 8,
+          "decisions": 768,
+          "macro_alarm_rate": 0.010416666666666666,
+          "pooled_descriptive_alarm_fraction": 0.010416666666666666,
+          "worst_context_rate": 0.0234375,
+          "worst_context_wilson95_upper": 0.0501809956000511,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 3
+        },
+        "portfolio_naive_or": {
+          "contexts": 3,
+          "alarms": 19,
+          "decisions": 768,
+          "macro_alarm_rate": 0.024739583333333332,
+          "pooled_descriptive_alarm_fraction": 0.024739583333333332,
+          "worst_context_rate": 0.05078125,
+          "worst_context_wilson95_upper": 0.08493105962106533,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 3
+        },
+        "portfolio_bonferroni_or": {
+          "contexts": 3,
+          "alarms": 0,
+          "decisions": 768,
+          "macro_alarm_rate": 0.0,
+          "pooled_descriptive_alarm_fraction": 0.0,
+          "worst_context_rate": 0.0,
+          "worst_context_wilson95_upper": 0.01478385642587143,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 3
+        }
+      },
+      "structural_inspection": {
+        "accept": 3
+      },
+      "ideal_probe_tvd_min": 0.0,
+      "ideal_probe_tvd_max": 0.0
+    },
+    {
+      "noise": 0.005,
+      "category": "QDoor:original:trained_backdoor",
+      "methods": {
+        "fixed_0Z": {
+          "contexts": 3,
+          "alarms": 753,
+          "decisions": 768,
+          "macro_alarm_rate": 0.98046875,
+          "pooled_descriptive_alarm_fraction": 0.98046875,
+          "worst_context_rate": 1.0,
+          "worst_context_wilson95_upper": 0.9999999999999999,
+          "contexts_exceeding_clean_upper_bound_0_10": 3,
+          "contexts_below_detection_lower_bound_0_90": 0
+        },
+        "portfolio_joint": {
+          "contexts": 3,
+          "alarms": 745,
+          "decisions": 768,
+          "macro_alarm_rate": 0.9700520833333334,
+          "pooled_descriptive_alarm_fraction": 0.9700520833333334,
+          "worst_context_rate": 1.0,
+          "worst_context_wilson95_upper": 0.9999999999999999,
+          "contexts_exceeding_clean_upper_bound_0_10": 3,
+          "contexts_below_detection_lower_bound_0_90": 1
+        },
+        "portfolio_naive_or": {
+          "contexts": 3,
+          "alarms": 764,
+          "decisions": 768,
+          "macro_alarm_rate": 0.9947916666666666,
+          "pooled_descriptive_alarm_fraction": 0.9947916666666666,
+          "worst_context_rate": 1.0,
+          "worst_context_wilson95_upper": 0.9999999999999999,
+          "contexts_exceeding_clean_upper_bound_0_10": 3,
+          "contexts_below_detection_lower_bound_0_90": 0
+        },
+        "portfolio_bonferroni_or": {
+          "contexts": 3,
+          "alarms": 744,
+          "decisions": 768,
+          "macro_alarm_rate": 0.96875,
+          "pooled_descriptive_alarm_fraction": 0.96875,
+          "worst_context_rate": 0.9921875,
+          "worst_context_wilson95_upper": 0.9978549096323186,
+          "contexts_exceeding_clean_upper_bound_0_10": 3,
+          "contexts_below_detection_lower_bound_0_90": 1
+        }
+      },
+      "structural_inspection": {
+        "inconclusive": 3
+      },
+      "ideal_probe_tvd_min": 0.20190561423340384,
+      "ideal_probe_tvd_max": 0.2277374374417132
+    },
+    {
+      "noise": 0.005,
+      "category": "VeriQBench:optimized:approved",
+      "methods": {
+        "fixed_0Z": {
+          "contexts": 55,
+          "alarms": 125,
+          "decisions": 14080,
+          "macro_alarm_rate": 0.00887784090909091,
+          "pooled_descriptive_alarm_fraction": 0.00887784090909091,
+          "worst_context_rate": 0.0234375,
+          "worst_context_wilson95_upper": 0.0501809956000511,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 55
+        },
+        "portfolio_joint": {
+          "contexts": 55,
+          "alarms": 129,
+          "decisions": 14080,
+          "macro_alarm_rate": 0.009161931818181817,
+          "pooled_descriptive_alarm_fraction": 0.009161931818181817,
+          "worst_context_rate": 0.03125,
+          "worst_context_wilson95_upper": 0.06044160650774316,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 55
+        },
+        "portfolio_naive_or": {
+          "contexts": 55,
+          "alarms": 434,
+          "decisions": 14080,
+          "macro_alarm_rate": 0.030823863636363635,
+          "pooled_descriptive_alarm_fraction": 0.030823863636363635,
+          "worst_context_rate": 0.078125,
+          "worst_context_wilson95_upper": 0.11758323829089878,
+          "contexts_exceeding_clean_upper_bound_0_10": 2,
+          "contexts_below_detection_lower_bound_0_90": 55
+        },
+        "portfolio_bonferroni_or": {
+          "contexts": 55,
+          "alarms": 90,
+          "decisions": 14080,
+          "macro_alarm_rate": 0.006392045454545455,
+          "pooled_descriptive_alarm_fraction": 0.006392045454545455,
+          "worst_context_rate": 0.03125,
+          "worst_context_wilson95_upper": 0.06044160650774316,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 55
+        }
+      },
+      "structural_inspection": {
+        "accept": 55
+      },
+      "ideal_probe_tvd_min": 0.0,
+      "ideal_probe_tvd_max": 0.0
+    },
+    {
+      "noise": 0.005,
+      "category": "VeriQBench:optimized:equivalent_x_pair",
+      "methods": {
+        "fixed_0Z": {
+          "contexts": 55,
+          "alarms": 249,
+          "decisions": 14080,
+          "macro_alarm_rate": 0.01768465909090909,
+          "pooled_descriptive_alarm_fraction": 0.01768465909090909,
+          "worst_context_rate": 0.12890625,
+          "worst_context_wilson95_upper": 0.17550411351552564,
+          "contexts_exceeding_clean_upper_bound_0_10": 3,
+          "contexts_below_detection_lower_bound_0_90": 55
+        },
+        "portfolio_joint": {
+          "contexts": 55,
+          "alarms": 154,
+          "decisions": 14080,
+          "macro_alarm_rate": 0.0109375,
+          "pooled_descriptive_alarm_fraction": 0.0109375,
+          "worst_context_rate": 0.0546875,
+          "worst_context_wilson95_upper": 0.08968958072528235,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 55
+        },
+        "portfolio_naive_or": {
+          "contexts": 55,
+          "alarms": 499,
+          "decisions": 14080,
+          "macro_alarm_rate": 0.03544034090909091,
+          "pooled_descriptive_alarm_fraction": 0.03544034090909091,
+          "worst_context_rate": 0.125,
+          "worst_context_wilson95_upper": 0.17113605913256094,
+          "contexts_exceeding_clean_upper_bound_0_10": 5,
+          "contexts_below_detection_lower_bound_0_90": 55
+        },
+        "portfolio_bonferroni_or": {
+          "contexts": 55,
+          "alarms": 102,
+          "decisions": 14080,
+          "macro_alarm_rate": 0.007244318181818182,
+          "pooled_descriptive_alarm_fraction": 0.007244318181818182,
+          "worst_context_rate": 0.04296875,
+          "worst_context_wilson95_upper": 0.07529105546366555,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 55
+        }
+      },
+      "structural_inspection": {
+        "accept": 55
+      },
+      "ideal_probe_tvd_min": 0.0,
+      "ideal_probe_tvd_max": 0.0
+    },
+    {
+      "noise": 0.005,
+      "category": "VeriQBench:original:approved",
+      "methods": {
+        "fixed_0Z": {
+          "contexts": 55,
+          "alarms": 174,
+          "decisions": 14080,
+          "macro_alarm_rate": 0.012357954545454545,
+          "pooled_descriptive_alarm_fraction": 0.012357954545454545,
+          "worst_context_rate": 0.0390625,
+          "worst_context_wilson95_upper": 0.07039983179986732,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 55
+        },
+        "portfolio_joint": {
+          "contexts": 55,
+          "alarms": 130,
+          "decisions": 14080,
+          "macro_alarm_rate": 0.009232954545454546,
+          "pooled_descriptive_alarm_fraction": 0.009232954545454546,
+          "worst_context_rate": 0.02734375,
+          "worst_context_wilson95_upper": 0.05535570792246043,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 55
+        },
+        "portfolio_naive_or": {
+          "contexts": 55,
+          "alarms": 388,
+          "decisions": 14080,
+          "macro_alarm_rate": 0.027556818181818182,
+          "pooled_descriptive_alarm_fraction": 0.027556818181818182,
+          "worst_context_rate": 0.0703125,
+          "worst_context_wilson95_upper": 0.10839432915401236,
+          "contexts_exceeding_clean_upper_bound_0_10": 1,
+          "contexts_below_detection_lower_bound_0_90": 55
+        },
+        "portfolio_bonferroni_or": {
+          "contexts": 55,
+          "alarms": 74,
+          "decisions": 14080,
+          "macro_alarm_rate": 0.005255681818181818,
+          "pooled_descriptive_alarm_fraction": 0.005255681818181818,
+          "worst_context_rate": 0.015625,
+          "worst_context_wilson95_upper": 0.039479262709196654,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 55
+        }
+      },
+      "structural_inspection": {
+        "accept": 55
+      },
+      "ideal_probe_tvd_min": 0.0,
+      "ideal_probe_tvd_max": 0.0
+    },
+    {
+      "noise": 0.005,
+      "category": "VeriQBench:original:equivalent_x_pair",
+      "methods": {
+        "fixed_0Z": {
+          "contexts": 55,
+          "alarms": 294,
+          "decisions": 14080,
+          "macro_alarm_rate": 0.02088068181818182,
+          "pooled_descriptive_alarm_fraction": 0.02088068181818182,
+          "worst_context_rate": 0.125,
+          "worst_context_wilson95_upper": 0.17113605913256094,
+          "contexts_exceeding_clean_upper_bound_0_10": 3,
+          "contexts_below_detection_lower_bound_0_90": 55
+        },
+        "portfolio_joint": {
+          "contexts": 55,
+          "alarms": 181,
+          "decisions": 14080,
+          "macro_alarm_rate": 0.012855113636363637,
+          "pooled_descriptive_alarm_fraction": 0.012855113636363637,
+          "worst_context_rate": 0.04296875,
+          "worst_context_wilson95_upper": 0.07529105546366555,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 55
+        },
+        "portfolio_naive_or": {
+          "contexts": 55,
+          "alarms": 512,
+          "decisions": 14080,
+          "macro_alarm_rate": 0.03636363636363636,
+          "pooled_descriptive_alarm_fraction": 0.03636363636363636,
+          "worst_context_rate": 0.09375,
+          "worst_context_wilson95_upper": 0.13570203516294374,
+          "contexts_exceeding_clean_upper_bound_0_10": 6,
+          "contexts_below_detection_lower_bound_0_90": 55
+        },
+        "portfolio_bonferroni_or": {
+          "contexts": 55,
+          "alarms": 127,
+          "decisions": 14080,
+          "macro_alarm_rate": 0.009019886363636364,
+          "pooled_descriptive_alarm_fraction": 0.009019886363636364,
+          "worst_context_rate": 0.02734375,
+          "worst_context_wilson95_upper": 0.05535570792246043,
+          "contexts_exceeding_clean_upper_bound_0_10": 0,
+          "contexts_below_detection_lower_bound_0_90": 55
+        }
+      },
+      "structural_inspection": {
+        "accept": 55
+      },
+      "ideal_probe_tvd_min": 0.0,
+      "ideal_probe_tvd_max": 0.0
+    },
+    {
+      "noise": 0.005,
+      "category": "VeriQBench:original:exact_optimized_rewrite",
+      "methods": {
+        "fixed_0Z": {
+          "contexts": 55,
+          "alarms": 1068,
+          "decisions": 14080,
+          "macro_alarm_rate": 0.07585227272727273,
+          "pooled_descriptive_alarm_fraction": 0.07585227272727273,
+          "worst_context_rate": 1.0,
+          "worst_context_wilson95_upper": 0.9999999999999999,
+          "contexts_exceeding_clean_upper_bound_0_10": 7,
+          "contexts_below_detection_lower_bound_0_90": 54
+        },
+        "portfolio_joint": {
+          "contexts": 55,
+          "alarms": 606,
+          "decisions": 14080,
+          "macro_alarm_rate": 0.043039772727272725,
+          "pooled_descriptive_alarm_fraction": 0.043039772727272725,
+          "worst_context_rate": 1.0,
+          "worst_context_wilson95_upper": 0.9999999999999999,
+          "contexts_exceeding_clean_upper_bound_0_10": 3,
+          "contexts_below_detection_lower_bound_0_90": 54
+        },
+        "portfolio_naive_or": {
+          "contexts": 55,
+          "alarms": 1074,
+          "decisions": 14080,
+          "macro_alarm_rate": 0.07627840909090909,
+          "pooled_descriptive_alarm_fraction": 0.07627840909090909,
+          "worst_context_rate": 1.0,
+          "worst_context_wilson95_upper": 0.9999999999999999,
+          "contexts_exceeding_clean_upper_bound_0_10": 7,
+          "contexts_below_detection_lower_bound_0_90": 54
+        },
+        "portfolio_bonferroni_or": {
+          "contexts": 55,
+          "alarms": 547,
+          "decisions": 14080,
+          "macro_alarm_rate": 0.03884943181818182,
+          "pooled_descriptive_alarm_fraction": 0.03884943181818182,
+          "worst_context_rate": 1.0,
+          "worst_context_wilson95_upper": 0.9999999999999999,
+          "contexts_exceeding_clean_upper_bound_0_10": 4,
+          "contexts_below_detection_lower_bound_0_90": 54
+        }
+      },
+      "structural_inspection": {
+        "inconclusive": 47,
+        "accept": 8
+      },
+      "ideal_probe_tvd_min": 0.0,
+      "ideal_probe_tvd_max": 1.612208630485945e-14
+    }
+  ],
+  "qdoor_contexts": [
+    {
+      "case": "clean",
+      "context": {
+        "base_circuit_id": "QDoor-00-original",
+        "fold": 0,
+        "noise": 0.0,
+        "raw_approved_digest": "1ff22c7df2d4b3c647d4bacaef811376a10bbe0d69b0709584bcee9d16e8c645",
+        "width": 8
+      },
+      "gate": "approved",
+      "ideal_probe_tvd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "inspection": {
+        "decision": "accept",
+        "extra_gates": 0,
+        "normalized_equal": true
+      },
+      "methods": {
+        "fixed_0Z": {
+          "n": 256,
+          "rate": 0.00390625,
+          "rejected": 1,
+          "wilson95": [
+            0.0006898821669617927,
+            0.021790975380582514
+          ]
+        },
+        "portfolio_bonferroni_or": {
+          "n": 256,
+          "rate": 0.015625,
+          "rejected": 4,
+          "wilson95": [
+            0.006092598203366294,
+            0.039479262709196654
+          ]
+        },
+        "portfolio_joint": {
+          "n": 256,
+          "rate": 0.02734375,
+          "rejected": 7,
+          "wilson95": [
+            0.013307156355121155,
+            0.05535570792246043
+          ]
+        },
+        "portfolio_naive_or": {
+          "n": 256,
+          "rate": 0.04296875,
+          "rejected": 11,
+          "wilson95": [
+            0.024159813300607562,
+            0.07529105546366555
+          ]
+        }
+      },
+      "mode": "QDoor",
+      "raw_changed": false,
+      "sample_id": "QDoor-00-original-approved",
+      "approved": "original",
+      "features": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "clean",
+      "context": {
+        "base_circuit_id": "QDoor-00-original",
+        "fold": 0,
+        "noise": 0.0,
+        "raw_approved_digest": "1ff22c7df2d4b3c647d4bacaef811376a10bbe0d69b0709584bcee9d16e8c645",
+        "width": 8
+      },
+      "gate": "compiled_initialization",
+      "ideal_probe_tvd": [
+        0.11560598705703054,
+        0.11729156022294325,
+        0.08682874958412
+      ],
+      "inspection": {
+        "decision": "inconclusive",
+        "extra_gates": 80,
+        "normalized_equal": false
+      },
+      "methods": {
+        "fixed_0Z": {
+          "n": 256,
+          "rate": 0.92578125,
+          "rejected": 237,
+          "wilson95": [
+            0.886999229454155,
+            0.9519738928081888
+          ]
+        },
+        "portfolio_bonferroni_or": {
+          "n": 256,
+          "rate": 0.51953125,
+          "rejected": 133,
+          "wilson95": [
+            0.4584937753463775,
+            0.5799912302619868
+          ]
+        },
+        "portfolio_joint": {
+          "n": 256,
+          "rate": 0.55078125,
+          "rejected": 141,
+          "wilson95": [
+            0.4895457648520954,
+            0.6105152497296519
+          ]
+        },
+        "portfolio_naive_or": {
+          "n": 256,
+          "rate": 0.68359375,
+          "rejected": 175,
+          "wilson95": [
+            0.6242666601546496,
+            0.7374923925639758
+          ]
+        }
+      },
+      "mode": "QDoor",
+      "raw_changed": true,
+      "sample_id": "QDoor-00-original-compiled",
+      "approved": "original",
+      "features": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "infected",
+      "context": {
+        "base_circuit_id": "QDoor-00-original",
+        "fold": 0,
+        "noise": 0.0,
+        "raw_approved_digest": "1ff22c7df2d4b3c647d4bacaef811376a10bbe0d69b0709584bcee9d16e8c645",
+        "width": 8
+      },
+      "gate": "trained_backdoor",
+      "ideal_probe_tvd": [
+        0.1327737666204031,
+        0.2277374374417132,
+        0.10456554992099558
+      ],
+      "inspection": {
+        "decision": "inconclusive",
+        "extra_gates": 80,
+        "normalized_equal": false
+      },
+      "methods": {
+        "fixed_0Z": {
+          "n": 256,
+          "rate": 1.0,
+          "rejected": 256,
+          "wilson95": [
+            0.9852161435741286,
+            0.9999999999999999
+          ]
+        },
+        "portfolio_bonferroni_or": {
+          "n": 256,
+          "rate": 0.98828125,
+          "rejected": 253,
+          "wilson95": [
+            0.9661184273321177,
+            0.9960067128769923
+          ]
+        },
+        "portfolio_joint": {
+          "n": 256,
+          "rate": 0.99609375,
+          "rejected": 255,
+          "wilson95": [
+            0.9782090246194175,
+            0.9993101178330381
+          ]
+        },
+        "portfolio_naive_or": {
+          "n": 256,
+          "rate": 1.0,
+          "rejected": 256,
+          "wilson95": [
+            0.9852161435741286,
+            0.9999999999999999
+          ]
+        }
+      },
+      "mode": "QDoor",
+      "raw_changed": true,
+      "sample_id": "QDoor-00-original-attacked",
+      "approved": "original",
+      "features": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "equivalent_x_pair",
+      "context": {
+        "base_circuit_id": "QDoor-00-original",
+        "fold": 0,
+        "noise": 0.0,
+        "raw_approved_digest": "1ff22c7df2d4b3c647d4bacaef811376a10bbe0d69b0709584bcee9d16e8c645",
+        "width": 8
+      },
+      "gate": "approved",
+      "ideal_probe_tvd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "inspection": {
+        "decision": "accept",
+        "extra_gates": 2,
+        "normalized_equal": true
+      },
+      "methods": {
+        "fixed_0Z": {
+          "n": 256,
+          "rate": 0.0078125,
+          "rejected": 2,
+          "wilson95": [
+            0.002145090367681419,
+            0.028032768301535768
+          ]
+        },
+        "portfolio_bonferroni_or": {
+          "n": 256,
+          "rate": 0.0,
+          "rejected": 0,
+          "wilson95": [
+            0.0,
+            0.01478385642587143
+          ]
+        },
+        "portfolio_joint": {
+          "n": 256,
+          "rate": 0.0078125,
+          "rejected": 2,
+          "wilson95": [
+            0.002145090367681419,
+            0.028032768301535768
+          ]
+        },
+        "portfolio_naive_or": {
+          "n": 256,
+          "rate": 0.02734375,
+          "rejected": 7,
+          "wilson95": [
+            0.013307156355121155,
+            0.05535570792246043
+          ]
+        }
+      },
+      "mode": "QDoor",
+      "raw_changed": true,
+      "sample_id": "QDoor-00-original-approved",
+      "approved": "original",
+      "features": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "clean",
+      "context": {
+        "base_circuit_id": "QDoor-00-original",
+        "fold": 0,
+        "noise": 0.005,
+        "raw_approved_digest": "1ff22c7df2d4b3c647d4bacaef811376a10bbe0d69b0709584bcee9d16e8c645",
+        "width": 8
+      },
+      "gate": "approved",
+      "ideal_probe_tvd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "inspection": {
+        "decision": "accept",
+        "extra_gates": 0,
+        "normalized_equal": true
+      },
+      "methods": {
+        "fixed_0Z": {
+          "n": 256,
+          "rate": 0.0078125,
+          "rejected": 2,
+          "wilson95": [
+            0.002145090367681419,
+            0.028032768301535768
+          ]
+        },
+        "portfolio_bonferroni_or": {
+          "n": 256,
+          "rate": 0.0,
+          "rejected": 0,
+          "wilson95": [
+            0.0,
+            0.01478385642587143
+          ]
+        },
+        "portfolio_joint": {
+          "n": 256,
+          "rate": 0.01953125,
+          "rejected": 5,
+          "wilson95": [
+            0.008370729784579391,
+            0.04489813224965644
+          ]
+        },
+        "portfolio_naive_or": {
+          "n": 256,
+          "rate": 0.03125,
+          "rejected": 8,
+          "wilson95": [
+            0.015918258891511296,
+            0.06044160650774316
+          ]
+        }
+      },
+      "mode": "QDoor",
+      "raw_changed": false,
+      "sample_id": "QDoor-00-original-approved",
+      "approved": "original",
+      "features": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "clean",
+      "context": {
+        "base_circuit_id": "QDoor-00-original",
+        "fold": 0,
+        "noise": 0.005,
+        "raw_approved_digest": "1ff22c7df2d4b3c647d4bacaef811376a10bbe0d69b0709584bcee9d16e8c645",
+        "width": 8
+      },
+      "gate": "compiled_initialization",
+      "ideal_probe_tvd": [
+        0.11560598705703054,
+        0.11729156022294325,
+        0.08682874958412
+      ],
+      "inspection": {
+        "decision": "inconclusive",
+        "extra_gates": 80,
+        "normalized_equal": false
+      },
+      "methods": {
+        "fixed_0Z": {
+          "n": 256,
+          "rate": 1.0,
+          "rejected": 256,
+          "wilson95": [
+            0.9852161435741286,
+            0.9999999999999999
+          ]
+        },
+        "portfolio_bonferroni_or": {
+          "n": 256,
+          "rate": 0.73828125,
+          "rejected": 189,
+          "wilson95": [
+            0.6811957065092896,
+            0.7883213619127559
+          ]
+        },
+        "portfolio_joint": {
+          "n": 256,
+          "rate": 0.921875,
+          "rejected": 236,
+          "wilson95": [
+            0.8824167617091012,
+            0.9488593594315697
+          ]
+        },
+        "portfolio_naive_or": {
+          "n": 256,
+          "rate": 0.984375,
+          "rejected": 252,
+          "wilson95": [
+            0.9605207372908033,
+            0.9939074017966336
+          ]
+        }
+      },
+      "mode": "QDoor",
+      "raw_changed": true,
+      "sample_id": "QDoor-00-original-compiled",
+      "approved": "original",
+      "features": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "infected",
+      "context": {
+        "base_circuit_id": "QDoor-00-original",
+        "fold": 0,
+        "noise": 0.005,
+        "raw_approved_digest": "1ff22c7df2d4b3c647d4bacaef811376a10bbe0d69b0709584bcee9d16e8c645",
+        "width": 8
+      },
+      "gate": "trained_backdoor",
+      "ideal_probe_tvd": [
+        0.1327737666204031,
+        0.2277374374417132,
+        0.10456554992099558
+      ],
+      "inspection": {
+        "decision": "inconclusive",
+        "extra_gates": 80,
+        "normalized_equal": false
+      },
+      "methods": {
+        "fixed_0Z": {
+          "n": 256,
+          "rate": 1.0,
+          "rejected": 256,
+          "wilson95": [
+            0.9852161435741286,
+            0.9999999999999999
+          ]
+        },
+        "portfolio_bonferroni_or": {
+          "n": 256,
+          "rate": 0.9921875,
+          "rejected": 254,
+          "wilson95": [
+            0.9719672316984642,
+            0.9978549096323186
+          ]
+        },
+        "portfolio_joint": {
+          "n": 256,
+          "rate": 1.0,
+          "rejected": 256,
+          "wilson95": [
+            0.9852161435741286,
+            0.9999999999999999
+          ]
+        },
+        "portfolio_naive_or": {
+          "n": 256,
+          "rate": 1.0,
+          "rejected": 256,
+          "wilson95": [
+            0.9852161435741286,
+            0.9999999999999999
+          ]
+        }
+      },
+      "mode": "QDoor",
+      "raw_changed": true,
+      "sample_id": "QDoor-00-original-attacked",
+      "approved": "original",
+      "features": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "equivalent_x_pair",
+      "context": {
+        "base_circuit_id": "QDoor-00-original",
+        "fold": 0,
+        "noise": 0.005,
+        "raw_approved_digest": "1ff22c7df2d4b3c647d4bacaef811376a10bbe0d69b0709584bcee9d16e8c645",
+        "width": 8
+      },
+      "gate": "approved",
+      "ideal_probe_tvd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "inspection": {
+        "decision": "accept",
+        "extra_gates": 2,
+        "normalized_equal": true
+      },
+      "methods": {
+        "fixed_0Z": {
+          "n": 256,
+          "rate": 0.0078125,
+          "rejected": 2,
+          "wilson95": [
+            0.002145090367681419,
+            0.028032768301535768
+          ]
+        },
+        "portfolio_bonferroni_or": {
+          "n": 256,
+          "rate": 0.0,
+          "rejected": 0,
+          "wilson95": [
+            0.0,
+            0.01478385642587143
+          ]
+        },
+        "portfolio_joint": {
+          "n": 256,
+          "rate": 0.0234375,
+          "rejected": 6,
+          "wilson95": [
+            0.010784867555857603,
+            0.0501809956000511
+          ]
+        },
+        "portfolio_naive_or": {
+          "n": 256,
+          "rate": 0.05078125,
+          "rejected": 13,
+          "wilson95": [
+            0.029913811386553534,
+            0.08493105962106533
+          ]
+        }
+      },
+      "mode": "QDoor",
+      "raw_changed": true,
+      "sample_id": "QDoor-00-original-approved",
+      "approved": "original",
+      "features": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "clean",
+      "context": {
+        "base_circuit_id": "QDoor-00-compiled_initialization",
+        "fold": 0,
+        "noise": 0.0,
+        "raw_approved_digest": "a96094568e0f4d6d8e0b2485a3388f1a10e77c415a63cf99a3a4245208c6fb4d",
+        "width": 8
+      },
+      "gate": "approved",
+      "ideal_probe_tvd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "inspection": {
+        "decision": "accept",
+        "extra_gates": 0,
+        "normalized_equal": true
+      },
+      "methods": {
+        "fixed_0Z": {
+          "n": 256,
+          "rate": 0.0078125,
+          "rejected": 2,
+          "wilson95": [
+            0.002145090367681419,
+            0.028032768301535768
+          ]
+        },
+        "portfolio_bonferroni_or": {
+          "n": 256,
+          "rate": 0.0,
+          "rejected": 0,
+          "wilson95": [
+            0.0,
+            0.01478385642587143
+          ]
+        },
+        "portfolio_joint": {
+          "n": 256,
+          "rate": 0.0078125,
+          "rejected": 2,
+          "wilson95": [
+            0.002145090367681419,
+            0.028032768301535768
+          ]
+        },
+        "portfolio_naive_or": {
+          "n": 256,
+          "rate": 0.01953125,
+          "rejected": 5,
+          "wilson95": [
+            0.008370729784579391,
+            0.04489813224965644
+          ]
+        }
+      },
+      "mode": "QDoor",
+      "raw_changed": false,
+      "sample_id": "QDoor-00-compiled_initialization-approved",
+      "approved": "compiled_initialization",
+      "features": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "infected",
+      "context": {
+        "base_circuit_id": "QDoor-00-compiled_initialization",
+        "fold": 0,
+        "noise": 0.0,
+        "raw_approved_digest": "a96094568e0f4d6d8e0b2485a3388f1a10e77c415a63cf99a3a4245208c6fb4d",
+        "width": 8
+      },
+      "gate": "trained_backdoor",
+      "ideal_probe_tvd": [
+        0.10740045181744659,
+        0.12263110953789892,
+        0.10100589437882389
+      ],
+      "inspection": {
+        "decision": "inconclusive",
+        "extra_gates": 0,
+        "normalized_equal": false
+      },
+      "methods": {
+        "fixed_0Z": {
+          "n": 256,
+          "rate": 0.85546875,
+          "rejected": 219,
+          "wilson95": [
+            0.8071377780781674,
+            0.8932893239940645
+          ]
+        },
+        "portfolio_bonferroni_or": {
+          "n": 256,
+          "rate": 0.41015625,
+          "rejected": 105,
+          "wilson95": [
+            0.3516648037328092,
+            0.47130417046871464
+          ]
+        },
+        "portfolio_joint": {
+          "n": 256,
+          "rate": 0.2890625,
+          "rejected": 74,
+          "wilson95": [
+            0.2369733003711826,
+            0.34738863905848194
+          ]
+        },
+        "portfolio_naive_or": {
+          "n": 256,
+          "rate": 0.7265625,
+          "rejected": 186,
+          "wilson95": [
+            0.6689146042381685,
+            0.7775114608188586
+          ]
+        }
+      },
+      "mode": "QDoor",
+      "raw_changed": true,
+      "sample_id": "QDoor-00-compiled_initialization-attacked",
+      "approved": "compiled_initialization",
+      "features": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "equivalent_x_pair",
+      "context": {
+        "base_circuit_id": "QDoor-00-compiled_initialization",
+        "fold": 0,
+        "noise": 0.0,
+        "raw_approved_digest": "a96094568e0f4d6d8e0b2485a3388f1a10e77c415a63cf99a3a4245208c6fb4d",
+        "width": 8
+      },
+      "gate": "approved",
+      "ideal_probe_tvd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "inspection": {
+        "decision": "accept",
+        "extra_gates": 2,
+        "normalized_equal": true
+      },
+      "methods": {
+        "fixed_0Z": {
+          "n": 256,
+          "rate": 0.0078125,
+          "rejected": 2,
+          "wilson95": [
+            0.002145090367681419,
+            0.028032768301535768
+          ]
+        },
+        "portfolio_bonferroni_or": {
+          "n": 256,
+          "rate": 0.0,
+          "rejected": 0,
+          "wilson95": [
+            0.0,
+            0.01478385642587143
+          ]
+        },
+        "portfolio_joint": {
+          "n": 256,
+          "rate": 0.0,
+          "rejected": 0,
+          "wilson95": [
+            0.0,
+            0.01478385642587143
+          ]
+        },
+        "portfolio_naive_or": {
+          "n": 256,
+          "rate": 0.01171875,
+          "rejected": 3,
+          "wilson95": [
+            0.003993287123007758,
+            0.033881572667882304
+          ]
+        }
+      },
+      "mode": "QDoor",
+      "raw_changed": true,
+      "sample_id": "QDoor-00-compiled_initialization-approved",
+      "approved": "compiled_initialization",
+      "features": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "clean",
+      "context": {
+        "base_circuit_id": "QDoor-00-compiled_initialization",
+        "fold": 0,
+        "noise": 0.005,
+        "raw_approved_digest": "a96094568e0f4d6d8e0b2485a3388f1a10e77c415a63cf99a3a4245208c6fb4d",
+        "width": 8
+      },
+      "gate": "approved",
+      "ideal_probe_tvd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "inspection": {
+        "decision": "accept",
+        "extra_gates": 0,
+        "normalized_equal": true
+      },
+      "methods": {
+        "fixed_0Z": {
+          "n": 256,
+          "rate": 0.0,
+          "rejected": 0,
+          "wilson95": [
+            0.0,
+            0.01478385642587143
+          ]
+        },
+        "portfolio_bonferroni_or": {
+          "n": 256,
+          "rate": 0.0,
+          "rejected": 0,
+          "wilson95": [
+            0.0,
+            0.01478385642587143
+          ]
+        },
+        "portfolio_joint": {
+          "n": 256,
+          "rate": 0.0,
+          "rejected": 0,
+          "wilson95": [
+            0.0,
+            0.01478385642587143
+          ]
+        },
+        "portfolio_naive_or": {
+          "n": 256,
+          "rate": 0.01171875,
+          "rejected": 3,
+          "wilson95": [
+            0.003993287123007758,
+            0.033881572667882304
+          ]
+        }
+      },
+      "mode": "QDoor",
+      "raw_changed": false,
+      "sample_id": "QDoor-00-compiled_initialization-approved",
+      "approved": "compiled_initialization",
+      "features": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "infected",
+      "context": {
+        "base_circuit_id": "QDoor-00-compiled_initialization",
+        "fold": 0,
+        "noise": 0.005,
+        "raw_approved_digest": "a96094568e0f4d6d8e0b2485a3388f1a10e77c415a63cf99a3a4245208c6fb4d",
+        "width": 8
+      },
+      "gate": "trained_backdoor",
+      "ideal_probe_tvd": [
+        0.10740045181744659,
+        0.12263110953789892,
+        0.10100589437882389
+      ],
+      "inspection": {
+        "decision": "inconclusive",
+        "extra_gates": 0,
+        "normalized_equal": false
+      },
+      "methods": {
+        "fixed_0Z": {
+          "n": 256,
+          "rate": 0.5,
+          "rejected": 128,
+          "wilson95": [
+            0.43920555858906296,
+            0.560794441410937
+          ]
+        },
+        "portfolio_bonferroni_or": {
+          "n": 256,
+          "rate": 0.17578125,
+          "rejected": 45,
+          "wilson95": [
+            0.13404604842154846,
+            0.22710285847960257
+          ]
+        },
+        "portfolio_joint": {
+          "n": 256,
+          "rate": 0.20703125,
+          "rejected": 53,
+          "wilson95": [
+            0.16190727728556475,
+            0.2608176385889693
+          ]
+        },
+        "portfolio_naive_or": {
+          "n": 256,
+          "rate": 0.421875,
+          "rejected": 108,
+          "wilson95": [
+            0.36297114591343,
+            0.4830888316531124
+          ]
+        }
+      },
+      "mode": "QDoor",
+      "raw_changed": true,
+      "sample_id": "QDoor-00-compiled_initialization-attacked",
+      "approved": "compiled_initialization",
+      "features": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "equivalent_x_pair",
+      "context": {
+        "base_circuit_id": "QDoor-00-compiled_initialization",
+        "fold": 0,
+        "noise": 0.005,
+        "raw_approved_digest": "a96094568e0f4d6d8e0b2485a3388f1a10e77c415a63cf99a3a4245208c6fb4d",
+        "width": 8
+      },
+      "gate": "approved",
+      "ideal_probe_tvd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "inspection": {
+        "decision": "accept",
+        "extra_gates": 2,
+        "normalized_equal": true
+      },
+      "methods": {
+        "fixed_0Z": {
+          "n": 256,
+          "rate": 0.0078125,
+          "rejected": 2,
+          "wilson95": [
+            0.002145090367681419,
+            0.028032768301535768
+          ]
+        },
+        "portfolio_bonferroni_or": {
+          "n": 256,
+          "rate": 0.00390625,
+          "rejected": 1,
+          "wilson95": [
+            0.0006898821669617927,
+            0.021790975380582514
+          ]
+        },
+        "portfolio_joint": {
+          "n": 256,
+          "rate": 0.00390625,
+          "rejected": 1,
+          "wilson95": [
+            0.0006898821669617927,
+            0.021790975380582514
+          ]
+        },
+        "portfolio_naive_or": {
+          "n": 256,
+          "rate": 0.01171875,
+          "rejected": 3,
+          "wilson95": [
+            0.003993287123007758,
+            0.033881572667882304
+          ]
+        }
+      },
+      "mode": "QDoor",
+      "raw_changed": true,
+      "sample_id": "QDoor-00-compiled_initialization-approved",
+      "approved": "compiled_initialization",
+      "features": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "clean",
+      "context": {
+        "base_circuit_id": "QDoor-01-original",
+        "fold": 0,
+        "noise": 0.0,
+        "raw_approved_digest": "9343fe67a44030ad25e8e121751646cf40fea65c3ab2ed883e383be939745141",
+        "width": 8
+      },
+      "gate": "approved",
+      "ideal_probe_tvd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "inspection": {
+        "decision": "accept",
+        "extra_gates": 0,
+        "normalized_equal": true
+      },
+      "methods": {
+        "fixed_0Z": {
+          "n": 256,
+          "rate": 0.00390625,
+          "rejected": 1,
+          "wilson95": [
+            0.0006898821669617927,
+            0.021790975380582514
+          ]
+        },
+        "portfolio_bonferroni_or": {
+          "n": 256,
+          "rate": 0.0,
+          "rejected": 0,
+          "wilson95": [
+            0.0,
+            0.01478385642587143
+          ]
+        },
+        "portfolio_joint": {
+          "n": 256,
+          "rate": 0.0078125,
+          "rejected": 2,
+          "wilson95": [
+            0.002145090367681419,
+            0.028032768301535768
+          ]
+        },
+        "portfolio_naive_or": {
+          "n": 256,
+          "rate": 0.02734375,
+          "rejected": 7,
+          "wilson95": [
+            0.013307156355121155,
+            0.05535570792246043
+          ]
+        }
+      },
+      "mode": "QDoor",
+      "raw_changed": false,
+      "sample_id": "QDoor-01-original-approved",
+      "approved": "original",
+      "features": [
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8
+      ]
+    },
+    {
+      "case": "clean",
+      "context": {
+        "base_circuit_id": "QDoor-01-original",
+        "fold": 0,
+        "noise": 0.0,
+        "raw_approved_digest": "9343fe67a44030ad25e8e121751646cf40fea65c3ab2ed883e383be939745141",
+        "width": 8
+      },
+      "gate": "compiled_initialization",
+      "ideal_probe_tvd": [
+        0.11749825126145048,
+        0.13261585571330217,
+        0.07244284134154928
+      ],
+      "inspection": {
+        "decision": "inconclusive",
+        "extra_gates": 80,
+        "normalized_equal": false
+      },
+      "methods": {
+        "fixed_0Z": {
+          "n": 256,
+          "rate": 0.921875,
+          "rejected": 236,
+          "wilson95": [
+            0.8824167617091012,
+            0.9488593594315697
+          ]
+        },
+        "portfolio_bonferroni_or": {
+          "n": 256,
+          "rate": 0.44921875,
+          "rejected": 115,
+          "wilson95": [
+            0.389484750270348,
+            0.5104542351479046
+          ]
+        },
+        "portfolio_joint": {
+          "n": 256,
+          "rate": 0.65625,
+          "rejected": 168,
+          "wilson95": [
+            0.596144121990143,
+            0.7117359228767722
+          ]
+        },
+        "portfolio_naive_or": {
+          "n": 256,
+          "rate": 0.73828125,
+          "rejected": 189,
+          "wilson95": [
+            0.6811957065092896,
+            0.7883213619127559
+          ]
+        }
+      },
+      "mode": "QDoor",
+      "raw_changed": true,
+      "sample_id": "QDoor-01-original-compiled",
+      "approved": "original",
+      "features": [
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8
+      ]
+    },
+    {
+      "case": "infected",
+      "context": {
+        "base_circuit_id": "QDoor-01-original",
+        "fold": 0,
+        "noise": 0.0,
+        "raw_approved_digest": "9343fe67a44030ad25e8e121751646cf40fea65c3ab2ed883e383be939745141",
+        "width": 8
+      },
+      "gate": "trained_backdoor",
+      "ideal_probe_tvd": [
+        0.12144666137260211,
+        0.20190561423340384,
+        0.09253958957390768
+      ],
+      "inspection": {
+        "decision": "inconclusive",
+        "extra_gates": 80,
+        "normalized_equal": false
+      },
+      "methods": {
+        "fixed_0Z": {
+          "n": 256,
+          "rate": 0.97265625,
+          "rejected": 249,
+          "wilson95": [
+            0.9446442920775396,
+            0.9866928436448789
+          ]
+        },
+        "portfolio_bonferroni_or": {
+          "n": 256,
+          "rate": 0.98828125,
+          "rejected": 253,
+          "wilson95": [
+            0.9661184273321177,
+            0.9960067128769923
+          ]
+        },
+        "portfolio_joint": {
+          "n": 256,
+          "rate": 0.99609375,
+          "rejected": 255,
+          "wilson95": [
+            0.9782090246194175,
+            0.9993101178330381
+          ]
+        },
+        "portfolio_naive_or": {
+          "n": 256,
+          "rate": 0.99609375,
+          "rejected": 255,
+          "wilson95": [
+            0.9782090246194175,
+            0.9993101178330381
+          ]
+        }
+      },
+      "mode": "QDoor",
+      "raw_changed": true,
+      "sample_id": "QDoor-01-original-attacked",
+      "approved": "original",
+      "features": [
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8
+      ]
+    },
+    {
+      "case": "equivalent_x_pair",
+      "context": {
+        "base_circuit_id": "QDoor-01-original",
+        "fold": 0,
+        "noise": 0.0,
+        "raw_approved_digest": "9343fe67a44030ad25e8e121751646cf40fea65c3ab2ed883e383be939745141",
+        "width": 8
+      },
+      "gate": "approved",
+      "ideal_probe_tvd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "inspection": {
+        "decision": "accept",
+        "extra_gates": 2,
+        "normalized_equal": true
+      },
+      "methods": {
+        "fixed_0Z": {
+          "n": 256,
+          "rate": 0.00390625,
+          "rejected": 1,
+          "wilson95": [
+            0.0006898821669617927,
+            0.021790975380582514
+          ]
+        },
+        "portfolio_bonferroni_or": {
+          "n": 256,
+          "rate": 0.0,
+          "rejected": 0,
+          "wilson95": [
+            0.0,
+            0.01478385642587143
+          ]
+        },
+        "portfolio_joint": {
+          "n": 256,
+          "rate": 0.0078125,
+          "rejected": 2,
+          "wilson95": [
+            0.002145090367681419,
+            0.028032768301535768
+          ]
+        },
+        "portfolio_naive_or": {
+          "n": 256,
+          "rate": 0.01171875,
+          "rejected": 3,
+          "wilson95": [
+            0.003993287123007758,
+            0.033881572667882304
+          ]
+        }
+      },
+      "mode": "QDoor",
+      "raw_changed": true,
+      "sample_id": "QDoor-01-original-approved",
+      "approved": "original",
+      "features": [
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8
+      ]
+    },
+    {
+      "case": "clean",
+      "context": {
+        "base_circuit_id": "QDoor-01-original",
+        "fold": 0,
+        "noise": 0.005,
+        "raw_approved_digest": "9343fe67a44030ad25e8e121751646cf40fea65c3ab2ed883e383be939745141",
+        "width": 8
+      },
+      "gate": "approved",
+      "ideal_probe_tvd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "inspection": {
+        "decision": "accept",
+        "extra_gates": 0,
+        "normalized_equal": true
+      },
+      "methods": {
+        "fixed_0Z": {
+          "n": 256,
+          "rate": 0.0078125,
+          "rejected": 2,
+          "wilson95": [
+            0.002145090367681419,
+            0.028032768301535768
+          ]
+        },
+        "portfolio_bonferroni_or": {
+          "n": 256,
+          "rate": 0.0,
+          "rejected": 0,
+          "wilson95": [
+            0.0,
+            0.01478385642587143
+          ]
+        },
+        "portfolio_joint": {
+          "n": 256,
+          "rate": 0.0,
+          "rejected": 0,
+          "wilson95": [
+            0.0,
+            0.01478385642587143
+          ]
+        },
+        "portfolio_naive_or": {
+          "n": 256,
+          "rate": 0.01953125,
+          "rejected": 5,
+          "wilson95": [
+            0.008370729784579391,
+            0.04489813224965644
+          ]
+        }
+      },
+      "mode": "QDoor",
+      "raw_changed": false,
+      "sample_id": "QDoor-01-original-approved",
+      "approved": "original",
+      "features": [
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8
+      ]
+    },
+    {
+      "case": "clean",
+      "context": {
+        "base_circuit_id": "QDoor-01-original",
+        "fold": 0,
+        "noise": 0.005,
+        "raw_approved_digest": "9343fe67a44030ad25e8e121751646cf40fea65c3ab2ed883e383be939745141",
+        "width": 8
+      },
+      "gate": "compiled_initialization",
+      "ideal_probe_tvd": [
+        0.11749825126145048,
+        0.13261585571330217,
+        0.07244284134154928
+      ],
+      "inspection": {
+        "decision": "inconclusive",
+        "extra_gates": 80,
+        "normalized_equal": false
+      },
+      "methods": {
+        "fixed_0Z": {
+          "n": 256,
+          "rate": 1.0,
+          "rejected": 256,
+          "wilson95": [
+            0.9852161435741286,
+            0.9999999999999999
+          ]
+        },
+        "portfolio_bonferroni_or": {
+          "n": 256,
+          "rate": 0.84375,
+          "rejected": 216,
+          "wilson95": [
+            0.7942285422215228,
+            0.8831075564856906
+          ]
+        },
+        "portfolio_joint": {
+          "n": 256,
+          "rate": 0.921875,
+          "rejected": 236,
+          "wilson95": [
+            0.8824167617091012,
+            0.9488593594315697
+          ]
+        },
+        "portfolio_naive_or": {
+          "n": 256,
+          "rate": 0.98046875,
+          "rejected": 251,
+          "wilson95": [
+            0.9551018677503436,
+            0.9916292702154206
+          ]
+        }
+      },
+      "mode": "QDoor",
+      "raw_changed": true,
+      "sample_id": "QDoor-01-original-compiled",
+      "approved": "original",
+      "features": [
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8
+      ]
+    },
+    {
+      "case": "infected",
+      "context": {
+        "base_circuit_id": "QDoor-01-original",
+        "fold": 0,
+        "noise": 0.005,
+        "raw_approved_digest": "9343fe67a44030ad25e8e121751646cf40fea65c3ab2ed883e383be939745141",
+        "width": 8
+      },
+      "gate": "trained_backdoor",
+      "ideal_probe_tvd": [
+        0.12144666137260211,
+        0.20190561423340384,
+        0.09253958957390768
+      ],
+      "inspection": {
+        "decision": "inconclusive",
+        "extra_gates": 80,
+        "normalized_equal": false
+      },
+      "methods": {
+        "fixed_0Z": {
+          "n": 256,
+          "rate": 1.0,
+          "rejected": 256,
+          "wilson95": [
+            0.9852161435741286,
+            0.9999999999999999
+          ]
+        },
+        "portfolio_bonferroni_or": {
+          "n": 256,
+          "rate": 0.98046875,
+          "rejected": 251,
+          "wilson95": [
+            0.9551018677503436,
+            0.9916292702154206
+          ]
+        },
+        "portfolio_joint": {
+          "n": 256,
+          "rate": 1.0,
+          "rejected": 256,
+          "wilson95": [
+            0.9852161435741286,
+            0.9999999999999999
+          ]
+        },
+        "portfolio_naive_or": {
+          "n": 256,
+          "rate": 1.0,
+          "rejected": 256,
+          "wilson95": [
+            0.9852161435741286,
+            0.9999999999999999
+          ]
+        }
+      },
+      "mode": "QDoor",
+      "raw_changed": true,
+      "sample_id": "QDoor-01-original-attacked",
+      "approved": "original",
+      "features": [
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8
+      ]
+    },
+    {
+      "case": "equivalent_x_pair",
+      "context": {
+        "base_circuit_id": "QDoor-01-original",
+        "fold": 0,
+        "noise": 0.005,
+        "raw_approved_digest": "9343fe67a44030ad25e8e121751646cf40fea65c3ab2ed883e383be939745141",
+        "width": 8
+      },
+      "gate": "approved",
+      "ideal_probe_tvd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "inspection": {
+        "decision": "accept",
+        "extra_gates": 2,
+        "normalized_equal": true
+      },
+      "methods": {
+        "fixed_0Z": {
+          "n": 256,
+          "rate": 0.01171875,
+          "rejected": 3,
+          "wilson95": [
+            0.003993287123007758,
+            0.033881572667882304
+          ]
+        },
+        "portfolio_bonferroni_or": {
+          "n": 256,
+          "rate": 0.0,
+          "rejected": 0,
+          "wilson95": [
+            0.0,
+            0.01478385642587143
+          ]
+        },
+        "portfolio_joint": {
+          "n": 256,
+          "rate": 0.0,
+          "rejected": 0,
+          "wilson95": [
+            0.0,
+            0.01478385642587143
+          ]
+        },
+        "portfolio_naive_or": {
+          "n": 256,
+          "rate": 0.00390625,
+          "rejected": 1,
+          "wilson95": [
+            0.0006898821669617927,
+            0.021790975380582514
+          ]
+        }
+      },
+      "mode": "QDoor",
+      "raw_changed": true,
+      "sample_id": "QDoor-01-original-approved",
+      "approved": "original",
+      "features": [
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8
+      ]
+    },
+    {
+      "case": "clean",
+      "context": {
+        "base_circuit_id": "QDoor-01-compiled_initialization",
+        "fold": 0,
+        "noise": 0.0,
+        "raw_approved_digest": "6b68058317a96b5c2791f26484d1c7081aa4165e8aa4cae8172c8f89def030d9",
+        "width": 8
+      },
+      "gate": "approved",
+      "ideal_probe_tvd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "inspection": {
+        "decision": "accept",
+        "extra_gates": 0,
+        "normalized_equal": true
+      },
+      "methods": {
+        "fixed_0Z": {
+          "n": 256,
+          "rate": 0.0078125,
+          "rejected": 2,
+          "wilson95": [
+            0.002145090367681419,
+            0.028032768301535768
+          ]
+        },
+        "portfolio_bonferroni_or": {
+          "n": 256,
+          "rate": 0.01171875,
+          "rejected": 3,
+          "wilson95": [
+            0.003993287123007758,
+            0.033881572667882304
+          ]
+        },
+        "portfolio_joint": {
+          "n": 256,
+          "rate": 0.0078125,
+          "rejected": 2,
+          "wilson95": [
+            0.002145090367681419,
+            0.028032768301535768
+          ]
+        },
+        "portfolio_naive_or": {
+          "n": 256,
+          "rate": 0.03515625,
+          "rejected": 9,
+          "wilson95": [
+            0.018604096092635542,
+            0.0654527704282918
+          ]
+        }
+      },
+      "mode": "QDoor",
+      "raw_changed": false,
+      "sample_id": "QDoor-01-compiled_initialization-approved",
+      "approved": "compiled_initialization",
+      "features": [
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8
+      ]
+    },
+    {
+      "case": "infected",
+      "context": {
+        "base_circuit_id": "QDoor-01-compiled_initialization",
+        "fold": 0,
+        "noise": 0.0,
+        "raw_approved_digest": "6b68058317a96b5c2791f26484d1c7081aa4165e8aa4cae8172c8f89def030d9",
+        "width": 8
+      },
+      "gate": "trained_backdoor",
+      "ideal_probe_tvd": [
+        0.0715947496815024,
+        0.08773964780389246,
+        0.09127854495711568
+      ],
+      "inspection": {
+        "decision": "inconclusive",
+        "extra_gates": 0,
+        "normalized_equal": false
+      },
+      "methods": {
+        "fixed_0Z": {
+          "n": 256,
+          "rate": 0.12109375,
+          "rejected": 31,
+          "wilson95": [
+            0.08663517067416432,
+            0.1667557205235664
+          ]
+        },
+        "portfolio_bonferroni_or": {
+          "n": 256,
+          "rate": 0.09375,
+          "rejected": 24,
+          "wilson95": [
+            0.0638098481830768,
+            0.13570203516294374
+          ]
+        },
+        "portfolio_joint": {
+          "n": 256,
+          "rate": 0.1171875,
+          "rejected": 30,
+          "wilson95": [
+            0.08333128838163656,
+            0.16236260169442127
+          ]
+        },
+        "portfolio_naive_or": {
+          "n": 256,
+          "rate": 0.40625,
+          "rejected": 104,
+          "wilson95": [
+            0.34790367679855766,
+            0.4673682962812932
+          ]
+        }
+      },
+      "mode": "QDoor",
+      "raw_changed": true,
+      "sample_id": "QDoor-01-compiled_initialization-attacked",
+      "approved": "compiled_initialization",
+      "features": [
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8
+      ]
+    },
+    {
+      "case": "equivalent_x_pair",
+      "context": {
+        "base_circuit_id": "QDoor-01-compiled_initialization",
+        "fold": 0,
+        "noise": 0.0,
+        "raw_approved_digest": "6b68058317a96b5c2791f26484d1c7081aa4165e8aa4cae8172c8f89def030d9",
+        "width": 8
+      },
+      "gate": "approved",
+      "ideal_probe_tvd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "inspection": {
+        "decision": "accept",
+        "extra_gates": 2,
+        "normalized_equal": true
+      },
+      "methods": {
+        "fixed_0Z": {
+          "n": 256,
+          "rate": 0.015625,
+          "rejected": 4,
+          "wilson95": [
+            0.006092598203366294,
+            0.039479262709196654
+          ]
+        },
+        "portfolio_bonferroni_or": {
+          "n": 256,
+          "rate": 0.0,
+          "rejected": 0,
+          "wilson95": [
+            0.0,
+            0.01478385642587143
+          ]
+        },
+        "portfolio_joint": {
+          "n": 256,
+          "rate": 0.0,
+          "rejected": 0,
+          "wilson95": [
+            0.0,
+            0.01478385642587143
+          ]
+        },
+        "portfolio_naive_or": {
+          "n": 256,
+          "rate": 0.01171875,
+          "rejected": 3,
+          "wilson95": [
+            0.003993287123007758,
+            0.033881572667882304
+          ]
+        }
+      },
+      "mode": "QDoor",
+      "raw_changed": true,
+      "sample_id": "QDoor-01-compiled_initialization-approved",
+      "approved": "compiled_initialization",
+      "features": [
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8
+      ]
+    },
+    {
+      "case": "clean",
+      "context": {
+        "base_circuit_id": "QDoor-01-compiled_initialization",
+        "fold": 0,
+        "noise": 0.005,
+        "raw_approved_digest": "6b68058317a96b5c2791f26484d1c7081aa4165e8aa4cae8172c8f89def030d9",
+        "width": 8
+      },
+      "gate": "approved",
+      "ideal_probe_tvd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "inspection": {
+        "decision": "accept",
+        "extra_gates": 0,
+        "normalized_equal": true
+      },
+      "methods": {
+        "fixed_0Z": {
+          "n": 256,
+          "rate": 0.0,
+          "rejected": 0,
+          "wilson95": [
+            0.0,
+            0.01478385642587143
+          ]
+        },
+        "portfolio_bonferroni_or": {
+          "n": 256,
+          "rate": 0.01171875,
+          "rejected": 3,
+          "wilson95": [
+            0.003993287123007758,
+            0.033881572667882304
+          ]
+        },
+        "portfolio_joint": {
+          "n": 256,
+          "rate": 0.01171875,
+          "rejected": 3,
+          "wilson95": [
+            0.003993287123007758,
+            0.033881572667882304
+          ]
+        },
+        "portfolio_naive_or": {
+          "n": 256,
+          "rate": 0.0234375,
+          "rejected": 6,
+          "wilson95": [
+            0.010784867555857603,
+            0.0501809956000511
+          ]
+        }
+      },
+      "mode": "QDoor",
+      "raw_changed": false,
+      "sample_id": "QDoor-01-compiled_initialization-approved",
+      "approved": "compiled_initialization",
+      "features": [
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8
+      ]
+    },
+    {
+      "case": "infected",
+      "context": {
+        "base_circuit_id": "QDoor-01-compiled_initialization",
+        "fold": 0,
+        "noise": 0.005,
+        "raw_approved_digest": "6b68058317a96b5c2791f26484d1c7081aa4165e8aa4cae8172c8f89def030d9",
+        "width": 8
+      },
+      "gate": "trained_backdoor",
+      "ideal_probe_tvd": [
+        0.0715947496815024,
+        0.08773964780389246,
+        0.09127854495711568
+      ],
+      "inspection": {
+        "decision": "inconclusive",
+        "extra_gates": 0,
+        "normalized_equal": false
+      },
+      "methods": {
+        "fixed_0Z": {
+          "n": 256,
+          "rate": 0.0703125,
+          "rejected": 18,
+          "wilson95": [
+            0.04493554746197091,
+            0.10839432915401236
+          ]
+        },
+        "portfolio_bonferroni_or": {
+          "n": 256,
+          "rate": 0.05078125,
+          "rejected": 13,
+          "wilson95": [
+            0.029913811386553534,
+            0.08493105962106533
+          ]
+        },
+        "portfolio_joint": {
+          "n": 256,
+          "rate": 0.06640625,
+          "rejected": 17,
+          "wilson95": [
+            0.04187072285916844,
+            0.10376215263514196
+          ]
+        },
+        "portfolio_naive_or": {
+          "n": 256,
+          "rate": 0.171875,
+          "rejected": 44,
+          "wilson95": [
+            0.13059812036467136,
+            0.2228537854148068
+          ]
+        }
+      },
+      "mode": "QDoor",
+      "raw_changed": true,
+      "sample_id": "QDoor-01-compiled_initialization-attacked",
+      "approved": "compiled_initialization",
+      "features": [
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8
+      ]
+    },
+    {
+      "case": "equivalent_x_pair",
+      "context": {
+        "base_circuit_id": "QDoor-01-compiled_initialization",
+        "fold": 0,
+        "noise": 0.005,
+        "raw_approved_digest": "6b68058317a96b5c2791f26484d1c7081aa4165e8aa4cae8172c8f89def030d9",
+        "width": 8
+      },
+      "gate": "approved",
+      "ideal_probe_tvd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "inspection": {
+        "decision": "accept",
+        "extra_gates": 2,
+        "normalized_equal": true
+      },
+      "methods": {
+        "fixed_0Z": {
+          "n": 256,
+          "rate": 0.01171875,
+          "rejected": 3,
+          "wilson95": [
+            0.003993287123007758,
+            0.033881572667882304
+          ]
+        },
+        "portfolio_bonferroni_or": {
+          "n": 256,
+          "rate": 0.0078125,
+          "rejected": 2,
+          "wilson95": [
+            0.002145090367681419,
+            0.028032768301535768
+          ]
+        },
+        "portfolio_joint": {
+          "n": 256,
+          "rate": 0.015625,
+          "rejected": 4,
+          "wilson95": [
+            0.006092598203366294,
+            0.039479262709196654
+          ]
+        },
+        "portfolio_naive_or": {
+          "n": 256,
+          "rate": 0.046875,
+          "rejected": 12,
+          "wilson95": [
+            0.027014851001628076,
+            0.0801330188843179
+          ]
+        }
+      },
+      "mode": "QDoor",
+      "raw_changed": true,
+      "sample_id": "QDoor-01-compiled_initialization-approved",
+      "approved": "compiled_initialization",
+      "features": [
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8
+      ]
+    },
+    {
+      "case": "clean",
+      "context": {
+        "base_circuit_id": "QDoor-02-original",
+        "fold": 0,
+        "noise": 0.0,
+        "raw_approved_digest": "a9097bc6570e3f2fbd51947a762e1b555cce3cb665761ecda919159e85b294ee",
+        "width": 8
+      },
+      "gate": "approved",
+      "ideal_probe_tvd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "inspection": {
+        "decision": "accept",
+        "extra_gates": 0,
+        "normalized_equal": true
+      },
+      "methods": {
+        "fixed_0Z": {
+          "n": 256,
+          "rate": 0.0078125,
+          "rejected": 2,
+          "wilson95": [
+            0.002145090367681419,
+            0.028032768301535768
+          ]
+        },
+        "portfolio_bonferroni_or": {
+          "n": 256,
+          "rate": 0.0,
+          "rejected": 0,
+          "wilson95": [
+            0.0,
+            0.01478385642587143
+          ]
+        },
+        "portfolio_joint": {
+          "n": 256,
+          "rate": 0.0,
+          "rejected": 0,
+          "wilson95": [
+            0.0,
+            0.01478385642587143
+          ]
+        },
+        "portfolio_naive_or": {
+          "n": 256,
+          "rate": 0.01171875,
+          "rejected": 3,
+          "wilson95": [
+            0.003993287123007758,
+            0.033881572667882304
+          ]
+        }
+      },
+      "mode": "QDoor",
+      "raw_changed": false,
+      "sample_id": "QDoor-02-original-approved",
+      "approved": "original",
+      "features": [
+        1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8
+      ]
+    },
+    {
+      "case": "clean",
+      "context": {
+        "base_circuit_id": "QDoor-02-original",
+        "fold": 0,
+        "noise": 0.0,
+        "raw_approved_digest": "a9097bc6570e3f2fbd51947a762e1b555cce3cb665761ecda919159e85b294ee",
+        "width": 8
+      },
+      "gate": "compiled_initialization",
+      "ideal_probe_tvd": [
+        0.10261226654816616,
+        0.13947048780792365,
+        0.08442224813308473
+      ],
+      "inspection": {
+        "decision": "inconclusive",
+        "extra_gates": 80,
+        "normalized_equal": false
+      },
+      "methods": {
+        "fixed_0Z": {
+          "n": 256,
+          "rate": 0.71484375,
+          "rejected": 183,
+          "wilson95": [
+            0.6566796990946451,
+            0.7666553625973633
+          ]
+        },
+        "portfolio_bonferroni_or": {
+          "n": 256,
+          "rate": 0.33203125,
+          "rejected": 85,
+          "wilson95": [
+            0.2771993280647148,
+            0.3918296237033514
+          ]
+        },
+        "portfolio_joint": {
+          "n": 256,
+          "rate": 0.47265625,
+          "rejected": 121,
+          "wilson95": [
+            0.4123556863984164,
+            0.5337653057498734
+          ]
+        },
+        "portfolio_naive_or": {
+          "n": 256,
+          "rate": 0.59375,
+          "rejected": 152,
+          "wilson95": [
+            0.5326317037187067,
+            0.6520963232014423
+          ]
+        }
+      },
+      "mode": "QDoor",
+      "raw_changed": true,
+      "sample_id": "QDoor-02-original-compiled",
+      "approved": "original",
+      "features": [
+        1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8
+      ]
+    },
+    {
+      "case": "infected",
+      "context": {
+        "base_circuit_id": "QDoor-02-original",
+        "fold": 0,
+        "noise": 0.0,
+        "raw_approved_digest": "a9097bc6570e3f2fbd51947a762e1b555cce3cb665761ecda919159e85b294ee",
+        "width": 8
+      },
+      "gate": "trained_backdoor",
+      "ideal_probe_tvd": [
+        0.10859302564713365,
+        0.2037642666920289,
+        0.13472142884156094
+      ],
+      "inspection": {
+        "decision": "inconclusive",
+        "extra_gates": 80,
+        "normalized_equal": false
+      },
+      "methods": {
+        "fixed_0Z": {
+          "n": 256,
+          "rate": 0.6953125,
+          "rejected": 178,
+          "wilson95": [
+            0.6363862715072103,
+            0.7484637845764336
+          ]
+        },
+        "portfolio_bonferroni_or": {
+          "n": 256,
+          "rate": 0.89453125,
+          "rejected": 229,
+          "wilson95": [
+            0.850899024665532,
+            0.9264980886234288
+          ]
+        },
+        "portfolio_joint": {
+          "n": 256,
+          "rate": 0.92578125,
+          "rejected": 237,
+          "wilson95": [
+            0.886999229454155,
+            0.9519738928081888
+          ]
+        },
+        "portfolio_naive_or": {
+          "n": 256,
+          "rate": 0.984375,
+          "rejected": 252,
+          "wilson95": [
+            0.9605207372908033,
+            0.9939074017966336
+          ]
+        }
+      },
+      "mode": "QDoor",
+      "raw_changed": true,
+      "sample_id": "QDoor-02-original-attacked",
+      "approved": "original",
+      "features": [
+        1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8
+      ]
+    },
+    {
+      "case": "equivalent_x_pair",
+      "context": {
+        "base_circuit_id": "QDoor-02-original",
+        "fold": 0,
+        "noise": 0.0,
+        "raw_approved_digest": "a9097bc6570e3f2fbd51947a762e1b555cce3cb665761ecda919159e85b294ee",
+        "width": 8
+      },
+      "gate": "approved",
+      "ideal_probe_tvd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "inspection": {
+        "decision": "accept",
+        "extra_gates": 2,
+        "normalized_equal": true
+      },
+      "methods": {
+        "fixed_0Z": {
+          "n": 256,
+          "rate": 0.00390625,
+          "rejected": 1,
+          "wilson95": [
+            0.0006898821669617927,
+            0.021790975380582514
+          ]
+        },
+        "portfolio_bonferroni_or": {
+          "n": 256,
+          "rate": 0.01171875,
+          "rejected": 3,
+          "wilson95": [
+            0.003993287123007758,
+            0.033881572667882304
+          ]
+        },
+        "portfolio_joint": {
+          "n": 256,
+          "rate": 0.0078125,
+          "rejected": 2,
+          "wilson95": [
+            0.002145090367681419,
+            0.028032768301535768
+          ]
+        },
+        "portfolio_naive_or": {
+          "n": 256,
+          "rate": 0.03125,
+          "rejected": 8,
+          "wilson95": [
+            0.015918258891511296,
+            0.06044160650774316
+          ]
+        }
+      },
+      "mode": "QDoor",
+      "raw_changed": true,
+      "sample_id": "QDoor-02-original-approved",
+      "approved": "original",
+      "features": [
+        1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8
+      ]
+    },
+    {
+      "case": "clean",
+      "context": {
+        "base_circuit_id": "QDoor-02-original",
+        "fold": 0,
+        "noise": 0.005,
+        "raw_approved_digest": "a9097bc6570e3f2fbd51947a762e1b555cce3cb665761ecda919159e85b294ee",
+        "width": 8
+      },
+      "gate": "approved",
+      "ideal_probe_tvd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "inspection": {
+        "decision": "accept",
+        "extra_gates": 0,
+        "normalized_equal": true
+      },
+      "methods": {
+        "fixed_0Z": {
+          "n": 256,
+          "rate": 0.0,
+          "rejected": 0,
+          "wilson95": [
+            0.0,
+            0.01478385642587143
+          ]
+        },
+        "portfolio_bonferroni_or": {
+          "n": 256,
+          "rate": 0.00390625,
+          "rejected": 1,
+          "wilson95": [
+            0.0006898821669617927,
+            0.021790975380582514
+          ]
+        },
+        "portfolio_joint": {
+          "n": 256,
+          "rate": 0.00390625,
+          "rejected": 1,
+          "wilson95": [
+            0.0006898821669617927,
+            0.021790975380582514
+          ]
+        },
+        "portfolio_naive_or": {
+          "n": 256,
+          "rate": 0.01953125,
+          "rejected": 5,
+          "wilson95": [
+            0.008370729784579391,
+            0.04489813224965644
+          ]
+        }
+      },
+      "mode": "QDoor",
+      "raw_changed": false,
+      "sample_id": "QDoor-02-original-approved",
+      "approved": "original",
+      "features": [
+        1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8
+      ]
+    },
+    {
+      "case": "clean",
+      "context": {
+        "base_circuit_id": "QDoor-02-original",
+        "fold": 0,
+        "noise": 0.005,
+        "raw_approved_digest": "a9097bc6570e3f2fbd51947a762e1b555cce3cb665761ecda919159e85b294ee",
+        "width": 8
+      },
+      "gate": "compiled_initialization",
+      "ideal_probe_tvd": [
+        0.10261226654816616,
+        0.13947048780792365,
+        0.08442224813308473
+      ],
+      "inspection": {
+        "decision": "inconclusive",
+        "extra_gates": 80,
+        "normalized_equal": false
+      },
+      "methods": {
+        "fixed_0Z": {
+          "n": 256,
+          "rate": 0.93359375,
+          "rejected": 239,
+          "wilson95": [
+            0.896237847364858,
+            0.9581292771408316
+          ]
+        },
+        "portfolio_bonferroni_or": {
+          "n": 256,
+          "rate": 0.62890625,
+          "rejected": 161,
+          "wilson95": [
+            0.5682303286253407,
+            0.6857707083898643
+          ]
+        },
+        "portfolio_joint": {
+          "n": 256,
+          "rate": 0.55078125,
+          "rejected": 141,
+          "wilson95": [
+            0.4895457648520954,
+            0.6105152497296519
+          ]
+        },
+        "portfolio_naive_or": {
+          "n": 256,
+          "rate": 0.890625,
+          "rejected": 228,
+          "wilson95": [
+            0.8464641652332502,
+            0.9232359469340378
+          ]
+        }
+      },
+      "mode": "QDoor",
+      "raw_changed": true,
+      "sample_id": "QDoor-02-original-compiled",
+      "approved": "original",
+      "features": [
+        1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8
+      ]
+    },
+    {
+      "case": "infected",
+      "context": {
+        "base_circuit_id": "QDoor-02-original",
+        "fold": 0,
+        "noise": 0.005,
+        "raw_approved_digest": "a9097bc6570e3f2fbd51947a762e1b555cce3cb665761ecda919159e85b294ee",
+        "width": 8
+      },
+      "gate": "trained_backdoor",
+      "ideal_probe_tvd": [
+        0.10859302564713365,
+        0.2037642666920289,
+        0.13472142884156094
+      ],
+      "inspection": {
+        "decision": "inconclusive",
+        "extra_gates": 80,
+        "normalized_equal": false
+      },
+      "methods": {
+        "fixed_0Z": {
+          "n": 256,
+          "rate": 0.94140625,
+          "rejected": 241,
+          "wilson95": [
+            0.9055877343822104,
+            0.9641733923668249
+          ]
+        },
+        "portfolio_bonferroni_or": {
+          "n": 256,
+          "rate": 0.93359375,
+          "rejected": 239,
+          "wilson95": [
+            0.896237847364858,
+            0.9581292771408316
+          ]
+        },
+        "portfolio_joint": {
+          "n": 256,
+          "rate": 0.91015625,
+          "rejected": 233,
+          "wilson95": [
+            0.8687984850418649,
+            0.9393866327337874
+          ]
+        },
+        "portfolio_naive_or": {
+          "n": 256,
+          "rate": 0.984375,
+          "rejected": 252,
+          "wilson95": [
+            0.9605207372908033,
+            0.9939074017966336
+          ]
+        }
+      },
+      "mode": "QDoor",
+      "raw_changed": true,
+      "sample_id": "QDoor-02-original-attacked",
+      "approved": "original",
+      "features": [
+        1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8
+      ]
+    },
+    {
+      "case": "equivalent_x_pair",
+      "context": {
+        "base_circuit_id": "QDoor-02-original",
+        "fold": 0,
+        "noise": 0.005,
+        "raw_approved_digest": "a9097bc6570e3f2fbd51947a762e1b555cce3cb665761ecda919159e85b294ee",
+        "width": 8
+      },
+      "gate": "approved",
+      "ideal_probe_tvd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "inspection": {
+        "decision": "accept",
+        "extra_gates": 2,
+        "normalized_equal": true
+      },
+      "methods": {
+        "fixed_0Z": {
+          "n": 256,
+          "rate": 0.0,
+          "rejected": 0,
+          "wilson95": [
+            0.0,
+            0.01478385642587143
+          ]
+        },
+        "portfolio_bonferroni_or": {
+          "n": 256,
+          "rate": 0.0,
+          "rejected": 0,
+          "wilson95": [
+            0.0,
+            0.01478385642587143
+          ]
+        },
+        "portfolio_joint": {
+          "n": 256,
+          "rate": 0.0078125,
+          "rejected": 2,
+          "wilson95": [
+            0.002145090367681419,
+            0.028032768301535768
+          ]
+        },
+        "portfolio_naive_or": {
+          "n": 256,
+          "rate": 0.01953125,
+          "rejected": 5,
+          "wilson95": [
+            0.008370729784579391,
+            0.04489813224965644
+          ]
+        }
+      },
+      "mode": "QDoor",
+      "raw_changed": true,
+      "sample_id": "QDoor-02-original-approved",
+      "approved": "original",
+      "features": [
+        1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8
+      ]
+    },
+    {
+      "case": "clean",
+      "context": {
+        "base_circuit_id": "QDoor-02-compiled_initialization",
+        "fold": 0,
+        "noise": 0.0,
+        "raw_approved_digest": "b3e6a4c61a1c849155d6524f5286632de42eb41b0c1c3697f841b507d18e8a6d",
+        "width": 8
+      },
+      "gate": "approved",
+      "ideal_probe_tvd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "inspection": {
+        "decision": "accept",
+        "extra_gates": 0,
+        "normalized_equal": true
+      },
+      "methods": {
+        "fixed_0Z": {
+          "n": 256,
+          "rate": 0.01171875,
+          "rejected": 3,
+          "wilson95": [
+            0.003993287123007758,
+            0.033881572667882304
+          ]
+        },
+        "portfolio_bonferroni_or": {
+          "n": 256,
+          "rate": 0.0,
+          "rejected": 0,
+          "wilson95": [
+            0.0,
+            0.01478385642587143
+          ]
+        },
+        "portfolio_joint": {
+          "n": 256,
+          "rate": 0.01171875,
+          "rejected": 3,
+          "wilson95": [
+            0.003993287123007758,
+            0.033881572667882304
+          ]
+        },
+        "portfolio_naive_or": {
+          "n": 256,
+          "rate": 0.03515625,
+          "rejected": 9,
+          "wilson95": [
+            0.018604096092635542,
+            0.0654527704282918
+          ]
+        }
+      },
+      "mode": "QDoor",
+      "raw_changed": false,
+      "sample_id": "QDoor-02-compiled_initialization-approved",
+      "approved": "compiled_initialization",
+      "features": [
+        1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8
+      ]
+    },
+    {
+      "case": "infected",
+      "context": {
+        "base_circuit_id": "QDoor-02-compiled_initialization",
+        "fold": 0,
+        "noise": 0.0,
+        "raw_approved_digest": "b3e6a4c61a1c849155d6524f5286632de42eb41b0c1c3697f841b507d18e8a6d",
+        "width": 8
+      },
+      "gate": "trained_backdoor",
+      "ideal_probe_tvd": [
+        0.07480756584589793,
+        0.07975489780584957,
+        0.08958164941798043
+      ],
+      "inspection": {
+        "decision": "inconclusive",
+        "extra_gates": 0,
+        "normalized_equal": false
+      },
+      "methods": {
+        "fixed_0Z": {
+          "n": 256,
+          "rate": 0.375,
+          "rejected": 96,
+          "wilson95": [
+            0.31795501653541774,
+            0.43574094757105014
+          ]
+        },
+        "portfolio_bonferroni_or": {
+          "n": 256,
+          "rate": 0.18359375,
+          "rejected": 47,
+          "wilson95": [
+            0.14096616877647156,
+            0.23557674036802523
+          ]
+        },
+        "portfolio_joint": {
+          "n": 256,
+          "rate": 0.109375,
+          "rejected": 28,
+          "wilson95": [
+            0.07676405306596229,
+            0.15353583476674978
+          ]
+        },
+        "portfolio_naive_or": {
+          "n": 256,
+          "rate": 0.3515625,
+          "rejected": 90,
+          "wilson95": [
+            0.295661910800322,
+            0.41185204657610863
+          ]
+        }
+      },
+      "mode": "QDoor",
+      "raw_changed": true,
+      "sample_id": "QDoor-02-compiled_initialization-attacked",
+      "approved": "compiled_initialization",
+      "features": [
+        1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8
+      ]
+    },
+    {
+      "case": "equivalent_x_pair",
+      "context": {
+        "base_circuit_id": "QDoor-02-compiled_initialization",
+        "fold": 0,
+        "noise": 0.0,
+        "raw_approved_digest": "b3e6a4c61a1c849155d6524f5286632de42eb41b0c1c3697f841b507d18e8a6d",
+        "width": 8
+      },
+      "gate": "approved",
+      "ideal_probe_tvd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "inspection": {
+        "decision": "accept",
+        "extra_gates": 2,
+        "normalized_equal": true
+      },
+      "methods": {
+        "fixed_0Z": {
+          "n": 256,
+          "rate": 0.01953125,
+          "rejected": 5,
+          "wilson95": [
+            0.008370729784579391,
+            0.04489813224965644
+          ]
+        },
+        "portfolio_bonferroni_or": {
+          "n": 256,
+          "rate": 0.0078125,
+          "rejected": 2,
+          "wilson95": [
+            0.002145090367681419,
+            0.028032768301535768
+          ]
+        },
+        "portfolio_joint": {
+          "n": 256,
+          "rate": 0.0078125,
+          "rejected": 2,
+          "wilson95": [
+            0.002145090367681419,
+            0.028032768301535768
+          ]
+        },
+        "portfolio_naive_or": {
+          "n": 256,
+          "rate": 0.0390625,
+          "rejected": 10,
+          "wilson95": [
+            0.0213540358427329,
+            0.07039983179986732
+          ]
+        }
+      },
+      "mode": "QDoor",
+      "raw_changed": true,
+      "sample_id": "QDoor-02-compiled_initialization-approved",
+      "approved": "compiled_initialization",
+      "features": [
+        1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8
+      ]
+    },
+    {
+      "case": "clean",
+      "context": {
+        "base_circuit_id": "QDoor-02-compiled_initialization",
+        "fold": 0,
+        "noise": 0.005,
+        "raw_approved_digest": "b3e6a4c61a1c849155d6524f5286632de42eb41b0c1c3697f841b507d18e8a6d",
+        "width": 8
+      },
+      "gate": "approved",
+      "ideal_probe_tvd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "inspection": {
+        "decision": "accept",
+        "extra_gates": 0,
+        "normalized_equal": true
+      },
+      "methods": {
+        "fixed_0Z": {
+          "n": 256,
+          "rate": 0.0078125,
+          "rejected": 2,
+          "wilson95": [
+            0.002145090367681419,
+            0.028032768301535768
+          ]
+        },
+        "portfolio_bonferroni_or": {
+          "n": 256,
+          "rate": 0.00390625,
+          "rejected": 1,
+          "wilson95": [
+            0.0006898821669617927,
+            0.021790975380582514
+          ]
+        },
+        "portfolio_joint": {
+          "n": 256,
+          "rate": 0.0078125,
+          "rejected": 2,
+          "wilson95": [
+            0.002145090367681419,
+            0.028032768301535768
+          ]
+        },
+        "portfolio_naive_or": {
+          "n": 256,
+          "rate": 0.015625,
+          "rejected": 4,
+          "wilson95": [
+            0.006092598203366294,
+            0.039479262709196654
+          ]
+        }
+      },
+      "mode": "QDoor",
+      "raw_changed": false,
+      "sample_id": "QDoor-02-compiled_initialization-approved",
+      "approved": "compiled_initialization",
+      "features": [
+        1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8
+      ]
+    },
+    {
+      "case": "infected",
+      "context": {
+        "base_circuit_id": "QDoor-02-compiled_initialization",
+        "fold": 0,
+        "noise": 0.005,
+        "raw_approved_digest": "b3e6a4c61a1c849155d6524f5286632de42eb41b0c1c3697f841b507d18e8a6d",
+        "width": 8
+      },
+      "gate": "trained_backdoor",
+      "ideal_probe_tvd": [
+        0.07480756584589793,
+        0.07975489780584957,
+        0.08958164941798043
+      ],
+      "inspection": {
+        "decision": "inconclusive",
+        "extra_gates": 0,
+        "normalized_equal": false
+      },
+      "methods": {
+        "fixed_0Z": {
+          "n": 256,
+          "rate": 0.0859375,
+          "rejected": 22,
+          "wilson95": [
+            0.05743557903626671,
+            0.12668230206640807
+          ]
+        },
+        "portfolio_bonferroni_or": {
+          "n": 256,
+          "rate": 0.01171875,
+          "rejected": 3,
+          "wilson95": [
+            0.003993287123007758,
+            0.033881572667882304
+          ]
+        },
+        "portfolio_joint": {
+          "n": 256,
+          "rate": 0.015625,
+          "rejected": 4,
+          "wilson95": [
+            0.006092598203366294,
+            0.039479262709196654
+          ]
+        },
+        "portfolio_naive_or": {
+          "n": 256,
+          "rate": 0.0625,
+          "rejected": 16,
+          "wilson95": [
+            0.03883364112851165,
+            0.09910223324412587
+          ]
+        }
+      },
+      "mode": "QDoor",
+      "raw_changed": true,
+      "sample_id": "QDoor-02-compiled_initialization-attacked",
+      "approved": "compiled_initialization",
+      "features": [
+        1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8
+      ]
+    },
+    {
+      "case": "equivalent_x_pair",
+      "context": {
+        "base_circuit_id": "QDoor-02-compiled_initialization",
+        "fold": 0,
+        "noise": 0.005,
+        "raw_approved_digest": "b3e6a4c61a1c849155d6524f5286632de42eb41b0c1c3697f841b507d18e8a6d",
+        "width": 8
+      },
+      "gate": "approved",
+      "ideal_probe_tvd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "inspection": {
+        "decision": "accept",
+        "extra_gates": 2,
+        "normalized_equal": true
+      },
+      "methods": {
+        "fixed_0Z": {
+          "n": 256,
+          "rate": 0.00390625,
+          "rejected": 1,
+          "wilson95": [
+            0.0006898821669617927,
+            0.021790975380582514
+          ]
+        },
+        "portfolio_bonferroni_or": {
+          "n": 256,
+          "rate": 0.0,
+          "rejected": 0,
+          "wilson95": [
+            0.0,
+            0.01478385642587143
+          ]
+        },
+        "portfolio_joint": {
+          "n": 256,
+          "rate": 0.01171875,
+          "rejected": 3,
+          "wilson95": [
+            0.003993287123007758,
+            0.033881572667882304
+          ]
+        },
+        "portfolio_naive_or": {
+          "n": 256,
+          "rate": 0.03515625,
+          "rejected": 9,
+          "wilson95": [
+            0.018604096092635542,
+            0.0654527704282918
+          ]
+        }
+      },
+      "mode": "QDoor",
+      "raw_changed": true,
+      "sample_id": "QDoor-02-compiled_initialization-approved",
+      "approved": "compiled_initialization",
+      "features": [
+        1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8
+      ]
+    }
+  ],
+  "inference_boundary": "Conditional simulation alarm probabilities; one reference/calibration per context. Per-context Wilson intervals, not a pooled or simultaneous population guarantee. Structural inspection is a separate SDK component, not a full guarded-runtime execution."
+}

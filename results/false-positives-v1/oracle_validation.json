@@ -1,0 +1,229 @@
+{
+  "scope": "All nine distinct eight-qubit QDoor circuits under every fixed probe. Explicit native primitive depolarization/readout channels versus Aer density matrices. Not validation of physical hardware noise or the article classification pipeline.",
+  "distinct_artifacts": 9,
+  "comparisons": 54,
+  "native_binary_sha256": "1b4995df72348d4752e632f02431ea177015ac1523c43d4ed1c76e4e703f81d0",
+  "qiskit_aer": "0.18.2",
+  "native_summary_sha256": "0a77c0359095f759b7a82cc9a6f83b4975d5570a5713a9982c90e2698d855575",
+  "maximum_ideal_probability_error": 1.7763568394002505e-15,
+  "maximum_noisy_probability_error": 1.942890293094024e-15,
+  "tolerance": 1e-11,
+  "checks": [
+    {
+      "artifact_index": 0,
+      "input": "0",
+      "basis": "Z",
+      "native_circuit_sha256": "0c55ffba4bbb018855f1b58b3c64e961884d1c171d1c2c9864e6f7ec8477fc97",
+      "maximum_probability_error_ideal": 3.0531133177191805e-16,
+      "maximum_probability_error_noisy": 4.996003610813204e-16
+    },
+    {
+      "artifact_index": 0,
+      "input": "1",
+      "basis": "Z",
+      "native_circuit_sha256": "32cc25de25fec3550ad5b4f5feabb35d882f13d7dedab3e6a3e4efd66d1d3ea5",
+      "maximum_probability_error_ideal": 1.5265566588595902e-16,
+      "maximum_probability_error_noisy": 3.191891195797325e-16
+    },
+    {
+      "artifact_index": 0,
+      "input": "+",
+      "basis": "X",
+      "native_circuit_sha256": "a265b8afc9f654d20327faff9eaa0ddcac58a2c894405766a2aecf9e9fcba511",
+      "maximum_probability_error_ideal": 1.2212453270876722e-15,
+      "maximum_probability_error_noisy": 6.106226635438361e-16
+    },
+    {
+      "artifact_index": 1,
+      "input": "0",
+      "basis": "Z",
+      "native_circuit_sha256": "3937ac289b440646ffbc501f75e28451c79cad7b9d942496bbf7a3ce287b89b1",
+      "maximum_probability_error_ideal": 3.608224830031759e-16,
+      "maximum_probability_error_noisy": 7.632783294297951e-16
+    },
+    {
+      "artifact_index": 1,
+      "input": "1",
+      "basis": "Z",
+      "native_circuit_sha256": "c2bfd5f1d3a7ce9c66feda52d194cced1f3045d9f74439390d66e7095b099209",
+      "maximum_probability_error_ideal": 6.106226635438361e-16,
+      "maximum_probability_error_noisy": 7.077671781985373e-16
+    },
+    {
+      "artifact_index": 1,
+      "input": "+",
+      "basis": "X",
+      "native_circuit_sha256": "ca504a38702605917ea0fa8f9c1d35dc85c43e821eceeb3d05911d60e72e86ed",
+      "maximum_probability_error_ideal": 1.7763568394002505e-15,
+      "maximum_probability_error_noisy": 1.942890293094024e-15
+    },
+    {
+      "artifact_index": 2,
+      "input": "0",
+      "basis": "Z",
+      "native_circuit_sha256": "abd63e88a6e24e461c7e16b571331f61d52a9d19ac280af45ee10f511c98f152",
+      "maximum_probability_error_ideal": 3.608224830031759e-16,
+      "maximum_probability_error_noisy": 4.3021142204224816e-16
+    },
+    {
+      "artifact_index": 2,
+      "input": "1",
+      "basis": "Z",
+      "native_circuit_sha256": "4bd7726eb17417b54b1e70ff3a941929c5c0ca6dc2a1dc008eabee622a61b370",
+      "maximum_probability_error_ideal": 3.885780586188048e-16,
+      "maximum_probability_error_noisy": 2.8449465006019636e-16
+    },
+    {
+      "artifact_index": 2,
+      "input": "+",
+      "basis": "X",
+      "native_circuit_sha256": "546f111e505c4249a1cea7cb579e760728f0f7138c1f58c65cbec4ebf342f405",
+      "maximum_probability_error_ideal": 6.661338147750939e-16,
+      "maximum_probability_error_noisy": 9.992007221626409e-16
+    },
+    {
+      "artifact_index": 3,
+      "input": "0",
+      "basis": "Z",
+      "native_circuit_sha256": "ccb1cb8cc57e6b6ab4aad1cc4642601b608663286d5fe9d89a67f5516a2a0db7",
+      "maximum_probability_error_ideal": 3.3306690738754696e-16,
+      "maximum_probability_error_noisy": 5.273559366969494e-16
+    },
+    {
+      "artifact_index": 3,
+      "input": "1",
+      "basis": "Z",
+      "native_circuit_sha256": "0567f8e5994b8abc559666cec5f75aa121a3cdbaca8a5dbefcc8ee5397c18a82",
+      "maximum_probability_error_ideal": 4.163336342344337e-17,
+      "maximum_probability_error_noisy": 4.3021142204224816e-16
+    },
+    {
+      "artifact_index": 3,
+      "input": "+",
+      "basis": "X",
+      "native_circuit_sha256": "58b349b4fbcaef3cce714ed2ed297660606a25c389cf1fefb07c22018d5b9f79",
+      "maximum_probability_error_ideal": 5.551115123125783e-16,
+      "maximum_probability_error_noisy": 4.163336342344337e-16
+    },
+    {
+      "artifact_index": 4,
+      "input": "0",
+      "basis": "Z",
+      "native_circuit_sha256": "3e1733e6c95a3cebc743a1cf6dc952c1ce81f4691abece56b131dc1f4c819754",
+      "maximum_probability_error_ideal": 2.0816681711721685e-16,
+      "maximum_probability_error_noisy": 4.579669976578771e-16
+    },
+    {
+      "artifact_index": 4,
+      "input": "1",
+      "basis": "Z",
+      "native_circuit_sha256": "e63adb74d9f64a2a5e1727596090213b0ab0fd2d6c9dc74aa7bd94f100ddef0c",
+      "maximum_probability_error_ideal": 2.914335439641036e-16,
+      "maximum_probability_error_noisy": 4.510281037539698e-16
+    },
+    {
+      "artifact_index": 4,
+      "input": "+",
+      "basis": "X",
+      "native_circuit_sha256": "945d9c9400d6cad285b10602681c18597924a489464d44d24190f574f492a787",
+      "maximum_probability_error_ideal": 7.216449660063518e-16,
+      "maximum_probability_error_noisy": 8.604228440844963e-16
+    },
+    {
+      "artifact_index": 5,
+      "input": "0",
+      "basis": "Z",
+      "native_circuit_sha256": "b9dd5de53a4abdccf14c2fd872b640d9535704e02cefcace56cf3f7574b60b21",
+      "maximum_probability_error_ideal": 2.914335439641036e-16,
+      "maximum_probability_error_noisy": 6.522560269672795e-16
+    },
+    {
+      "artifact_index": 5,
+      "input": "1",
+      "basis": "Z",
+      "native_circuit_sha256": "3e96f431c56da2c772f4960c9d272b2e2f9ddd634b45a3c9f4bdd0f2c7d5f6b0",
+      "maximum_probability_error_ideal": 2.0122792321330962e-16,
+      "maximum_probability_error_noisy": 3.7470027081099033e-16
+    },
+    {
+      "artifact_index": 5,
+      "input": "+",
+      "basis": "X",
+      "native_circuit_sha256": "a146d6427a870bd5f68afc2fe1107c4220850ab9b82a27c1185fca9ea6c03ccf",
+      "maximum_probability_error_ideal": 7.91033905045424e-16,
+      "maximum_probability_error_noisy": 9.298117831235686e-16
+    },
+    {
+      "artifact_index": 6,
+      "input": "0",
+      "basis": "Z",
+      "native_circuit_sha256": "0f5cbb0731145add7bed20560b24358237fc303250e7b36af7221d60b5f0ab19",
+      "maximum_probability_error_ideal": 1.942890293094024e-16,
+      "maximum_probability_error_noisy": 3.191891195797325e-16
+    },
+    {
+      "artifact_index": 6,
+      "input": "1",
+      "basis": "Z",
+      "native_circuit_sha256": "7bef539bf0bb4839b2232a9b965bd7fb6c679517f1c2e0b55b5368ae2084716a",
+      "maximum_probability_error_ideal": 1.942890293094024e-16,
+      "maximum_probability_error_noisy": 2.7755575615628914e-16
+    },
+    {
+      "artifact_index": 6,
+      "input": "+",
+      "basis": "X",
+      "native_circuit_sha256": "0d41635b46594bee21295017d43d74096a60bdc5c20799ea3446404258738050",
+      "maximum_probability_error_ideal": 7.494005416219807e-16,
+      "maximum_probability_error_noisy": 6.938893903907228e-16
+    },
+    {
+      "artifact_index": 7,
+      "input": "0",
+      "basis": "Z",
+      "native_circuit_sha256": "5bdca641730fe3b80f170692e7d1a81084ae647c5e742a541298afe29772681f",
+      "maximum_probability_error_ideal": 4.718447854656915e-16,
+      "maximum_probability_error_noisy": 6.522560269672795e-16
+    },
+    {
+      "artifact_index": 7,
+      "input": "1",
+      "basis": "Z",
+      "native_circuit_sha256": "717c5b832e51376fbda4b51cec86a713ad31c5928c9ed05f72dfdddddb23f951",
+      "maximum_probability_error_ideal": 2.2898349882893854e-16,
+      "maximum_probability_error_noisy": 4.2327252813834093e-16
+    },
+    {
+      "artifact_index": 7,
+      "input": "+",
+      "basis": "X",
+      "native_circuit_sha256": "bff3d18908253b2b517f15487d892f6267067eee8ca2770d4b54b721bd302cfd",
+      "maximum_probability_error_ideal": 8.049116928532385e-16,
+      "maximum_probability_error_noisy": 1.1657341758564144e-15
+    },
+    {
+      "artifact_index": 8,
+      "input": "0",
+      "basis": "Z",
+      "native_circuit_sha256": "2c62629ca53bd216bb21d64df2c15c5cccff322af3b9432b0d9a09d3b3dee35b",
+      "maximum_probability_error_ideal": 2.7755575615628914e-16,
+      "maximum_probability_error_noisy": 7.077671781985373e-16
+    },
+    {
+      "artifact_index": 8,
+      "input": "1",
+      "basis": "Z",
+      "native_circuit_sha256": "e8071a13c2162616a534608ecb9ec8d36b57329cd22967d49b4096fc42c01a66",
+      "maximum_probability_error_ideal": 1.8041124150158794e-16,
+      "maximum_probability_error_noisy": 4.0245584642661925e-16
+    },
+    {
+      "artifact_index": 8,
+      "input": "+",
+      "basis": "X",
+      "native_circuit_sha256": "28dabf78880d474910c129c0a6e9914d3dd790ae785d4f753db83786411501ef",
+      "maximum_probability_error_ideal": 5.967448757360216e-16,
+      "maximum_probability_error_noisy": 1.304512053934559e-15
+    }
+  ]
+}

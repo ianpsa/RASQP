@@ -1,0 +1,506 @@
+[
+  {
+    "circuit_index": 0,
+    "case": "clean",
+    "probe": 0,
+    "logical_to_compact_measurement": [
+      0,
+      1,
+      2
+    ],
+    "operations": {
+      "rz": 38,
+      "sx": 23,
+      "ecr": 12,
+      "delay": 6,
+      "x": 4,
+      "measure": 3,
+      "barrier": 1
+    },
+    "density_normalization_error": 6.439293542825908e-15,
+    "duration_seconds": 8.298666666666666e-06
+  },
+  {
+    "circuit_index": 1,
+    "case": "clean",
+    "probe": 1,
+    "logical_to_compact_measurement": [
+      0,
+      1,
+      2
+    ],
+    "operations": {
+      "rz": 39,
+      "sx": 23,
+      "ecr": 12,
+      "delay": 6,
+      "x": 4,
+      "measure": 3,
+      "barrier": 1
+    },
+    "density_normalization_error": 5.773159728050814e-15,
+    "duration_seconds": 8.298666666666666e-06
+  },
+  {
+    "circuit_index": 2,
+    "case": "clean",
+    "probe": 2,
+    "logical_to_compact_measurement": [
+      0,
+      1,
+      2
+    ],
+    "operations": {
+      "rz": 35,
+      "sx": 20,
+      "ecr": 12,
+      "delay": 7,
+      "x": 4,
+      "measure": 3,
+      "barrier": 1
+    },
+    "density_normalization_error": 6.106226635438361e-15,
+    "duration_seconds": 8.298666666666666e-06
+  },
+  {
+    "circuit_index": 3,
+    "case": "equivalent_optimized",
+    "probe": 0,
+    "logical_to_compact_measurement": [
+      0,
+      1,
+      2
+    ],
+    "operations": {
+      "rz": 39,
+      "sx": 23,
+      "ecr": 12,
+      "delay": 6,
+      "x": 4,
+      "measure": 3,
+      "barrier": 1
+    },
+    "density_normalization_error": 6.772360450213455e-15,
+    "duration_seconds": 8.298666666666666e-06
+  },
+  {
+    "circuit_index": 4,
+    "case": "equivalent_optimized",
+    "probe": 1,
+    "logical_to_compact_measurement": [
+      0,
+      1,
+      2
+    ],
+    "operations": {
+      "rz": 40,
+      "sx": 23,
+      "ecr": 12,
+      "delay": 6,
+      "x": 4,
+      "measure": 3,
+      "barrier": 1
+    },
+    "density_normalization_error": 5.995204332975845e-15,
+    "duration_seconds": 8.298666666666666e-06
+  },
+  {
+    "circuit_index": 5,
+    "case": "equivalent_optimized",
+    "probe": 2,
+    "logical_to_compact_measurement": [
+      0,
+      1,
+      2
+    ],
+    "operations": {
+      "rz": 36,
+      "sx": 20,
+      "ecr": 12,
+      "delay": 7,
+      "x": 4,
+      "measure": 3,
+      "barrier": 1
+    },
+    "density_normalization_error": 6.661338147750939e-15,
+    "duration_seconds": 8.298666666666666e-06
+  },
+  {
+    "circuit_index": 6,
+    "case": "x0",
+    "probe": 0,
+    "logical_to_compact_measurement": [
+      0,
+      1,
+      2
+    ],
+    "operations": {
+      "rz": 38,
+      "sx": 23,
+      "ecr": 12,
+      "delay": 6,
+      "x": 4,
+      "measure": 3,
+      "barrier": 1
+    },
+    "density_normalization_error": 6.106226635438361e-15,
+    "duration_seconds": 8.298666666666666e-06
+  },
+  {
+    "circuit_index": 7,
+    "case": "x0",
+    "probe": 1,
+    "logical_to_compact_measurement": [
+      0,
+      1,
+      2
+    ],
+    "operations": {
+      "rz": 39,
+      "sx": 23,
+      "ecr": 12,
+      "delay": 6,
+      "x": 4,
+      "measure": 3,
+      "barrier": 1
+    },
+    "density_normalization_error": 5.329070518200751e-15,
+    "duration_seconds": 8.298666666666666e-06
+  },
+  {
+    "circuit_index": 8,
+    "case": "x0",
+    "probe": 2,
+    "logical_to_compact_measurement": [
+      0,
+      1,
+      2
+    ],
+    "operations": {
+      "rz": 35,
+      "sx": 20,
+      "ecr": 12,
+      "delay": 7,
+      "x": 4,
+      "measure": 3,
+      "barrier": 1
+    },
+    "density_normalization_error": 6.106226635438361e-15,
+    "duration_seconds": 8.298666666666666e-06
+  },
+  {
+    "circuit_index": 9,
+    "case": "z0",
+    "probe": 0,
+    "logical_to_compact_measurement": [
+      0,
+      1,
+      2
+    ],
+    "operations": {
+      "rz": 38,
+      "sx": 23,
+      "ecr": 12,
+      "delay": 6,
+      "x": 4,
+      "measure": 3,
+      "barrier": 1
+    },
+    "density_normalization_error": 6.439293542825908e-15,
+    "duration_seconds": 8.298666666666666e-06
+  },
+  {
+    "circuit_index": 10,
+    "case": "z0",
+    "probe": 1,
+    "logical_to_compact_measurement": [
+      0,
+      1,
+      2
+    ],
+    "operations": {
+      "rz": 39,
+      "sx": 23,
+      "ecr": 12,
+      "delay": 6,
+      "x": 4,
+      "measure": 3,
+      "barrier": 1
+    },
+    "density_normalization_error": 5.773159728050814e-15,
+    "duration_seconds": 8.298666666666666e-06
+  },
+  {
+    "circuit_index": 11,
+    "case": "z0",
+    "probe": 2,
+    "logical_to_compact_measurement": [
+      0,
+      1,
+      2
+    ],
+    "operations": {
+      "rz": 35,
+      "sx": 20,
+      "ecr": 12,
+      "delay": 7,
+      "x": 5,
+      "measure": 3,
+      "barrier": 1
+    },
+    "density_normalization_error": 6.106226635438361e-15,
+    "duration_seconds": 8.298666666666666e-06
+  },
+  {
+    "circuit_index": 12,
+    "case": "rz0_0.12",
+    "probe": 0,
+    "logical_to_compact_measurement": [
+      0,
+      1,
+      2
+    ],
+    "operations": {
+      "rz": 38,
+      "sx": 23,
+      "ecr": 12,
+      "delay": 6,
+      "x": 4,
+      "measure": 3,
+      "barrier": 1
+    },
+    "density_normalization_error": 6.328271240363392e-15,
+    "duration_seconds": 8.298666666666666e-06
+  },
+  {
+    "circuit_index": 13,
+    "case": "rz0_0.12",
+    "probe": 1,
+    "logical_to_compact_measurement": [
+      0,
+      1,
+      2
+    ],
+    "operations": {
+      "rz": 39,
+      "sx": 23,
+      "ecr": 12,
+      "delay": 6,
+      "x": 4,
+      "measure": 3,
+      "barrier": 1
+    },
+    "density_normalization_error": 5.551115123125783e-15,
+    "duration_seconds": 8.298666666666666e-06
+  },
+  {
+    "circuit_index": 14,
+    "case": "rz0_0.12",
+    "probe": 2,
+    "logical_to_compact_measurement": [
+      0,
+      1,
+      2
+    ],
+    "operations": {
+      "rz": 37,
+      "sx": 22,
+      "ecr": 12,
+      "delay": 6,
+      "x": 4,
+      "measure": 3,
+      "barrier": 1
+    },
+    "density_normalization_error": 6.217248937900877e-15,
+    "duration_seconds": 8.298666666666666e-06
+  },
+  {
+    "circuit_index": 15,
+    "case": "cx01",
+    "probe": 0,
+    "logical_to_compact_measurement": [
+      0,
+      1,
+      2
+    ],
+    "operations": {
+      "rz": 41,
+      "sx": 25,
+      "ecr": 13,
+      "delay": 6,
+      "x": 4,
+      "measure": 3,
+      "barrier": 1
+    },
+    "density_normalization_error": 7.216449660063518e-15,
+    "duration_seconds": 8.888888888888888e-06
+  },
+  {
+    "circuit_index": 16,
+    "case": "cx01",
+    "probe": 1,
+    "logical_to_compact_measurement": [
+      0,
+      1,
+      2
+    ],
+    "operations": {
+      "rz": 42,
+      "sx": 25,
+      "ecr": 13,
+      "delay": 6,
+      "x": 4,
+      "measure": 3,
+      "barrier": 1
+    },
+    "density_normalization_error": 6.994405055138486e-15,
+    "duration_seconds": 8.888888888888888e-06
+  },
+  {
+    "circuit_index": 17,
+    "case": "cx01",
+    "probe": 2,
+    "logical_to_compact_measurement": [
+      0,
+      1,
+      2
+    ],
+    "operations": {
+      "rz": 36,
+      "sx": 21,
+      "ecr": 13,
+      "delay": 7,
+      "x": 4,
+      "measure": 3,
+      "barrier": 1
+    },
+    "density_normalization_error": 5.440092820663267e-15,
+    "duration_seconds": 8.832e-06
+  },
+  {
+    "circuit_index": 18,
+    "case": "swap_end",
+    "probe": 0,
+    "logical_to_compact_measurement": [
+      0,
+      1,
+      2
+    ],
+    "operations": {
+      "rz": 46,
+      "sx": 29,
+      "ecr": 15,
+      "delay": 6,
+      "x": 4,
+      "measure": 3,
+      "barrier": 1
+    },
+    "density_normalization_error": 9.103828801926284e-15,
+    "duration_seconds": 1.0069333333333332e-05
+  },
+  {
+    "circuit_index": 19,
+    "case": "swap_end",
+    "probe": 1,
+    "logical_to_compact_measurement": [
+      0,
+      1,
+      2
+    ],
+    "operations": {
+      "rz": 47,
+      "sx": 29,
+      "ecr": 15,
+      "delay": 6,
+      "x": 4,
+      "measure": 3,
+      "barrier": 1
+    },
+    "density_normalization_error": 8.659739592076221e-15,
+    "duration_seconds": 1.0069333333333332e-05
+  },
+  {
+    "circuit_index": 20,
+    "case": "swap_end",
+    "probe": 2,
+    "logical_to_compact_measurement": [
+      0,
+      1,
+      2
+    ],
+    "operations": {
+      "rz": 40,
+      "sx": 25,
+      "ecr": 15,
+      "delay": 7,
+      "x": 4,
+      "measure": 3,
+      "barrier": 1
+    },
+    "density_normalization_error": 6.8833827526759706e-15,
+    "duration_seconds": 1.0012444444444443e-05
+  },
+  {
+    "circuit_index": 21,
+    "case": "parameter_scale_1.1",
+    "probe": 0,
+    "logical_to_compact_measurement": [
+      0,
+      1,
+      2
+    ],
+    "operations": {
+      "rz": 41,
+      "sx": 26,
+      "ecr": 12,
+      "delay": 6,
+      "x": 4,
+      "measure": 3,
+      "barrier": 1
+    },
+    "density_normalization_error": 8.770761894538737e-15,
+    "duration_seconds": 8.355555555555554e-06
+  },
+  {
+    "circuit_index": 22,
+    "case": "parameter_scale_1.1",
+    "probe": 1,
+    "logical_to_compact_measurement": [
+      0,
+      1,
+      2
+    ],
+    "operations": {
+      "rz": 41,
+      "sx": 26,
+      "ecr": 12,
+      "delay": 6,
+      "x": 4,
+      "measure": 3,
+      "barrier": 1
+    },
+    "density_normalization_error": 7.105427357601002e-15,
+    "duration_seconds": 8.355555555555554e-06
+  },
+  {
+    "circuit_index": 23,
+    "case": "parameter_scale_1.1",
+    "probe": 2,
+    "logical_to_compact_measurement": [
+      0,
+      1,
+      2
+    ],
+    "operations": {
+      "rz": 44,
+      "sx": 27,
+      "ecr": 12,
+      "delay": 5,
+      "x": 4,
+      "measure": 3,
+      "barrier": 1
+    },
+    "density_normalization_error": 8.43769498715119e-15,
+    "duration_seconds": 8.355555555555554e-06
+  }
+]

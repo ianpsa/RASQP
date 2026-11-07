@@ -1,0 +1,34 @@
+{
+  "scope": "Independent recomputation of extension/context references, quantiles, decisions, rates, Wilson intervals, McNemar and Holm; no tuning of frozen experiments.",
+  "raw_sha256": "e32cf059f183f1871234dfd230412a91306e47860a02575cac30111b8f85ad6f",
+  "raw_kinds": {
+    "samples": 1992,
+    "batch_decision": 24192,
+    "normalization": 360,
+    "mutation": 390,
+    "dynamic_check": 1,
+    "trojan": 6480,
+    "extension_decisions": 60,
+    "context_decisions": 216
+  },
+  "decisions_recomputed": 62976,
+  "comparisons_recomputed": 144,
+  "executor_cost_reconciles": true,
+  "executor_cost": {
+    "circuits": 129200,
+    "includes": "all logged native samples including calibration/reference; exact oracle computation not shots",
+    "jobs": 1993,
+    "seconds": 0.680108067,
+    "shots": 77388288
+  },
+  "classical_fabrication_histograms": 1728,
+  "additional_classical_uniform_draws": 1105920,
+  "executor_plus_fabrication_draws": 78494208,
+  "sample_rows_without_noise_metadata": 1992,
+  "H41_pass": false,
+  "H42_pass": true,
+  "H44_pass": true,
+  "weak_rz_ideal_detection_probability_at_256_sensitive_shots": 0.6023382428440239,
+  "fresh_raw_byte_identical": true,
+  "fresh_summary_identical_except_timings": true
+}
