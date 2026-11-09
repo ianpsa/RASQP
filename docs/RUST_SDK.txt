@@ -1,0 +1,196 @@
+# Rust SDK 0.3
+
+The library, native simulator, research runners, reports, Linux sandbox and release
+packager run in Rust. Python/Qiskit/Cirq remain independent reference implementations
+and parity tests; no Python process is required by a Rust SDK or laboratory execution.
+See `MIGRATION_MATRIX.txt` for explicit language/backend differences.
+
+## Build and use
+
+```sh
+cargo build --locked --release
+cargo test --locked --all-targets
+cargo run --locked --example runtime
+cargo run --locked --example protect
+cargo doc --locked --no-deps --open
+target/release/rasqp-lab all results/runs/my-run
+```
+
+The laboratory enables Linux seccomp by default. On other operating systems, opt into
+`--unconfined` to run trusted fixtures without that filter. There is no silent fallback.
+The SDK itself runs on Linux, Windows and macOS; only Linux was executed locally.
+
+`rasqp-lab` supports `all`, `batch`, `hypotheses`, `trojans`, `extensions`, and `context`.
+It writes raw JSONL counts and decisions, JSON summaries, a protocol snapshot and a
+Markdown report. Files open before sandbox installation. Existing output files in the
+chosen directory are replaced: use a fresh directory to preserve an earlier experiment.
+
+Rust modules are grouped by responsibility:
+
+| Module | Main types |
+|---|---|
+| `domain` | `Circuit`, `Gate`, `Family`, `MirrorTrap`; executor/oracle traits |
+| `application` | `GuardedRuntime<B,S>`, `Supervisor<S>`, `Inspector`, policies and result gates |
+| `classical` | `TranscriptVerifier<S>`, `SqliteLedger`, `ArtifactFingerprint`, `FunctionGuard` |
+| `research` | `Normalizer`, `Alignment`, `VariantCatalog`, `Lineage`, `ProbeSelector`, verifiers, statistics |
+| `adapters` | `NativeBackend`, `Statevector`, `DensityMatrix`, `NativeExecutor`, `PassManager`, `OpenQasm`, `PauliSandwich` |
+| `lab` | `ResearchLab`, `ProtocolRegistry`, `ResearchReport`, sandbox |
+
+The SDK can be consumed as a local path dependency or extracted `.crate` source package.
+The configured source repository is https://github.com/ianpsa/RASQP;
+REQUIREMENTS.txt documents build and terminal prerequisites. `publish=false` prevents accidental public crates.io publication. No project
+redistribution license was invented. Rust ABI stability, a C ABI and a Python wheel are
+not promised. The optional Python bridge is retained locally in the ignored
+`legacy/python/src/rasqp/rust_sdk.py` archive.
+
+### Guarded execution API
+
+The `Probabilities` CLI operation computes an offline simulator distribution for a
+specified circuit. It does not guard a running application. `GuardedRuntime::execute`
+is the application entry point: it checks the submitted circuit and artifact, creates
+fresh local request IDs, executes the workload through a `QuantumBackend`, validates
+the measurement shape and calibrated distribution, optionally runs a fixed portfolio
+of challenge circuits, rechecks the artifact, and releases counts only on acceptance.
+The application must consume `outcome.accepted_counts`, never a backend result directly.
+
+The [working runtime example](../examples/runtime.rs) builds circuits with Rust types;
+no CLI JSON is needed. It uses `NativeBackend`, a local simulator. To use a quantum
+provider, implement `QuantumBackend` so it submits the exact circuit, verifies the
+provider connection and job identity, and converts results to canonical basis counts.
+There is no real-QPU adapter in this repository yet. The adapter must own transport
+authentication; local request nonces do not authenticate a remote provider's counts.
+
+| Detection | SDK method | When it runs | What it establishes |
+|---|---|---|---|
+| Circuit/resource change | `inspect`, called by `GuardedRuntime::execute` | Before submission | Rejects width/gate-budget violations; unproven semantic differences are inconclusive. |
+| Classical file change | `ArtifactFingerprint::measure`, called before and after execution | Every guarded run | Detects changed on-disk bytes relative to a trusted fingerprint, within file check/use limits. |
+| Workload measurement anomaly | `CalibratedVerifier::score` and `rejects` | Every guarded run | Flags total-variation distance beyond a calibrated reference threshold. |
+| Challenge measurement anomaly | `ProbePlan` plus `JointVerifier::score` and `rejects` | Only when probes are configured | Flags the largest deviation in an ordered portfolio of separate challenge jobs. |
+| Local request reuse | `NonceStore::claim`, normally `SqliteLedger` | Every guarded workload and challenge | Prevents reuse of locally generated request IDs in the same trusted ledger. |
+| Signed transcript replay | `transcript::verify`, called by `Supervisor::execute` or `protect` | Separate signed-response integration | Verifies HMAC binding and consumes a nonce, only when a trusted signer actually produced the HMAC. |
+| Function pointer/snapshot change | `FunctionGuard` | Only when explicitly called | Compares a pointer and caller-supplied byte snapshot; it is not loaded-code attestation. |
+| Mutation/probe/Pauli studies | `Mutation`, `ProbeSelector`, `PauliSandwich`, `ResearchLab` | Offline research unless integrated by an application | Develops and evaluates candidate checks; these do not run automatically in `GuardedRuntime`. |
+
+An anomaly alarm is statistical evidence, not a proof of attack. Separate challenge
+jobs cannot prove that an adaptive provider executed the workload honestly, and a
+provider that fabricates plausible counts may pass these checks. This runtime protects
+the application's measurement consumption within its configured, trusted scope.
+
+### Signed-response API
+
+```rust
+use rasqp::{Circuit, Gate, SqliteLedger};
+use rasqp::application::guard::Supervisor;
+
+// In an application, supply a trusted Policy and a key from a secret store.
+// let mut supervisor = Supervisor::new(policy, key, SqliteLedger::open("nonces.db")?)?;
+// let outcome = supervisor.execute(&approved, &submitted, &request, &response)?;
+// Only outcome.accepted_counts may be passed to the consumer.
+let circuit = Circuit::new(2, vec![Gate::h(0), Gate::cx(0, 1)])?;
+# Ok::<(), rasqp::Error>(())
+```
+
+`examples/protect.rs` is a complete working example of signed-response verification. It uses a test key and demonstration
+nonce and writes `demo.sqlite`; applications need fresh unpredictable nonces and random
+keys with at least 32 bytes. `guard::protect_batch` checks the entire ordered batch before
+releasing any counts. A rejected batch can consume a prefix of nonces; retries need fresh
+requests. Batch checking does not prove a hidden relation to an unverified workload.
+
+### Native CLI
+
+```sh
+echo '{"operation":"digest","circuit":{"width":1,"gates":[]}}' | target/release/rasqp
+```
+
+One JSON command goes to stdin and one result to stdout. Invalid input exits 2 and writes
+JSON with `accepted_counts:null` to stderr. Reject/inconclusive are valid outcomes and
+exit 0: inspect `decision`. Input is limited to 8 MiB.
+
+Operations: digest, normalize, normalize_trace, inspect, score, joint_score, protect,
+protect_batch, probabilities, equivalent, qasm, align, select_probes, paired, holm, evaluate_joint.
+Schemas are the tagged `Command` enum in `rust/main.rs`; complete integration examples
+are in the local `legacy/python/integration/test_sdk.py` archive. Protection operations take an explicit ledger pathname
+as the positional argument and read `RASQP_KEY_HEX` from the trusted caller's environment.
+The native service API avoids subprocess environment transport for secrets.
+
+## Security and numerical contracts
+
+* Gates: x,h,z,rx,ry,rz,cx; width 1–16; at most 4096 gates. Angles are finite;
+  nonrotation angles must be zero. Normalization aborts after a million scanned positions.
+* Normalization uses conservative rewrites, with trace offsets and original resource
+  counts. Different normal forms mean inconclusive unless a trusted oracle resolves them.
+* Counts use q0 as the least significant bit, length 2^width, nonnegative u64 values,
+  checked sum equal to shots, and a maximum total of 2^53.
+* HMAC covers every request field and count. SQLite WAL/FULL and a unique nonce key
+  provide atomic claims across local processes and persistence across restart. Invalid
+  authentication does not burn a nonce; authentic rejected results do. SQLite URI
+  interpretation is disabled. Deletion or rollback of the database still permits replay.
+* Context mismatch is inconclusive; artifact mismatch rejects. No rejected/inconclusive
+  outcome exposes counts. Policies, approved circuits and expected requests come from
+  the trusted supervisor, never copied from provider claims.
+* In the signed-response API, the application must commit ordered probes, shots,
+  thresholds, references, approved raw variants, backend epoch and artifact manifest
+  into `context_digest` with its fixed encoding; that API compares supplied identifiers.
+  `GuardedRuntime` instead computes a local digest of its full `RuntimePolicy` and
+  remeasures the configured file. Neither API infers a provider's actual calibration.
+* `ArtifactFingerprint::measure` hashes actual file bytes. It does not attest loaded
+  machine code or remove check/use races. `FunctionGuard` checks a function identity and
+  a supplied code snapshot, not arbitrary mutable state or Python closures.
+* Individual/joint TVD calibration requires exchangeable clean batches and fixed probe,
+  shot and backend context. A statistical alarm does not identify malicious intent.
+
+Statevectors allow up to 16 qubits; full operators and density matrices are capped at 8.
+Their exponential memory cost is explicit. Native sampling uses ChaCha8 with recorded
+seeds for reproducibility; never derive production keys/nonces from experiment seeds.
+The exact noisy engine implements the declared local depolarizing/readout channel, not
+an IBM hardware calibration. Native gate optimization is not Qiskit's transpiler.
+
+## Wire format v1
+
+Unsigned integers are little-endian. Text is u64 UTF-8 byte length then bytes. Digests
+are lowercase SHA-256 hex. Angles use little-endian IEEE binary64, canonical positive
+zero for either signed zero, and no NaN/infinity.
+
+Circuit: ASCII `RASQP-CIRCUIT`, bytes 0 and 1, u8 width, u64 gate count, then each gate:
+u8 opcode, u8 arity, arity u8 qubits, f64 angle. Opcodes 0–6 are x,h,z,rx,ry,rz,cx.
+
+Response: ASCII `RASQP-RESPONSE`, bytes 0 and 1, length-prefixed job_id, nonce,
+circuit_digest, backend, artifact_digest, context_digest, then u8 width, u64 shots,
+u64 count length, each u64 count. HMAC-SHA256 covers all bytes.
+
+Frozen vectors: `tests/fixtures/wire_vectors.json` and
+`tests/fixtures/response_vector.json`. Legacy Python
+JSON digests remain unchanged for archival reproduction and are incompatible with v1.
+No implicit downgrade or dual acceptance exists.
+
+## CI and GitHub releases
+
+CI checks formatting, Clippy, tests, native release builds, docs and source packaging on
+Linux/Windows/macOS. Linux runs all native experiments under seccomp. Comparisons with
+Qiskit/Cirq and the original Python tests are local checks using the ignored archive;
+see [legacy instructions](../legacy/README.txt).
+The native runtime, lab and package generation do not require Python.
+
+The tag workflow calls CI, checks version/platform agreement, creates native `.tar.gz`
+archives with SDK source and SHA-256 files, then publishes a GitHub prerelease. It uses
+the repository's `GITHUB_TOKEN`; only the publish job has contents write. There
+is no public registry upload or paid artifact-attestation dependency. Checksums and build
+metadata are not independent cryptographic signing.
+
+For a local archive:
+
+```sh
+cargo build --locked --release
+cargo package --locked --allow-dirty
+target/release/rasqp-release
+```
+
+CI uses a clean checkout without `--allow-dirty`. Push a tag matching Cargo.toml
+(`v0.3.0`) to the configured GitHub repository to invoke the prerelease workflow.
+The terminal interface is documented in `TUI_GUIDE.txt`; build prerequisites
+are in the root `REQUIREMENTS.txt`. See GitHub Actions for remote job status.
+
+A compromised supervisor/key store/consumer remains outside the guarantee. Rust memory
+safety does not prevent a privileged attacker from replacing binaries or bypassing checks.
+No QPU execution, quantum authentication protocol, blind computation, machine-code
+attestation or quantum advantage is claimed.

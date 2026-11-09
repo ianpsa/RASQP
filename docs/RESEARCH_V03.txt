@@ -1,0 +1,135 @@
+# Research extensions and Rust migration evidence
+
+This work follows the draft RASQP paper's bounded hypothesis: layered controls may
+mitigate specified hybrid-workflow threats; quantum properties do not eliminate classical
+tampering. The PDF was read but not edited. Earlier H01–H38 claims and data were retained.
+
+## Implementation outcome
+
+The project now has a Rust SDK, native scientific engines, experiment runners, reporting,
+Linux filtering and release packaging. A persistent ledger, versioned encoding, circuit
+and artifact/context binding, resource limits and individual/joint result gates are
+implemented. The migration is functional, with explicit differences in RNG, compiler
+optimization and language-specific hook inspection: see `MIGRATION_MATRIX.txt`.
+
+The original Python regression suite passed, along with new portfolio tests. Rust
+integration tests compare wire vectors, HMAC, process races, normalization/trace/alignment,
+policy decisions, statistics, OpenQASM and native simulators against Python/Qiskit/Cirq.
+Sixty random mixed-gate circuits (1–4 qubits) were checked against both independent ideal
+engines and Aer's noisy quantum probabilities with an independent readout matrix.
+Tolerances are 1e-12 ideal and 1e-11 noisy. These finite tests are not a simulator proof.
+
+## Versioned studies and negative results
+
+`EXTENSION_PROTOCOL_V03.json` was fixed before its first run. The failed noise conditions
+motivated `EXTENSION_PROTOCOL_V04.json`, fixed before that follow-up. The follow-up is
+exploratory and data-informed, not an externally preregistered independent confirmation.
+No threshold in v03 was changed after seeing its results. Native execution has its own
+`NATIVE_PROTOCOL_V1.json`, different random streams and explicitly named backend changes.
+
+| Hypothesis | Tested extension | Outcome and boundary |
+|---|---|---|
+| H39 | Atomic durable replay claims | One accepted submission in a 16-process race, none after restart; database deletion/rollback excluded. |
+| H40 | Bind classical artifacts, circuit, context and response | Declared substitutions withhold counts; stale calibration is inconclusive. A signer falsely claiming the old executable hash remains a counterexample. |
+| H41 | Training-selected complementary probes at equal evaluation shots | Strong coverage improved, but the first protocol failed the noisy equivalent-variant false-alarm criterion. Retained failure. |
+| H42 | Joint maximum-score calibration versus per-probe OR | Reduces false alarms in observed noisy runs. Python v03 failed its overall criterion; the separate native stream passed. A single calibration draw is not a conditional FPR guarantee. |
+| H43 | Compose orthogonal controls without partial result release | Circuit/resource, transcript, artifact and behavioral fixtures are withheld; batch gate tests forbid partial release. Integration evidence, not universal superiority or a new cryptographic protocol. |
+| H44 | Context-conditioned portfolio contract | Follow-up candidate met its fixed strong-attack and clean-FPR criteria in all six noise/approved-variant conditions. Ablations do not show that noisy references are necessary. |
+
+## Native measured results
+
+The full run is recorded in `results/native-v1/`: **129,200 circuit instances and
+77,388,288 sampled shots**, including references and calibrations. It contains **24,192
+main-batch decisions**, **6,480 Trojan decisions**, 360 normalization variants with
+360 preserved operators/recognized normal forms, and 390/390 restored mutation reversals.
+The Python atlas had 396 interventions: native benchmark RNG changes the lengths of
+basis circuits and hence the number of distinct insertion positions. This difference
+is documented, not silently described as identical data.
+
+The original Python batches were rerun separately in `results/v03-rerun/`, including
+29,419 circuit instances and 20,747,776 shots for the original hypothesis suite. Original
+files under `results/` and the earlier reports were not overwritten.
+
+For native H41, the selected portfolio was 0/Z, 1/Z and +/X, trained only on visible
+two-qubit X, Z and CX mutations. Three-qubit holdouts include X, Z, CX, XZ and CXZ:
+
+| Condition | Strong attacks detected | Clean alarms | Equivalent X-pair alarms |
+|---|---:|---:|---:|
+| Ideal, joint portfolio | 128/128 for each family | 0/128 | 0/128 |
+| Noise 0.005, joint portfolio | 128/128 for each family | 4/128 | 14/128 |
+| Noise 0.005, naïve OR | 128/128 for each family | 11/128 | 34/128 |
+
+The selected single i/Y probe missed the combined XZ mutation in the ideal condition
+(0/128); the portfolio caught 128/128. This is a fixture-specific benefit of complementary
+observability, not evidence that portfolios universally dominate single probes. The
+equivalent-variant result still fails H41's FPR rule.
+
+H44 uses four-qubit holdouts, two independently approved raw variants (identity and
+X3-X3), 511 calibration batches, 8192 reference shots per probe and 768 evaluation shots
+per decision, with a candidate alpha of 0.01. References and variant approval are trusted
+inputs; the runtime does not choose a calibration based on a hidden attack label.
+
+| Noise | Approved variant | Clean alarms / 256 | Strong detections | Weak RZ(0.12) / 256 |
+|---|---|---:|---:|---:|
+| 0 | Identity | 0 | 256/256 each | 147 |
+| 0 | X3-X3 | 0 | 256/256 each | 143 |
+| 0.005 | Identity | 2 | 256/256 each | 1 |
+| 0.005 | X3-X3 | 1 | 256/256 each | 3 |
+| 0.01 | Identity | 2 | 256/256 each | 14 |
+| 0.01 | X3-X3 | 3 | 256/256 each | 5 |
+
+Each condition meets Wilson95 lower TPR ≥90% for every strong family and upper FPR ≤10%.
+The ideal-reference alpha=0.01 ablation also meets the criteria and sometimes has fewer
+clean alarms. Therefore the data support feasibility of the configured contract, **not
+superiority of noisy-reference acquisition**. The larger calibration budget and stricter
+alpha prevent attributing the cross-study improvement to one component.
+
+At noise 0.005/0.01, weak rotations are mostly missed. Benign drift causes 256/256 alarms
+in all H44 conditions; it must trigger quarantine/recalibration rather than a malicious
+label. A provider returning the known reference distribution is accepted in almost all
+cases: the observed alarms are at roughly clean false-alarm rates, not evidence of
+successful detection of fabrication.
+
+## Candidate contribution to the paper
+
+The defensible RASQP-specific concept is an **execution-context assurance contract**:
+an independently approved raw circuit and classical artifact manifest, bounded resource
+cost, versioned probe/calibration policy, authenticated request/result association and
+durable nonce history jointly determine whether a trusted supervisor releases results.
+The complementary-probe experiment illustrates why a composition can expose a combined
+mutation that a single training-optimal probe misses; the failures show why the contract
+must retain the raw implementation and calibration context.
+
+This is an implemented architectural and experimental contribution candidate. It is not
+yet an established new scientific algorithm. Pauli checks and quantum metamorphic tests
+already have substantial prior art: [Gonzales et al., Pauli Check Sandwiching](https://arxiv.org/abs/2206.00215)
+and [Paltenghi and Pradel, MorphQ](https://arxiv.org/abs/2206.01111). A recent directly related
+work is [Testing and Verification of Quantum Compilers through Assurance Contracts and Evidence](https://arxiv.org/abs/2610.00255).
+These sources preclude claiming that checks, metamorphic relations or assurance contracts
+were invented here. The novelty assessment needs a systematic comparison with such work.
+
+Suggested paper wording: “In a bounded simulation study, a context-conditioned portfolio
+combined with classical binding and replay controls met predefined detection and clean
+false-alarm criteria for specified mutations. Weak perturbations, benign drift and
+adaptive fabricated responses reveal remaining limitations. The results demonstrate
+prototype feasibility rather than general security, hardware efficacy or quantum advantage.”
+
+## Reproduction and interpretation
+
+```sh
+cargo build --locked --release
+target/release/rasqp-lab all results/reproduction-native
+```
+
+Use `all` to reproduce the archived native stream: standalone modes start from the base
+seed rather than consuming earlier studies' samples. Every sample's seed and circuit is
+logged. Wilson intervals are per condition, not simultaneous population guarantees.
+McNemar comparisons use the declared pairing and Holm families. Runtime property tests
+do not use p-values. Matrix oracles and exact probabilities are classical computation,
+not free quantum resources. Cache reuse affects local simulator timing; no QPU latency,
+queue, financial cost or speedup can be inferred.
+
+The recorded local validation was on Linux. CI additionally targets Windows and macOS.
+Current delivery workflows are configured at https://github.com/ianpsa/RASQP; consult
+GitHub Actions for remote validation status. Delivery changes do not alter frozen criteria
+or the archived observations described above.

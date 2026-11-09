@@ -27,6 +27,7 @@ fn run() -> Result<()> {
     let crate_file = root.join(format!("target/package/rasqp-{version}.crate"));
     let docs = [
         "README.txt",
+        "REQUIREMENTS.txt",
         "docs/RUST_SDK.txt",
         "docs/RESEARCH_V03.txt",
         "docs/MIGRATION_MATRIX.txt",
@@ -37,8 +38,17 @@ fn run() -> Result<()> {
             root.join(format!("target/release/rasqp-lab{suffix}")),
             format!("rasqp-lab{suffix}"),
         ),
+        (
+            root.join(format!("target/release/rasqp-tui{suffix}")),
+            format!("rasqp-tui{suffix}"),
+        ),
+        (
+            root.join(format!("target/release/rasqp-external{suffix}")),
+            format!("rasqp-external{suffix}"),
+        ),
         (crate_file, format!("rasqp-{version}.crate")),
     ];
+    inputs.push((root.join("docs/TUI_GUIDE.txt"), "docs/TUI_GUIDE.txt".into()));
     inputs.extend(docs.iter().map(|p| (root.join(p), p.to_string())));
     for (path, _) in &inputs {
         if !path.is_file() {
