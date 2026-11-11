@@ -70,6 +70,6 @@ comparable without rewriting historical evidence.
    an explicit unconfined laboratory flag; runtime verification remains cross-platform.
 
 The original Python tests remain available as local external validation; see
-[legacy instructions](../legacy/README.txt). CI uses native Rust checks because the Python
+[legacy instructions](../legacy/README.md). CI uses native Rust checks because the Python
 archive is ignored and absent from fresh checkouts. GitHub is the configured source and prerelease destination. crates.io publication
 is disabled; the native TUI does not substitute a remote IBM execution adapter.

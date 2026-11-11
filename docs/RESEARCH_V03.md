@@ -10,7 +10,7 @@ The project now has a Rust SDK, native scientific engines, experiment runners, r
 Linux filtering and release packaging. A persistent ledger, versioned encoding, circuit
 and artifact/context binding, resource limits and individual/joint result gates are
 implemented. The migration is functional, with explicit differences in RNG, compiler
-optimization and language-specific hook inspection: see `MIGRATION_MATRIX.txt`.
+optimization and language-specific hook inspection: see the [migration map](MIGRATION_MATRIX.md).
 
 The original Python regression suite passed, along with new portfolio tests. Rust
 integration tests compare wire vectors, HMAC, process races, normalization/trace/alignment,

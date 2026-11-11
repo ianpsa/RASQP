@@ -6,7 +6,24 @@ rust-version = "1.98"
 description = "Experimental assurance SDK for hybrid classical-quantum workflows"
 readme = "README.md"
 publish = false
-include = ["/src/**", "/examples/**", "/tests/*.rs", "/tests/fixtures/*.json", "/Cargo.toml", "/Cargo.lock", "/rust-toolchain.toml", "/README.md", "/REQUIREMENTS.txt", "/docs/*.txt", "/docs/*.json", "/legacy/README.txt"]
+include = [
+    "/src/**",
+    "/examples/**",
+    "/tests/*.rs",
+    "/tests/fixtures/*.json",
+    "/Cargo.toml",
+    "/Cargo.lock",
+    "/rust-toolchain.toml",
+    "/README.md",
+    "/REQUIREMENTS.md",
+    "/docs/LOCAL_VALIDATION.md",
+    "/docs/MIGRATION_MATRIX.md",
+    "/docs/RESEARCH_V03.md",
+    "/docs/RUST_SDK.md",
+    "/docs/TUI_GUIDE.md",
+    "/docs/*.json",
+    "/legacy/README.md",
+]
 
 [lib]
 path = "src/lib.rs"

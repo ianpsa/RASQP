@@ -61,5 +61,5 @@ jobs:
       - name: Offline calibrated noise, logical mappings, IBM primitive interoperability and QPU budget limits
         run: python -m pytest research/ibm/test_ibm.py -q
   # No IBM credentials, physical submissions or paid service calls run in CI.
-  # Python reference parity is a local check documented in legacy/README.txt.
+  # Python reference parity is a local check documented in legacy/README.md.
   # Its ignored source archive is intentionally unavailable in a fresh checkout.

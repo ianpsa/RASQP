@@ -1,18 +1,21 @@
-Local validation and release delivery
-====================================
+# Local validation and release delivery
 
-Run the Linux checks without GitHub Actions
-------------------------------------------
+## Run the Linux checks without GitHub Actions
+
 From the repository root, prepare separate Python 3.12 environments once:
 
-    python3.12 -m venv .venv
-    .venv/bin/python -m pip install -r research/wildisley/requirements.lock.txt
-    python3.12 -m venv .venv-ibm
-    .venv-ibm/bin/python -m pip install -r research/ibm/requirements.lock.txt
+```sh
+python3.12 -m venv .venv
+.venv/bin/python -m pip install -r research/wildisley/requirements.lock.txt
+python3.12 -m venv .venv-ibm
+.venv-ibm/bin/python -m pip install -r research/ibm/requirements.lock.txt
+```
 
 Then, with a clean tracked working tree:
 
-    bash scripts/check-local.sh
+```sh
+bash scripts/check-local.sh
+```
 
 This runs formatting, Clippy, all Rust test targets, debug/release builds,
 API documentation, source-package verification, the full native study under
@@ -26,25 +29,29 @@ paths with RASQP_EXTERNAL_PYTHON and RASQP_IBM_PYTHON if needed. Source-package
 verification requires committed source changes. The host must allow seccomp.
 These are Linux checks; Windows and macOS require separate validation.
 
-Build and publish the current platform package
----------------------------------------------
+## Build and publish the current platform package
+
 After validation, package the committed source and record its commit:
 
-    GITHUB_SHA="$(git rev-parse HEAD)" target/release/rasqp-release
-    cd dist
-    sha256sum -c rasqp-v0.3.1-linux-x86_64.tar.gz.sha256
-    sha256sum -c rasqp-tui-v0.3.1-linux-x86_64.sha256
-    cd ..
+```sh
+GITHUB_SHA="$(git rev-parse HEAD)" target/release/rasqp-release
+cd dist
+sha256sum -c rasqp-v0.3.1-linux-x86_64.tar.gz.sha256
+sha256sum -c rasqp-tui-v0.3.1-linux-x86_64.sha256
+cd ..
+```
 
 The version-matching annotated tag must point to that same commit:
 
-    git tag -a v0.3.1 -m 'RASQP v0.3.1: local validation and release delivery'
-    git push origin trunk refs/tags/v0.3.1
-    gh auth login
-    gh release create v0.3.1 \
-        dist/rasqp*-v0.3.1-linux-x86_64* \
-        --repo ianpsa/RASQP --verify-tag --prerelease \
-        --title 'RASQP v0.3.1 (research SDK)' --generate-notes
+```sh
+git tag -a v0.3.1 -m 'RASQP v0.3.1: local validation and release delivery'
+git push origin trunk refs/tags/v0.3.1
+gh auth login
+gh release create v0.3.1 \
+    dist/rasqp*-v0.3.1-linux-x86_64* \
+    --repo ianpsa/RASQP --verify-tag --prerelease \
+    --title 'RASQP v0.3.1 (research SDK)' --generate-notes
+```
 
 Use the current Cargo version for subsequent releases. Never move an existing
 release tag. The packager emits the full archive plus standalone rasqp,
@@ -53,12 +60,11 @@ Standalone asset names include the version and platform, plus .exe on Windows.
 On Linux/macOS, mark a directly downloaded file executable with chmod +x
 before running it; the archive already preserves executable permissions.
 A local x86_64 Linux build produces assets for Linux x86_64. They are uploaded
-directly with gh and do not
-depend on an Actions run. Existing hosted workflows remain available once
+directly with gh and do not depend on an Actions run. Existing hosted workflows remain available once
 the account's billing lock is resolved; local delivery does not clear it.
 
-Repository scope
-----------------
+## Repository scope
+
 Version code, build configuration, implementation/reproduction guides,
 experiment protocols, audit tools, and archived observations. Manuscripts,
 reference papers and presentations remain local and are ignored by Git.

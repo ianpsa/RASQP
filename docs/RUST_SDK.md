@@ -3,7 +3,7 @@
 The library, native simulator, research runners, reports, Linux sandbox and release
 packager run in Rust. Python/Qiskit/Cirq remain independent reference implementations
 and parity tests; no Python process is required by a Rust SDK or laboratory execution.
-See `MIGRATION_MATRIX.txt` for explicit language/backend differences.
+See the [migration map](MIGRATION_MATRIX.md) for explicit language/backend differences.
 
 ## Build and use
 
@@ -38,7 +38,7 @@ Rust modules are grouped by responsibility:
 
 The SDK can be consumed as a local path dependency or extracted `.crate` source package.
 The configured source repository is https://github.com/ianpsa/RASQP;
-REQUIREMENTS.txt documents build and terminal prerequisites. `publish=false` prevents accidental public crates.io publication. No project
+[Requirements](../REQUIREMENTS.md) documents build and terminal prerequisites. `publish=false` prevents accidental public crates.io publication. No project
 redistribution license was invented. Rust ABI stability, a C ABI and a Python wheel are
 not promised. The optional Python bridge is retained locally in the ignored
 `legacy/python/src/rasqp/rust_sdk.py` archive.
@@ -168,7 +168,7 @@ No implicit downgrade or dual acceptance exists.
 CI checks formatting, Clippy, tests, native release builds, docs and source packaging on
 Linux/Windows/macOS. Linux runs all native experiments under seccomp. Comparisons with
 Qiskit/Cirq and the original Python tests are local checks using the ignored archive;
-see [legacy instructions](../legacy/README.txt).
+see [legacy instructions](../legacy/README.md).
 The native runtime, lab and package generation do not require Python.
 
 The tag workflow calls CI, checks version/platform agreement, creates native `.tar.gz`
@@ -187,8 +187,8 @@ target/release/rasqp-release
 
 CI uses a clean checkout without `--allow-dirty`. Push a tag matching Cargo.toml
 (`v0.3.0`) to the configured GitHub repository to invoke the prerelease workflow.
-The terminal interface is documented in `TUI_GUIDE.txt`; build prerequisites
-are in the root `REQUIREMENTS.txt`. See GitHub Actions for remote job status.
+The terminal interface is documented in `TUI_GUIDE.md`; build prerequisites
+are in the root `REQUIREMENTS.md`. See GitHub Actions for remote job status.
 
 A compromised supervisor/key store/consumer remains outside the guarantee. Rust memory
 safety does not prevent a privileged attacker from replacing binaries or bypassing checks.

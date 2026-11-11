@@ -59,9 +59,17 @@ Thumbs.db
 *.potx
 *.odp
 
-# Local documentation copies retained during the README migration.
+# Local documentation copies retained during the Markdown migration.
 /README.txt
 /README.local.md
+/.local-docs/
+/REQUIREMENTS.txt
+/docs/LOCAL_VALIDATION.txt
+/docs/MIGRATION_MATRIX.txt
+/docs/RESEARCH_V03.txt
+/docs/RUST_SDK.txt
+/docs/TUI_GUIDE.txt
+/legacy/README.txt
 
 # LaTeX build outputs.
 /article/build/

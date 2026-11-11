@@ -143,7 +143,7 @@ Each run gets a unique directory under `results/runs/tui/` containing:
 - `native_protocol.json`: the exact native protocol;
 - `native_trials.jsonl`: raw seeded observations;
 - `native_summary.json`: study results and measured simulation cost;
-- `native_report.txt`: generated report;
+- `native_report.md`: generated report;
 - `runner.log`: child progress and errors.
 
 These runs are ignored by Git and do not overwrite published evidence. H41,

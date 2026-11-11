@@ -7,6 +7,9 @@ classical artifact fingerprints, signed request/result binding, replay controls,
 and calibrated comparisons of measurement distributions. It is a research
 prototype with explicit trust boundaries and negative findings.
 
+Browse the [documentation](docs/README.md) and [experiment results](results/README.md)
+for implementation guides, reproduction commands, protocols, and readable reports.
+
 ## Quick start
 
 ### Download the Linux executable
@@ -37,7 +40,7 @@ cargo build --locked --release
 cargo run --locked --release --bin rasqp-tui
 ```
 
-See [requirements and installation](REQUIREMENTS.txt) for platform prerequisites.
+See [requirements and installation](REQUIREMENTS.md) for platform prerequisites.
 
 ## Interactive notebook
 
@@ -83,7 +86,7 @@ demonstrations are separate from frozen research runs. The native summary retain
 H41's failed criterion and H42/H44's bounded screening outcomes; registry IDs are
 not presented as independently validated security claims.
 
-See the [terminal guide](docs/TUI_GUIDE.txt) for more detail.
+See the [terminal guide](docs/TUI_GUIDE.md) for more detail.
 
 ## SDK and command-line tools
 
@@ -132,7 +135,7 @@ cargo package --locked
 
 For the full local Linux CI equivalent, including native experiments and offline
 Python harnesses, prepare the environments described in the
-[local validation guide](docs/LOCAL_VALIDATION.txt), then run:
+[local validation guide](docs/LOCAL_VALIDATION.md), then run:
 
 ```sh
 bash scripts/check-local.sh
@@ -160,8 +163,8 @@ The native full study records **129,200 circuit instances** and **77,388,288 sam
 shots**. Negative findings and frozen criteria remain part of the evidence.
 Terminal illustrations explain mechanisms; measured plots use actual SDK output.
 
-- [SDK reference](docs/RUST_SDK.txt)
-- [Research methods, results, and limits](docs/RESEARCH_V03.txt)
-- [Python-to-Rust migration and implementation differences](docs/MIGRATION_MATRIX.txt)
+- [SDK reference](docs/RUST_SDK.md)
+- [Research methods, results, and limits](docs/RESEARCH_V03.md)
+- [Python-to-Rust migration and implementation differences](docs/MIGRATION_MATRIX.md)
 - [Frozen protocols](docs/)
 - [Archived results](results/)
