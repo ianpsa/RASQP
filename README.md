@@ -11,17 +11,20 @@ prototype with explicit trust boundaries and negative findings.
 
 ### Download the Linux executable
 
-The [v0.3.1 Linux x86_64 release](https://github.com/ianpsa/RASQP/releases/tag/v0.3.1)
-contains compiled executables, the SDK source package, documentation, a checksum,
-and a validation log. Extract the archive and start the interactive notebook:
+Download the [standalone Linux x86_64 notebook](https://github.com/ianpsa/RASQP/releases/download/v0.3.1/rasqp-tui-v0.3.1-linux-x86_64),
+then make it executable and launch it:
 
 ```sh
-tar -xzf rasqp-v0.3.1-linux-x86_64.tar.gz
-./rasqp-tui
+chmod +x rasqp-tui-v0.3.1-linux-x86_64
+./rasqp-tui-v0.3.1-linux-x86_64
 ```
 
 The downloaded executables do not require Rust or Python. This release provides
 Linux x86_64 binaries; Windows and macOS builds require separate validation.
+
+The [release page](https://github.com/ianpsa/RASQP/releases/tag/v0.3.1) also offers
+the other standalone command-line tools, SHA-256 checksums, a validation log,
+and a full archive with executables, SDK source, and documentation.
 
 ### Build from source
 
@@ -138,6 +141,8 @@ bash scripts/check-local.sh
 The GitHub release workflow calls CI before building Linux x86_64, Windows x86_64,
 and macOS aarch64 archives. A version-matching tag triggers a prerelease. Archives
 contain native executables, SDK source, documentation, checksums, and build metadata.
+Each executable is also published as a separate download with its own checksum;
+asset names identify the version, operating system, and architecture.
 Cargo registry publication is disabled with `publish = false`.
 
 When Actions is unavailable, the local validation guide explains direct release

@@ -27,7 +27,7 @@ jobs:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
       - run: cargo build --locked --release
       - run: cargo package --locked
-      - name: Package executable, SDK source, documentation, and checksums
+      - name: Package standalone executables, SDK archive, documentation, and checksums
         env:
           RELEASE_TAG: ${{ github.ref_name }}
           RELEASE_PLATFORM: ${{ matrix.platform }}

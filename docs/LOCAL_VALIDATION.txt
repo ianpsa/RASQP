@@ -33,6 +33,7 @@ After validation, package the committed source and record its commit:
     GITHUB_SHA="$(git rev-parse HEAD)" target/release/rasqp-release
     cd dist
     sha256sum -c rasqp-v0.3.1-linux-x86_64.tar.gz.sha256
+    sha256sum -c rasqp-tui-v0.3.1-linux-x86_64.sha256
     cd ..
 
 The version-matching annotated tag must point to that same commit:
@@ -41,14 +42,18 @@ The version-matching annotated tag must point to that same commit:
     git push origin trunk refs/tags/v0.3.1
     gh auth login
     gh release create v0.3.1 \
-        dist/rasqp-v0.3.1-linux-x86_64.tar.gz \
-        dist/rasqp-v0.3.1-linux-x86_64.tar.gz.sha256 \
+        dist/rasqp*-v0.3.1-linux-x86_64* \
         --repo ianpsa/RASQP --verify-tag --prerelease \
         --title 'RASQP v0.3.1 (research SDK)' --generate-notes
 
 Use the current Cargo version for subsequent releases. Never move an existing
-release tag. A local Linux build produces only a Linux x86_64 archive on an
-x86_64 Linux host. Release assets are uploaded directly with gh and do not
+release tag. The packager emits the full archive plus standalone rasqp,
+rasqp-tui, rasqp-lab and rasqp-external executables, each with a .sha256 file.
+Standalone asset names include the version and platform, plus .exe on Windows.
+On Linux/macOS, mark a directly downloaded file executable with chmod +x
+before running it; the archive already preserves executable permissions.
+A local x86_64 Linux build produces assets for Linux x86_64. They are uploaded
+directly with gh and do not
 depend on an Actions run. Existing hosted workflows remain available once
 the account's billing lock is resolved; local delivery does not clear it.
 
