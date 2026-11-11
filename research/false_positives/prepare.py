@@ -18,7 +18,7 @@ from qiskit.quantum_info import Operator, Statevector
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
 from research.web_variants.prepare import detector_hashes
-from research.wildisley.prepare import lower_qasm
+from research.external_dataset.prepare import lower_qasm
 
 PROTOCOL = ROOT / 'docs/FALSE_POSITIVE_PROTOCOL_V1.json'
 
@@ -218,7 +218,7 @@ def prepare(archives, cache, output):
         raise ValueError('prepared output must be fresh')
     sources = {name: extract(path, cache, protocol['source'][name]) for name, path in archives.items()}
     previous_hashes = set()
-    previous_inventory = ROOT/'results/wildisley-v1/inventory.jsonl.gz'
+    previous_inventory = ROOT/'results/external-dataset-v1/inventory.jsonl.gz'
     if previous_inventory.exists():
         with gzip.open(previous_inventory, 'rt') as handle:
             previous_hashes = {json.loads(line)['sha256'] for line in handle}

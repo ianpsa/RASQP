@@ -9,10 +9,10 @@ import pytest
 from qiskit import QuantumCircuit
 from qiskit.quantum_info import Operator
 
-from research.wildisley.prepare import lower_qasm, source_root
-from research.wildisley.analyze import classification, quantile
+from research.external_dataset.prepare import lower_qasm, source_root
+from research.external_dataset.analyze import classification, quantile
 
-PROTOCOL = json.loads((Path(__file__).resolve().parents[2]/"docs/WILDISLEY_PROTOCOL_V1.json").read_text())
+PROTOCOL = json.loads((Path(__file__).resolve().parents[2]/"docs/EXTERNAL_DATASET_PROTOCOL_V1.json").read_text())
 
 
 def write_qasm(tmp_path, body):

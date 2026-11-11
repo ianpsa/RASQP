@@ -110,7 +110,7 @@ fn run() -> Result<()> {
     let protocol_storage = if args.len() == 4 {
         std::fs::read(&args[3])?
     } else {
-        include_bytes!("../docs/WILDISLEY_PROTOCOL_V1.json").to_vec()
+        include_bytes!("../docs/EXTERNAL_DATASET_PROTOCOL_V1.json").to_vec()
     };
     let protocol_bytes = protocol_storage.as_slice();
     let protocol: Value = serde_json::from_slice(protocol_bytes)?;

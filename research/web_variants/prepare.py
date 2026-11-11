@@ -24,7 +24,7 @@ def detector_hashes():
     # Retain archived detector identity labels while reading the current source tree.
     # Existing preparation manifests and hardware plans use these frozen keys.
     hashes = {'rust/'+name:sha(ROOT/'src'/name) for name in files}
-    archived = json.loads((ROOT/'results/wildisley-v1/validation_manifest.json').read_text())['source_files_sha256']
+    archived = json.loads((ROOT/'results/external-dataset-v1/validation_manifest.json').read_text())['source_files_sha256']
     assert all(archived[name]==value for name,value in hashes.items()), 'detector changed since Wildisley evaluation'
     return hashes
 

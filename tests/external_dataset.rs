@@ -24,7 +24,7 @@ fn prepare(path: &std::path::Path) {
     std::fs::write(
         path.join("preparation.json"),
         json!({
-        "protocol_sha256":artifact_digest(include_bytes!("../docs/WILDISLEY_PROTOCOL_V1.json")),
+        "protocol_sha256":artifact_digest(include_bytes!("../docs/EXTERNAL_DATASET_PROTOCOL_V1.json")),
         "input_sha256":artifact_digest(input.as_bytes())})
         .to_string(),
     )

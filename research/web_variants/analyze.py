@@ -10,7 +10,7 @@ import numpy as np
 
 ROOT=Path(__file__).resolve().parents[2]
 sys.path.insert(0,str(ROOT))
-from research.wildisley.analyze import audit_raw
+from research.external_dataset.analyze import audit_raw
 from research.web_variants.prepare import detector_hashes
 
 

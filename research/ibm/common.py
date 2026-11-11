@@ -18,8 +18,8 @@ from qiskit_aer.noise import NoiseModel, RelaxationNoisePass
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
-from research.wildisley.prepare import lower_qasm
-from research.wildisley.analyze import quantile, wilson
+from research.external_dataset.prepare import lower_qasm
+from research.external_dataset.analyze import quantile, wilson
 from research.web_variants.prepare import detector_hashes
 
 

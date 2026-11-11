@@ -75,8 +75,8 @@ def validate(prepared, output, cache):
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser()
-    parser.add_argument('--prepared',type=Path,default=ROOT/'results/runs/wildisley-input')
-    parser.add_argument('--output',type=Path,default=ROOT/'results/wildisley-v1')
-    parser.add_argument('--cache',type=Path,default=ROOT/'results/runs/wildisley-source')
+    parser.add_argument('--prepared',type=Path,default=ROOT/'results/runs/external-dataset-input')
+    parser.add_argument('--output',type=Path,default=ROOT/'results/external-dataset-v1')
+    parser.add_argument('--cache',type=Path,default=ROOT/'results/runs/external-dataset-source')
     args=parser.parse_args()
     validate(args.prepared,args.output,args.cache)

@@ -8,7 +8,7 @@ from pathlib import Path
 import tarfile
 
 ROOT = Path(__file__).resolve().parents[2]
-PROTOCOL = ROOT / "docs/WILDISLEY_PROTOCOL_V1.json"
+PROTOCOL = ROOT / "docs/EXTERNAL_DATASET_PROTOCOL_V1.json"
 
 
 def sha(path):
@@ -167,7 +167,7 @@ def prepare(archive, cache, output):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--archive", type=Path, required=True)
-    parser.add_argument("--cache", type=Path, default=ROOT / "results/runs/wildisley-source")
-    parser.add_argument("--output", type=Path, default=ROOT / "results/runs/wildisley-input")
+    parser.add_argument("--cache", type=Path, default=ROOT / "results/runs/external-dataset-source")
+    parser.add_argument("--output", type=Path, default=ROOT / "results/runs/external-dataset-input")
     args = parser.parse_args()
     prepare(args.archive, args.cache, args.output)

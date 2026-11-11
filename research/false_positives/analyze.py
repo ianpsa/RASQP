@@ -11,7 +11,7 @@ import numpy as np
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
 from research.false_positives.prepare import detector_hashes, sha
-from research.wildisley.analyze import audit_raw
+from research.external_dataset.analyze import audit_raw
 
 
 def category(group, row):
@@ -114,7 +114,7 @@ def analyze(prepared, output):
         f"Scanned {sum(preparation['inventory_counts'].values())} source QASM files. Exclusions: {preparation['exclusions']}. The inventory also retains optional compiler rewrites that failed the strict operator check; an excluded rewrite never excludes its eligible original. Compiler output wire permutations are explicitly restored before comparing operators and submitting native gates.", '',
         f"{preparation['byte_identical_wildisley_eligible']} eligible source files are byte-identical to previously inspected Wildisley artifacts. Repositories contain related programs and pretranspiled counterparts; treat counts as a descriptive benchmark, not independent new programs or an unseen-population guarantee. All per-context results are retained; macro averages do not rescue a failing context.", '',
         f"Independently reconstructed {counters['decisions_checked']:,} method decisions and all thresholds from raw samples. Compared {comparisons:,} ideal probe distances with Qiskit; maximum absolute difference {max_error:.3g}. Cost: {summary['cost']['shots']:,} simulated shots, zero QPU shots. These are SDK component tests; no full-runtime release rate or physical device security guarantee is inferred.", '',
-        'Sources: [QASMBench](https://github.com/pnnl/QASMBench), [VeriQBench](https://github.com/Veri-Q/Benchmark), [QDoor author toy implementation](https://github.com/chuchengc/QDoor), [QDoor article](https://arxiv.org/abs/2307.09529). Pinned commits, archive hashes and source file hashes are in preparation_manifest.json. See research/false_positives/README.md for commands.'])
+        'Sources: [QASMBench](https://github.com/pnnl/QASMBench), [VeriQBench](https://github.com/Veri-Q/Benchmark), [QDoor author toy implementation](https://github.com/chuchengc/QDoor), [QDoor article](https://arxiv.org/abs/2307.09529). Pinned commits, archive hashes and source file hashes are in preparation_manifest.json. See [reproduction commands](https://github.com/ianpsa/RASQP#false-positive-controls).'])
     (output/'REPORT.md').write_text('\n'.join(report)+'\n')
     print(json.dumps({'matched_clean': matched, 'ideal_tvd_parity_error': max_error,
                      'verified': dict(counters), 'cost': summary['cost']}, indent=2))

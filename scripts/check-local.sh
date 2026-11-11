@@ -32,7 +32,7 @@ mkdir -p results/ci
 run_dir="$(mktemp -d "$PWD/results/ci/local.XXXXXX")"
 target/release/rasqp-lab all "$run_dir"
 "$external_python" -m pytest \
-    research/wildisley/test_dataset.py \
+    research/external_dataset/test_dataset.py \
     research/web_variants/test_variants.py \
     research/false_positives/test_controls.py -q
 "$ibm_python" -m pytest research/ibm/test_ibm.py -q
