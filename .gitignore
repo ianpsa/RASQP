@@ -59,6 +59,10 @@ Thumbs.db
 *.potx
 *.odp
 
+# Local documentation copies retained during the README migration.
+/README.txt
+/README.local.md
+
 # LaTeX build outputs.
 /article/build/
 /article/generated/

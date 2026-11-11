@@ -26,7 +26,7 @@ fn run() -> Result<()> {
     }
     let crate_file = root.join(format!("target/package/rasqp-{version}.crate"));
     let docs = [
-        "README.txt",
+        "README.md",
         "REQUIREMENTS.txt",
         "docs/RUST_SDK.txt",
         "docs/RESEARCH_V03.txt",
