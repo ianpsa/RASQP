@@ -80,7 +80,7 @@ def analyze(prepared, output):
         matched.append({'noise': noise, 'methods': {m: describe(selected, m) for m in protocol['methods']}})
     evidence = {'version': protocol['version'], 'preparation': preparation,
                 'protocol_sha256': sha(output/'protocol.json'), 'raw_sha256': sha(output/'native_trials.jsonl.gz'),
-                'source_code_sha256': {p: sha(ROOT/p) for p in ['rust/external_main.rs',
+                'source_code_sha256': {p: sha(ROOT/p) for p in ['src/external_main.rs',
                     'research/false_positives/prepare.py', 'research/false_positives/analyze.py']},
                 'cost': summary['cost'], 'raw_verified': dict(counters),
                 'ideal_probe_tvd_comparisons': comparisons, 'maximum_ideal_tvd_parity_error': max_error,

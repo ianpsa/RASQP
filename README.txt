@@ -13,6 +13,9 @@ SDK reference: docs/RUST_SDK.txt
 Research interpretation: docs/RESEARCH_V03.txt
 Migration map: docs/MIGRATION_MATRIX.txt
 
+The main implementation lives under src/; examples/, tests/, and research/
+contain usage examples, integration tests, and optional Python study harnesses.
+
 Start the interactive notebook
 ------------------------------
     cargo run --locked --release --bin rasqp-tui

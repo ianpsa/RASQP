@@ -108,7 +108,7 @@ exit 0: inspect `decision`. Input is limited to 8 MiB.
 
 Operations: digest, normalize, normalize_trace, inspect, score, joint_score, protect,
 protect_batch, probabilities, equivalent, qasm, align, select_probes, paired, holm, evaluate_joint.
-Schemas are the tagged `Command` enum in `rust/main.rs`; complete integration examples
+Schemas are the tagged `Command` enum in `src/main.rs`; complete integration examples
 are in the local `legacy/python/integration/test_sdk.py` archive. Protection operations take an explicit ledger pathname
 as the positional argument and read `RASQP_KEY_HEX` from the trusted caller's environment.
 The native service API avoids subprocess environment transport for secrets.

@@ -35,9 +35,15 @@ a claim that Python, Qiskit or Cirq themselves were rewritten.
 | scripts/package_release.py | rasqp-release, native archive/checksum generation |
 | rust_sdk.py | optional compatibility client only; native callers use structs/traits directly |
 
-Rust paths in the table are relative to `rust/`. `tests/native_research.rs`,
+Rust paths in the table are relative to `src/`. `tests/native_research.rs`,
 `tests/rust_runtime.rs`, and the local `legacy/python/integration/test_sdk.py` cover the
 migrated behavior. Shared wire vectors remain versioned in `tests/fixtures/`.
+
+The active implementation moved from `rust/` to `src/`. Archived results and
+checksum manifests retain the paths recorded at evaluation time. Detector
+identity checks read the corresponding files under `src/` while preserving
+the archived keys, so existing preparation manifests and hardware plans remain
+comparable without rewriting historical evidence.
 
 ## Intentional differences
 

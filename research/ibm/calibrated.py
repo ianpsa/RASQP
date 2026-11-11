@@ -109,7 +109,7 @@ def run(output):
     write_json(output/'summary.json',{'version':protocol['version'],'contexts':contexts,'outcomes':outcomes,
         'cost':{'sampled_shots':shot_total,'qpu_shots':0},'detector_sha256':frozen,
         'source_files_sha256':{p:sha(ROOT/p) for p in ['research/ibm/common.py','research/ibm/calibrated.py',
-                                                     'docs/IBM_CALIBRATION_PROTOCOL_V1.json','rust/main.rs']}})
+                                                     'docs/IBM_CALIBRATION_PROTOCOL_V1.json','src/main.rs']}})
     analyze(output)
 
 
