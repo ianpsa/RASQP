@@ -5,6 +5,17 @@ use std::{
     path::{Path, PathBuf},
     process::Command,
 };
+fn write_checksum(path: &Path) -> Result<()> {
+    let name = path
+        .file_name()
+        .and_then(|name| name.to_str())
+        .ok_or(Error::Invalid("release asset filename"))?;
+    std::fs::write(
+        path.with_file_name(format!("{name}.sha256")),
+        format!("{}  {name}\n", artifact_digest(&std::fs::read(path)?)),
+    )?;
+    Ok(())
+}
 fn run() -> Result<()> {
     let root = Path::new(env!("CARGO_MANIFEST_DIR"));
     let version = env!("CARGO_PKG_VERSION");
@@ -33,22 +44,17 @@ fn run() -> Result<()> {
         "docs/MIGRATION_MATRIX.txt",
         "docs/LOCAL_VALIDATION.txt",
     ];
-    let mut inputs: Vec<(PathBuf, String)> = vec![
-        (binary, format!("rasqp{suffix}")),
-        (
-            root.join(format!("target/release/rasqp-lab{suffix}")),
-            format!("rasqp-lab{suffix}"),
-        ),
-        (
-            root.join(format!("target/release/rasqp-tui{suffix}")),
-            format!("rasqp-tui{suffix}"),
-        ),
-        (
-            root.join(format!("target/release/rasqp-external{suffix}")),
-            format!("rasqp-external{suffix}"),
-        ),
-        (crate_file, format!("rasqp-{version}.crate")),
-    ];
+    let executables = ["rasqp", "rasqp-lab", "rasqp-tui", "rasqp-external"];
+    let mut inputs: Vec<(PathBuf, String)> = executables
+        .iter()
+        .map(|name| {
+            (
+                root.join(format!("target/release/{name}{suffix}")),
+                format!("{name}{suffix}"),
+            )
+        })
+        .collect();
+    inputs.push((crate_file, format!("rasqp-{version}.crate")));
     inputs.push((root.join("docs/TUI_GUIDE.txt"), "docs/TUI_GUIDE.txt".into()));
     inputs.extend(docs.iter().map(|p| (root.join(p), p.to_string())));
     for (path, _) in &inputs {
@@ -61,6 +67,15 @@ fn run() -> Result<()> {
     }
     let out = root.join("dist");
     std::fs::create_dir_all(&out)?;
+    for name in executables {
+        let standalone = out.join(format!("{name}-{tag}-{platform}{suffix}"));
+        std::fs::copy(
+            root.join(format!("target/release/{name}{suffix}")),
+            &standalone,
+        )?;
+        write_checksum(&standalone)?;
+        println!("{}", standalone.display());
+    }
     let filename = format!("rasqp-{tag}-{platform}.tar.gz");
     let archive = out.join(&filename);
     let gzip =
@@ -78,13 +93,7 @@ fn run() -> Result<()> {
     header.set_cksum();
     tar.append_data(&mut header, "build.json", metadata.as_slice())?;
     tar.into_inner()?.finish()?;
-    std::fs::write(
-        out.join(format!("{filename}.sha256")),
-        format!(
-            "{}  {filename}\n",
-            artifact_digest(&std::fs::read(&archive)?)
-        ),
-    )?;
+    write_checksum(&archive)?;
     println!("{}", archive.display());
     Ok(())
 }
