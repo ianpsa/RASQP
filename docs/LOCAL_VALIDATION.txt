@@ -1,0 +1,61 @@
+Local validation and release delivery
+====================================
+
+Run the Linux checks without GitHub Actions
+------------------------------------------
+From the repository root, prepare separate Python 3.12 environments once:
+
+    python3.12 -m venv .venv
+    .venv/bin/python -m pip install -r research/wildisley/requirements.lock.txt
+    python3.12 -m venv .venv-ibm
+    .venv-ibm/bin/python -m pip install -r research/ibm/requirements.lock.txt
+
+Then, with a clean tracked working tree:
+
+    bash scripts/check-local.sh
+
+This runs formatting, Clippy, all Rust test targets, debug/release builds,
+API documentation, source-package verification, the full native study under
+Linux seccomp, the external-dataset harness, and the offline IBM tests. It
+independently audits the archived native statistics. Fresh study output goes
+to a unique ignored results/ci/local.* directory; frozen results are preserved.
+It does not submit QPU jobs or require IBM credentials.
+
+Set RASQP_OFFLINE=1 to use cached Cargo dependencies. Override interpreter
+paths with RASQP_EXTERNAL_PYTHON and RASQP_IBM_PYTHON if needed. Source-package
+verification requires committed source changes. The host must allow seccomp.
+These are Linux checks; Windows and macOS require separate validation.
+
+Build and publish the current platform package
+---------------------------------------------
+After validation, package the committed source and record its commit:
+
+    GITHUB_SHA="$(git rev-parse HEAD)" target/release/rasqp-release
+    cd dist
+    sha256sum -c rasqp-v0.3.1-linux-x86_64.tar.gz.sha256
+    cd ..
+
+The version-matching annotated tag must point to that same commit:
+
+    git tag -a v0.3.1 -m 'RASQP v0.3.1: local validation and release delivery'
+    git push origin trunk refs/tags/v0.3.1
+    gh auth login
+    gh release create v0.3.1 \
+        dist/rasqp-v0.3.1-linux-x86_64.tar.gz \
+        dist/rasqp-v0.3.1-linux-x86_64.tar.gz.sha256 \
+        --repo ianpsa/RASQP --verify-tag --prerelease \
+        --title 'RASQP v0.3.1 (research SDK)' --generate-notes
+
+Use the current Cargo version for subsequent releases. Never move an existing
+release tag. A local Linux build produces only a Linux x86_64 archive on an
+x86_64 Linux host. Release assets are uploaded directly with gh and do not
+depend on an Actions run. Existing hosted workflows remain available once
+the account's billing lock is resolved; local delivery does not clear it.
+
+Repository scope
+----------------
+Version code, build configuration, implementation/reproduction guides,
+experiment protocols, audit tools, and archived observations. Manuscripts,
+reference papers and presentations remain local and are ignored by Git.
+Removing a tracked file with git rm --cached preserves its working copy.
+Earlier commits and release tags retain their historical trees.

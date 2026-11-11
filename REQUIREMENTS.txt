@@ -104,3 +104,5 @@ GitHub release publication additionally requires Git push access to the
 repository. A version-matching v* tag invokes .github/workflows/release.yml;
 GitHub Actions runs CI, builds the platform archives and publishes a prerelease
 using the repository-scoped GITHUB_TOKEN. crates.io publication is disabled.
+For local Linux validation and direct release uploads without GitHub Actions,
+see docs/LOCAL_VALIDATION.txt. Direct uploads require GitHub authentication.

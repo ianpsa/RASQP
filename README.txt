@@ -75,6 +75,11 @@ They are not dependencies of the terminal interface or native simulator.
 
 Check and package
 -----------------
+For the complete local Linux CI equivalent, including native experiments and
+offline Python harnesses, see docs/LOCAL_VALIDATION.txt:
+
+    bash scripts/check-local.sh
+
     cargo fmt --all --check
     cargo clippy --locked --all-targets -- -D warnings
     cargo test --locked --all-targets
@@ -82,10 +87,14 @@ Check and package
     cargo package --locked
 
 The GitHub release workflow calls CI before building Linux x86_64, Windows
-x86_64 and macOS aarch64 archives. A tag matching Cargo.toml, such as v0.3.0,
+x86_64 and macOS aarch64 archives. A tag matching Cargo.toml, such as v0.3.1,
 triggers a GitHub prerelease. Archives contain native executables, SDK source,
 requirements, documentation, checksums and build metadata. Cargo registry
 publication remains disabled by publish=false.
+
+When Actions is unavailable, docs/LOCAL_VALIDATION.txt describes building and
+uploading a release directly from the local host. A local Linux release does
+not establish validation or provide binaries for Windows or macOS.
 
 Scientific scope
 ----------------

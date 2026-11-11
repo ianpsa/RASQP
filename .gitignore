@@ -48,7 +48,18 @@ Thumbs.db
 *.swo
 *~
 
-# LaTeX build outputs; manuscript sources and reference PDFs stay visible.
+# Local manuscripts, reference papers, presentations, and their working assets.
+/paper/
+/article/
+/presentations/
+/RASQP-chatgpt.tex
+/RASQP*presentati*
+/RASQP.pptx
+*.pptx
+*.potx
+*.odp
+
+# LaTeX build outputs.
 /article/build/
 /article/generated/
 *.aux

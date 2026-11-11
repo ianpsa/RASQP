@@ -31,6 +31,7 @@ fn run() -> Result<()> {
         "docs/RUST_SDK.txt",
         "docs/RESEARCH_V03.txt",
         "docs/MIGRATION_MATRIX.txt",
+        "docs/LOCAL_VALIDATION.txt",
     ];
     let mut inputs: Vec<(PathBuf, String)> = vec![
         (binary, format!("rasqp{suffix}")),
