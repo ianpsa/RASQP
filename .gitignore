@@ -83,3 +83,19 @@ Thumbs.db
 *.toc
 *.out
 /article/rasqp_revised.pdf
+
+# Guides consolidated into README.md; previous local copies are preserved.
+/REQUIREMENTS.md
+/docs/LOCAL_VALIDATION.md
+/docs/MIGRATION_MATRIX.md
+/docs/README.md
+/docs/RESEARCH_V03.md
+/docs/RUST_SDK.md
+/docs/TUI_GUIDE.md
+/docs/manifests/README.md
+/legacy/README.md
+/research/false_positives/README.md
+/research/ibm/README.md
+/research/web_variants/README.md
+/research/external_dataset/README.md
+/results/README.md

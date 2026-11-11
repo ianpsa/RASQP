@@ -36,14 +36,7 @@ fn run() -> Result<()> {
         return Err(Error::Invalid("compiled binary version"));
     }
     let crate_file = root.join(format!("target/package/rasqp-{version}.crate"));
-    let docs = [
-        "README.md",
-        "REQUIREMENTS.md",
-        "docs/RUST_SDK.md",
-        "docs/RESEARCH_V03.md",
-        "docs/MIGRATION_MATRIX.md",
-        "docs/LOCAL_VALIDATION.md",
-    ];
+    let docs = ["README.md"];
     let executables = ["rasqp", "rasqp-lab", "rasqp-tui", "rasqp-external"];
     let mut inputs: Vec<(PathBuf, String)> = executables
         .iter()
@@ -55,7 +48,6 @@ fn run() -> Result<()> {
         })
         .collect();
     inputs.push((crate_file, format!("rasqp-{version}.crate")));
-    inputs.push((root.join("docs/TUI_GUIDE.md"), "docs/TUI_GUIDE.md".into()));
     inputs.extend(docs.iter().map(|p| (root.join(p), p.to_string())));
     for (path, _) in &inputs {
         if !path.is_file() {
