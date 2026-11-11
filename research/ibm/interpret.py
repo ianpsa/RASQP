@@ -41,8 +41,10 @@ def interpret(output):
            'conditional_rates':conditional,
            'limits':'Quantum noise can expose extra-gate noise even when a logical mutation preserves the ideal measured distributions. Alarm rates are not harmful-application-impact rates. Parameter scaling changes only explicit RX/RY/RZ source instructions: QFT and quantum-walk sources lack those instructions, so those parameter cases are unchanged controls. These facts do not rescue any prespecified failed criterion.'}
     write_json(output/'interpretation.json',value)
-    path=output/'REPORT.txt'
-    text=path.read_text().split('\n## Post hoc interpretation\n')[0]
+    path=output/'REPORT.md'
+    # Older run directories may still contain the original plain-text filename.
+    original=path if path.exists() else output/'REPORT.txt'
+    text=original.read_text().split('\n## Post hoc interpretation\n')[0]
     text+='\n## Post hoc interpretation\n\n'
     text+=f"The topology-selected physical qubits have mean assignment errors from {min(assignments):.2%} to {max(assignments):.2%}. These include poor qubits; the study does not estimate the average quality of a modern processor or select layouts to obtain favorable outcomes.\n\n"
     text+='Some strong mutations are intrinsically invisible to the three fixed preparations/bases. The post hoc ideal distributions show this before considering noise. Noise from added physical gates can itself raise alarms even when the logical ideal distributions agree. Consequently, these aggregate results must not be interpreted as evidence that noise alone caused all misses, or that an alarm establishes harmful application impact.\n\n'

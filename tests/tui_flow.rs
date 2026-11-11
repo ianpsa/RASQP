@@ -77,7 +77,7 @@ fn standalone_lab_child_writes_reusable_native_evidence() {
     for file in [
         "native_protocol.json",
         "native_trials.jsonl",
-        "native_report.txt",
+        "native_report.md",
     ] {
         assert!(d.path().join(file).metadata().unwrap().len() > 0);
     }

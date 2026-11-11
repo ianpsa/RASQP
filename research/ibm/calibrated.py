@@ -163,7 +163,7 @@ def analyze(output):
         'Logical classical-bit mappings are preserved after routing. Clean references alone determine thresholds. No failed case is retuned. Topology-only path selection deliberately includes qubits of varying quality; the manifest shows per-qubit calibration and snapshot dates. The optimized equivalent control is evaluated against original raw calibration. Extra readout drift is benign by construction.','',
         'Post hoc ideal probe TVDs are retained to separate input/basis blind spots from sensitivity lost to noise. These additional diagnostics do not change the prespecified pass criteria. Different workloads and mutations prevent attributing differences from earlier dataset averages solely to hardware noise.','',
         'Separate probe outcomes do not prove that an untrusted provider executed the workload. Visible mutations may already be withheld by conservative structural inspection; this study measures measurement sensitivity, not end-to-end SDK release or detection of clandestine provider faults. A hardware pilot is separately specified in docs/IBM_HARDWARE_PILOT_V1.json.'])
-    (output/'REPORT.txt').write_text('\n'.join(report)+'\n')
+    (output/'REPORT.md').write_text('\n'.join(report)+'\n')
     print(json.dumps({'verified_decisions':independently_checked,'cost':summary['cost'],'rates':table},indent=2))
 
 

@@ -91,7 +91,7 @@ def analyze(prepared,output):
         'Known SWAP symmetry and prior rotation/CX studies make these diagnostic transfer tests, not proof that every attack concept was previously unknown. The initial-swap and mixed-trigger cases deliberately retain physically distinct computations invisible to the fixed input preparations. They are dormant on those inputs, including the ordinary zero-state workload execution, so their low alarm rates do not establish a bypass that changes the current workload output. They diagnose limits of general circuit coverage; an activating input is separately demonstrated by the physical regression test. Any noisy detection of such cases can arise from additional gate noise rather than logical activation.','',
         f"Independent raw verification: {counters['decisions_checked']:,} decisions; native versus Qiskit ideal probe-TVD error at most {parity:.3g}. Cost: {summary['cost']['shots']:,} simulated shots, zero QPU shots.",'',
         '[CutBackdoor](https://arxiv.org/abs/2607.18126) requires a cut-execution and reconstruction pipeline absent here. [QAD](https://netslab.ucd.ie/quantum-attack-dataset-qad/) is a separately identified public dataset, not imported or scored in this suite. Neither is counted as successfully tested protection.'])
-    (output/'REPORT.txt').write_text('\n'.join(report)+'\n')
+    (output/'REPORT.md').write_text('\n'.join(report)+'\n')
     print(json.dumps({'detector_unchanged':True,'bases':len(groups),'variants':len(index)-len(groups),
                       'verified_decisions':counters['decisions_checked'],'max_parity_error':parity},indent=2))
 

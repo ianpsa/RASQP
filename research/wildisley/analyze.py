@@ -208,7 +208,7 @@ def main(prepared, output):
     text.extend(["", "These are different information settings: RASQP receives an independently approved golden circuit and new behavioral samples; the text classifier predicts from a single QASM representation. The metrics do not establish a quantum advantage or direct superiority.", "",
         f"Executor cost: {summary['cost']['shots']:,} simulated shots, {summary['cost']['circuits']:,} circuit instances, {summary['cost']['executor_calls']:,} local calls; zero QPU shots. Shared portfolio ablations reuse observations. Independent analysis verified {counters['decisions_checked']:,} decisions from raw counts.", "",
         "Source family labels and dataset labels are retained verbatim; source_dataset='other' is not relabeled as VeriQBench. Related variants share author base folds, but base separation does not imply complete separation of higher-level algorithm families."])
-    (output/"REPORT.txt").write_text("\n".join(text)+"\n")
+    (output/"REPORT.md").write_text("\n".join(text)+"\n")
     print("\n".join(text[:14]))
 
 

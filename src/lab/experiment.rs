@@ -40,7 +40,7 @@ impl ResearchLab {
         Ok(Self {
             trials: BufWriter::new(File::create(path.join("native_trials.jsonl"))?),
             summary: BufWriter::new(File::create(path.join("native_summary.json"))?),
-            report: BufWriter::new(File::create(path.join("native_report.txt"))?),
+            report: BufWriter::new(File::create(path.join("native_report.md"))?),
             seed: 710000,
             circuits: 0,
             shots: 0,

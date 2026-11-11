@@ -35,13 +35,13 @@ pub const LESSONS: &[Topic] = &[
         title: "The five research questions",
         body: "The manuscript triage groups the work into five retrospective questions. H01-H44 are registry identifiers, not 44 independently validated security claims.\n\n1. Behavioral sensitivity: which interventions produce observable differences? Keep zero-separation cases and weak rotations.\n\n2. Probe selection at a fixed budget: does complementary coverage help on unseen mutations? H41 failed its original conjunction, including its noisy equivalent-control requirement.\n\n3. Alarm calibration: can clean alarms stay within bounds while strong-mutation detection stays high? Native H42 and the original H44 screening passed their recorded criteria; broader external criteria do not all pass.\n\n4. Context transfer: can the check distinguish malicious changes from benign compilation or drift? General discrimination is not established.\n\n5. Security boundary: what does measurement add to visible classical inspection? A plausible public-probe fabrication can pass. Native synthesized combined-rejection counters are not end-to-end runtime executions.\n\nThe tiny Workbench demonstrations teach mechanisms. They do not rerun the frozen hypothesis protocols. Use Studies for those native runs and inspect their original criteria and evidence.",
         art: "             sensitivity\n                  │\n coverage ─── [ evidence ] ── calibration\n                  │              │\n           trust boundary ─── context\n\n Keep the negative controls in view.",
-        source: "docs/RESEARCH_V03.txt; docs/NATIVE_PROTOCOL_V1.json",
+        source: "docs/RESEARCH_V03.md; docs/NATIVE_PROTOCOL_V1.json",
     },
     Topic {
         title: "What an accepted result actually means",
         body: "Accept means the enabled checks passed within the evaluated policy. Reject means a specified violation was found. Inconclusive means the available evidence does not establish acceptance. Both Reject and Inconclusive withhold counts.\n\nThe trusted application, approved reference, key, policy, and replay ledger must be protected independently. A compromised verifier host is outside the guarantee. Artifact hashes compare file bytes against an approved baseline; they do not attest loaded machine code.\n\nHMAC binds counts to a request for a signer that actually owns the key. It is not an IBM signature and cannot make a dishonest authorized signer honest. The in-memory ledger used in Workbench forgets history when recreated; production paths use a durable SQLite ledger.\n\nPublic probes are separate jobs. A backend can answer them plausibly while treating the workload differently. Distribution-preserving changes can escape behavioral checks. Local operator comparison is limited to small circuits and scales exponentially.\n\nThis interface runs classical simulation. No real QPU execution, quantum advantage, universal tamper detection, private watermarking, or cryptographic quantum authentication is demonstrated.",
         art: " Trusted host\n ┌──────────────────────────────────┐\n │ approved policy → checks → gate  │\n │ key / artifact / replay ledger   │\n └─────────────────┬────────────────┘\n                   │\n            backend boundary\n                   │\n       separate jobs, limited evidence",
-        source: "docs/RUST_SDK.txt; docs/RESEARCH_V03.txt",
+        source: "docs/RUST_SDK.md; docs/RESEARCH_V03.md",
     },
 ];
 
@@ -305,12 +305,12 @@ pub const GLOSSARY: &[Topic] = &[
         title: "Holdout / ablation / negative control",
         body: "A holdout evaluates examples withheld from training/selection. An ablation removes a component to test what it contributes. A negative control intentionally has no malicious intervention, for example benign drift or an equivalent rewrite. Preserve failures and blind spots when comparing methods.",
         art: " train -> freeze -> holdout\n full method <-> remove component\n malicious case <-> benign control",
-        source: "docs/RESEARCH_V03.txt; docs/NATIVE_PROTOCOL_V1.json",
+        source: "docs/RESEARCH_V03.md; docs/NATIVE_PROTOCOL_V1.json",
     },
     Topic {
         title: "Oracle / QPU / quantum advantage",
         body: "An oracle is a trusted idealized computation used by these local experiments. A QPU is physical quantum hardware; the native simulator is ordinary classical software. Quantum advantage would require a competitive end-to-end demonstration, which this project does not provide.",
         art: " local classical simulator != physical QPU",
-        source: "H37 / H38; docs/RESEARCH_V03.txt",
+        source: "H37 / H38; docs/RESEARCH_V03.md",
     },
 ];
